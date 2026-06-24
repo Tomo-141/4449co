@@ -6,7 +6,7 @@ This site is a portal I (Tomo) have created in collaboration with my trusty AI  
 
  Click on the **menu items (▶)** below to view detailed project information. 
 
-- **⚠️Please be sure to Read this First‼**
+<details><summary><b>⚠️Please be sure to Read this First‼</b></summary>
     
     **License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)**
     
@@ -41,6 +41,7 @@ This site is a portal I (Tomo) have created in collaboration with my trusty AI  
         4. **宣伝費**（マーケティングノイズおよび注目コストの浪費）
     - **核心的なルール：**
     上記4つのパラメータを含めた総合的なインフラ効率がトモの美学より劣っている場合は、販売することを一切禁止します。引き算の法則をリスペクトし、100%無駄のない低燃費状態を維持せよ！📊❌
+</details>
 - **🍅Yoyoshiku-Home Gardening**
     - **Tomo-Modular Linked Planter System(Tomo-Link Planter 1.0)**
         
