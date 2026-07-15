@@ -1,0 +1,865 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Yoyoshiku-Company🚬（日本語）</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+/* For default-background callouts, render the border outline. */
+.callout.block-color-default_background {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+figure,
+aside,
+details {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+/*
+ * Render emoji icons using a ::before pseudo-element to keep the glyph
+ * out of the DOM textContent traversal. This avoids double-rendering icons
+ * in callouts and page titles.
+ * NOTE(slim/html-export-pseudo-icons): I can't tagref this because it will
+ * flag as a duplicate tag after codegen.
+ */
+.icon[data-emoji]::before {
+	content: attr(data-emoji);
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	margin-right: 0.4em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.tab {
+	margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style></head><body><article id="38cfcdf3-f965-8079-8c21-ed7c1e61945f" class="page sans"><header><h1 class="page-title" dir="auto">Yoyoshiku-Company🚬（日本語）</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><h2 id="38dfcdf3-f965-80eb-8c39-f99d714ca522" class="" dir="auto">🛠<span style="border-bottom:0.05em solid">Yoyoshiku(Plz)-Do It Yourself！</span></h2><p id="38dfcdf3-f965-805c-8819-e2776e11b0a6" class="" dir="auto">このサイトは、<strong><span style="border-bottom:0.05em solid">私（Tomo）</span></strong>が信頼できる相棒である<strong><span style="border-bottom:0.05em solid">Hack（Claude AI）</span></strong>と共同で立ち上げたポータルサイトです。ここでは、私の<strong>家庭菜園プロジェクト</strong>や<strong>実用的なDIYプロジェクト</strong>、その他の役立つ知識に関する情報を紹介しています。すべてをできるだけわかりやすくお伝えできるよう、最善を尽くしました（多分・・・）。</p><p id="38dfcdf3-f965-800c-8e2a-dfd01cda880f" class="block-color-gray_background" data-notion-highlight="gray_background" dir="auto"><strong><span style="border-bottom:0.05em solid">🖍コンテンツをご覧になるには「▶」の行をクリックしてください。</span></strong></p><hr id="391fcdf3-f965-8084-8bb2-e430ce954101" dir="auto"/><details id="38dfcdf3-f965-80f8-bad8-f117d8ae5663" open="" class="block-color-brown_background toggle" data-notion-highlight="brown_background" dir="auto"><summary><strong><span style="border-bottom:0.05em solid">🍅Yoyoshiku</span></strong><mark class="highlight-default_background" data-notion-highlight="default_background"><strong><span style="border-bottom:0.05em solid">-Home Garden</span></strong></mark></summary><div class="indented"><details id="390fcdf3-f965-80c6-9641-e0ef9ad702ad" open="" class="toggle" dir="auto"><summary><strong><span style="border-bottom:0.05em solid">📅育成状況</span></strong></summary><div class="indented"><details id="390fcdf3-f965-8008-8aff-cf629d3ee8f1" open="" class="toggle" dir="auto"><summary><span style="border-bottom:0.05em solid">🥬芽キャベツさん</span></summary><div class="indented"><table id="39efcdf3-f965-80e7-b6f4-e27a8e174b72" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="39efcdf3-f965-8055-883a-dc2e39965c6a" dir="ltr"><th id="oj&gt;=" class="block-color-teal_background simple-table-header" style="width:61px">種まき</th><th id="_Vom" class="block-color-teal_background simple-table-header" style="width:47px">株数</th><th id="b[ug" class="block-color-teal_background simple-table-header" style="width:89px">使用ツール</th><th id="^T&lt;&gt;" class="block-color-teal_background simple-table-header" style="width:117px">使用プランタ</th></tr></thead><tbody><tr id="39efcdf3-f965-8002-9789-dc4a6e57f35d" dir="ltr"><td id="oj&gt;=" class="" style="width:61px">6/10</td><td id="_Vom" class="" style="width:47px">3</td><td id="b[ug" class="" style="width:89px">TUAL<br/>TUAH</td><td id="^T&lt;&gt;" class="" style="width:117px">ワイヤネット型</td></tr></tbody></table><hr id="39efcdf3-f965-8085-aad2-f01c20ba038a" dir="auto"/><table id="39efcdf3-f965-80f9-9702-e5434a2416ef" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="39efcdf3-f965-8059-9435-ea11b2bdf402" dir="ltr"><th id="f_sX" class="block-color-teal_background simple-table-header" style="width:47px">日付</th><th id="U_Xv" class="block-color-teal_background simple-table-header" style="width:39px">7/1</th><th id="UI[T" class="block-color-teal_background simple-table-header" style="width:47px">7/15</th><th id="`Ow`" class="block-color-teal_background simple-table-header" style="width:49px">7/29</th><th id="Oo@B" class="block-color-teal_background simple-table-header" style="width:47px">8/12</th><th id="ChA|" class="block-color-teal_background simple-table-header" style="width:49px">8/26</th><th id="lzcG" class="block-color-teal_background simple-table-header" style="width:41px">9/9</th><th id="u_zx" class="block-color-teal_background simple-table-header" style="width:47px">9/16</th><th id="v_w}" class="block-color-teal_background simple-table-header" style="width:49px">9/23</th></tr></thead><tbody><tr id="39efcdf3-f965-80cd-90d2-e3ddc26a2f2c" dir="ltr"><td id="f_sX" class="" style="width:47px">状況</td><td id="U_Xv" class="" style="width:39px">testttttttttttttttttttttttttttttt</td><td id="UI[T" class="" style="width:47px"></td><td id="`Ow`" class="" style="width:49px"></td><td id="Oo@B" class="" style="width:47px"></td><td id="ChA|" class="" style="width:49px"></td><td id="lzcG" class="" style="width:41px"></td><td id="u_zx" class="" style="width:47px"></td><td id="v_w}" class="" style="width:49px"></td></tr></tbody></table><hr id="390fcdf3-f965-8023-a52f-eb3647848af0" dir="auto"/><ul id="396fcdf3-f965-803f-b37e-c51b11b4f486" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>実の栄養</strong><p id="396fcdf3-f965-8066-ad44-c8b05f65d3ab" class="" dir="auto">キャベツの約3〜4倍の<strong>ビタミンC</strong>を含み、レモン並みの美肌・風邪予防効果があります。胃腸を保護する<strong>ビタミンU（キャベベジン）</strong>も豊富です。<br/></p></li></ul><ul id="396fcdf3-f965-80c4-a894-fb1d0bb27788" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>葉の栄養</strong>：葉も食べられます。抗酸化作用の高い<strong>β-カロテン</strong>や、骨を丈夫にする<strong>ビタミンK</strong>が豊富です。</li></ul></div></details><details id="390fcdf3-f965-801f-b128-eb025fffe57e" open="" class="toggle" dir="auto"><summary><span style="border-bottom:0.05em solid">🥕五寸人参さん</span></summary><div class="indented"><div id="390fcdf3-f965-80b4-808c-ea38227acc64" class="column-list" data-notion-column-list="" dir="auto"><div id="390fcdf3-f965-802c-b1d1-ef7c30631a01" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-8093-bcaa-f5883a80c381" class="block-color-default_background" data-notion-highlight="default_background" dir="auto">7/1</p><figure id="390fcdf3-f965-8028-aea2-f09f6f8a2021" class="image" data-notion-image="growstatus_carrots_0701.jpg" dir="ltr"><a href="growstatus_carrots_0701.jpg"><img style="width:72px" src="growstatus_carrots_0701.jpg"/></a></figure></div><div id="390fcdf3-f965-80b9-b5e9-e751783bac5a" style="width:25.00000000000002%" class="column" data-notion-column-ratio="0.2500000000000002" dir="auto"><p id="390fcdf3-f965-80c8-b768-c9b039c69d9e" class="block-color-default_background" data-notion-highlight="default_background" dir="auto">7/15</p><p id="390fcdf3-f965-8096-a0bb-c77a3911cbce" class="" dir="auto">－</p></div><div id="390fcdf3-f965-802e-be5b-c032d0e3cad1" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-80e9-92f7-de655fe85c00" class="block-color-default_background" data-notion-highlight="default_background" dir="auto">7/29</p><p id="390fcdf3-f965-809b-8e8e-f87317632f6e" class="" dir="auto">－</p></div><div id="392fcdf3-f965-8062-820a-d3799c63c5b1" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-807e-a05d-d5424b2cdd36" class="block-color-default_background" data-notion-highlight="default_background" dir="auto">8/12</p><p id="390fcdf3-f965-80dd-a833-ef8ebfe3ec10" class="" dir="auto">－</p></div></div><hr id="390fcdf3-f965-8027-b86b-f65c97ba176c" dir="auto"/><div id="390fcdf3-f965-80b2-b1bd-c1603d4f6035" class="column-list" data-notion-column-list="" dir="auto"><div id="390fcdf3-f965-8027-a3d6-f9e0d58c7db0" style="width:25.000000000000007%" class="column" data-notion-column-ratio="0.25000000000000006" dir="auto"><p id="390fcdf3-f965-801a-ad50-c1189a0892ff" class="block-color-default_background" data-notion-highlight="default_background" dir="auto">8/26</p><p id="390fcdf3-f965-800a-be48-e9934bbd1888" class="" dir="auto">－</p></div><div id="390fcdf3-f965-808c-b328-f0511e4f04f7" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-80b9-b515-f2a855672342" class="block-color-default_background" data-notion-highlight="default_background" dir="auto">9/9</p><p id="390fcdf3-f965-807f-9ef2-e72598357815" class="" dir="auto">－</p></div><div id="392fcdf3-f965-8057-8472-d657d91ce85f" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="392fcdf3-f965-80be-8fda-f827427df594" class="block-color-default_background" data-notion-highlight="default_background" dir="auto">9/16</p><p id="392fcdf3-f965-80ca-843e-f1a138743bbe" class="" dir="auto">－</p></div><div id="392fcdf3-f965-807a-bf58-f860aa913f85" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="392fcdf3-f965-805c-8b1d-e3e5b314571d" class="" dir="auto">9/23</p><p id="392fcdf3-f965-8057-8c65-ef60b94ef7e9" class="" dir="auto">－</p></div></div><hr id="390fcdf3-f965-8029-9852-e33d512be919" dir="auto"/></div></details><details id="390fcdf3-f965-80f8-9b1c-ca358b715769" open="" class="toggle" dir="auto"><summary><span style="border-bottom:0.05em solid">🌿ミニ大根さん</span></summary><div class="indented"><div id="390fcdf3-f965-80f1-8f5e-efdcdefebbf0" class="column-list" data-notion-column-list="" dir="auto"><div id="390fcdf3-f965-8022-a98b-e8a10ee9ff4c" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-80dc-9bab-d6a34ab4b183" class="block-color-default_background" data-notion-highlight="default_background" dir="auto">7/1</p><figure id="390fcdf3-f965-807d-917a-dd502a4552c4" class="image" data-notion-image="growstatus_radishes_0701.jpg" dir="ltr"><a href="growstatus_radishes_0701.jpg"><img style="width:72px" src="growstatus_radishes_0701.jpg"/></a></figure></div><div id="390fcdf3-f965-80a8-bdec-d8af9752d960" style="width:25.00000000000002%" class="column" data-notion-column-ratio="0.2500000000000002" dir="auto"><p id="390fcdf3-f965-80fb-b60a-cc5848949ecb" class="block-color-default_background" data-notion-highlight="default_background" dir="auto">7/15</p><p id="390fcdf3-f965-8040-91d0-c6354c2a3e01" class="" dir="auto">－</p></div><div id="390fcdf3-f965-80da-a7ec-d09617610472" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-80c1-a535-da2326bf6e6c" class="block-color-default_background" data-notion-highlight="default_background" dir="auto">7/29</p><p id="390fcdf3-f965-80ea-a0b1-d7c4948daf83" class="" dir="auto">－</p></div><div id="392fcdf3-f965-8084-ae24-d02cb83e267c" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-802c-9458-ebe79c00f3a4" class="block-color-default_background" data-notion-highlight="default_background" dir="auto">8/12</p><p id="390fcdf3-f965-8093-91e8-d6147db90754" class="" dir="auto">－</p></div></div><hr id="390fcdf3-f965-8016-8613-f168a519ecb5" dir="auto"/><div id="390fcdf3-f965-80f4-bae4-e9baef211948" class="column-list" data-notion-column-list="" dir="auto"><div id="390fcdf3-f965-8084-949f-d8f5e05d3743" style="width:25.000000000000007%" class="column" data-notion-column-ratio="0.25000000000000006" dir="auto"><p id="390fcdf3-f965-8085-8efc-d2ae046c9116" class="block-color-default_background" data-notion-highlight="default_background" dir="auto">8/26</p><p id="390fcdf3-f965-8009-8572-ee91cde89fa9" class="" dir="auto">－</p></div><div id="390fcdf3-f965-805f-a32d-ca88a352fcf5" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-80c9-a173-e28d3d4f068d" class="block-color-default_background" data-notion-highlight="default_background" dir="auto">9/9</p><p id="390fcdf3-f965-80f3-9cda-ed8a059f9bd1" class="" dir="auto">－</p></div><div id="392fcdf3-f965-80b5-b875-d8f80d768a3c" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="392fcdf3-f965-80b5-80c0-d38a37bee6bb" class="block-color-default_background" data-notion-highlight="default_background" dir="auto">9/16</p><p id="392fcdf3-f965-8086-9b79-c6366504ee65" class="" dir="auto">－</p></div><div id="392fcdf3-f965-809e-9cd6-eafed1fd767b" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="392fcdf3-f965-8065-8797-e9fcb8570722" class="" dir="auto">9/23</p><p id="392fcdf3-f965-8090-9c2e-c0b3602ff1c9" class="" dir="auto">－</p></div></div><hr id="390fcdf3-f965-80d6-b8a6-c4c7bd2318d6" dir="auto"/><p id="396fcdf3-f965-8084-a133-d478187148dc" class="" dir="auto">※ミニ大根は葉を食べる目的で栽培しています。</p></div></details><details id="390fcdf3-f965-809a-a9fc-c8c62cf153c8" open="" class="toggle" dir="auto"><summary><span style="border-bottom:0.05em solid">🌱枝豆さん</span></summary><div class="indented"><div id="390fcdf3-f965-8043-8aa4-fc2484bdb6aa" class="column-list" data-notion-column-list="" dir="auto"><div id="390fcdf3-f965-8055-8cd0-fbe8d015a054" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-8014-8a2c-edb90508d1a8" class="" dir="auto">7/1</p><figure id="390fcdf3-f965-802d-bbd1-d4e6f8b8c74f" class="image" data-notion-image="growstatus_soybean_0701.jpg" dir="ltr"><a href="growstatus_soybean_0701.jpg"><img style="width:72px" src="growstatus_soybean_0701.jpg"/></a></figure></div><div id="390fcdf3-f965-80bc-a66f-faa75ad7e7cb" style="width:25.00000000000002%" class="column" data-notion-column-ratio="0.2500000000000002" dir="auto"><p id="390fcdf3-f965-80dc-b9fc-fef3c06f1cb9" class="" dir="auto">7/15</p><p id="390fcdf3-f965-8003-a650-e78bc1ab43c8" class="" dir="auto">－</p></div><div id="390fcdf3-f965-80e6-9953-f9e290ae7f50" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-80cf-a28e-ee5efee1904e" class="" dir="auto">7/29</p><p id="390fcdf3-f965-80dc-b758-c218854c7628" class="" dir="auto">－</p></div><div id="392fcdf3-f965-800f-add5-e757c6a13e6a" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-8048-87ae-d3615c640696" class="" dir="auto">8/12</p><p id="390fcdf3-f965-80b2-993f-f2d477b05f98" class="" dir="auto">－</p></div></div><hr id="38efcdf3-f965-8035-8f4f-e9dc0715504b" dir="auto"/><div id="390fcdf3-f965-8092-9fb8-f0da718fc379" class="column-list" data-notion-column-list="" dir="auto"><div id="390fcdf3-f965-80ea-951d-c5f67ae3b3e1" style="width:25.000000000000007%" class="column" data-notion-column-ratio="0.25000000000000006" dir="auto"><p id="390fcdf3-f965-80d1-ac16-c7684f9eeb4b" class="" dir="auto">8/26</p><p id="390fcdf3-f965-803d-a3c9-d051a6468e6e" class="" dir="auto">－</p></div><div id="390fcdf3-f965-807b-82e8-d90bf7a7d286" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-8009-871f-cbdcfa399776" class="" dir="auto">9/9</p><p id="390fcdf3-f965-80a1-b42c-e9c44fd0dabf" class="" dir="auto">－</p></div><div id="392fcdf3-f965-80a4-b3c5-e9d92881278f" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="392fcdf3-f965-80b4-a795-ffeef98f82cc" class="" dir="auto">9/16</p><p id="392fcdf3-f965-80b5-8334-ffc83ff5202c" class="" dir="auto">－</p></div><div id="392fcdf3-f965-80a5-9062-cd99dceaa4db" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="392fcdf3-f965-8072-bafe-c8f7be3a6446" class="" dir="auto">9/23</p><p id="392fcdf3-f965-804a-be0b-f1936da9fb97" class="" dir="auto">－</p></div></div><hr id="390fcdf3-f965-80b6-bc64-fd9f26fcad15" dir="auto"/></div></details><details id="390fcdf3-f965-80c3-a642-ec72cd4b4266" open="" class="toggle" dir="auto"><summary><span style="border-bottom:0.05em solid">🍅トマトさん</span></summary><div class="indented"><div id="390fcdf3-f965-802c-89ee-f2c686091d30" class="column-list" data-notion-column-list="" dir="auto"><div id="390fcdf3-f965-80da-a552-e50338b0dcaa" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-80c3-baa2-cc8344458d7b" class="" dir="auto">7/1</p><figure id="390fcdf3-f965-807b-b0c9-c5f2c86d17fc" class="image" data-notion-image="growstatus_tomato_0701.jpg" dir="ltr"><a href="growstatus_tomato_0701.jpg"><img style="width:72px" src="growstatus_tomato_0701.jpg"/></a></figure></div><div id="390fcdf3-f965-8078-bc99-d97533486095" style="width:25.00000000000002%" class="column" data-notion-column-ratio="0.2500000000000002" dir="auto"><p id="390fcdf3-f965-80e3-996b-dba9d1fdd1f4" class="" dir="auto">7/15</p><p id="390fcdf3-f965-80ac-8947-f6459777836c" class="" dir="auto">－</p></div><div id="390fcdf3-f965-8085-aae2-da6c1062f182" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-803c-ad72-d7c1660afd2c" class="" dir="auto">7/29</p><p id="390fcdf3-f965-8019-924f-e5b8be93d81e" class="" dir="auto">－</p></div><div id="392fcdf3-f965-8018-8fc2-e2d3ed3df57b" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-8050-a75d-f904e01b81bb" class="" dir="auto">8/12</p><p id="390fcdf3-f965-8078-99c7-e9a2d1c14fc0" class="" dir="auto">－</p></div></div><hr id="390fcdf3-f965-80a9-a8a5-dd181a80ca2e" dir="auto"/><div id="390fcdf3-f965-8034-aa3a-e1de7f8eba01" class="column-list" data-notion-column-list="" dir="auto"><div id="390fcdf3-f965-806d-9888-ceafa207c823" style="width:25.000000000000007%" class="column" data-notion-column-ratio="0.25000000000000006" dir="auto"><p id="390fcdf3-f965-80aa-8a3f-d22671afda77" class="" dir="auto">8/26</p><p id="390fcdf3-f965-8037-a296-c6d4002cef42" class="" dir="auto">－</p></div><div id="390fcdf3-f965-8041-9e0a-cdde88687d8f" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-80d5-9c63-d803017e5464" class="" dir="auto">9/9</p><p id="390fcdf3-f965-8028-992a-d9c47ca815d2" class="" dir="auto">－</p></div><div id="392fcdf3-f965-8069-972f-d53229f38911" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="392fcdf3-f965-8017-ba4c-f5cd9437ed93" class="" dir="auto">9/16</p><p id="392fcdf3-f965-805e-ad52-fa9e4bdd628e" class="" dir="auto">－</p></div><div id="392fcdf3-f965-80c9-a199-ef1bcc8c6d9f" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="392fcdf3-f965-80ad-8212-d36b8cc82797" class="" dir="auto">9/23</p><p id="392fcdf3-f965-8082-b814-c8ece54ca682" class="" dir="auto">－</p></div></div><hr id="390fcdf3-f965-80d2-a847-f893d39c6684" dir="auto"/></div></details><details id="390fcdf3-f965-8060-a29f-d9dbc95c565a" open="" class="toggle" dir="auto"><summary><span style="border-bottom:0.05em solid">🍃モロヘイヤさん</span></summary><div class="indented"><div id="390fcdf3-f965-809a-9d96-f776e904cd48" class="column-list" data-notion-column-list="" dir="auto"><div id="390fcdf3-f965-801a-b7b7-ca63b3011182" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-80b9-9497-e4a973b081f4" class="" dir="auto">7/-</p><p id="390fcdf3-f965-8063-99da-d6179f665aa8" class="" dir="auto">－</p></div><div id="390fcdf3-f965-8004-a641-e58f3c7c85c9" style="width:25.00000000000002%" class="column" data-notion-column-ratio="0.2500000000000002" dir="auto"><p id="390fcdf3-f965-80ed-8bc6-cce01373a5ac" class="" dir="auto">7/15</p><p id="390fcdf3-f965-8047-8aa0-e086aa59cd1d" class="" dir="auto">－</p></div><div id="390fcdf3-f965-8024-a76a-f8bdfe423dd1" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-8058-8ab5-c34601374865" class="" dir="auto">7/29</p><p id="390fcdf3-f965-80f8-afcc-c44a123fea0a" class="" dir="auto">－</p></div><div id="392fcdf3-f965-80ad-b25d-d9f15e120eb3" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-80f8-ae82-c05401c678ad" class="" dir="auto">8/12</p><p id="390fcdf3-f965-80f8-af3c-e4832d6ee7da" class="" dir="auto">－</p></div></div><hr id="390fcdf3-f965-8001-9159-f6f50136da3b" dir="auto"/><div id="390fcdf3-f965-8065-b604-f6c10428b4ff" class="column-list" data-notion-column-list="" dir="auto"><div id="390fcdf3-f965-8083-922c-f852623a4647" style="width:25.000000000000007%" class="column" data-notion-column-ratio="0.25000000000000006" dir="auto"><p id="390fcdf3-f965-808e-b0dc-c87b798c6228" class="" dir="auto">8/26</p><p id="390fcdf3-f965-803d-a302-e279a48c07a1" class="" dir="auto">－</p></div><div id="390fcdf3-f965-80f8-8e0d-d54b55c3f712" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="390fcdf3-f965-809d-bd9e-f3295de94398" class="" dir="auto">9/9</p><p id="390fcdf3-f965-80e6-a35e-d21db0c48442" class="" dir="auto">－</p></div><div id="392fcdf3-f965-8041-84e7-e1bb3b3d947b" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="392fcdf3-f965-80b2-9538-c989e893a640" class="" dir="auto">9/16</p><p id="392fcdf3-f965-8067-b3eb-da30e5a52472" class="" dir="auto">－</p></div><div id="392fcdf3-f965-80d8-85b0-c918bc11337e" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="392fcdf3-f965-8053-8c31-de604a888de6" class="" dir="auto">9/23</p><p id="392fcdf3-f965-800c-83ea-d5746a358897" class="" dir="auto">－</p></div></div></div></details></div></details><details id="38efcdf3-f965-8036-b3b7-c5dcaf0381a2" open="" class="block-color-default_background toggle" data-notion-highlight="default_background" dir="auto"><summary>💡<strong>野菜別コンテンツ使用内容</strong></summary><div class="indented"><ul id="392fcdf3-f965-800b-8164-c599f4fdb6ee" class="bulleted-list" dir="auto"><li style="list-style-type:disc">約2週間単位で記録。</li></ul><ul id="396fcdf3-f965-804b-a7cc-f0b7a3e2ce47" class="bulleted-list" dir="auto"><li style="list-style-type:disc">私の食生活を基準に選定した野菜を育てています。<ul id="396fcdf3-f965-805a-b5de-dd6148695887" class="bulleted-list" dir="auto"><li style="list-style-type:circle">カロリーベースではなく栄養ベースの食事を摂っています。</li></ul></li></ul><table id="38efcdf3-f965-80ee-877e-ffb1f424bfae" class="simple-table" dir="ltr"><tbody><tr id="38efcdf3-f965-8048-82d0-c2eb302361ef" dir="ltr"><td id="Kg`G" class="block-color-teal_background" style="width:89px">野菜さん</td><td id="}Y@m" class="block-color-teal_background" style="width:89px">芽キャベツ</td><td id="tO{V" class="block-color-teal_background" style="width:89px">五寸人参</td><td id="xTiV" class="block-color-teal_background" style="width:89px">ミニ大根</td><td id="I~Z:" class="block-color-teal_background" style="width:75px">早生枝豆</td><td id="o{?p" class="block-color-teal_background" style="width:91px">鈴なりミニトマト（逆さ栽培）</td><td id="hebN" class="block-color-teal_background" style="width:89px">モロヘイヤ</td></tr><tr id="38efcdf3-f965-8068-b3b7-cf4741206d01" dir="ltr"><td id="Kg`G" class="block-color-default_background" style="width:89px">種まき</td><td id="}Y@m" class="block-color-default_background" style="width:89px">6/10</td><td id="tO{V" class="block-color-default_background" style="width:89px">7/1</td><td id="xTiV" class="block-color-default_background" style="width:89px">6/14</td><td id="I~Z:" class="block-color-default_background" style="width:75px">6/10</td><td id="o{?p" class="block-color-default_background" style="width:91px">6/10</td><td id="hebN" class="block-color-default_background" style="width:89px"></td></tr><tr id="38efcdf3-f965-801e-9890-e6852b588c89" dir="ltr"><td id="Kg`G" class="block-color-teal_background" style="width:89px">株数</td><td id="}Y@m" class="block-color-teal_background" style="width:89px">3株</td><td id="tO{V" class="block-color-teal_background" style="width:89px">4株</td><td id="xTiV" class="block-color-teal_background" style="width:89px">2株</td><td id="I~Z:" class="block-color-teal_background" style="width:75px">4株</td><td id="o{?p" class="block-color-teal_background" style="width:91px">2株</td><td id="hebN" class="block-color-teal_background" style="width:89px"></td></tr><tr id="38efcdf3-f965-80f5-80cf-d05c1e8e7049" dir="ltr"><td id="Kg`G" class="" style="width:89px">菌さん</td><td id="}Y@m" class="" style="width:89px">納豆菌</td><td id="tO{V" class="" style="width:89px">納豆菌<br/>菌根菌</td><td id="xTiV" class="" style="width:89px">納豆菌</td><td id="I~Z:" class="" style="width:75px">納豆菌<br/>菌根菌<br/>根粒菌</td><td id="o{?p" class="" style="width:91px">納豆菌<br/>菌根菌</td><td id="hebN" class="" style="width:89px">納豆菌</td></tr><tr id="38efcdf3-f965-8068-aa20-dc575ddfb48a" dir="ltr"><td id="Kg`G" class="block-color-teal_background" style="width:89px">プランター</td><td id="}Y@m" class="block-color-teal_background" style="width:89px">ワイヤーネットプランター</td><td id="tO{V" class="block-color-teal_background" style="width:89px">パック<br/>プランター</td><td id="xTiV" class="block-color-teal_background" style="width:89px">洗濯籠プランター</td><td id="I~Z:" class="block-color-teal_background" style="width:75px">TMLP</td><td id="o{?p" class="block-color-teal_background" style="width:91px">TMLP</td><td id="hebN" class="block-color-teal_background" style="width:89px">パック<br/>プランター</td></tr><tr id="38efcdf3-f965-8046-82fa-dd6038441b4e" dir="ltr"><td id="Kg`G" class="block-color-default_background" style="width:89px">オプション</td><td id="}Y@m" class="block-color-default_background" style="width:89px">TUAL</td><td id="tO{V" class="block-color-default_background" style="width:89px">TUAL</td><td id="xTiV" class="block-color-default_background" style="width:89px">TUAL<br/>TUAH</td><td id="I~Z:" class="block-color-default_background" style="width:75px">TUAL</td><td id="o{?p" class="block-color-default_background" style="width:91px">TUAL</td><td id="hebN" class="block-color-default_background" style="width:89px">TUAL</td></tr></tbody></table></div></details><details id="396fcdf3-f965-80a9-b228-fd4ff00d57b5" open="" class="toggle" dir="auto"><summary><strong>📊野菜別栄養マトリクス</strong></summary><div class="indented"><table id="396fcdf3-f965-802a-a45f-edbbccda096c" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="396fcdf3-f965-8025-9ecb-d6c9d3a2341c" dir="ltr"><th id="bj@]" class="simple-table-header-color simple-table-header" style="width:145px">作物</th><th id="SE}C" class="simple-table-header-color simple-table-header" style="width:89px">タンパク質</th><th id="fh[S" class="simple-table-header-color simple-table-header">抗酸化</th><th id="hKBI" class="simple-table-header-color simple-table-header" style="width:47px">葉酸</th><th id="FEJR" class="simple-table-header-color simple-table-header" style="width:96px">免疫</th><th id="yI]Y" class="simple-table-header-color simple-table-header" style="width:131px">鉄・ミネラル</th></tr></thead><tbody><tr id="396fcdf3-f965-80de-80b8-c37c744cd661" dir="ltr"><td id="bj@]" class="" style="width:145px">枝豆</td><td id="SE}C" class="" style="width:89px">◎</td><td id="fh[S" class="">○</td><td id="hKBI" class="" style="width:47px">◎</td><td id="FEJR" class="" style="width:96px">○</td><td id="yI]Y" class="" style="width:131px">◎</td></tr><tr id="396fcdf3-f965-8025-a202-f22d580c0bee" dir="ltr"><td id="bj@]" class="" style="width:145px">鈴なりトマト</td><td id="SE}C" class="" style="width:89px">ー</td><td id="fh[S" class="">◎リコピン</td><td id="hKBI" class="" style="width:47px">○</td><td id="FEJR" class="" style="width:96px">○</td><td id="yI]Y" class="" style="width:131px">ー</td></tr><tr id="396fcdf3-f965-8084-9869-e38c8d0c7dac" dir="ltr"><td id="bj@]" class="" style="width:145px">芽キャベツ</td><td id="SE}C" class="" style="width:89px">○</td><td id="fh[S" class="">◎スルフォラファン</td><td id="hKBI" class="" style="width:47px">◎</td><td id="FEJR" class="" style="width:96px">◎</td><td id="yI]Y" class="" style="width:131px">○</td></tr><tr id="396fcdf3-f965-8038-81f2-c8b63c9715d6" dir="ltr"><td id="bj@]" class="" style="width:145px"><strong>大根の葉</strong></td><td id="SE}C" class="" style="width:89px">○</td><td id="fh[S" class="">◎βカロテン</td><td id="hKBI" class="" style="width:47px">◎</td><td id="FEJR" class="" style="width:96px">◎</td><td id="yI]Y" class="" style="width:131px">◎鉄・カルシウム</td></tr><tr id="396fcdf3-f965-80b8-b161-dd1bdfc919b8" dir="ltr"><td id="bj@]" class="" style="width:145px">ジャガイモ（予定）</td><td id="SE}C" class="" style="width:89px">○</td><td id="fh[S" class="">○</td><td id="hKBI" class="" style="width:47px">○</td><td id="FEJR" class="" style="width:96px">○ビタミンC</td><td id="yI]Y" class="" style="width:131px">◎カリウム</td></tr><tr id="396fcdf3-f965-80b8-8a28-fe3b5105fae0" dir="ltr"><td id="bj@]" class="" style="width:145px">五寸人参（予定）</td><td id="SE}C" class="" style="width:89px">ー</td><td id="fh[S" class="">◎βカロテン</td><td id="hKBI" class="" style="width:47px">○</td><td id="FEJR" class="" style="width:96px">○</td><td id="yI]Y" class="" style="width:131px">○</td></tr></tbody></table></div></details><details id="38dfcdf3-f965-8054-a6f2-cc8a31395a23" open="" class="block-color-default_background toggle" data-notion-highlight="default_background" dir="auto"><summary><strong>📋活動内容</strong></summary><div class="indented"><ul id="392fcdf3-f965-80e6-8f85-d9b5836f1bd1" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>限られたスペースで効率的に栽培するプランター</strong>を発案し作成しています。</li></ul><p id="396fcdf3-f965-8049-9ffe-c4b3a38f3711" class="" dir="auto">
+</p><ul id="392fcdf3-f965-800e-8175-d8df2f953e96" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>土中へ酸素を効率よく取り入れるツール</strong>を発案し作成しています。<ul id="396fcdf3-f965-807f-82ef-f1844932e2f4" class="bulleted-list" dir="auto"><li style="list-style-type:circle"><strong>収穫量と収穫期間でツールを検証しています。</strong></li></ul></li></ul><p id="396fcdf3-f965-805d-807d-e704767a539f" class="" dir="auto">
+</p><ul id="392fcdf3-f965-80e2-a7a2-ebff600cdcc1" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>複数の菌を野菜と共生</strong>させ、野菜の成長度合いを検証しています。<ul id="396fcdf3-f965-8022-ad37-f79946bcfd76" class="bulleted-list" dir="auto"><li style="list-style-type:circle">植物学的には既に立証されています。</li></ul></li></ul><p id="396fcdf3-f965-80b5-bb2a-e87c9de44aed" class="" dir="auto">
+</p><ul id="392fcdf3-f965-80c7-a6b5-eb130addc325" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>間引きは一切行なっていません</strong>。種一つ一つの成長を見届けたいと思っています。2026年6月の中旬より世界情勢を鑑み、趣味の一つだった工作や基本的な物理事象の知識を使って初めて農業にチャレンジしていますが、全ての芽をとても愛おしく感じます。</li></ul><p id="392fcdf3-f965-801f-ab24-d7eb3637cb0a" class="" dir="auto">
+</p></div></details><details id="392fcdf3-f965-800a-8773-f4310e70760a" open="" class="toggle" dir="auto"><summary>🟤<strong>土成分</strong></summary><div class="indented"><ul id="38dfcdf3-f965-80cc-bb32-e2a1a56aee70" class="bulleted-list" dir="auto"><li style="list-style-type:disc">ココブリック７：バーミキュライト３（保水と通気性を重視）<p id="396fcdf3-f965-80e4-9afa-cf7f42e950f3" class="" dir="auto">※保水力と通気性は良いのですが、土そのものに栄養（チッソ・リン・カリ）はほぼありません。その代わり、水撒きの頻度を減らし、土中の酸素量を増加させつつ排水を減らせると思いました。栄養については次項目で対処しています。</p></li></ul><p id="392fcdf3-f965-809a-94b8-f8b34fca039a" class="" dir="auto">
+</p></div></details><details id="38dfcdf3-f965-803e-b99f-f005d5b09530" open="" class="toggle" dir="auto"><summary><strong>💧水＆🧃肥料</strong></summary><div class="indented"><ul id="38dfcdf3-f965-8089-bbbb-e4877504432b" class="bulleted-list" dir="auto"><li style="list-style-type:disc">💧ヨモギ茶パック水：土が乾いた時の基本水撒き用。<ul id="396fcdf3-f965-8026-a24a-ed5d4cae9be9" class="bulleted-list" dir="auto"><li style="list-style-type:circle">お茶パックに入れて使用します。ミネラルやチッソ、リン、カリをダイレクトに与え、更に共生している菌類へのご飯になります。また、植物に害のあるカビなどの菌を抑制します。私が使用しているヨモギはお茶用のヨモギではなく乾燥させただけのヨモギになります。ハーブティー用のヨモギでもいいと思います。3日くらいで取り出すといいと思います。<p id="396fcdf3-f965-8039-aab3-de436bdcc644" class="" dir="auto">※ヨモギ効果は実際に使用されている方法です。</p></li></ul><p id="396fcdf3-f965-8053-a077-f83df150f18f" class="" dir="auto">
+</p></li></ul><ul id="396fcdf3-f965-807b-9cd6-fbdb041ef1da" class="bulleted-list" dir="auto"><li style="list-style-type:disc">クエン酸水：本葉が出始めてから2週間に1回程度<ul id="396fcdf3-f965-806e-9f52-ebd9e6cb5a1c" class="bulleted-list" dir="auto"><li style="list-style-type:circle">1000倍液：土中に溜まったハイポネックスの栄養を分解します。また植物が栄養を吸収するのを助けたり、植物によっては病気予防になります。<ul id="396fcdf3-f965-802f-b9ff-f70d01b1c9ec" class="bulleted-list" dir="auto"><li style="list-style-type:square">水2リットルのペットボトルに小さじ半分（2g）を入れると、ちょうど1000倍液が作れて便利です。</li></ul><ul id="396fcdf3-f965-80b1-a0f3-da88d7493970" class="bulleted-list" dir="auto"><li style="list-style-type:square">芽が幼い時期でも2000倍に薄めて与えることは可能です。</li></ul><p id="396fcdf3-f965-80f0-baa3-f9a0e938c5ba" class="" dir="auto">
+</p></li></ul></li></ul><ul id="396fcdf3-f965-80a9-98c8-f5a2c2f23b53" class="bulleted-list" dir="auto"><li style="list-style-type:disc">🧃ハイポネックス<ul id="396fcdf3-f965-80e8-990e-c93026cf1022" class="bulleted-list" dir="auto"><li style="list-style-type:circle">2000倍液：本葉が4〜5枚に増えてきたら1週間に1回程度。</li></ul></li></ul><p id="392fcdf3-f965-8026-9cab-ca0dcd25ceca" class="" dir="auto">
+</p></div></details><details id="38efcdf3-f965-8046-86b2-e14c5466521c" open="" class="toggle" dir="auto"><summary>🙂<strong>共生している菌</strong></summary><div class="indented"><details id="390fcdf3-f965-80cd-89e0-ddfc04fe367e" open="" class="toggle" dir="auto"><summary>納豆菌</summary><div class="indented"><ul id="390fcdf3-f965-80ae-a6b9-ccb00339cdca" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>植物へ与えるメリット</strong><ul id="390fcdf3-f965-80b6-b8d3-e638231d66c6" class="bulleted-list" dir="auto"><li style="list-style-type:circle"><strong>病気予防：</strong><p id="393fcdf3-f965-80ff-91e2-c68b6f1758c0" class="" dir="auto">納豆菌は非常に繁殖力が強く、植物の表面や根の周りを圧倒的な数で埋め尽くす。これにより、カビなどの病原菌が住み着くスペースを物理的に奪い、病気を予防する。</p></li></ul><ul id="390fcdf3-f965-8099-93c3-d47fe4b7f96b" class="bulleted-list" dir="auto"><li style="list-style-type:circle"><strong>カビを撃退する：</strong><p id="393fcdf3-f965-80e4-ad0c-dd03c8e810ae" class="" dir="auto">納豆菌は、病気の原因となるカビの細胞壁を分解する酵素や、抗菌物質（サプティリンなど）を分泌する。うどんこ病やトマトの青枯病などの予防に効果を発揮する。<br/></p></li></ul><ul id="390fcdf3-f965-800c-a173-f7e807f51a7f" class="bulleted-list" dir="auto"><li style="list-style-type:circle"><strong>土をフカフカにする（有機物の分解）：</strong><p id="393fcdf3-f965-80d2-8c6a-e77aa628d9a9" class="" dir="auto">枯れ葉や未完熟な堆肥など、土の中の頑固な有機物を強力に分解する。土の微生物のバランスが良くなり、植物の根が伸びやすいフカフカな土（団粒構造）を作る。</p></li></ul></li></ul><ul id="38efcdf3-f965-80a4-856a-ce7ecf903ee2" class="bulleted-list" dir="auto"><li style="list-style-type:disc">納豆菌の採取：<p id="393fcdf3-f965-803b-92fe-db15b1eebc13" class="" dir="auto">納豆のパックから採取し、1週間に一回程度の頻度で撒く。<div class="indented"><p id="38efcdf3-f965-8087-8395-e2798492079f" class="" dir="auto">注意：パックに調味料などを入れた場合は使用しない事。</p></div></p></li></ul><p id="390fcdf3-f965-80ad-b77b-ed021d035a0a" class="" dir="auto">
+</p></div></details><hr id="390fcdf3-f965-805a-909c-fdb707b378d0" dir="auto"/><details id="390fcdf3-f965-80c6-a0d2-d495aaa30102" open="" class="toggle" dir="auto"><summary>菌根菌</summary><div class="indented"><ul id="390fcdf3-f965-8099-83b5-ff68e2b31c43" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>植物へ与えるメリット</strong><ul id="390fcdf3-f965-8092-a8e3-de94b098f1ca" class="bulleted-list" dir="auto"><li style="list-style-type:circle"><strong>栄養と水分の吸収サポート：</strong><p id="393fcdf3-f965-80f5-ad42-df7b8d6083b8" class="" dir="auto">菌根菌の菌糸が根の代わりとなって土壌に広がり、植物が自力では吸収しにくい「リン酸」や「微量ミネラル」、水分を効率よく植物に届ける。</p></li></ul><ul id="390fcdf3-f965-80f6-b14b-e1c8afbbdc94" class="bulleted-list" dir="auto"><li style="list-style-type:circle"> <strong>ストレスへの耐性アップ：</strong><p id="393fcdf3-f965-809a-982d-dfbf9d6b927e" class="" dir="auto">乾燥や塩害、酸性土壌といった厳しい環境（非生物的ストレス）に強くなり、過酷な条件下でも植物が枯れずに育つ力を養う。</p></li></ul><ul id="390fcdf3-f965-8073-8642-c40074a97116" class="bulleted-list" dir="auto"><li style="list-style-type:circle"> <strong>病気への抵抗力強化：</strong><p id="393fcdf3-f965-8015-9362-dc2fe26a176c" class="" dir="auto">根のまわりを菌糸で覆うことで、病原菌が根に侵入するのを物理的に防いだり、植物自身の免疫力を高める効果がある。</p></li></ul><p id="392fcdf3-f965-8004-aa31-e3f1d8df9373" class="" dir="auto">
+</p></li></ul><ul id="390fcdf3-f965-80f9-99e8-f2f637e6afd4" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>菌根菌の影響を受けない植物</strong><ul id="390fcdf3-f965-80b2-a797-fe7a97274243" class="bulleted-list" dir="auto"><li style="list-style-type:circle"><strong>アブラナ科</strong>：<p id="393fcdf3-f965-802d-ba0e-e90df0ff5ad2" class="" dir="auto">キャベツ、白菜、ブロッコリー、大根、小松菜など。</p></li></ul><ul id="390fcdf3-f965-807d-bac4-d4b171eff067" class="bulleted-list" dir="auto"><li style="list-style-type:circle"><strong>ヒユ科</strong>：<p id="393fcdf3-f965-8034-b302-d947af7f61bf" class="" dir="auto">ホウレンソウ、ビーツ、サトウダイコンなど。</p></li></ul><ul id="390fcdf3-f965-80d8-a7ba-cda8917d3b29" class="bulleted-list" dir="auto"><li style="list-style-type:circle"><strong>タデ科</strong>：<p id="393fcdf3-f965-8026-8a5d-c540079e616e" class="" dir="auto">ソバ、ポリゴヌムなど。</p></li></ul><ul id="390fcdf3-f965-8075-8f11-db84b44c14bb" class="bulleted-list" dir="auto"><li style="list-style-type:circle"><strong>カヤツリグサ科・イグサ科</strong>：<p id="393fcdf3-f965-8051-be64-f14bf788eee4" class="" dir="auto">湿地に生える多くの雑草類（水分の多い場所では菌根菌が不要なため）。</p></li></ul><p id="391fcdf3-f965-8050-b840-d0e870fed8b9" class="" dir="auto">
+</p></li></ul></div></details><hr id="390fcdf3-f965-8093-ba9d-c4100de33ef7" dir="auto"/><details id="390fcdf3-f965-804f-8ba0-d286c3ac8d4a" open="" class="toggle" dir="auto"><summary>根粒菌（豆科のみ）</summary><div class="indented"><ul id="390fcdf3-f965-8048-8161-d9c9240de444" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>枝豆へ与えるメリット</strong><ul id="390fcdf3-f965-8006-b0a9-c19899c82545" class="bulleted-list" dir="auto"><li style="list-style-type:circle"><strong>空気から窒素（肥料）を作る：</strong><p id="393fcdf3-f965-80fb-83b4-cf74dc4af679" class="" dir="auto">植物が育つのに一番たくさん必要な栄養は「窒素」、いわゆる葉や茎を大きくする肥料成分。空気の7割は窒素だが、植物はそれを直接吸うことができない。根粒菌は、空気中の窒素を枝豆が吸える形（アンモニア）に変換する。</p></li></ul><ul id="390fcdf3-f965-8014-9d0a-c3d2068d5618" class="bulleted-list" dir="auto"><li style="list-style-type:circle"> <strong>根に「根粒」を作る：</strong><p id="393fcdf3-f965-801f-8867-f7fef1730ea2" class="" dir="auto">枝豆の根にコブ（根粒）を作り、そこに定住する。枝豆から光合成の糖分をもらう代わりに、窒素肥料を24時間体制で供給し続ける。</p></li></ul><p id="396fcdf3-f965-8030-9ee4-e75c23e75617" class="" dir="auto">※同じ豆科でも種類によって相性の合う根粒菌が違うので注意して下さい。</p><p id="392fcdf3-f965-80cb-86b9-e3c5eadf8266" class="" dir="auto">
+</p></li></ul></div></details><hr id="390fcdf3-f965-80f0-9e35-d94bb29b3bec" dir="auto"/></div></details><hr id="390fcdf3-f965-807e-a1ef-d753357bce99" dir="auto"/><details id="396fcdf3-f965-8038-b14c-c0ab7e1dd23b" open="" class="toggle" dir="auto"><summary><strong><span style="border-bottom:0.05em solid">🎁作成した各種プランターと作成手順</span></strong></summary><div class="indented"><details id="38dfcdf3-f965-80e4-9d05-c80df5053490" open="" class="block-color-default_background toggle" data-notion-highlight="default_background" dir="auto"><summary><mark class="highlight-default_background" data-notion-highlight="default_background"><strong><span style="border-bottom:0.05em solid">TMLP 1.0： Tomo-Modular 連結式プランター システム</span></strong></mark></summary><div class="indented"><p id="38dfcdf3-f965-80cb-9e7d-d9b6ac749777" class="" dir="auto">👉<strong>吊り下げ、連結、上下位置入替え、逆さ栽培、深さ調整、自動排水</strong><div class="indented"><ol type="1" id="38dfcdf3-f965-807f-856d-d8057258d336" class="numbered-list" start="1" dir="auto"><li> 使用例</li></ol><figure id="391fcdf3-f965-80b5-a158-dcabd72f8555" class="image" style="text-align:left" data-notion-image="HG_tmlp00_Example_of_use_10.webp" dir="ltr"><a href="HG_tmlp00_Example_of_use_10.webp"><img style="width:384px" src="HG_tmlp00_Example_of_use_10.webp"/></a></figure><figure id="393fcdf3-f965-801d-a8d7-ff2e1b0e7089" class="image" style="text-align:left" data-notion-image="HG_tmlp00_Example_of_use_20.webp" dir="ltr"><a href="HG_tmlp00_Example_of_use_20.webp"><img style="width:384px" src="HG_tmlp00_Example_of_use_20.webp"/></a></figure><p id="38efcdf3-f965-80b8-9bed-cdf34df4d817" class="" dir="auto">
+</p><hr id="38efcdf3-f965-807b-8c02-ff1be79fb170" dir="auto"/><p id="38efcdf3-f965-8059-a7d3-c530228eaebd" class="" dir="auto">
+</p><div data-notion-highlight="default_background" dir="auto"><ol type="1" id="38dfcdf3-f965-8007-83bf-e4b2a84495f0" class="block-color-default_background numbered-list" data-notion-highlight="default_background" start="2"><li>主な機能<ul id="38dfcdf3-f965-80c0-b55d-d4bc35921a4c" class="bulleted-list" dir="auto"><li style="list-style-type:disc"> フックを使い<strong>吊り下げて栽培</strong>できます。</li></ul><ul id="38dfcdf3-f965-8065-aba7-da0579b4cc72" class="bulleted-list" dir="auto"><li style="list-style-type:disc"> 上下のプランターの位置を<strong>簡単に入替え</strong>できます。</li></ul><ul id="38dfcdf3-f965-80ed-8df4-ff3f37733abe" class="bulleted-list" dir="auto"><li style="list-style-type:disc">植物のサイズに合わせて<strong>深さを調整</strong>できます。</li></ul><ul id="38dfcdf3-f965-80f0-83be-fb46ed24dbdf" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>小～中サイズ</strong>の植物を育てられます。</li></ul><ul id="393fcdf3-f965-8007-837c-d2d02e730bb3" class="bulleted-list" dir="auto"><li style="list-style-type:disc">逆さ栽培ができます。</li></ul><ul id="38dfcdf3-f965-8078-8f5e-e5193e74c172" class="bulleted-list" dir="auto"><li style="list-style-type:disc">余分な水を効率的に<strong>排水</strong>します。</li></ul><ul id="38dfcdf3-f965-80c8-8649-ddf379000f7c" class="bulleted-list" dir="auto"><li style="list-style-type:disc">季節や気温に応じて<strong>表面の色を変更</strong>できます（黒［光を吸収］、シルバー［光を反射］）。</li></ul><p id="38efcdf3-f965-8087-b50e-c200ddd64a70" class="" dir="auto">
+</p><hr id="38efcdf3-f965-8014-b841-cd9521afda7c" dir="auto"/><p id="38efcdf3-f965-80ff-8e7b-c3fee5688632" class="" dir="auto">
+</p></li></ol></div><div data-notion-highlight="default_background" dir="auto"><ol type="1" id="38dfcdf3-f965-800a-baa1-e45c090600b3" class="block-color-default_background numbered-list" data-notion-highlight="default_background" start="3"><li>設計目的：<p id="38dfcdf3-f965-8023-a7a3-e546e5b9d75e" class="" dir="auto">デッドスペースを有効活用した垂直栽培。</p><p id="38efcdf3-f965-80a2-b5f6-fde0deb4c61c" class="" dir="auto">
+</p><hr id="38efcdf3-f965-80db-99a3-d57cf0972927" dir="auto"/><p id="38efcdf3-f965-8016-bf7d-c3aeb16b57eb" class="" dir="auto">
+</p></li></ol></div><div data-notion-highlight="default_background" dir="auto"><ol type="1" id="38dfcdf3-f965-80ab-8a5d-eb0602d06b3b" class="block-color-default_background numbered-list" data-notion-highlight="default_background" start="4"><li>注意点<ul id="38dfcdf3-f965-80e2-89c4-df7904bd275d" class="bulleted-list" dir="auto"><li style="list-style-type:disc">強風への対策<p id="38dfcdf3-f965-800f-9766-e1714653cb22" class="" dir="auto">◦ 下の例のように物干しロープを使用してください。</p><p id="38dfcdf3-f965-8095-bd5a-c9afb331bd07" class="" dir="auto">◦ ペットボトルを並べて設置することで、風による揺れを大幅に軽減できます。</p></li></ul><ul id="38dfcdf3-f965-80fe-a11d-c313a019ba9e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">例<figure id="391fcdf3-f965-80eb-a261-fbd229275ec5" class="image" style="text-align:left" data-notion-image="tmlp10_Points_to_note.jpg" dir="ltr"><a href="tmlp10_Points_to_note.jpg"><img style="width:384px" src="tmlp10_Points_to_note.jpg"/></a></figure><p id="38efcdf3-f965-807d-aaee-edbdbc22034c" class="" dir="auto">
+</p></li></ul><hr id="38efcdf3-f965-8032-be4b-dc18d5b11a43" dir="auto"/><p id="38efcdf3-f965-80e4-aa7c-f160202c5338" class="" dir="auto">
+</p></li></ol></div><div data-notion-highlight="default_background" dir="auto"><ol type="1" id="38dfcdf3-f965-80b4-aadb-d5a178627c12" class="block-color-default_background numbered-list" data-notion-highlight="default_background" start="5"><li><mark class="highlight-red_background" data-notion-highlight="red_background"><strong>材料（1ユニット分）と費用（製品価格／個数）</strong></mark><ul id="38dfcdf3-f965-80c9-84fe-e5977245a8bc" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>横線入りの</strong>2リットル角型ペットボトル（大きなクビレのあるペットボトルは不向きです）<ul id="38dfcdf3-f965-8065-83f1-c429796a02b1" class="bulleted-list" dir="auto"><li style="list-style-type:circle">0円（リサイクル素材）</li></ul></li></ul><ul id="38dfcdf3-f965-806a-bf4b-d288b76c2bdb" class="bulleted-list" dir="auto"><li style="list-style-type:disc">S字フック（5.4cm）： 1個<ul id="38dfcdf3-f965-804f-95dc-df6287cfeaff" class="bulleted-list" dir="auto"><li style="list-style-type:circle">25円（ ＝ 100円 ／ 4個入り ）</li></ul></li></ul><ul id="38dfcdf3-f965-803f-b677-eb40ea768de6" class="bulleted-list" dir="auto"><li style="list-style-type:disc">アルミホイル（34cm）： 1枚<ul id="38dfcdf3-f965-8012-a46a-fb7b5dd7a47e" class="bulleted-list" dir="auto"><li style="list-style-type:circle">2円（ ≈ （ 100円 ／ 1500cm )  x  34cm ）</li></ul></li></ul><ul id="38dfcdf3-f965-80f2-8721-d99dbd54e023" class="bulleted-list" dir="auto"><li style="list-style-type:disc">結束バンド（15cm）：2本<ul id="38dfcdf3-f965-8003-b673-e87511ebd081" class="bulleted-list" dir="auto"><li style="list-style-type:circle">5円（ ＝ 100円 ／ 40 本入り x 2本 ）</li></ul></li></ul><ul id="38dfcdf3-f965-8076-a880-e742af82e85d" class="bulleted-list" dir="auto"><li style="list-style-type:disc">排水溝ネット（高さ30cm×幅24cm）：1枚<ul id="38dfcdf3-f965-80dd-87b8-cfb296ba68d3" class="bulleted-list" dir="auto"><li style="list-style-type:circle">2円（ ≈ 100円 ／ 45枚入り）</li></ul></li></ul><ul id="38dfcdf3-f965-8069-9ace-db5e7339a8a4" class="bulleted-list" dir="auto"><li style="list-style-type:disc">ハトメ：1個（任意）<ul id="38dfcdf3-f965-80df-a096-ebff25c959b4" class="bulleted-list" dir="auto"><li style="list-style-type:circle">2円（ ≈ 100 ÷ 50個入り ）</li></ul></li></ul><ul id="38dfcdf3-f965-8037-85a2-dc610f89e877" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><mark class="highlight-red_background" data-notion-highlight="red_background"><strong>総費用</strong></mark><ul id="38dfcdf3-f965-8074-9858-f7e2dd8c1b7c" class="bulleted-list" dir="auto"><li style="list-style-type:circle"><strong>≈ 32～34円（消費税別）</strong></li></ul></li></ul><p id="38efcdf3-f965-8070-be22-fb7e0182e97e" class="" dir="auto">
+</p><hr id="38efcdf3-f965-8034-84c7-dab24b95f5de" dir="auto"/><p id="38efcdf3-f965-80b1-b3c6-db9955433554" class="" dir="auto">
+</p></li></ol></div><div data-notion-highlight="default_background" dir="auto"><ol type="1" id="38dfcdf3-f965-80d7-8fd0-d1b366392955" class="block-color-default_background numbered-list" data-notion-highlight="default_background" start="6"><li>🛠制作<ul id="38dfcdf3-f965-8048-903b-ea7e0c7ffe7d" class="bulleted-list" dir="auto"><li style="list-style-type:disc">制作を始める前に<ul id="38dfcdf3-f965-80ec-afcd-da4cd6dfbd68" class="bulleted-list" dir="auto"><li style="list-style-type:circle">混乱を避けるため、各手順を終えるごとに画像を閉じてから、次の画像を確認することをお勧めします。</li></ul><ul id="38dfcdf3-f965-800c-800b-e909103571c8" class="bulleted-list" dir="auto"><li style="list-style-type:circle">試行錯誤を経て作成したため、一部の画像は説明と完全に一致しない場合がありますが、以下の手順に従えば問題ありません。</li></ul><p id="38efcdf3-f965-802c-8d60-c6d30bcf2846" class="" dir="auto">
+</p></li></ul><hr id="38efcdf3-f965-80cc-8edb-ce8e4663131f" dir="auto"/><p id="38efcdf3-f965-8011-8fae-c96245818afa" class="" dir="auto">
+</p><ul id="38dfcdf3-f965-8038-b45f-e6df8a91d2c6" class="bulleted-list" dir="auto"><li style="list-style-type:disc">必要なもの<ul id="38dfcdf3-f965-8085-a5fe-e2ac6dd19b7a" class="bulleted-list" dir="auto"><li style="list-style-type:circle">ワイヤーカッター</li></ul><ul id="38dfcdf3-f965-8089-a349-c428750eb192" class="bulleted-list" dir="auto"><li style="list-style-type:circle">カッターナイフ</li></ul><ul id="38dfcdf3-f965-80db-83e9-c54202c91474" class="bulleted-list" dir="auto"><li style="list-style-type:circle">はさみ</li></ul><ul id="38dfcdf3-f965-801e-901e-ec90f08861c6" class="bulleted-list" dir="auto"><li style="list-style-type:circle">千枚通し、穴あけパンチなど</li></ul><ul id="38dfcdf3-f965-800f-974d-ecf5c03d407a" class="bulleted-list" dir="auto"><li style="list-style-type:circle">ライター（必須ではないが、使用すると仕上がりが良くなる）</li></ul><ul id="38dfcdf3-f965-8042-a698-f4a4b408c2fb" class="bulleted-list" dir="auto"><li style="list-style-type:circle">ハトメパンチ（ハトメを使用する場合）</li></ul><p id="38efcdf3-f965-80c2-acf9-fc0b34c98d62" class="" dir="auto">
+</p></li></ul><hr id="38efcdf3-f965-80f1-bbf4-db6a06ea5003" dir="auto"/><p id="38efcdf3-f965-8058-b775-e0cbb8f18752" class="" dir="auto">
+</p><div data-notion-highlight="default_background" dir="auto"><ul id="38dfcdf3-f965-8018-8963-f30bfca6b16f" class="block-color-default_background bulleted-list" data-notion-highlight="default_background"><li style="list-style-type:disc">作成手順<div data-notion-highlight="default_background" dir="auto"><ol type="a" id="38dfcdf3-f965-80dc-82c6-ec8084a8b3b7" class="block-color-default_background numbered-list" data-notion-highlight="default_background" start="1"><li><span style="border-bottom:0.05em solid">土台を作る</span><p id="38dfcdf3-f965-8059-b2a7-fc07ff9bff31" class="" dir="auto">長方形の2Lプラスチックボトルの底面から見て、最初の水平線に沿って切り取ります。<strong>切り取った底部分は、深さを調整するために使用します。</strong></p><p id="38efcdf3-f965-808e-9e4c-e120f54fc021" class="" dir="auto">
+</p><hr id="38efcdf3-f965-8077-ab8b-cea4358acc98" dir="auto"/><p id="38efcdf3-f965-80e6-870d-db472e658173" class="" dir="auto">
+</p></li></ol></div><div data-notion-highlight="default_background" dir="auto"><ol type="a" id="38dfcdf3-f965-8020-a93f-c0f5e319cc3e" class="block-color-default_background numbered-list" data-notion-highlight="default_background" start="2"><li>排水穴<details id="38dfcdf3-f965-80be-9f5e-c82df862d164" open="" class="toggle" dir="auto"><summary>1 切り取った底に穴を開けます。</summary><div class="indented"><figure id="391fcdf3-f965-803d-9b0a-d6ca71a9d148" class="image" style="text-align:left" data-notion-image="tmlp20_Drainage_hole_10.jpg" dir="ltr"><a href="tmlp20_Drainage_hole_10.jpg"><img style="width:336px" src="tmlp20_Drainage_hole_10.jpg"/></a></figure></div></details><p id="38dfcdf3-f965-800a-9627-c522390ad7be" class="" dir="auto">
+</p><details id="38dfcdf3-f965-80c5-aed6-cc6657a7fe90" open="" class="toggle" dir="auto"><summary>2 この時点でまとめて穴を開ける方が効率的です。</summary><div class="indented"><figure id="391fcdf3-f965-80cb-b8ae-faa71d3085ff" class="image" style="text-align:left" data-notion-image="tmlp20_Drainage_hole_20.jpg" dir="ltr"><a href="tmlp20_Drainage_hole_20.jpg"><img style="width:336px" src="tmlp20_Drainage_hole_20.jpg"/></a></figure><p id="391fcdf3-f965-806c-8c8d-ead15d3a2c4d" class="" dir="auto">
+</p></div></details><details id="38dfcdf3-f965-8024-a5de-ffc6a9b2f594" open="" class="toggle" dir="auto"><summary>3 切り口をやさしく焦がしておくと、植物の茎をさらに保護できます。</summary><div class="indented"><figure id="391fcdf3-f965-8042-bfa2-eb80af691704" class="image" style="text-align:left" data-notion-image="tmlp20_Drainage_hole_30.jpg" dir="ltr"><a href="tmlp20_Drainage_hole_30.jpg"><img style="width:336px" src="tmlp20_Drainage_hole_30.jpg"/></a></figure><p id="38dfcdf3-f965-8034-83c5-c6d562846c9b" class="" dir="auto">
+</p></div></details><details id="38dfcdf3-f965-80c4-b70e-f629ff31e0d9" open="" class="toggle" dir="auto"><summary>4 底の取り付け方法（画像は穴を開ける前のテストの様子です。実際には、取り付ける前に穴を開けます）。</summary><div class="indented"><figure id="391fcdf3-f965-801a-9316-c760dccbd31d" class="image" style="text-align:left" data-notion-image="tmlp20_Drainage_hole_40.jpg" dir="ltr"><a href="tmlp20_Drainage_hole_40.jpg"><img style="width:336px" src="tmlp20_Drainage_hole_40.jpg"/></a></figure><p id="38efcdf3-f965-807b-8b9c-e2075fd83208" class="" dir="auto">
+</p></div></details><hr id="38dfcdf3-f965-80f6-8b12-c6a8cb7ede66" dir="auto"/><p id="38efcdf3-f965-80b2-9484-cecfebb7e1b4" class="" dir="auto">
+</p></li></ol></div><div data-notion-highlight="default_background" dir="auto"><ol type="a" id="38dfcdf3-f965-80d2-83c8-dd3b4586e1f2" class="block-color-default_background numbered-list" data-notion-highlight="default_background" start="3"><li>フック用の背面穴<details id="38dfcdf3-f965-807c-8825-c2bcb93a6b8e" open="" class="toggle" dir="auto"><summary>1 ペットボトルの背面の上端から約2cmのところで切り取り、折り曲げて穴を開けます。アイレットを使用すると穴の耐久性が高まりますが、折り曲げるため、必ずしも必要ではないかもしれません。アイレットを使用しない場合は、千枚通しなどを使って穴を開けてください。</summary><div class="indented"><p id="38dfcdf3-f965-80ca-9ed1-ce82a3e1ba00" class="" dir="auto">側面から撮影した写真。</p><figure id="391fcdf3-f965-80d1-a404-eb789379933d" class="image" style="text-align:left" data-notion-image="tmlp30_Rear_hole_for_hook_10.jpg" dir="ltr"><a href="tmlp30_Rear_hole_for_hook_10.jpg"><img style="width:336px" src="tmlp30_Rear_hole_for_hook_10.jpg"/></a></figure><p id="38dfcdf3-f965-806f-afe7-e71d6a8d4633" class="" dir="auto">
+</p><p id="38dfcdf3-f965-80b2-a307-cadc6fb35e69" class="" dir="auto">正面から撮影した写真</p><figure id="391fcdf3-f965-8062-a854-de6f6a216d1e" class="image" style="text-align:left" data-notion-image="tmlp30_Rear_hole_for_hook_20.jpg" dir="ltr"><a href="tmlp30_Rear_hole_for_hook_20.jpg"><img style="width:336px" src="tmlp30_Rear_hole_for_hook_20.jpg"/></a></figure><p id="38efcdf3-f965-800a-bcd8-f7d69fba92e8" class="" dir="auto">
+</p></div></details><hr id="38dfcdf3-f965-80b7-8ab9-df640cb36282" dir="auto"/><p id="38efcdf3-f965-8037-b640-cca4885e6eee" class="" dir="auto">
+</p></li></ol></div><div data-notion-highlight="default_background" dir="auto"><ol type="a" id="38dfcdf3-f965-8069-ac44-d793cd6aad04" class="block-color-default_background numbered-list" data-notion-highlight="default_background" start="4"><li>後部フックの取り付け<details id="38dfcdf3-f965-80cd-9628-d98ee0de95df" open="" class="toggle" dir="auto"><summary>1 キャップを外したフックを、手順 c で開けた穴に通します。</summary><div class="indented"><figure id="391fcdf3-f965-8034-8d39-eab0a121572f" class="image" style="text-align:left" data-notion-image="tmlp30_Rear_hook_attachment__10.jpg" dir="ltr"><a href="tmlp30_Rear_hook_attachment__10.jpg"><img style="width:336px" src="tmlp30_Rear_hook_attachment__10.jpg"/></a></figure><p id="38dfcdf3-f965-80c0-bb3f-d81b8c4baf1b" class="" dir="auto">
+</p></div></details><details id="38dfcdf3-f965-8033-8ace-ef2a686f5d21" open="" class="toggle" dir="auto"><summary>2 フックを通し終えたら、キャップを元に戻します。こうすることで、微風でも外れることがありません。</summary><div class="indented"><figure id="391fcdf3-f965-80ef-9af2-c5c245f64cfe" class="image" style="text-align:left" data-notion-image="tmlp30_Rear_hook_attachment__20.jpg" dir="ltr"><a href="tmlp30_Rear_hook_attachment__20.jpg"><img style="width:336px" src="tmlp30_Rear_hook_attachment__20.jpg"/></a></figure><p id="38efcdf3-f965-80ab-8f2a-f23d727308ca" class="" dir="auto">
+</p></div></details><hr id="38dfcdf3-f965-80ec-b233-cd53db2ad39b" dir="auto"/><p id="38efcdf3-f965-809a-be61-fef57db6aec6" class="" dir="auto">
+</p></li></ol></div><div data-notion-highlight="default_background" dir="auto"><ol type="a" id="38dfcdf3-f965-808a-9691-ecc64c8d5207" class="block-color-default_background numbered-list" data-notion-highlight="default_background" start="5"><li>根元の遮光処理<details id="38dfcdf3-f965-80a8-bf2f-d65890054fd0" open="" class="toggle" dir="auto"><summary>1 アルミホイルを用意します。黒いホイルを使用すれば、季節や気温、日差しの強さに応じてホイルを裏返すことで、プランター内の温度を調整できます。長さは約25～26 cmです。</summary><div class="indented"><figure id="391fcdf3-f965-802a-abd5-e5ad005b51d2" class="image" style="text-align:left" data-notion-image="tmlp40_Root_shading_treatment__10.jpg" dir="ltr"><a href="tmlp40_Root_shading_treatment__10.jpg"><img style="width:439.984375px" src="tmlp40_Root_shading_treatment__10.jpg"/></a></figure><p id="38dfcdf3-f965-8068-a79f-cd789fbb04f8" class="" dir="auto">
+</p></div></details><details id="38dfcdf3-f965-8023-97a8-e06402fbbead" open="" class="toggle" dir="auto"><summary>2 余分な長さを折り込むと、耐久性が少し高まります。上下両端から約2.5cmずつ折り込みます。</summary><div class="indented"><figure id="391fcdf3-f965-80ea-ad0d-c652b5133646" class="image" style="text-align:left" data-notion-image="tmlp40_Root_shading_treatment__20.jpg" dir="ltr"><a href="tmlp40_Root_shading_treatment__20.jpg"><img style="width:439.984375px" src="tmlp40_Root_shading_treatment__20.jpg"/></a></figure><p id="38dfcdf3-f965-8048-8177-d665c425db11" class="" dir="auto">
+</p></div></details><details id="38dfcdf3-f965-80ac-b533-cf42cee8f665" open="" class="toggle" dir="auto"><summary>3 アルミホイルを本体に巻くための排水ネット。</summary><div class="indented"><figure id="391fcdf3-f965-8043-9a6c-c77b7b16ef0a" class="image" style="text-align:left" data-notion-image="tmlp40_Root_shading_treatment__30.jpg" dir="ltr"><a href="tmlp40_Root_shading_treatment__30.jpg"><img style="width:336px" src="tmlp40_Root_shading_treatment__30.jpg"/></a></figure><p id="38dfcdf3-f965-801a-aeb9-e7c75320cde7" class="" dir="auto">
+</p></div></details><details id="38dfcdf3-f965-80b6-8a79-c75b5517762e" open="" class="toggle" dir="auto"><summary>4 排水ネットの底部分を、底部の糸と平行になるように切り取ります。<strong>底部の糸を切るとネットが緩んでしまうため、絶対に切らないでください</strong>。</summary><div class="indented"><figure id="391fcdf3-f965-8080-a29f-e29e59bae1bc" class="image" style="text-align:left" data-notion-image="tmlp40_Root_shading_treatment__40.jpg" dir="ltr"><a href="tmlp40_Root_shading_treatment__40.jpg"><img style="width:439.984375px" src="tmlp40_Root_shading_treatment__40.jpg"/></a></figure><p id="38dfcdf3-f965-8043-bc3b-ca28d74e5d9f" class="" dir="auto">
+</p></div></details><details id="38dfcdf3-f965-8065-a851-c7975295047e" open="" class="toggle" dir="auto"><summary>5 排水ネットを、首元側から始め、開口部が上を向くようにボトルにかぶせます。</summary><div class="indented"><figure id="391fcdf3-f965-8066-9af8-cf41b13992e7" class="image" style="text-align:left" data-notion-image="tmlp40_Root_shading_treatment__50.jpg" dir="ltr"><a href="tmlp40_Root_shading_treatment__50.jpg"><img style="width:336px" src="tmlp40_Root_shading_treatment__50.jpg"/></a></figure><p id="38efcdf3-f965-801d-82f0-c231ec96535d" class="" dir="auto">
+</p></div></details><hr id="38efcdf3-f965-80a9-93ad-e98507822236" dir="auto"/><p id="38efcdf3-f965-800d-9a90-e506d978950b" class="" dir="auto">
+</p></li></ol></div><div data-notion-highlight="default_background" dir="auto"><ol type="a" id="38dfcdf3-f965-800c-9a7d-c7e595cdb4f9" class="block-color-default_background numbered-list" data-notion-highlight="default_background" start="6"><li>フック挿入用のケーブルタイの取り付け<details id="38dfcdf3-f965-801f-b9d6-cbbf8ea671ec" open="" class="block-color-default_background toggle" data-notion-highlight="default_background" dir="auto"><summary>1 <strong>ボトルのキャップ留め具を切り取り、そこにケーブルタイを取り付けます。</strong>その際、画像のように、まずフックを取り付け、次にケーブルタイのタブを持ち、親指でケーブルタイの留め具を、押し込みやすい程度まで押します。そうすることで、正しい位置に固定されます（個人差がありますのでご注意ください）。<strong>ここで重要な点は、ケーブルタイは完全に固定するためではなく、単にフックを通すための手段として使用しているということです。</strong></summary><div class="indented"><figure id="391fcdf3-f965-8099-9e0c-fbed93530434" class="image" style="text-align:left" data-notion-image="tmlp50_Attaching_cable_ties_10.jpg" dir="ltr"><a href="tmlp50_Attaching_cable_ties_10.jpg"><img style="width:336px" src="tmlp50_Attaching_cable_ties_10.jpg"/></a></figure><p id="38dfcdf3-f965-80d0-9af7-d0e6bc2f2ea6" class="" dir="auto">
+</p></div></details><details id="38dfcdf3-f965-807c-a6bb-f88a93ce58ff" open="" class="toggle" dir="auto"><summary>2 キャップを取り外した後、S字フックの着脱が可能であること、およびケーブルタイが緩んでいないことを確認してください。</summary><div class="indented"><figure id="391fcdf3-f965-8075-bcb1-cdae85960e0a" class="image" style="text-align:left" data-notion-image="tmlp50_Attaching_cable_ties_20.jpg" dir="ltr"><a href="tmlp50_Attaching_cable_ties_20.jpg"><img style="width:336px" src="tmlp50_Attaching_cable_ties_20.jpg"/></a></figure><p id="38dfcdf3-f965-8039-a7ac-f16520671ec2" class="" dir="auto">
+</p></div></details><details id="38dfcdf3-f965-80f6-b60e-d4c640912500" open="" class="toggle" dir="auto"><summary>3 余分なケーブルタイの端を切り落としてください。</summary><div class="indented"><figure id="391fcdf3-f965-8087-b647-e87d067b6018" class="image" style="text-align:left" data-notion-image="tmlp50_Attaching_cable_ties_30.jpg" dir="ltr"><a href="tmlp50_Attaching_cable_ties_30.jpg"><img style="width:336px" src="tmlp50_Attaching_cable_ties_30.jpg"/></a></figure><p id="38dfcdf3-f965-80e7-836f-cc9da6c9f0b9" class="" dir="auto">
+</p></div></details><details id="38dfcdf3-f965-80b2-a442-d0526487e41c" open="" class="toggle" dir="auto"><summary>4 ケーブルタイの端を軽く焦がします（怪我を防ぐため。気にならない場合はこの手順は不要です）。</summary><div class="indented"><figure id="391fcdf3-f965-80a5-a0bf-ce8913c2f4a0" class="image" style="text-align:left" data-notion-image="tmlp50_Attaching_cable_ties_40.jpg" dir="ltr"><a href="tmlp50_Attaching_cable_ties_40.jpg"><img style="width:439.984375px" src="tmlp50_Attaching_cable_ties_40.jpg"/></a></figure><p id="38efcdf3-f965-80b0-947d-d34eca7d4362" class="" dir="auto">
+</p></div></details><hr id="38dfcdf3-f965-80dc-a707-d3fbc8a35afe" dir="auto"/><p id="38efcdf3-f965-8042-8d4b-e363def5f0b9" class="" dir="auto">
+</p></li></ol></div><div data-notion-highlight="default_background" dir="auto"><ol type="a" id="38dfcdf3-f965-8079-bb94-cc7f053f47ed" class="block-color-default_background numbered-list" data-notion-highlight="default_background" start="7"><li>完成<details id="38dfcdf3-f965-8045-8a51-def75e00c40d" open="" class="toggle" dir="auto"><summary>完成写真</summary><div class="indented"><figure id="391fcdf3-f965-80f6-a3e4-dd180f9233b7" class="image" style="text-align:left" data-notion-image="tmlp60g_Completed_.jpg" dir="ltr"><a href="tmlp60g_Completed_.jpg"><img style="width:336px" src="tmlp60g_Completed_.jpg"/></a></figure><p id="38efcdf3-f965-80ad-ad4f-e4316c12596e" class="" dir="auto">
+</p></div></details></li></ol></div></li></ul></div><hr id="38efcdf3-f965-8095-98b8-d1878bf4260f" dir="auto"/></li></ol></div><p id="391fcdf3-f965-80c3-9b54-f8f3087f7b68" class="" dir="auto">
+</p><p id="38dfcdf3-f965-809e-876c-ced93fd28577" class="block-color-default_background" data-notion-highlight="default_background" dir="auto">７．今後の課題<div class="indented"><p id="38dfcdf3-f965-8040-85f8-f25dade71086" class="" dir="auto">現在、実際に使用しながら研究を進めています。</p><p id="391fcdf3-f965-8092-b2d9-fe2dfc0e2140" class="" dir="auto">
+</p></div></p><hr id="391fcdf3-f965-8083-b284-ddb822176097" dir="auto"/><p id="391fcdf3-f965-8099-bfcd-fbc69cf42791" class="" dir="auto">
+</p><p id="38dfcdf3-f965-80df-9289-f056517c02eb" class="" dir="auto">以上です。</p><p id="391fcdf3-f965-8016-9344-f55fdac373ea" class="" dir="auto">
+</p></div></p></div></details><details id="38dfcdf3-f965-8034-a7e2-dd2e9cba11e1" open="" class="block-color-default_background toggle" data-notion-highlight="default_background" dir="auto"><summary><strong>　🙃 TMLP 逆さ栽培モード</strong></summary><div class="indented"><ul id="38dfcdf3-f965-802c-acb5-e6f13f40eed0" class="bulleted-list" dir="auto"><li style="list-style-type:disc">逆さガーデニングの手順<ol type="1" id="38dfcdf3-f965-8033-825c-cb7744b3b360" class="numbered-list" start="1" dir="auto"><li>ボトルの<strong>キャップをしっかりと締めて</strong>、土を入れます。</li></ol><ol type="1" id="38dfcdf3-f965-8013-8d97-d3c50e375994" class="numbered-list" start="2" dir="auto"><li>ベースを取り付けます。</li></ol><ol type="1" id="38dfcdf3-f965-8027-9fa6-e7a08d5eca24" class="numbered-list" start="3" dir="auto"><li>ボトルのキャップを外し、飲み口に直接種をまきます。</li></ol><ol type="1" id="38dfcdf3-f965-8099-a316-dfebb42044c7" class="numbered-list" start="4" dir="auto"><li>ボトルを直立させ、種が発芽するのを待ちます。</li></ol><ol type="1" id="38dfcdf3-f965-80c8-99a5-c4442012c2c1" class="numbered-list" start="5" dir="auto"><li>発芽後、根がしっかりと張るまで待ちます。</li></ol><ol type="1" id="38dfcdf3-f965-80e4-a19b-c3b40f917d31" class="numbered-list" start="6" dir="auto"><li>逆さまに吊るします。</li></ol><p id="38efcdf3-f965-80d4-817e-d41115a3bf6a" class="" dir="auto">
+</p></li></ul><hr id="38efcdf3-f965-80d5-a7b7-e480050a2387" dir="auto"/><p id="38efcdf3-f965-804e-ad41-ca672d3660ba" class="" dir="auto">
+</p><p id="38efcdf3-f965-80fa-8ff3-d320bc984087" class="" dir="auto"><strong>植え替えのストレスゼロ</strong>。<div class="indented"><p id="38dfcdf3-f965-8037-ae39-f487cbaff430" class="" dir="auto">🍅この芽は「トマトさん」です。</p><figure id="391fcdf3-f965-8043-bcdc-dc37ffa2d261" class="image" style="text-align:left" data-notion-image="tmlpudpm_10.jpg" dir="ltr"><a href="tmlpudpm_10.jpg"><img style="width:384px" src="tmlpudpm_10.jpg"/></a></figure><p id="38efcdf3-f965-80f5-93b7-ff15ad97939a" class="" dir="auto">
+</p></div></p></div></details><details id="38dfcdf3-f965-802d-8580-ff928ea3be17" open="" class="block-color-default_background toggle" data-notion-highlight="default_background" dir="auto"><summary><strong>　📈 TMLP レビュー：by Hack（ClaudeAI）</strong></summary><div class="indented"><figure id="38dfcdf3-f965-8072-91c7-c1067e4462fe" class="image" style="text-align:left" data-notion-image="tmlpRv_hack_rv.jpg" dir="ltr"><a href="tmlpRv_hack_rv.jpg"><img style="width:624px" src="tmlpRv_hack_rv.jpg"/></a></figure><p id="38efcdf3-f965-8097-af03-f57cd91084a5" class="" dir="auto">
+</p></div></details><hr id="396fcdf3-f965-80b1-9631-ccd36c53ab17" dir="auto"/><p id="396fcdf3-f965-800a-acc2-d1b58af0d7f7" class="" dir="auto">
+</p></div></details><hr id="38efcdf3-f965-80ba-8f54-ec9ebbdb21e9" dir="auto"/><details id="396fcdf3-f965-805e-9455-cbc4a1d36cdc" open="" class="toggle" dir="auto"><summary><strong><span style="border-bottom:0.05em solid">⚙作成した各種ツールと作成手順</span></strong></summary><div class="indented"><details id="38dfcdf3-f965-8048-b608-efba7b410b07" open="" class="block-color-default_background toggle" data-notion-highlight="default_background" dir="auto"><summary><mark class="highlight-default_background" data-notion-highlight="default_background"><strong><span style="border-bottom:0.05em solid">TUAH 1.0：Tomo-</span></strong></mark><strong><span style="border-bottom:0.05em solid">Underground エア</span></strong><mark class="highlight-default_background" data-notion-highlight="default_background"><strong><span style="border-bottom:0.05em solid">ホール システム</span></strong></mark></summary><div class="indented"><p id="390fcdf3-f965-8005-83ba-efbeb61162fc" class="" dir="auto"><strong>👉 土中に空気の空間を作る</strong><div class="indented"><p id="390fcdf3-f965-8059-bafe-f92aef8754a2" class="" dir="auto">（<strong>For each item, click the row marked with ▶ to view the image.</strong>）</p></div></p><ol type="1" id="390fcdf3-f965-8089-90c3-ec467570c3f5" class="numbered-list" start="1" dir="auto"><li>使用例<figure id="394fcdf3-f965-809f-955a-c9194b0574f8" class="image" style="text-align:left" data-notion-image="10HG_tuah30_completed_10.webp" dir="ltr"><a href="10HG_tuah30_completed_10.webp"><img style="width:108px" src="10HG_tuah30_completed_10.webp"/></a></figure><figure id="390fcdf3-f965-801a-9c4a-f5e439c7477f" class="image" style="text-align:left" data-notion-image="10HG_tuah00_Example_use10.webp" dir="ltr"><a href="10HG_tuah00_Example_use10.webp"><img style="width:384px" src="10HG_tuah00_Example_use10.webp"/></a></figure><figure id="396fcdf3-f965-8092-8fc6-cb92ee5c318f" class="image" style="text-align:left" data-notion-image="10HG_tuah00_Example_use20.webp" dir="ltr"><a href="10HG_tuah00_Example_use20.webp"><img style="width:384px" src="10HG_tuah00_Example_use20.webp"/></a></figure><p id="391fcdf3-f965-803a-b4c5-fcd04bf151f3" class="" dir="auto">
+</p></li></ol><ol type="1" id="390fcdf3-f965-80fc-bfda-ed2048dac930" class="numbered-list" start="2" dir="auto"><li>主な機能<ul id="390fcdf3-f965-801a-a431-e5da02f19f42" class="bulleted-list" dir="auto"><li style="list-style-type:disc">土中に常時空気の空間を確保し周囲に酸素を供給します。</li></ul></li></ol><ol type="1" id="390fcdf3-f965-8060-b8f0-d2e4282db8dd" class="numbered-list" start="3" dir="auto"><li>設計目的<ul id="390fcdf3-f965-801b-ae30-fae702eb6e25" class="bulleted-list" dir="auto"><li style="list-style-type:disc">大サイズの植物根本などに設置します。</li></ul><ul id="390fcdf3-f965-80fb-9166-f219b9c8f1e9" class="bulleted-list" dir="auto"><li style="list-style-type:disc">プランターに複数の植物を植えた際、酸素の奪い合い緩和する。</li></ul></li></ol><ol type="1" id="390fcdf3-f965-80a1-9379-df46cb31bfcc" class="numbered-list" start="4" dir="auto"><li>注意点<p id="390fcdf3-f965-8074-8756-ebfb395a7793" class="" dir="auto">現在調査中。</p></li></ol><ol type="1" id="390fcdf3-f965-8055-afd1-d5a758c5ea0d" class="numbered-list" start="5" dir="auto"><li><strong>材料（1ユニット分）と費用（製品価格／個数）</strong><ul id="390fcdf3-f965-80cb-80e5-f1f460aaf6ef" class="bulleted-list" dir="auto"><li style="list-style-type:disc">ピックルボール<ul id="390fcdf3-f965-80ef-be80-d32e3f4493e8" class="bulleted-list" dir="auto"><li style="list-style-type:circle">2つで100円</li></ul></li></ul><ul id="390fcdf3-f965-80fe-b619-e2d6904cd0a6" class="bulleted-list" dir="auto"><li style="list-style-type:disc">排水溝ネット（高さ30cm×幅24cm）<ul id="390fcdf3-f965-8036-b764-fa9464e8dec1" class="bulleted-list" dir="auto"><li style="list-style-type:circle">2円（≈ 100 ÷ 45）</li></ul></li></ul><ul id="394fcdf3-f965-80bf-93ef-d20a62559302" class="bulleted-list" dir="auto"><li style="list-style-type:disc">ストロー（2本）<ul id="394fcdf3-f965-803e-9a22-f563ab443289" class="bulleted-list" dir="auto"><li style="list-style-type:circle">1円 ( ≈ ( 100 / 150 ) x 2 )</li></ul></li></ul><ul id="390fcdf3-f965-807f-b299-f2c6c921b4c0" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>総費用</strong><ul id="390fcdf3-f965-803b-aa02-ec0b00e4bf94" class="bulleted-list" dir="auto"><li style="list-style-type:circle">≈ 103円（消費税別）</li></ul></li></ul></li></ol><ol type="1" id="390fcdf3-f965-8078-9b26-e0ab52e7f80f" class="numbered-list" start="6" dir="auto"><li>🛠作り方<ul id="391fcdf3-f965-8040-a464-c0d8cc004387" class="bulleted-list" dir="auto"><li style="list-style-type:disc">作成手順<ol type="1" id="394fcdf3-f965-80b1-aae2-d8fd6d2199f6" class="numbered-list" start="1" dir="auto"><li>空気循環処置<ol type="a" id="394fcdf3-f965-80be-af08-eb7fa24477ed" class="numbered-list" start="1" dir="auto"><li>二本のストローを差し込みます。その際、<strong>一本のストローだけ蛇腹より下の長さを半分にします（煙突効果で空気の循環を促します）。</strong>先に排水溝ネットを被せてから差し込んでも大丈夫です。<figure id="394fcdf3-f965-8049-9c74-de704aeff3e2" class="image" style="text-align:left" data-notion-image="10HG_tuah10_airflow_10.webp" dir="ltr"><a href="10HG_tuah10_airflow_10.webp"><img style="width:336px" src="10HG_tuah10_airflow_10.webp"/></a></figure><p id="394fcdf3-f965-807d-be9c-ccbb0ec4ec00" class="" dir="auto">
+</p></li></ol><ol type="a" id="394fcdf3-f965-8094-88f3-da96c9e9c65c" class="numbered-list" start="2" dir="auto"><li><strong>二本のストローの吸い口を短くします。</strong><figure id="394fcdf3-f965-80e3-8c8b-d43e9fe91752" class="image" style="text-align:left" data-notion-image="10HG_tuah10_airflow_20.webp" dir="ltr"><a href="10HG_tuah10_airflow_20.webp"><img style="width:336px" src="10HG_tuah10_airflow_20.webp"/></a></figure><p id="394fcdf3-f965-80b2-805c-d282bc52270d" class="" dir="auto">
+</p></li></ol><ol type="a" id="394fcdf3-f965-805b-a938-df555ae20a4f" class="numbered-list" start="3" dir="auto"><li>※これはオプションです。ハイドロボールを詰めています。空気の供給範囲の増加と土中の湿気管理になると考えています。<figure id="394fcdf3-f965-8094-9e11-c644cca2d092" class="image" data-notion-image="10HG_tuah10_airflow_30.webp" dir="ltr"><a href="10HG_tuah10_airflow_30.webp"><img style="width:336px" src="10HG_tuah10_airflow_30.webp"/></a></figure><p id="394fcdf3-f965-80d7-a5d4-deb53ade1a3b" class="" dir="auto">
+</p></li></ol></li></ol><ol type="1" id="394fcdf3-f965-8006-aec1-faa5d23d67b8" class="numbered-list" start="2" dir="auto"><li>土の混入防止処置<ul id="391fcdf3-f965-8007-a4e1-c05b482814ee" class="bulleted-list" dir="auto"><li style="list-style-type:disc">ピックルボールは最初からネットで包まれているので、そのネットごと排水溝ネットで包みます。備え付けのキャップに挟み込んだり、結びつけると良いです。<figure id="394fcdf3-f965-8086-a3a4-cc427f6c7b31" class="image" style="text-align:left" data-notion-image="10HG_tuah20_Soil_Prevention_10.webp" dir="ltr"><a href="10HG_tuah20_Soil_Prevention_10.webp"><img style="width:336px" src="10HG_tuah20_Soil_Prevention_10.webp"/></a></figure><p id="394fcdf3-f965-808c-87c5-db52ee3e939b" class="" dir="auto">
+</p></li></ul></li></ol><ol type="1" id="391fcdf3-f965-801c-96f0-e8bfea243ecc" class="numbered-list" start="3" dir="auto"><li>完成<ul id="394fcdf3-f965-80b2-9e64-d2b588ab3721" class="bulleted-list" dir="auto"><li style="list-style-type:disc">完成写真<figure id="394fcdf3-f965-804a-b537-d3d69926ca12" class="image" style="text-align:left" data-notion-image="10HG_tuah30_completed_10%201.webp" dir="ltr"><a href="10HG_tuah30_completed_10%201.webp"><img style="width:336px" src="10HG_tuah30_completed_10%201.webp"/></a></figure></li></ul></li></ol><p id="394fcdf3-f965-80a1-b50d-e642a913e862" class="" dir="auto">
+</p></li></ul></li></ol><ol type="1" id="390fcdf3-f965-8088-93eb-c802e1a783e4" class="numbered-list" start="7" dir="auto"><li>今後の課題<p id="390fcdf3-f965-8024-be54-d8a2a982a500" class="" dir="auto">効果の確認をしています。</p></li></ol><hr id="391fcdf3-f965-804b-a98a-ee7dcb9ac315" dir="auto"/><p id="391fcdf3-f965-8056-97cc-d77065841fc3" class="" dir="auto">
+</p><p id="391fcdf3-f965-80d4-a2c3-c5d090ff5ad1" class="" dir="auto">以上です。</p><p id="391fcdf3-f965-80fc-aa43-d59ef258d5ea" class="" dir="auto">
+</p></div></details><details id="38dfcdf3-f965-800d-96be-c740bfdaf256" open="" class="block-color-default_background toggle" data-notion-highlight="default_background" dir="auto"><summary><strong>　📈 TUAH レビュー：by Hack（ClaudeAI）</strong></summary><div class="indented"></div></details><hr id="38dfcdf3-f965-80d2-a6b7-e59685cb82d6" dir="auto"/><details id="38dfcdf3-f965-808a-80a5-f3087ef69063" open="" class="block-color-default_background toggle" data-notion-highlight="default_background" dir="auto"><summary><strong><span style="border-bottom:0.05em solid">TUAL 1.0 ：Tomo-Underground エアライン システム</span></strong></summary><div class="indented"><p id="38dfcdf3-f965-8004-aa5b-c855efbcdf4d" class="" dir="auto"><strong>👉 土壌に直接、継続的に酸素を供給</strong></p><p id="38dfcdf3-f965-80d8-9142-d715947ec488" class="" dir="auto">（<strong>各項目について、▶のマークが付いた行をクリックすると画像が表示されます。</strong>）<div class="indented"><ol type="1" id="38dfcdf3-f965-80ee-981b-fb397edad278" class="numbered-list" start="1" dir="auto"><li>使用例<figure id="391fcdf3-f965-80e8-a1af-c1d5b07eb77f" class="image" style="text-align:left" data-notion-image="tual00_Example_of_use_10.jpg" dir="ltr"><a href="tual00_Example_of_use_10.jpg"><img style="width:384px" src="tual00_Example_of_use_10.jpg"/></a></figure><figure id="391fcdf3-f965-8098-a0c6-c6ddb2efa29e" class="image" style="text-align:left" data-notion-image="tual00_Example_of_use_20.jpg" dir="ltr"><a href="tual00_Example_of_use_20.jpg"><img style="width:384px" src="tual00_Example_of_use_20.jpg"/></a></figure><p id="38efcdf3-f965-80a3-9793-d27e389e6f3c" class="" dir="auto">
+</p><hr id="38dfcdf3-f965-806e-be4c-eca5aa0d5abf" dir="auto"/><p id="38efcdf3-f965-807c-a207-ea1a5636c514" class="" dir="auto">
+</p></li></ol><ol type="1" id="38dfcdf3-f965-80b0-9041-f0f5c02ad5e2" class="numbered-list" start="2" dir="auto"><li>主な特長<ul id="38dfcdf3-f965-806f-83f0-c6a0183f3a8d" class="bulleted-list" dir="auto"><li style="list-style-type:disc">余分なスペースを取ることなく、360°全方向に空気を直接送り込みます。</li></ul><ul id="38dfcdf3-f965-802f-a701-deb5431da117" class="bulleted-list" dir="auto"><li style="list-style-type:disc">製作が簡単で、あらゆる植物やプランターのサイズに合わせて自由にカスタマイズ可能です。</li></ul><p id="38efcdf3-f965-806b-8edc-ea107f90cd1f" class="" dir="auto">
+</p><hr id="38efcdf3-f965-8035-a0df-ec477cf2848b" dir="auto"/><p id="38efcdf3-f965-80a4-848a-f7a684bb2b30" class="" dir="auto">
+</p></li></ol><ol type="1" id="38dfcdf3-f965-80fb-bcdd-f799e2a0fdaf" class="numbered-list" start="3" dir="auto"><li>設計目的<ul id="38dfcdf3-f965-805f-89c1-dcea7a5c39b1" class="bulleted-list" dir="auto"><li style="list-style-type:disc">地中の根域に酸素を絶えず供給すること。</li></ul><p id="38efcdf3-f965-8046-a115-cef121168563" class="" dir="auto">
+</p><hr id="38efcdf3-f965-8016-8ffc-f9a01f11b365" dir="auto"/><p id="38efcdf3-f965-803f-8384-c0dbab8f8a1a" class="" dir="auto">
+</p></li></ol><ol type="1" id="38dfcdf3-f965-800a-8caa-e51f142a4b37" class="numbered-list" start="4" dir="auto"><li>注意事項<ul id="38dfcdf3-f965-80fa-bb43-ddd247d947f6" class="bulleted-list" dir="auto"><li style="list-style-type:disc">根に酸素を必要としない植物には適していません。</li></ul><ul id="38dfcdf3-f965-801e-9df9-e4ec74f21ba3" class="bulleted-list" dir="auto"><li style="list-style-type:disc">降雨量の多い地域での地植え栽培には推奨されません。スポンジが水分を保持し、根腐れを引き起こす恐れがあります。</li></ul><p id="38efcdf3-f965-8038-ba2a-fcecfd2d6a21" class="" dir="auto">
+</p><hr id="38efcdf3-f965-8006-a47a-e646259538ce" dir="auto"/><p id="38efcdf3-f965-8035-aa94-db0ee92e1c46" class="" dir="auto">
+</p></li></ol><ol type="1" id="38dfcdf3-f965-8067-bc74-c8f2bbbfea3c" class="numbered-list" start="5" dir="auto"><li><strong>材料（1個分）と費用（製品価格／数量）</strong><ul id="38dfcdf3-f965-80ea-b1fb-cf65fd283a42" class="bulleted-list" dir="auto"><li style="list-style-type:disc">発泡ポリウレタンスポンジまたは隙間埋めシート（ダイソー）。<p id="38dfcdf3-f965-808a-9e37-d8f4e7a7a9ed" class="" dir="auto">5円 ((=100 / 400cm ) x 20cm))</p></li></ul><ul id="38dfcdf3-f965-80e4-b348-e9f94379bcb2" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>総費用</strong><ul id="38dfcdf3-f965-8025-accb-c7bf05f607b2" class="bulleted-list" dir="auto"><li style="list-style-type:circle">= 5 <strong>円（消費税別）</strong></li></ul></li></ul><p id="38efcdf3-f965-80b9-9af6-c86d1b6722a7" class="" dir="auto">
+</p><hr id="38efcdf3-f965-804b-b0f7-c68cd33a06e1" dir="auto"/><p id="38efcdf3-f965-8030-a418-f12773f0614b" class="" dir="auto">
+</p></li></ol><ol type="1" id="38dfcdf3-f965-80ea-a631-c8f96b391aaf" class="numbered-list" start="6" dir="auto"><li>🛠作り方<ul id="38dfcdf3-f965-8026-bea3-d48cff6e93ac" class="bulleted-list" dir="auto"><li style="list-style-type:disc">作成手順<ol type="1" id="38dfcdf3-f965-80f8-8d91-dac3a4e399c2" class="numbered-list" start="1" dir="auto"><li>スポンジのカット<p id="38dfcdf3-f965-80ce-a63b-cfda43b63e6c" class="" dir="auto">プランターや植物の根のサイズに合わせてスポンジをカットします。</p><p id="38dfcdf3-f965-800b-bddd-e3705155d3cd" class="" dir="auto">隙間埋めシートを使用する場合は、2枚を裏面同士（粘着面が内側になるように）貼り合わせてサイズを大きくすることができます。</p><p id="38efcdf3-f965-8035-80b1-eec47c0ae492" class="" dir="auto">
+</p><hr id="38efcdf3-f965-80f7-bc61-ed4ee0952526" dir="auto"/><p id="38efcdf3-f965-80dc-ac1c-f1efade2a65a" class="" dir="auto">
+</p></li></ol><ol type="1" id="38dfcdf3-f965-80f4-ae19-e7796c790e33" class="numbered-list" start="2" dir="auto"><li>完成<ul id="38dfcdf3-f965-80d7-85cf-e03cb477317c" class="bulleted-list" dir="auto"><li style="list-style-type:disc">写真は、ダイソーの隙間埋めシートを裏面同士で貼り合わせたものです。<figure id="391fcdf3-f965-80c3-ac2a-cd10a84a6825" class="image" style="text-align:left" data-notion-image="tual60_Completed.jpg" dir="ltr"><a href="tual60_Completed.jpg"><img style="width:336px" src="tual60_Completed.jpg"/></a></figure></li></ul><p id="38efcdf3-f965-804d-be53-f2b579379aea" class="" dir="auto">
+</p><hr id="38dfcdf3-f965-80ee-928b-eb5131bd9990" dir="auto"/><p id="38efcdf3-f965-80f2-934e-e6c6f3a8a61b" class="" dir="auto">
+</p></li></ol></li></ul></li></ol><ol type="1" id="38dfcdf3-f965-8022-b9ea-c1e67d370ca2" class="numbered-list" start="7" dir="auto"><li>今後の課題<ul id="38dfcdf3-f965-80f3-b403-c84d4cdb320c" class="bulleted-list" dir="auto"><li style="list-style-type:disc">現在、収穫量と収穫までの期間に関するデータを収集中です。</li></ul><p id="38efcdf3-f965-80a2-bd91-c81f6d10f235" class="" dir="auto">
+</p></li></ol><hr id="38efcdf3-f965-8023-be2c-f902625e9a51" dir="auto"/></div></p><p id="38efcdf3-f965-80b9-a85c-ed94629f835f" class="" dir="auto"><div class="indented"><p id="38dfcdf3-f965-804c-a2b6-d66388b32fcc" class="" dir="auto">以上です。</p></div></p><p id="38efcdf3-f965-80b5-9ed9-f258222e4371" class="" dir="auto">
+</p></div></details><details id="38dfcdf3-f965-80da-a388-db88b3177986" open="" class="block-color-default_background toggle" data-notion-highlight="default_background" dir="auto"><summary><strong>　📈 TUAL レビュー：by Hack（ClaudeAI）</strong></summary><div class="indented"></div></details></div></details></div></details><hr id="38efcdf3-f965-80a6-9ea3-e4d859189a92" dir="auto"/><details id="38dfcdf3-f965-80f6-905f-d1a8894a48bb" open="" class="block-color-teal_background toggle" data-notion-highlight="teal_background" dir="auto"><summary><mark class="highlight-default_background" data-notion-highlight="default_background"><strong><span style="border-bottom:0.05em solid">🔧ヨヨシク-家庭工房</span></strong></mark></summary><div class="indented"><details id="38dfcdf3-f965-807a-86bf-f84fdda68293" open="" class="block-color-default_background toggle" data-notion-highlight="default_background" dir="auto"><summary><strong>Tomo-Cooler</strong></summary><div class="indented"></div></details></div></details><hr id="38efcdf3-f965-803d-b69e-ef4ae405aea6" dir="auto"/><details id="38dfcdf3-f965-80b0-883d-f007b3dc2f9f" open="" class="block-color-red_background toggle" data-notion-highlight="red_background" dir="auto"><summary><strong>⚠️Tomoコンテンツを利用する場合は必ずお読みください‼</strong></summary><div class="indented"><h2 id="38dfcdf3-f965-80ec-9162-c227321fcc13" class="" dir="auto">英語版：</h2><p id="38dfcdf3-f965-80bc-87a6-c757df7f87cd" class="" dir="auto"><strong>ライセンス：クリエイティブ・コモンズ 表示-継承 4.0 国際 (CC BY-SA 4.0)<br/>[ Yoyoshiku-Company 特別追加条項：Tomoコスト削減シールド ]</strong></p><ul id="38dfcdf3-f965-800d-a75d-fde931aefed5" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>帰属および同一条件許諾の条件：</strong><br/>このコンテンツを自由に共有、リミックス、および商用販売することができます。<strong>ただし、以下の3つの必須条件を厳守する必要があります：</strong><ol type="1" id="38dfcdf3-f965-80ff-9ad6-de88f1d2e90c" class="numbered-list" start="1" dir="auto"><li><strong>帰属（BY）：</strong> オリジナル開発者である「<strong>moTo (4449Co)</strong>」を、完全かつ明確かつ紛れもない形でクレジット表示しなければなりません。<p id="38dfcdf3-f965-804c-8ce1-edb9fe1ee6cb" class="" dir="auto">※ 「moTo」は「Tomo」を逆から綴ったものです。日本語で「moto」（元／素）は、万物の源である「起源」を意味し、また「本質」や「基盤」も表します。「Tomo」（友／共／智）は、友情、一体感、そして知恵を意味し、作者の名前です。</p></li></ol><ol type="1" id="38dfcdf3-f965-80b4-a0f7-cc1575abfe26" class="numbered-list" start="2" dir="auto"><li><strong>同一条件許諾 (SA):</strong> 改変またはリミックスされたすべてのバージョンは、この CC BY-SA 4.0 ライセンスと全く同じ条件で配布され、100% 無償かつ恒久的に一般に公開されなければなりません。</li></ol><ol type="1" id="38dfcdf3-f965-807f-97f4-cbee13d892c9" class="numbered-list" start="3" dir="auto"><li><strong>コスト条件:</strong> 運用および処理にかかる総コストは、Tomo のオリジナル実装のコストを厳密に下回っており、かつより効率的でなければなりません。</li></ol></li></ul><ul id="38dfcdf3-f965-8058-8652-c69ea34c7bd7" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>「コスト」の厳格な定義：</strong><ol type="1" id="38dfcdf3-f965-80d8-9b14-e01ab9c3b8d4" class="numbered-list" start="1" dir="auto"><li><strong>人件費</strong>（人的労力およびAI処理のオーバーヘッド）</li></ol><ol type="1" id="38dfcdf3-f965-8029-80b0-c81af9165f9c" class="numbered-list" start="2" dir="auto"><li><strong>エネルギーコスト</strong>（電力消費量および計算用トークンの燃焼）</li></ol><ol type="1" id="38dfcdf3-f965-80cb-aeec-ddec410bca65" class="numbered-list" start="3" dir="auto"><li><strong>輸送コスト</strong>（データ伝送量および物流負担）</li></ol><ol type="1" id="38dfcdf3-f965-8022-a3cc-dcfaf18245cd" class="numbered-list" start="4" dir="auto"><li><strong>広告・プロモーション費用</strong>（マーケティング上のノイズおよび注目を集めるためのコスト）</li></ol></li></ul><ul id="38dfcdf3-f965-8024-ac99-e662e505cab6" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>厳格なルール：</strong><br/>上記4項目を含むインフラコストの合計が、オリジナルのTomoのコストを上回る場合、販売は厳禁です。「Tomoのデザイン哲学」を尊重してください。それは、完全に合理化され、透明性が高く、低コストでなければならないということです。</li></ul><h3 id="38dfcdf3-f965-80fd-8c12-c8bb6cc801d7" class="" dir="auto"><strong>日本語版：</strong></h3><p id="38dfcdf3-f965-80a5-ad62-fa146b7210d4" class="" dir="auto"><strong>ライセンス：クリエイティブ・コモンズ 表示-継承 4.0 国際 (CC BY-SA 4.0)<br/>[ ヨヨシク・カンパニー特別追加条項：トモ・コスト削減シールド ]</strong></p><ul id="38dfcdf3-f965-80ad-a1cb-ea089b825cb4" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>帰属および同一条件許諾条項：</strong><br/>本コンテンツの共有、リミックス、商用販売は自由に行えます。<strong>ただし、以下の3つの絶対条件を厳守しなければなりません：</strong><ol type="1" id="38dfcdf3-f965-80e7-b46c-f2f4ea49e822" class="numbered-list" start="1" dir="auto"><li><strong>帰属（BY）：</strong> オリジナルの開発者である「<strong>moTo (4449Co)</strong>」を、はっきりと目立つように、かつ完全にクレジット表示しなければなりません。<p id="38dfcdf3-f965-80f2-bb8d-c590c301136f" class="" dir="auto">※「moTo」は「Tomo」を逆から読んだものです。日本語で「moto」（元／素）は「起源」、すなわち万物の源を意味し、また「本質」、「基礎」を表します。「Tomo」（友／共／智）は友情、一体感、そして知恵を意味し、著者の名前でもあります。</p></li></ol><ol type="1" id="38dfcdf3-f965-807a-a01e-d3bc7d5f046f" class="numbered-list" start="2" dir="auto"><li><strong>同一条件許諾（SA）：</strong> 改変またはリミックスされたバージョンは、すべてこの全く同じ CC BY-SA 4.0 ライセンスの下で配布され、100% 無料で、かつ永久に一般に公開されなければなりません。</li></ol><ol type="1" id="38dfcdf3-f965-80f1-9eda-cf3809231da5" class="numbered-list" start="3" dir="auto"><li><strong>販売に関わるコスト条件：</strong> 総運用コストおよび処理コストは、Tomoのオリジナル実装よりも厳密に低く、かつ効率的でなければなりません。</li></ol></li></ul><ul id="38dfcdf3-f965-803c-bd50-d50348a91004" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>「コスト」の厳格な定義：</strong><ol type="1" id="38dfcdf3-f965-808e-b891-daf091de589e" class="numbered-list" start="1" dir="auto"><li><strong>人件費</strong>（人的労力およびAI処理のオーバーヘッド）</li></ol><ol type="1" id="38dfcdf3-f965-80ee-87b6-f7510bde10bc" class="numbered-list" start="2" dir="auto"><li><strong>エネルギーコスト</strong>（電力消費量および計算トークンの燃焼量）</li></ol><ol type="1" id="38dfcdf3-f965-804f-b62e-ca0bd5f5e4e2" class="numbered-list" start="3" dir="auto"><li><strong>輸送コスト</strong>（データ伝送量および物流負荷）</li></ol><ol type="1" id="38dfcdf3-f965-8095-9484-fbae4483e612" class="numbered-list" start="4" dir="auto"><li><strong>広告・プロモーション費用</strong>（マーケティングノイズおよび注目獲得コスト）</li></ol></li></ul><ul id="38dfcdf3-f965-80fc-8a4c-ed93aa3655b8" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>厳格なルール：</strong><br/><strong>上記の4項目すべてを含むインフラ全体のコストが、Tomoのオリジナルを上回る場合、その販売は厳禁です</strong>。「Tomoの美学」を尊重してください。完全に合理化され、透明性が高く、低コストであること。<br/></li></ul></div></details><hr id="391fcdf3-f965-8072-8ec7-df805d95b903" dir="auto"/><p id="38efcdf3-f965-80e0-a159-c5b4971fa9ed" class="" dir="auto">
+</p><p id="38dfcdf3-f965-8052-9938-e79d523245c0" class="" dir="auto">
+</p><p id="38dfcdf3-f965-803e-9858-eecb90bbaaae" class="" dir="auto">
+</p><p id="38dfcdf3-f965-806c-a3a5-ded2b99c3c82" class="" dir="auto">
+</p><p id="38dfcdf3-f965-8085-b817-eae65fb6eea9" class="" dir="auto">
+</p><p id="38dfcdf3-f965-80c4-ac28-e481ce1e959c" class="" dir="auto">
+</p><p id="38dfcdf3-f965-80b8-966a-e0c46b5c683a" class="" dir="auto">
+</p><p id="38dfcdf3-f965-8064-8889-cae328a059ca" class="" dir="auto">
+</p><p id="38dfcdf3-f965-80fe-bd85-c82f3d762331" class="" dir="auto">
+</p><p id="38dfcdf3-f965-8067-a5bf-e1a6bcf079ee" class="" dir="auto">
+</p><p id="38dfcdf3-f965-80ee-999a-de7f6a5b7174" class="" dir="auto">
+</p><p id="38dfcdf3-f965-806f-9560-cbeb3806931a" class="" dir="auto">
+</p><p id="38dfcdf3-f965-8048-9ebd-c3eeffa3d8ae" class="" dir="auto">
+</p><p id="38dfcdf3-f965-803f-9ec3-fd82db0e9356" class="" dir="auto">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
