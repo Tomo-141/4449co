@@ -150,7 +150,7 @@
           /* box-sizing: border-box; /* 枠のサイズを正確に計算する */
           margin-left:      10px; /* ボタン位置調整 */
           margin-right:     10px; /* 見た目調整 */
-          padding-right:    30px; /* トグルタイトル位置調整 */
+          padding-right:    25px; /* トグルタイトル位置調整 */
         }
            /* 👇️トグルが開いた（open状態）のときのスタイル指定 */
 
@@ -166,7 +166,7 @@
               font-size:     auto; /* 文字サイズを自動調整 */
               line-height:   auto; /* 行間を自動調整 */
               display:      table;
-              margin:  10px 0 0 0;
+              margin:  11px 0 0 0;
               padding:          0;
            }
 
@@ -179,10 +179,10 @@
            /* 👇️左側の項目(span)を「テーブルの左のマス」にする */
 
            .vege-info li span {
-              white-space: nowrap;
-              display: table-cell;
-              padding-left: 11px;
-              padding-right: 5px; /* コロンとの間のほんの少しの隙間 */
+              white-space: nowrap; /* 改行禁止 */
+              display: table-cell; /* テーブル非視覚化 */
+              padding-left:   8px; /* リスト位置調整 */
+              /* padding-right: 5px; /* コロンとの間のほんの少しの隙間 */
            }
 
            /* 👇️「▶」と「Info」を横1行で並べるための設定 */
@@ -317,22 +317,22 @@
              <summary>📒野菜情報</summary>
                <ul>
                 <li><span>・種まき</span><span>：</span>6/10</li>
-                <li><span>・ツール</span><span>：</span>[TUAH][TUAL]</li>
+                <li><span>・共存菌</span><span>：</span>納豆菌、菌根菌</li>
+                <li><span>・ツール</span><span>：</span>TUAH、TUAL</li>
                 <li><span>・プランタ</span><span>：</span>ワイヤネット</li>
                </ul>
                <ul>
-                 <li><span>・サイズ</span><span>：</span>株の高さは約15-20cm、葉の幅は約10-15cm。</li>
-                 <li><span>・傾向</span><span>：</span>弱アルカリ性～中性を好む。</li>
-                 <li><span>・気温</span><span>：</span>15-25℃を好む。</li>
-                 <li><span>・日照</span><span>：</span>十分な日光を必要とする。</li>
+                 <li><span>・サイズ</span><span>：</span>株の高さ約15-20cm、葉の幅は約10-15cm。</li>
+                 <li><span>・傾向</span><span>：</span>弱アルカリ性～中性。</li>
+                 <li><span>・温度</span><span>：</span>15-25℃を好む。</li>
+                 <li><span>・日光</span><span>：</span>十分な日光が必要。</li>
                  <li><span>・水やり</span><span>：</span>土の表面が乾いたら多めに。</li>
                  <li><span>・肥料</span><span>：</span>元肥は少なめ、追肥は定期的に。</li>
-                 <li><span>・病害虫</span><span>：</span>アブラムシ、ハモグリバエ、ヨトウムシなどに注意。</li>
-                 <li><span>・期間</span><span>：</span>種まきから収穫まで約60-70日。</li>
-                 <li><span>・収穫</span><span>：</span>株の下の方から順に外側の葉を摘み取るように。</li>
-                 <li><span>・再収穫</span><span>：</span>株の中心から新芽が出てくるので、再収穫可能。</li>
+                 <li><span>・害虫</span><span>：</span>アブラムシ、ハモグリバエ、ヨトウムシなど。</li>
+                 <li><span>・収穫</span><span>：</span>種まきから約60-70日。株の下の方から順に外側の葉を摘み取るように。</li>
+                 <li><span>・再収穫</span><span>：</span>可能。株の中心から新芽が出てくる。</li>
                  <li><span>・栄養</span><span>：</span>ビタミンC、ビタミンK、葉酸を豊富に含む。</li>
-                 <li><span>・その他</span><span>：</span>葉も食べれる。栄養豊富。</li>
+                 <li><span>・その他</span><span>：</span>葉は栄養豊富で食べれる。</li>
                </ul>
              </details>
 
