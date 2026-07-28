@@ -22,6 +22,7 @@
     <style>
 
     /* コメントアウトコマンド置き場  */
+    /* padding:           20px; /* 端っこに文字がくっつきすぎないための適度な余白 */
     /* メインタイトル
         /* font-size:            2rem; /* 文字を大きく */
         /* text-decoration: underline; /* 下線 */
@@ -29,10 +30,9 @@
     /* 👇️サイトベース設定 */
 
     body {
-      background:   #ffffff; /* 背景色を黒に */
-      color:        #000000; /* 文字色を白に */
+      background:   #ffffff; /* 背景色を白に */
+      color:        #000000; /* 文字色を黒に */
       margin:          0 auto; /* 上下マージン0、左右を「auto」にすると画面中央に配置  */
-      padding:           20px; /* 端っこに文字がくっつきすぎないための適度な余白 */
       max-width:       1100px; /* 横幅を最大1100pxでストップ */
       box-sizing:  border-box; /* 枠のサイズを正確に計算する */
       border-radius:      5px; /* 角を丸くする */
@@ -54,7 +54,7 @@
       color:            #fcfff0; /* 文字色を白に */
       text-align:           center; /* 真ん中寄せ */
       padding:             4px 8px; /* 文字の上下左右に適度な余白を作る */
-      border-radius:          20px; /* 丸みをつける */
+      border-radius:           240px; /* 丸みをつける */
       background-image: 
         url("IHUWBH1200x900.png") ; /* 画像を指定 */
       background-position:  center; /* 画像を中央に寄せる */
@@ -94,6 +94,8 @@
       background-color: #98cde2; /* 見出しの背景を薄いグレーにする */
     }
 
+    /* 👇️div全体の設定  */
+
     /* 👇️トグル（details）全体の設定 */
 
     details {
@@ -103,10 +105,13 @@
       box-shadow:
         1px 4px 11px 
          rgba(0, 0, 0, 0.4); /* カードに影をつけて立体感を出す */
-       transition: all 1s ease; /* 開閉時になめらかに動かす */
+      transition:  all 1s ease; /* 開閉時になめらかに動かす */
       margin-top:         10px; /* 上の隙間 */
-      margin-bottom:      15px; /* 下の隙間 */
-      padding:        5px 15px; /* トグルリストの上下左右に余白を作る */
+      margin-bottom:      10px; /* 下の隙間 */
+      margin-left:         5px;
+      padding-bottom:      1px;
+      padding-right:       0px;
+      padding-left:        5px; /* 左に余白を作る */
       border-radius:       8px; /* 枠に丸みをつける */
     }
 
@@ -125,26 +130,25 @@
     /* 👇️vege-infoとカールセル格納用クラス */
 
     .grow-info{
-          box-shadow:
-           1px 4px 11px 
-          rgba(0, 0, 0, 0.4);
-          display:         flex; /* 中に入れた要素を横並びにする */
-          gap:             10px; /* 要素同士の隙間 */
-          width:           100%; /* 横幅を最大値にする */
-          padding:          0px; /* 上下左右に適度な余白を作る */
-          border-radius:    8px; /* 枠の角を丸くする */
-          margin-top:      10px; /* 上の隙間 */
-          margin-bottom:   10px; /* 下の隙間 */
-        }
+      box-shadow:
+       1px 4px 11px 
+       rgba(0, 0, 0, 0.4);
+      display:         flex; /* 中に入れた要素を横並びにする */
+      gap:             10px; /* 要素同士の隙間 */
+      width:           100%; /* 横幅を最大値にする */
+      margin-top:      10px; /* 上の隙間 */
+      margin-bottom:   10px; /* 下の隙間 */
+      border-radius:    8px; /* 枠の角を丸くする */
+    }
  
         /* 👇️トグルクラス：野菜さん別情報*/
 
         .vege-info{
-          box-shadow:
-           1px 4px 11px 
+          box-shadow: 1px 4px 11px 
            rgba(0, 0, 0, 0.4);
+          width:         70px; /* 開いたときに文字が読みやすい幅に自動拡張 */
+
           align-self: flex-start; /* 親の枠の上に揃える */
-          margin-left:      10px; /* 左の隙間 */
           box-sizing: border-box; /* 枠のサイズを正確に計算する */
           /* flex-shrink:      0; /* 縮まないようにする*/
         }
@@ -165,7 +169,7 @@
 
            .vege-info ul {
              margin:     0 0 0 0; /* ulのデフォルトの余白を消す */
-             padding-left: -30px; /* 位置調整用 */
+             /* padding-left: -30px; /* 位置調整用 */
              font-size:     auto; /* 文字サイズを自動調整 */
              line-height:   auto; /* 行間を自動調整 */
           }
@@ -173,8 +177,7 @@
     /* 👇️カールセルクラス：全体の設定 （位置の基準）*/
 
     .carousel {
-      box-shadow: 1px 4px 11px 
-      rgba(0, 0, 0, 0.4); /* カードに影をつけて立体感を出す */
+
       width:           100%; /* 横幅を最大値にする */
       min-width:          0; /* 横幅を自動で親の枠に合わせる */
       margin-top:      10px; /* 上の隙間 */
@@ -271,12 +274,11 @@
       <h1>Yoyoshiku Company(4449co)</h1>
       <h3>Please Do It Yourself<br>
       （4449 DIY）</h3>
-      <h4 style="padding: 0px 100px; text-align: center;">
-        このサイトは、私（<u>Tomo</u>）がAIさん達と共同で立ち上げたポータルサイトです。<br>
-        ここでは、私の家庭菜園プロジェクトや実用的なDIYプロジェクト、<br>
-        その他の役立つ知識に関する情報を紹介しています。<br>
+      <h4 style="text-align: center;">
+        このサイトは、私（<u>Tomo</u>）がAIさん達と共同で作成したポータルサイトです。
+        ここでは、私の家庭菜園情報や実用的なDIY情報、その他の役立つ情報を紹介しています。
         できるだけわかりやすくお伝えできるよう、最善を尽くしました。</h4>
-    </div><br>
+    </div>
 
     <!-- 👇️Home garden --------------------------------------------------------->
     <details open="open">
@@ -291,7 +293,6 @@
          <summary >🥬芽キャベツさん（アブラナ科）</summary>
            　種まき：6/10<br>
            　使用コンテンツ：[TUAH] [TUAL]
-           <div class="grow-info">
 
              <!-- 👇️Info  --------------------------------------->
              <details class="vege-info">
@@ -376,7 +377,6 @@
              <!-- 👇️右ボタン -->
              <button class="scro-btn next"
              onclick="scrollPrime(this, 265)">&gt;</button> </div>
-           </div>
          </details>
          <!-- 👆️芽キャベツさん ---------------------------------------->
 
@@ -462,9 +462,9 @@
     </details>
     <!-- License ------------------------------------------------------------->
     <details style="background-color: #ffe1e1">
-      <summary><u>⚠️- Tomoコンテンツのライセンスについて -</u></summary>
+      <summary><u>⚠️ライセンスについて</u></summary>
       <div class="license-base">
-        <h3><u><b>License：Creative Commons CC BY-SA 4.0（表示-継承 4.0 国際）</b></u></h3>
+        <h2><u><b>License：Creative Commons CC BY-SA 4.0（表示-継承 4.0 国際）</b></u></h2>
         <u><b>帰属および同一条件許諾条項</b></u><br>
         サイト内コンテンツの共有、改変は１と２、販売は全ての条件を厳守しなければなりません。<br>
         <br>
@@ -476,7 +476,7 @@
         「Tomo」（友／共／智）は友情、一体感、そして知恵を意味し、著者の名前の一部でもあ ります。<br>
         <br>
         <u><b>２．同一条件許諾（SA）</b></u><br>
-        改変、リミックスされたバージョンは、すべてこの全く同じ CC BY-SA 4.0
+        改変、リミックスされたバージョンは、すべて「CC BY-SA 4.0」
         ライセンスの下で配布され、無料で一般に公開されなければなりません。<br>
         <br>
         <u><b>３．販売コスト削減条項</b></u><br>
@@ -485,23 +485,23 @@
         <b><u>「コスト」の厳格な定義</u></b><br>
         <br>
         <b>＜人的コスト＞</b><br>
-        人的労力およびAI処理のオーバーヘッド<br>
+        人的労力およびAI処理のコスト<br>
         <br>
         <b>＜エネルギーコスト＞</b><br>
-        電力消費量および計算トークンの燃焼量<br>
+        電力消費および計算トークンのコスト<br>
         <br>
         <b>＜輸送コスト＞</b><br>
         データ伝送量および物流負荷<br>
         <br>
         <b>＜広告・プロモーションコスト＞</b><br>
-        マーケティングノイズおよび注目獲得コスト<br>
+        マーケティングおよび注目獲得コスト<br>
         <br>
         <u><b>厳格な販売ルール</b></u><br>
         上記4つの総コストがTomoのオリジナルを下回った場合に限り、「<b>３．販売コスト削減条項</b>」を満たし、販売可能となりま
         す。<br>
         完全に合理化され、透明性が高く、低コストであること。<br>
         <br>
-        Tomoの「美学」を尊重してください。<br>
+        Tomoの「美学」を尊重して頂けることを願います。<br>
         <br>
       </div>
     </details>
