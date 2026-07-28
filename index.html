@@ -20,6 +20,8 @@
 
     <!---------------------------------- ここからCSSの設定 ------------------------------------>
     <style>
+    /* 💡 Googleから丸文字フォント（M PLUS Rounded 1c）を読み込む呪文 */
+    @import url('https://googleapis.com');
 
     /* コメントアウトコマンド置き場  */
     /* padding:           20px; /* 端っこに文字がくっつきすぎないための適度な余白 */
@@ -33,10 +35,12 @@
       background:   #ffffff; /* 背景色を白に */
       color:        #000000; /* 文字色を黒に */
       margin:          0 auto; /* 上下マージン0、左右を「auto」にすると画面中央に配置  */
-      max-width:       700px; /* 横幅を最大1100pxでストップ */
-      box-sizing:  border-box; /* 枠のサイズを正確に計算する */
-      border-radius:      5px; /* 角を丸くする */
-      font-family: sans-serif; /* ゴシック体に */  
+      max-width:         700px; /* 横幅を最大1100pxでストップ */
+      box-sizing:  border- box; /* 枠のサイズを正確に計算する */
+      border-radius:       5px; /* 角を丸くする */
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+
+      /* font-family: sans-serif; /* ゴシック体に */  
     }
 
     /* ------------------------------ ここからCSS共通設定エリア ------------------------------>
@@ -53,15 +57,18 @@
              rgba(0, 0, 0, 0.9); /* 文字にうっすら黒い影をつける */
       color:            #fcfff0; /* 文字色を白に */
       text-align:           center; /* 真ん中寄せ */
-      margin: 7px;
-      padding:             4px 11px; /* 文字の上下左右に適度な余白を作る */
-      border-radius:           11px; /* 丸みをつける */
-      background-image: 
-        url("IHUWBH1200x900.png") ; /* 画像を指定 */
+      margin:                  7px;
+      padding:            4px 11px; /* 文字の上下左右に適度な余白を作る */
+      background-image:
+       linear-gradient(
+       rgba(172, 205, 255, 0.15),
+       rgba(0, 0, 0, 0.1)), 
+         url("IHUWBH1200x900.png"); /* 画像を指定 */
       background-position:  center; /* 画像を中央に寄せる */
       background-repeat: no-repeat; /* 画像を繰り返さない */
       background-size:       cover; /* 箱のサイズに画像をフィットさせる */
-    }
+      border-radius:           11px; /* 丸みをつける */
+     }
 
     /* 👇️スクロール用クラス */
 
@@ -254,7 +261,7 @@
       flex:       0 0 220px; /* カードの横幅をpxに固定して型崩れを防ぐ（中央の「0」） */
       text-align:      left; /* 文字を左寄せにする */
       padding:     8px 15px; /* 文字の上下左右に適度な余白（クッション）を作る */
-      border-radius:    11px; /* カードの角を丸くする */
+      border-radius:   11px; /* カードの角を丸くする */
     }
 
     /* 👇️カード内の日付部分 */
@@ -288,6 +295,7 @@
   </head>
  <!--------------------------------------- 以下HTML本文 -------------------------------------->
   <body> 
+
     <div class="main-title">
       <h1>Yoyoshiku Company(4449co)</h1>
       <h3>Please Do It Yourself<br>
@@ -488,7 +496,7 @@
     <details style="background-color: #ffe1e1">
       <summary><u>⚠️ライセンスについて</u></summary>
       <div class="license-base">
-        <h2><u><b>License：Creative Commons CC BY-SA 4.0（表示-継承 4.0 国際）</b></u></h2>
+        <h2><u><b>License：Creative Commons CC BY-SA 4.0<br>（表示-継承 4.0 国際）</b></u></h2>
         <u><b>帰属および同一条件許諾条項</b></u><br>
         サイト内コンテンツの共有、改変は１と２、販売は全ての条件を厳守しなければなりません。<br>
         <br>
@@ -525,7 +533,7 @@
         す。<br>
         完全に合理化され、透明性が高く、低コストであること。<br>
         <br>
-        Tomoの「美学」を尊重して頂けることを願います。<br>
+        Tomoの「美学」をご理解ください。<br>
         <br>
       </div>
     </details>
