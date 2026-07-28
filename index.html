@@ -109,9 +109,9 @@
       margin-top:         10px; /* 上の隙間 */
       margin-bottom:      10px; /* 下の隙間 */
       margin-left:         5px;
-      padding-bottom:      1px;
-      padding-right:       0px;
-      padding-left:        5px; /* 左に余白を作る */
+      padding:             7px; 
+      padding-left:          3;
+      padding-right:       1px;
       border-radius:       8px; /* 枠に丸みをつける */
     }
 
@@ -121,7 +121,7 @@
       min-width:        0; /* 横幅を自動で親の枠に合わせる */
       white-space: nowrap; /* 文字が長くても横1行で表示する */
       cursor:     pointer; /* マウスカーソルを指マークにする */
-      font-weight: bold  ; /* 文字を太字にする */
+      font-weight:   bold; /* 文字を太字にする */
     }
 
     /* ------------------------------ ここからcss個別設定エリア ------------------------------>
@@ -144,13 +144,8 @@
         /* 👇️トグルクラス：野菜さん別情報*/
 
         .vege-info{
-          box-shadow: 1px 4px 11px 
-           rgba(0, 0, 0, 0.4);
-          width:         70px; /* 開いたときに文字が読みやすい幅に自動拡張 */
-
-          align-self: flex-start; /* 親の枠の上に揃える */
+          width:            70px; /* トグルボタンの幅*/
           box-sizing: border-box; /* 枠のサイズを正確に計算する */
-          /* flex-shrink:      0; /* 縮まないようにする*/
         }
            /* 👇️トグルが開いた（open状態）のときのスタイル指定 */
 
