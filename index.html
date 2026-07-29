@@ -602,6 +602,16 @@
       const container = button.parentElement.querySelector('.carousel-cont');
       container.scrollBy({ left: distance, behavior: 'smooth' });
      }
+       // 💡 2. 【新登場】トグルを開いたときに、その場所へ自動で画面をフォーカスさせる魔法
+  document.querySelectorAll('.vege-info').forEach(details => {
+    details.addEventListener('toggle', function() {
+      // トグルが「開いた（open）」瞬間だけ発動する
+      if (this.open) {
+        // 🌟 そのトグルが画面の少し上（見やすい位置）にスイーっと自動スクロールする命令
+        this.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
      </script>
   </body>
 </html>
