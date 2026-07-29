@@ -152,7 +152,7 @@
       /* 👇️ 情報トグルを並べる箱クラス */
 
       .info-wrap {
-      min-width:         0; /* 横幅を自動で親の枠に合わせる */
+      /* min-width:         0; /* 横幅を自動で親の枠に合わせる */
       /*box-shadow: 1px 4px 11px
             rgba(0, 0, 0, 0.4); */
       display:            flex;
@@ -163,6 +163,10 @@
       scrollbar-width:    none; /* Firefox用 */
       /* gap: 15px; */
       }
+       .info-wrap::-webkit-scrollbar {
+          display:            none; /* Chrome, Safari用 */
+       }
+
       /* 👇️ トグルクラス：野菜情報トグル関連 */
 
       .vege-info{
@@ -172,7 +176,7 @@
         margin-right:     10px; /* 見た目調整 */
         padding-right:    25px; /* トグルタイトル位置調整 */
         align-self: flex-start; /* トグル並列対応 */
-        transition: flex 0.5s ease,
+        /*  transition: flex 0.5s ease,
            min-width 0.5s ease; /* 開閉アニメーション */
       }
 
@@ -381,7 +385,7 @@
 
             <!-----------------------------------------  👇️ 各情報トグルを入れる箱  -->
 
-            <details open="" class="vege-info">
+            <details open="" class="vege-info scro-target">
             <summary>📒関連情報</summary>
               <ul>
                 <li><span>・共存菌</span><span>：</span>納豆菌、菌根菌</li>
@@ -602,16 +606,24 @@
       const container = button.parentElement.querySelector('.carousel-cont');
       container.scrollBy({ left: distance, behavior: 'smooth' });
      }
-       // 💡 2. 【新登場】トグルを開いたときに、その場所へ自動で画面をフォーカスさせる魔法
-  document.querySelectorAll('.vege-info').forEach(details => {
+ // 2. 🏁【最新版】トグルが開いたとき、縦は動かさず、限界の右端まで一気にスクロールする魔法
+  document.querySelectorAll('.scro-target').forEach(details => {
     details.addEventListener('toggle', function() {
-      // トグルが「開いた（open）」瞬間だけ発動する
       if (this.open) {
-        // 🌟 そのトグルが画面の少し上（見やすい位置）にスイーっと自動スクロールする命令
-        this.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const wrapper = this.closest('.info-wrap');
+        if (wrapper) {
+          // 💡【大本命】親の箱の「全体の横幅」から「見えている横幅」を引いて、限界の右端の数値を自動計算します
+          const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
+          
+          // 💡 縦（上下）は1ミリも動かさず、横だけ計算した限界の右端へスイーっと動かします
+          wrapper.scrollTo({
+            left: maxScrollLeft,
+            top: wrapper.scrollTop,
+            behavior: 'smooth'
+          });
+        }
       }
     });
   });
-     </script>
-  </body>
+</script>  </body>
 </html>
