@@ -22,14 +22,8 @@
     <!--  CSS設定エリア  -->
     <style>
 
-      /* 💡 Googleから丸文字フォント（M PLUS Rounded 1c）を読み込む呪文 */
+      /* 💡 Googleから丸文字フォント（M PLUS Rounded 1c）を読み込む */
       @import url('https://googleapis.com');
-
-      /* コメントアウトコマンド置き場  */
-      /* padding:           20px; /* 端っこに文字がくっつきすぎないための適度な余白 */
-      /* メインタイトル
-      /* font-size:            2rem; /* 文字を大きく */
-      /* text-decoration: underline; /* 下線 */
 
       /* 👇️ サイトベース設定 */
 
@@ -78,31 +72,25 @@
         white-space:               nowrap; /* 横並びにする */
       }
 
-      /* 👇️ テーブル全体の枠線と隙間の設定 */
+      /* 👇️ 左右スクロールボタン用クラス */
 
-      table {
-        /* table-layout:      fixed; /* すべての列を同じ幅で均等に割り振る */
-        width:                 100%; /* 横幅を最大値にする */
-        border-collapse:   collapse; /* 枠線を1本の細い線にまとめる※重要 */
-        margin-top:             5px; /* 表の上の隙間 */
-        margin-bottom:          5px; /* 表の下の隙間 */
+      .scro-btn {
+        box-shadow:1px 4px 11px 
+        rgba(0, 0, 0, 0.4);
+        background:
+        rgba(0, 0, 0, 0.6); /* スクロールボタンの背景色（半透明） */
+        color:       white; /* スクロールボタンの文字色 */
+        position:   absolute; /* スクロールボタンを絶対位置で配置する */
+        z-index:          20; /* スクロールボタンを前面に表示する */
+        border:         none; /* スクロールボタンの枠線を消す */
+        border-radius:   50%; /* スクロールボタンを丸くする */
+        width:          45px; /* スクロールボタンの横幅 */
+        height:         45px; /* スクロールボタンの縦幅 */
+        cursor:      pointer; /* マウスカーソルを指マークにする */
+        font-size:      40px; /* スクロールボタンの文字サイズ */
       }
-
-      /* 👇️ テーブル見出し（th）とデータ（td）の共通設定 */
-
-      th, td {
-        border: 1px solid #000000; /* 黒の細いラインをつける */
-        text-align:          center; /* 文字を中央寄せにする */
-        padding:            5px 5px; /* 文字の上下左右に適度な余白（クッション）を作る */
-      }
-
-      /* 👇️テーブル見出し（th）だけの特別な設定 */
-
-      th {
-        background-color: #98cde2; /* 見出しの背景を薄いグレーにする */
-      }
-
-      /* 👇️ div全体の設定  */
+        .scro-btn.prev { left : 3px; } /* 左ボタンの位置を左端に寄せる */
+        .scro-btn.next { right: 3px; } /* 右ボタンの位置を右端に寄せる */
 
       /* 👇️ トグル（details）全体の設定 */
 
@@ -131,107 +119,6 @@
         font-weight:   bold; /* 文字を太字にする */
         padding-left:  10px; /* ▶位置調整 */
       }
-  
-      /* ---------------------------------------------------  👇️ CSS個別設定エリア  */
-      /* CSS個別設定エリア */
-
-
-      /* 👇️ トグルクラス；野菜さん毎の親トグル */
-
-      .grow-info{
-        box-shadow: 1px 4px 11px 
-         rgba(0, 0, 0, 0.4);
-        /* display:          flex; /* 中に入れた要素を横並びにする */
-        gap:              10px; /* 要素同士の隙間 */
-        width:            100%; /* 横幅を最大値にする */
-        margin-top:       10px; /* 上の隙間 */
-        margin-bottom:    10px; /* 下の隙間 */
-        border-radius:    11px; /* 枠の角を丸くする */
-      }
- 
-      /* 👇️ 情報トグルを並べる箱クラス */
-
-      .info-wrap {
-      /* min-width:         0; /* 横幅を自動で親の枠に合わせる */
-      /*box-shadow: 1px 4px 11px
-            rgba(0, 0, 0, 0.4); */
-      display:            flex;
-      margin-top:         10px;
-      border-radius:      11px;
-      overflow-x:         auto; /* 横スクロールを有効にする */
-      -ms-overflow-style: none; /* IE, Firefox用 */
-      scrollbar-width:    none; /* Firefox用 */
-      /* gap: 15px; */
-      }
-       .info-wrap::-webkit-scrollbar {
-          display:            none; /* Chrome, Safari用 */
-       }
-
-      /* 👇️ トグルクラス：野菜情報トグル関連 */
-
-      .vege-info{
-        max-width: fit-content; /* トグルボタンの幅*/
-        box-sizing: border-box; /* 枠のサイズを正確に計算する */
-        margin-left:      10px; /* 位置調整 */
-        margin-right:     10px; /* 見た目調整 */
-        padding-right:    25px; /* トグルタイトル位置調整 */
-        align-self: flex-start; /* トグル並列対応 */
-        /*  transition: flex 0.5s ease,
-           min-width 0.5s ease; /* 開閉アニメーション */
-      }
-
-      /* 👇️ トグルが開いた（open状態）のときのスタイル指定 */
-
-        .vege-info[open] {
-        flex:         1 0 100%; /* flex-grow（余白一杯広がる）flex-shrink（サイズ固定） flex-basis（横幅指定）*/
-        /* position: absolute; */
-        z-index: 30;
-        }
-
-        /* 👇️ リスト全体を「見えない自動調整テーブル」にする */
-
-        .vege-info ul {
-          font-size:   auto; /* 文字サイズを自動調整 */
-          line-height: auto; /* 行間を自動調整 */
-          display:    table; /* テーブル化 */
-          margin-top:   5px; /* テーブル位置調整 */
-          margin-left:   3%; /* インデント対策 */
-          padding-left:   0; /* インデント対策 */
-        }
-
-        /* 👇️ 行(li)を「テーブルの行」にする（中点は消える） */
-
-        .vege-info li {
-          display:  table-row; /* リストをテーブル行化 */
-          /* white-space: nowrap; /* 改行禁止 */
-
-        }
-
-        /* 👇️ spanをテーブルのマスにする */
-
-        .vege-info li span {
-          white-space: nowrap; /* 改行禁止 */
-          display: table-cell; /* テーブルマス化 */
-        }
-
-        /* 👇️「▶」と「Info」を横1行で並べるための設定 */
-
-
-      /* 👆️ トグルクラス：野菜情報トグル関連 */
-
-      /* 👇️ カールセルクラス：全体の設定 （位置の基準）*/
-
-      .carousel {
-        width:         100%; /* 横幅を最大値にする */
-        min-width:        0; /* 横幅を自動で親の枠に合わせる */
-        /* margin-top:    10px; /* 上の隙間 */
-        margin-bottom: 10px; /* 下の隙間 */
-        margin-right:  10px; /* 右の隙間 */
-        position:  relative; /* スクロールボタンの位置を絶対位置で指定するための基準 */
-        display:       flex; /* 中に入れた要素を「横並び」のモードにする */
-        align-items: center; /* 要素を縦方向の中央に揃える */
-        border-radius: 11px; /* 枠の角を丸くする */
-      }
 
       /* 👇️ 親トグルを閉じるボタン */
 
@@ -251,44 +138,134 @@
         border-radius:    11px;
       }
 
-      /* 👇️ 左右スクロールボタン用クラス：共通設定 */
 
-      .scro-btn {
-        box-shadow:1px 4px 11px 
-        rgba(0, 0, 0, 0.4);
-        background:
-        rgba(0, 0, 0, 0.6); /* スクロールボタンの背景色（半透明） */
-        color:       white; /* スクロールボタンの文字色 */
-        position:   absolute; /* スクロールボタンを絶対位置で配置する */
-        z-index:          20; /* スクロールボタンを前面に表示する */
-        border:         none; /* スクロールボタンの枠線を消す */
-        border-radius:   50%; /* スクロールボタンを丸くする */
-        width:          45px; /* スクロールボタンの横幅 */
-        height:         45px; /* スクロールボタンの縦幅 */
-        cursor:      pointer; /* マウスカーソルを指マークにする */
-        font-size:      40px; /* スクロールボタンの文字サイズ */
+      /* 👇️ テーブル全体の枠線と隙間の設定 */
+
+      table {
+        /* table-layout:      fixed; /* すべての列を同じ幅で均等に割り振る */
+        width:                 100%; /* 横幅を最大値にする */
+        border-collapse:   collapse; /* 枠線を1本の細い線にまとめる※重要 */
+        margin-top:             5px; /* 表の上の隙間 */
+        margin-bottom:          5px; /* 表の下の隙間 */
       }
-        .scro-btn.prev { left : 3px; } /* 左ボタンの位置を左端に寄せる */
-        .scro-btn.next { right: 3px; } /* 右ボタンの位置を右端に寄せる */
+
+      /* 👇️ テーブル見出し（th）とデータ（td）の共通設定 */
+
+      th, td {
+        border: 1px solid #000000; /* 黒の細いラインをつける */
+        text-align:          center; /* 文字を中央寄せにする */
+        padding:            5px 5px; /* 文字の上下左右に適度な余白（クッション）を作る */
+      }
+
+      /* 👇️テーブル見出し（th）だけの特別な設定 */
+
+      th {
+        background-color: #98cde2; /* 見出しの背景を薄いグレーにする */
+      }
+ 
+      /* ---------------------------------------------------  👇️ CSS個別設定エリア  */
+      /* CSS個別設定エリア */
+
+ 
+      /* 👇️ 情報トグルを並べる箱クラス */
+
+      .info-wrap {
+      /* min-width:         0; /* 横幅を自動で親の枠に合わせる */
+      /*box-shadow: 1px 4px 11px
+            rgba(0, 0, 0, 0.4); */
+        display:            flex;
+        margin-top:         10px;
+        border-radius:      11px;
+        overflow-x:         auto; /* 横スクロールを有効にする */
+        -ms-overflow-style: none; /* IE, Firefox用 */
+        scrollbar-width:    none; /* Firefox用 */
+      }
+      .info-wrap::-webkit-scrollbar {
+        display:            none; /* Chrome, Safari用 */
+      }
+
+      /* 👇️ 野菜情報トグルクラス */
+
+      .vege-info{
+        max-width: fit-content; /* トグルボタンの幅*/
+        box-sizing: border-box; /* 枠のサイズを正確に計算する */
+        margin-left:      10px; /* 位置調整 */
+        margin-right:     10px; /* 見た目調整 */
+        padding-right:    25px; /* トグルタイトル位置調整 */
+        align-self: flex-start; /* トグル並列対応 */
+        /*  transition: flex 0.5s ease,
+           min-width 0.5s ease; /* 開閉アニメーション */
+      }
+
+      /* 👇️ 情報トグルが開いたときのスタイル指定 */
+
+        .vege-info[open] {
+        flex:        1 0 100%; /* flex-grow（余白一杯広がる）flex-shrink（サイズ固定） flex-basis（横幅指定）*/
+        /* position: absolute; /* これを指定すると透明化し、全てのコンテンツに被る。なにかに使える予感 */
+        /* z-index:        30; /* 優先順位はflexで指定したのでコメ化 */
+        }
+
+        /* 👇️ リスト全体を「見えない自動調整テーブル」にする */
+
+        .vege-info ul {
+          font-size:   auto; /* 文字サイズを自動調整 */
+          display:    table; /* テーブル化 */
+          margin-top:   5px; /* テーブル位置調整 */
+          margin-left:   3%; /* インデント対策 */
+          padding-left:   0; /* インデント対策 */
+        }
+
+        /* 👇️ 行(li)を「テーブルの行」にする（中点は消える） */
+
+        .vege-info li {
+          display:  table-row; /* リストをテーブル行化 */
+        }
+
+        /* 👇️ vege-info li 直下のspanを全てテーブルのマスにする */
+
+        .vege-info li > span{
+          display: table-cell; /* テーブルマス化 */
+          padding-top: 8px   ; /* リスト間調整（Top指定しか効かない） */
+
+        }
+
+        /* 👇️ vege-info li 直下のspan１個目と２個目だけを改行禁止にする */
+
+        .vege-info li span:nth-child(1),
+        .vege-info li span:nth-child(2) {
+          white-space: nowrap; /* 改行禁止 */
+        }
+
+      /* 👆️ トグルクラス：野菜情報トグル関連 */
+
+      /* 👇️ カールセルクラス：全体の設定 （位置の基準）*/
+
+      .carousel {
+        width:         100%; /* 横幅を最大値にする */
+        min-width:        0; /* 横幅を自動で親の枠に合わせる */
+        margin-bottom: 10px; /* 下の隙間 */
+        margin-right:  10px; /* 右の隙間 */
+        position:  relative; /* スクロールボタンの位置を絶対位置で指定するための基準 */
+        display:       flex; /* 中に入れた要素を「横並び」のモードにする */
+        align-items: center; /* 要素を縦方向の中央に揃える */
+        border-radius: 11px; /* 枠の角を丸くする */
+      }
 
       /* 👇️ 写真カード用クラス：横に並ぶスクロールの箱 */
 
       .carousel-cont {
         width:              100%; /* 横幅を最大値にする */
         padding:            10px; /* 上下左右に適度な余白を作る */
-        display:            flex; /* 中に入れた要素を横並びにする */
+        display:            flex; /* 中に入れた要素を同じ縦サイズにして横並びにする */
+        /* align-items:  flex-start; /* 💡 これを足すと、それぞれの文字量に応じた高さにバラバラに戻る */
         gap:                15px; /* カード同士の隙間 */
         overflow-x:         auto; /* 横スクロールを有効にする */
         scroll-behavior:  smooth; /* スクロールをスムーズにする */
-
         /* 👇️ スクロールバーを消す */
-
         -ms-overflow-style: none; /* IE, Firefox用 */
         scrollbar-width:    none; /* Firefox用 */
-      }
-       .carousel-cont::-webkit-scrollbar {
-          display:            none; /* Chrome, Safari用 */
-       }
+      }.carousel-cont::-webkit-scrollbar {
+        display:            none; /* Chrome, Safari用 */}
 
       /* 👇️ 野菜さん別情報カード用クラス */
 
@@ -301,14 +278,6 @@
         border-radius:   11px; /* カードの角を丸くする */
       }
 
-      /* 👇️ カード内の日付部分 */
-
-      .vege-card-date {
-        margin-bottom: 5px; /* カード内の画像との間に隙間を作る */
-        padding:     2px 0; /* 文字の上下に適度な余白（クッション）を作る */
-        border-radius: 8px; /* 日付部分の角を丸くする */
-      }
-
       /* 👇️ カード内の画像 */
 
       .vege-card img {
@@ -316,7 +285,6 @@
         rgba(0, 0, 0, 0.4);
         width:           100%; /* カードの横幅いっぱいに広げる */
         height:          auto; /* 縦横比を維持して自動調整 */
-        /* padding:        2px 0; /* 文字の上下に適度な余白（クッション）を作る */
         border-radius:   11px; /* カードの角を丸くする */
       }
 
@@ -368,17 +336,16 @@
             <details open="" class="vege-info" >
             <summary>📒野菜情報</summary>
               <ul>
-                <li><span>種まき</span><span>：</span>6/10</li>
-                <li><span>・サイズ</span><span>：</span>株の高さ約15-20cm、葉の幅は約10-15cm。</li>
+                <li><span>・高さ</span><span>：</span>約15-20cm、葉の幅は10-15cm。</li>
                 <li><span>・傾向</span><span>：</span>弱アルカリ性～中性。</li>
                 <li><span>・温度</span><span>：</span>15-25℃を好む。</li>
                 <li><span>・太陽光</span><span>：</span>十分に必要。</li>
                 <li><span>・水やり</span><span>：</span>土の表面が乾いたら多めに。</li>
                 <li><span>・肥料</span><span>：</span>元肥は少なめ、追肥は定期的に。</li>
-                <li><span>・害虫</span><span>：</span>アブラムシ、ハモグリバエ、ヨトウムシなど。</li>
-                <li><span>・収穫</span><span>：</span>種まきから約60-70日。<br>株の下の方から順に外側の葉を摘み取るように。</li>
+                <li><span>・害虫</span><span>：</span>アブラムシ、ハモグリバエ、ヨトウムシ。</li>
+                <li><span>・収穫</span><span>：</span>種まきから約60-70日。<br>株の下の方から順に外側の葉を摘みる。</li>
                 <li><span>・再収穫</span><span>：</span>可能。株の中心から新芽が出てくる。</li>
-                <li><span>・栄養</span><span>：</span>ビタミンC、ビタミンK、葉酸を豊富に含む。</li>
+                <li><span>・栄養</span><span>：</span>ビタミンC、ビタミンK、葉酸が豊富。</li>
                 <li><span>・その他</span><span>：</span>葉は栄養豊富で食べれる。</li>
               </ul>
             </details>
@@ -388,8 +355,8 @@
             <details open="" class="vege-info scro-target">
             <summary>📒関連情報</summary>
               <ul style="white-space: nowrap;" >
-                <li><span>・共存菌</span><span>：</span>納豆菌、菌根菌</li>
-                <li><span>・ツール</span><span>：</span>TUAH、TUAL</li>
+                <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
+                <li><span>・ツール</span><span>：</span>TUAH<br>TUAL</li>
                 <li><span>・プランタ</span><span>：</span>ワイヤネット</li>
               </ul>
             </details>
@@ -404,14 +371,13 @@
 
             <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
-            <!---------------------------------------  👇️ 横スクロールの箱  -->
-
+            <!---------------------------------------  👇️ 横スクロールの箱  --> 
             <div class="carousel-cont">
- 
               <!-----------------------------------  👇️ 野菜写真（増やしたいときはこれをコピペ！）  -->
               <div class="vege-card">
                 <b>7/1</b><br>
                 <img src="10HG_tuah00_Example_use20.webp" alt="写真1" width="500" height="500">
+                種蒔き：6/10<br>写真は約3週間後の様子
               </div>
 
               <div class="vege-card">
@@ -602,28 +568,29 @@
 
      <!-- 🧙‍♂️ ボタンを動かすJavaScript（HTMLの最後に1回だけ貼る） -->
      <!-- querySelector('ここに対象を指定する')                   -->
-     <script>function scrollPrime(button, distance) {
+    <script>function scrollPrime(button, distance) {
       const container = button.parentElement.querySelector('.carousel-cont');
       container.scrollBy({ left: distance, behavior: 'smooth' });
-     }
- // 2. 🏁【最新版】トグルが開いたとき、縦は動かさず、限界の右端まで一気にスクロールする魔法
-  document.querySelectorAll('.scro-target').forEach(details => {
-    details.addEventListener('toggle', function() {
-      if (this.open) {
-        const wrapper = this.closest('.info-wrap');
-        if (wrapper) {
-          // 💡【大本命】親の箱の「全体の横幅」から「見えている横幅」を引いて、限界の右端の数値を自動計算します
-          const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
-          
-          // 💡 縦（上下）は1ミリも動かさず、横だけ計算した限界の右端へスイーっと動かします
-          wrapper.scrollTo({
-            left: maxScrollLeft,
-            top: wrapper.scrollTop,
-            behavior: 'smooth'
-          });
-        }
       }
-    });
-  });
-</script>  </body>
+      // 2. 🏁【最新版】トグルが開いたとき、縦は動かさず、限界の右端まで一気にスクロールする魔法
+      document.querySelectorAll('.scro-target').forEach(details => {
+      details.addEventListener('toggle', function() {
+        if (this.open) {
+          const wrapper = this.closest('.info-wrap');
+            if (wrapper) {
+              // 💡【大本命】親の箱の「全体の横幅」から「見えている横幅」を引いて、限界の右端の数値を自動計算します
+              const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
+          
+              // 💡 縦（上下）は1ミリも動かさず、横だけ計算した限界の右端へスイーっと動かします
+              wrapper.scrollTo({
+                left: maxScrollLeft,
+                top: wrapper.scrollTop,
+                behavior: 'smooth'
+              });
+            }
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
