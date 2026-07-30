@@ -96,16 +96,16 @@
 
       details {
         text-shadow: 1px 4px 8px  
-         rgba(0, 0, 0, 0.4); /* 文字にうっすら黒影をつける */
+         rgba(0, 0, 0, 0.4); /* 文字に影をつける */
         box-shadow: 1px 4px 11px 
-         rgba(0, 0, 0, 0.4); /* カードに影をつけて立体感を出す */
+         rgba(0, 0, 0, 0.4); /* 共通の影 */
         /* transition:  all 1s ease; /* 開閉時になめらかに動かす */
         margin-top:       10px; /* 上の隙間 */
         margin-bottom:    10px; /* 下の隙間 */
-        margin-left:       5px;
-        padding:           7px; 
-        padding-left:      1px;
-        padding-right:     0px;
+        margin-left:       5px; /* 位置調整 */
+        padding:           7px; /* サイズ調整 */
+        padding-left:      1px; /* 見た目調整 */
+        padding-right:     0px; /* 見た目調整 */
         border-radius:    11px; /* 枠に丸みをつける */
       }
 
@@ -114,9 +114,9 @@
       summary {
         min-width:        0; /* 横幅を自動で親の枠に合わせる */
         white-space: nowrap; /* 文字が長くても横1行で表示する */
-        display:  list-item; /* これを入れると横一列にカチッと並びます */
+        display:  list-item; /* 改行禁止 */
         cursor:     pointer; /* マウスカーソルを指マークにする */
-        font-weight:   bold; /* 文字を太字にする */
+        font-weight:   bold; /* 太字にする */
         padding-left:  10px; /* ▶位置調整 */
       }
 
@@ -124,18 +124,20 @@
 
       .close-btn {
         text-shadow: 1px 4px 8px  
-         rgba(0, 0, 0, 0.7); /* 文字にうっすら黒影をつける */
+         rgba(0, 0, 0, 0.8); /* 文字に影をつける */
         box-shadow: 1px 4px 11px
-         rgba(0, 0, 0, 0.7);
+         rgba(0, 0, 0, 0.4); /* 共通の影 */
         background: #ffffff;       
         color:      #000000;
-        cursor:        pointer;
+        cursor:        pointer; /* マウスカーソルを指マークにする */
         font-size:        14px;
         border:           none;
-        width:             70%;
-        margin-bottom:     9px;
-        padding:           7px;
-        border-radius:    11px;
+        width:             80%; /* 左右どちらでも押しやすいサイズ */
+        margin-top:        5px; /* 位置調整 */
+        margin-bottom:    11px; /* 位置調整 */
+        margin-left:      25px; /* 位置調整 */
+        padding:           3px; /* 位置調整 */
+        border-radius:    11px; /* 共通の丸み */
       }
 
 
@@ -154,13 +156,13 @@
       th, td {
         border: 1px solid #000000; /* 黒の細いラインをつける */
         text-align:          center; /* 文字を中央寄せにする */
-        padding:            5px 5px; /* 文字の上下左右に適度な余白（クッション）を作る */
+        padding:            5px 5px; /* 文字の上下左右に余白を作る */
       }
 
       /* 👇️テーブル見出し（th）だけの特別な設定 */
 
       th {
-        background-color: #98cde2; /* 見出しの背景を薄いグレーにする */
+        background-color: #98cde2;
       }
  
       /* ---------------------------------------------------  👇️ CSS個別設定エリア  */
@@ -172,15 +174,15 @@
       .info-wrap {
       /* min-width:         0; /* 横幅を自動で親の枠に合わせる */
       /*box-shadow: 1px 4px 11px
-            rgba(0, 0, 0, 0.4); */
-        display:            flex;
-        margin-top:         10px;
-        border-radius:      11px;
+            rgba(0, 0, 0, 0.4); /* 調整時はこれをアクティブ化 */
+        display:            flex; /* 要素を横に並べる */
+        margin-top:         10px; /* 位置調整 */
+        border-radius:      11px; /* 見えないけど一応丸み */
         overflow-x:         auto; /* 横スクロールを有効にする */
+        /* 👇️ スクロールバーを非表示にする */
         -ms-overflow-style: none; /* IE, Firefox用 */
         scrollbar-width:    none; /* Firefox用 */
-      }
-      .info-wrap::-webkit-scrollbar {
+      } .info-wrap::-webkit-scrollbar {
         display:            none; /* Chrome, Safari用 */
       }
 
@@ -194,7 +196,7 @@
         padding-right:    25px; /* トグルタイトル位置調整 */
         align-self: flex-start; /* トグル並列対応 */
         /*  transition: flex 0.5s ease,
-           min-width 0.5s ease; /* 開閉アニメーション */
+           min-width 0.5s ease; /* 開閉アニメーション。おしゃれだけどコメ化 */
       }
 
       /* 👇️ 情報トグルが開いたときのスタイル指定 */
@@ -257,35 +259,36 @@
         width:              100%; /* 横幅を最大値にする */
         padding:            10px; /* 上下左右に適度な余白を作る */
         display:            flex; /* 中に入れた要素を同じ縦サイズにして横並びにする */
-        /* align-items:  flex-start; /* 💡 これを足すと、それぞれの文字量に応じた高さにバラバラに戻る */
+        /* align-items:  flex-start; /* 💡 これを足すと、それぞれの文字量に応じた高さで表示される */
         gap:                15px; /* カード同士の隙間 */
         overflow-x:         auto; /* 横スクロールを有効にする */
         scroll-behavior:  smooth; /* スクロールをスムーズにする */
-        /* 👇️ スクロールバーを消す */
+        /* 👇️ スクロールバーを非表示にする */
         -ms-overflow-style: none; /* IE, Firefox用 */
         scrollbar-width:    none; /* Firefox用 */
       }.carousel-cont::-webkit-scrollbar {
-        display:            none; /* Chrome, Safari用 */}
+        display:            none; /* Chrome, Safari用 */
+      }
 
       /* 👇️ 野菜さん別情報カード用クラス */
 
       .vege-card {
         box-shadow: 1px 4px 11px 
-        rgba(0, 0, 0, 0.4); /* カードに影をつけて立体感を出す */
+        rgba(0, 0, 0, 0.4); /* 共通の影 */
         flex:       0 0 220px; /* カードの横幅をpxに固定して型崩れを防ぐ（中央の「0」） */
-        text-align:      left; /* 文字を左寄せにする */
-        padding:     8px 15px; /* 文字の上下左右に適度な余白（クッション）を作る */
-        border-radius:   11px; /* カードの角を丸くする */
+        text-align:      left; /* 左寄せ */
+        padding:     8px 15px; /* 見た目調整  */
+        border-radius:   11px; /* 共通の丸み */
       }
 
       /* 👇️ カード内の画像 */
 
       .vege-card img {
         box-shadow: 1px 4px 11px 
-        rgba(0, 0, 0, 0.4);
-        width:           100%; /* カードの横幅いっぱいに広げる */
+        rgba(0, 0, 0, 0.4); /* 共通の影 */
+        width:           100%; /* 横幅いっぱいに広げる */
         height:          auto; /* 縦横比を維持して自動調整 */
-        border-radius:   11px; /* カードの角を丸くする */
+        border-radius:   11px; /* 共通の丸み */
       }
 
       /* 👇️ ライセンストグル用クラス：全体を中央寄せにする */
@@ -293,7 +296,7 @@
       .license-base {
         text-align: center;
         line-height:   1.5; /* 行間を少し広げて読みやすく */
-        padding: 10px 15px; /* 文字の上下左右に適度な余白（クッション）を作る */
+        padding: 10px 15px; /* 見た目調整 */
       }
 
     </style>
@@ -342,20 +345,26 @@
                 <li><span>・太陽光</span><span>：</span>十分に必要。</li>
                 <li><span>・水やり</span><span>：</span>土の表面が乾いたら多めに。</li>
                 <li><span>・肥料</span><span>：</span>元肥は少なめ、追肥は定期的に。</li>
-                <li><span>・害虫</span><span>：</span>アブラムシ、ハモグリバエ、ヨトウムシ。</li>
-                <li><span>・収穫</span><span>：</span>種まきから約60-70日。<br>株の下の方から順に外側の葉を摘みる。</li>
+                <li><span>・害虫</span><span>：</span>アブラ虫、ハモグリ蠅、ヨトウ虫。</li>
+                <li><span>・収穫</span><span>：</span>種まきから約60-70日。<br>株の下の方から順に外側の葉を摘む。</li>
                 <li><span>・再収穫</span><span>：</span>可能。株の中心から新芽が出てくる。</li>
                 <li><span>・栄養</span><span>：</span>ビタミンC、ビタミンK、葉酸が豊富。</li>
-                <li><span>・その他</span><span>：</span>葉は栄養豊富で食べれる。</li>
+                <li><span>・その他</span><span>：</span>葉も栄養豊富で食べれる。</li>
               </ul>
+          <!-------------------------------------------  👇️ 親トグルを「閉じる」ボタン  --> 
+          <div style=" text-align: center;">
+            <button class="close-btn"
+               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+          </div>
             </details>
 
-            <!-----------------------------------------  👇️ 各情報トグルを入れる箱  -->
+            <!-----------------------------------------  👇️ 関連情報  -->
 
             <details open="" class="vege-info scro-target">
             <summary>📒関連情報</summary>
               <ul style="white-space: nowrap;" >
-                <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
+                <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
+                <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
                 <li><span>・ツール</span><span>：</span>TUAH<br>TUAL</li>
                 <li><span>・プランタ</span><span>：</span>ワイヤネット</li>
               </ul>
@@ -438,7 +447,7 @@
           </div>
 
         </details>         
-        <!-------------------------------------------------  👇️ 芽キャベツさん  -->
+        <!-------------------------------------------------  👆️ 芽キャベツさん  -->
 
          <!--五寸人参さん-------------------------------------------------->
         <details>
