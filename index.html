@@ -82,12 +82,12 @@
         color:       white; /* スクロールボタンの文字色 */
         position:   absolute; /* スクロールボタンを絶対位置で配置する */
         z-index:          20; /* スクロールボタンを前面に表示する */
+        cursor:      pointer; /* マウスカーソルを指マークにする */
         border:         none; /* スクロールボタンの枠線を消す */
         border-radius:   50%; /* スクロールボタンを丸くする */
-        width:          45px; /* スクロールボタンの横幅 */
-        height:         45px; /* スクロールボタンの縦幅 */
-        cursor:      pointer; /* マウスカーソルを指マークにする */
-        font-size:      40px; /* スクロールボタンの文字サイズ */
+        width:          35px; /* スクロールボタンの横幅 */
+        height:         35px; /* スクロールボタンの縦幅 */
+        font-size:      25px; /* スクロールボタンの文字サイズ */
       }
         .scro-btn.prev { left : 3px; } /* 左ボタンの位置を左端に寄せる */
         .scro-btn.next { right: 3px; } /* 右ボタンの位置を右端に寄せる */
@@ -392,7 +392,7 @@
               <div class="vege-card">
                 <b>7/15</b><br>
                 <img src="10HG_tuah00_Example_use20.webp" alt="写真1" width="500" height="500">
-                てｓとｄかｌｊｆぁｓｋｊｄｆぁｓｊｄぁｆｊぁｓｋｄｆｊぁｓふぁｓｄｊふぁｌｓｋｆｄじゃｌ
+                準備中
               </div>
 
               <div class="vege-card">
@@ -421,14 +421,17 @@
               </div>
 
               <div class="vege-card">
+                <b>10/1</b><br>
                 <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
               </div>
 
               <div class="vege-card">
+                <b>10/15</b><br>
                 <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
               </div>
 
               <div class="vege-card">
+                <b>10/29</b><br>
                 <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
               </div>
             </div>
@@ -533,7 +536,7 @@
     <details style="background-color: #ffe1e1">
       <summary><u>⚠️ライセンスについて</u></summary>
       <div class="license-base">
-        <h2><u><b>License：Creative Commons CC BY-SA 4.0<br>（表示-継承 4.0 国際）</b></u></h2>
+        <h2><u><b>License：<br>Creative Commons CC BY-SA 4.0<br>（表示-継承 4.0 国際）</b></u></h2>
         <u><b>帰属および同一条件許諾条項</b></u><br>
         サイト内コンテンツの共有、改変は１と２、販売は全ての条件を厳守しなければなりません。<br>
         <br>
@@ -581,7 +584,7 @@
       const container = button.parentElement.querySelector('.carousel-cont');
       container.scrollBy({ left: distance, behavior: 'smooth' });
       }
-      // 2. 🏁【最新版】トグルが開いたとき、縦は動かさず、限界の右端まで一気にスクロールする魔法
+      // 2. 🏁【最新版】トグルが開いたとき、縦は動かさず、限界の右端まで一気にスクロールする
       document.querySelectorAll('.scro-target').forEach(details => {
       details.addEventListener('toggle', function() {
         if (this.open) {
