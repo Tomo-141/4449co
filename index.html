@@ -184,7 +184,7 @@
       /* 👇️ 情報トグルを並べる箱クラス */
 
       .info-wrap {
-      /* min-width:         0; /* 横幅を自動で親の枠に合わせる */
+    /* min-width:         1; /* 横幅を自動で親の枠に合わせる これがないと自動横スクロールしないっぽい */
       /*box-shadow: 1px 4px 11px
             rgba(0, 0, 0, 0.4); /* 調整時はこれをアクティブ化 */
         display:            flex; /* 要素を横に並べる */
@@ -201,23 +201,30 @@
       /* 👇️ 野菜情報トグルクラス */
 
       .vege-info{
-        max-width: fit-content; /* 幅をコンテツ内容に合わせる */
-        box-sizing: border-box; /* 枠のサイズを正確に計算する */
-        margin-left:      10px; /* 位置調整 */
-        margin-right:     10px; /* 見た目調整 */
-        padding-right:    15px; /* トグルタイトル位置調整 */
-        align-self: flex-start; /* トグル並列対応 */
-        /*  transition: flex 0.5s ease,
-           min-width 0.5s ease; /* 開閉アニメーション。おしゃれだけどコメ化 */
+        max-width:     fit-content; /* 幅をコンテツ内容に合わせる */
+        box-sizing:     border-box; /* 枠のサイズを正確に計算する */
+        margin-left:          10px; /* 位置調整 */
+        margin-right:         10px; /* 見た目調整 */
+        padding-right:        15px; /* トグルタイトル位置調整 */
+        align-self:     flex-start; /* トグル並列対応 */
+        /* transition: flex 0.5s ease,
+           min-width 0.5s     ease,
+           min-hitht 0.5s     ease; /* 開閉アニメーション。おしゃれだけどコメ化 */
+/*         overflow-y:           auto; /* 縦スクロールを有効にする */
+        /* 👇️ スクロールバーを非表示にする */
+        -ms-overflow-style:   none; /* IE, Firefox用 */
+        scrollbar-width:      none; /* Firefox用 */
+      }.info-wrap::-webkit-scrollbar {
+        display:              none; /* Chrome, Safari用 */
       }
 
       /* 👇️ 情報トグルが開いたときのスタイル指定 */
 
         .vege-info[open] {
-        flex:        0 1 100%; /* flex-grow（0余白一杯広がる）flex-shrink（0サイズ固定） flex-basis（横幅指定）*/
+        flex:        1 0 100%; /* flex-grow（0余白一杯広がる）flex-shrink（0サイズ固定） flex-basis（横幅指定）*/
         /* position: absolute; /* これを指定すると透明化し、全てのコンテンツに被る。なにかに使える予感 */
         /* z-index:        30; /* 優先順位はflexで指定したのでコメ化 */
-        }
+      }
 
         /* 👇️ リスト全体を「見えない自動調整テーブル」にする */
 
@@ -339,7 +346,7 @@
       <details open="">
       <summary><u>📆野菜さん別状況-2026</u></summary>
 
-      <!-------------------------------------------------  👇️ 🥬芽キャベツさん  -->
+        <!-------------------------------------------------  👇️ 🥬芽キャベツさん  -->
         <details style="margin-right: 5px;" >
         <summary >🥬芽キャベツさん</summary>
 
@@ -350,7 +357,8 @@
             <!-----------------------------------------  👇️ 🥬野菜情報  -->
 
             <details class="vege-info" >
-            <summary>ℹ️野菜情報</summary>
+            <summary >ℹ️野菜情報</summary>
+            <div style="overflow-y: auto ; max-height: 300px;">
               <ul>
                 <li><span>アブラナ科</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>春／秋</li>
@@ -366,12 +374,14 @@
                 <li><span>・栄養</span><span>：</span>ビタミンC<br>ビタミンK<br>葉酸</li>
                 <li><span>・その他</span><span>：</span>葉も栄養豊富で食べれる。</li>
               </ul>
-          <!-------------------------------------------  👇️ 🥬親トグルを「閉じる」ボタン  --> 
-          <div style=" text-align: center;">
-            <button class="close-btn"
-               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
-          </div>
-            </details>
+          <!-------------------------------------------  👇️ 🥬親トグルを「閉じる」ボタン  -->
+
+              <div style=" text-align: center;">
+                <button class="close-btn"
+                onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+              </div>
+               </div>
+          </details>
 
             <!-----------------------------------------  👇️ 🥬関連情報  -->
 
@@ -458,9 +468,10 @@
 
         </div>
 
-        <!-----------------------------------------------  👇️ 🥬親トグルを「閉じる」ボタン  --> 
-          <div style=" text-align: center;">
-            <button class="close-btn"
+        <!-----------------------------------------------  👇️ 🥬親トグルを「閉じる」ボタン  -->         
+
+        <div style=" text-align: center;">          
+             <button class="close-btn"
                onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
           </div>
 
