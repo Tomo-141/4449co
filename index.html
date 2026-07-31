@@ -28,14 +28,14 @@
       /* 👇️ サイトベース設定 */
 
       body {
-        background:   #ffffff; /* 背景色を白に */
-        color:        #000000; /* 文字色を黒に */
+        background:  #ffffff; /* 背景色を白に */
+        color:       #000000; /* 文字色を黒に */
         margin:          0 auto; /* 上下マージン0、左右を「auto」にすると画面中央に配置  */
-        max-width:         700px; /* 横幅を最大700pxでストップ */
-        box-sizing:  border- box; /* 枠のサイズを正確に計算する */
-        border-radius:       5px; /* 角を丸くする */
+        max-width:        700px; /* 横幅を最大700pxでストップ */
+        box-sizing: border- box; /* 枠のサイズを正確に計算する */
+        border-radius:      5px; /* 角を丸くする */
         font-family: 'M PLUS Rounded 1c'
-                    , sans-serif; /* 丸文字フォントを読み込む */
+                   , sans-serif; /* 丸文字フォントを読み込む */
       }
 
       /* ---------------------------------------------------  👇️ CSS共通設定エリア  */
@@ -44,11 +44,9 @@
       /* 👇️ メインタイトルのデザイン */
 
       .main-title {
-        box-shadow:
-        1px 1px 11px 
+        box-shadow: 1px 1px 11px 
                rgba(0, 0, 0, 0.4); /* カードに影をつけて立体感を出す */
-        text-shadow: 
-        2px 4px 11px 
+        text-shadow: 2px 4px 11px 
                rgba(0, 0, 0, 0.9); /* 文字にうっすら黒い影をつける */
        color:             #fcfff0; /* 文字色を白に */
        background-image: linear-gradient(
@@ -92,34 +90,6 @@
         .scro-btn.prev { left : 3px; } /* 左ボタンの位置を左端に寄せる */
         .scro-btn.next { right: 3px; } /* 右ボタンの位置を右端に寄せる */
 
-      /* 👇️ トグル（details）全体の設定 */
-
-      details {
-        text-shadow: 1px 4px 8px  
-         rgba(0, 0, 0, 0.4); /* 文字に影をつける */
-        box-shadow: 1px 4px 11px 
-         rgba(0, 0, 0, 0.4); /* 共通の影 */
-        /* transition:  all 1s ease; /* 開閉時になめらかに動かす */
-        margin-top:       10px; /* 上の隙間 */
-        margin-bottom:    10px; /* 下の隙間 */
-        margin-left:       5px; /* 位置調整 */
-        padding:           7px; /* サイズ調整 */
-        padding-left:      1px; /* 見た目調整 */
-        padding-right:     0px; /* 見た目調整 */
-        border-radius:    11px; /* 枠に丸みをつける */
-      }
-
-      /* 👇️ トグルタイトル（summary）のデザイン */
-
-      summary {
-        min-width:        0; /* 横幅を自動で親の枠に合わせる */
-        white-space: nowrap; /* 文字が長くても横1行で表示する */
-        display:  list-item; /* 改行禁止 */
-        cursor:     pointer; /* マウスカーソルを指マークにする */
-        font-weight:   bold; /* 太字にする */
-        padding-left:  10px; /* ▶位置調整 */
-      }
-
       /* 👇️ 親トグルを閉じるボタン */
 
       .close-btn {
@@ -140,23 +110,52 @@
         border-radius:    11px; /* 共通の丸み */
       }
 
+      /* 👇️ トグル（details）全体の設定 */
+
+      details {
+        text-shadow: 1px 4px 8px  
+          rgba(0, 0, 0, 0.4); /* 文字に影をつける */
+        box-shadow: 1px 4px 11px 
+          rgba(0, 0, 0, 0.4); /* 共通の影 */
+        transition: all 0.5s ease; /* 開閉時になめらかに動かす */
+        margin-top:        10px; /* 上の隙間 */
+        margin-bottom:     10px; /* 下の隙間 */
+        margin-left:        5px; /* 位置調整 */
+        padding:            7px; /* サイズ調整 */
+        padding-left:       1px; /* 見た目調整 */
+        padding-right:      0px; /* 見た目調整 */
+        border-radius:     11px; /* 枠に丸みをつける */
+      }
+
+      /* 👇️ トグルタイトル（summary）のデザイン */
+
+      summary {
+        min-width:        0; /* 横幅を自動で親の枠に合わせる */
+        white-space: nowrap; /* 文字が長くても横1行で表示する */
+        display:  list-item; /* 改行禁止 */
+        cursor:     pointer; /* マウスカーソルを指マークにする */
+        font-weight:   bold; /* 太字にする */
+        padding-left:  10px; /* ▶位置調整 */
+      }
 
       /* 👇️ テーブル全体の枠線と隙間の設定 */
 
       table {
-        /* table-layout:      fixed; /* すべての列を同じ幅で均等に割り振る */
-        width:                 100%; /* 横幅を最大値にする */
-        border-collapse:   collapse; /* 枠線を1本の細い線にまとめる※重要 */
-        margin-top:             5px; /* 表の上の隙間 */
-        margin-bottom:          5px; /* 表の下の隙間 */
+        /*
+        table-layout:       fixed; /* すべての列を同じ幅で均等に割り振る */
+        width:               100%; /* 横幅を最大値にする */
+        border-collapse: collapse; /* 枠線を1本の細い線にまとめる※重要 */
+        margin-top:           5px; /* 表の上の隙間 */
+        margin-bottom:        5px; /* 表の下の隙間 */
       }
 
       /* 👇️ テーブル見出し（th）とデータ（td）の共通設定 */
 
       th, td {
-        border: 1px solid #000000; /* 黒の細いラインをつける */
-        text-align:          center; /* 文字を中央寄せにする */
-        padding:            5px 5px; /* 文字の上下左右に余白を作る */
+        border: 
+        1px solid #000000; /* 黒の細いラインをつける */
+        text-align:   center; /* 文字を中央寄せにする */
+        padding:     5px 5px; /* 文字の上下左右に余白を作る */
       }
 
       /* 👇️テーブル見出し（th）だけの特別な設定 */
@@ -168,25 +167,37 @@
       /* ---------------------------------------------------  👇️ CSS個別設定エリア  */
       /* CSS個別設定エリア */
 
-      /* 野菜カテゴリ用箱クラス（作ったけど使ってない） */
+      /* 野菜カテゴリ用箱クラス（作ったけど使ってない😀） */
 
       .family {
-          /* box-shadow: 1px 4px 11px
-          rgba(0, 0, 0, 0.4); */
-          text-align: center;
-          font-size: 13px;
-          /* font-weight: bold; */
-          width: 90%;
-          /* padding-left: 2%; */
-          margin: 21px 1% 21px 1%; /* 上右下左 widthの数値と合わせて100%に*/
-          border-radius: 50px;
+        box-shadow: 1px 4px 11px
+           rgba(0, 0, 0, 0.4); /* 共通の影 */
+        text-align:      center;
+        font-size:         13px;
+        /*
+        font-weight:       bold; /* 主張が強すぎ */
+        width:              90%;
+        margin: 21px 1% 21px 1%; /* 上右下左 widthの数値と合わせて100%に */
+        /*
+        padding-left:        2%; /* 位置調整 */
+        border-radius:     50px;
       }
+
+      /* 👇️ ミニウィンドウ用の箱クラス */
+
+      .mini-window {
+        overflow-y:  auto;
+        max-height: 250px;
+      }
+
       /* 👇️ 情報トグルを並べる箱クラス */
 
       .info-wrap {
-    /* min-width:         1; /* 横幅を自動で親の枠に合わせる これがないと自動横スクロールしないっぽい */
-      /*box-shadow: 1px 4px 11px
-            rgba(0, 0, 0, 0.4); /* 調整時はこれをアクティブ化 */
+        /* 
+        min-width:             1; /* 横幅を自動で親の枠に合わせる これがないと自動横スクロールしないっぽい */
+        /*
+        box-shadow: 1px 4px 11px
+              rgba(0, 0, 0, 0.4); /* 調整時はこれをアクティブ化 */
         display:            flex; /* 要素を横に並べる */
         margin-top:         10px; /* 位置調整 */
         border-radius:      11px; /* 見えないけど一応丸み */
@@ -207,10 +218,12 @@
         margin-right:         10px; /* 見た目調整 */
         padding-right:        15px; /* トグルタイトル位置調整 */
         align-self:     flex-start; /* トグル並列対応 */
-        /* transition: flex 0.5s ease,
+        /*
+        transition: flex 0.5s ease,
            min-width 0.5s     ease,
            min-hitht 0.5s     ease; /* 開閉アニメーション。おしゃれだけどコメ化 */
-/*         overflow-y:           auto; /* 縦スクロールを有効にする */
+        /*
+        overflow-y:           auto; /* 縦スクロールを有効にする */
         /* 👇️ スクロールバーを非表示にする */
         -ms-overflow-style:   none; /* IE, Firefox用 */
         scrollbar-width:      none; /* Firefox用 */
@@ -220,10 +233,18 @@
 
       /* 👇️ 情報トグルが開いたときのスタイル指定 */
 
-        .vege-info[open] {
-        flex:        1 0 100%; /* flex-grow（0余白一杯広がる）flex-shrink（0サイズ固定） flex-basis（横幅指定）*/
-        /* position: absolute; /* これを指定すると透明化し、全てのコンテンツに被る。なにかに使える予感 */
-        /* z-index:        30; /* 優先順位はflexで指定したのでコメ化 */
+      .vege-info[open] {
+      /*flex-grow  （0余白一杯広がる）
+        flex-shrink（0サイズ固定）
+        flex-basis （横幅指定）*/
+        flex:        1 0 100%;
+      /*
+        position:    absolute;
+      /*これを指定すると透明化し、
+        全てのコンテンツに被る。
+        なにかに使える予感 */
+      /*
+        z-index:           30; /* 優先順位はflexで指定したのでコメ化 */
       }
 
         /* 👇️ リスト全体を「見えない自動調整テーブル」にする */
@@ -239,7 +260,7 @@
         /* 👇️ 行(li)を「テーブルの行」にする（中点は消える） */
 
         .vege-info li {
-          display:  table-row; /* リストをテーブル行化 */
+          display: table-row; /* リストをテーブル行化 */
         }
 
         /* 👇️ vege-info li 直下のspanを全てテーブルのマスにする */
@@ -279,7 +300,8 @@
         width:              100%; /* 横幅を最大値にする */
         padding:            10px; /* 上下左右に適度な余白を作る */
         display:            flex; /* 中に入れた要素を同じ縦サイズにして横並びにする */
-        /* align-items:  flex-start; /* 💡 これを足すと、それぞれの文字量に応じた高さで表示される */
+        /* 
+        align-items:  flex-start; /* 💡 これを足すと、それぞれの文字量に応じた高さで表示される */
         gap:                15px; /* カード同士の隙間 */
         overflow-x:         auto; /* 横スクロールを有効にする */
         scroll-behavior:  smooth; /* スクロールをスムーズにする */
@@ -358,29 +380,30 @@
 
             <details class="vege-info" >
             <summary >ℹ️野菜情報</summary>
-            <div style="overflow-y: auto ; max-height: 300px;">
-              <ul>
-                <li><span>アブラナ科</span><span></span></li>
-                <li><span>・種蒔き</span><span>：</span>春／秋</li>
-                <li><span>・サイズ</span><span>：</span>約15-20cm<br>葉の幅10-15cm</li>
-                <li><span>・傾向pH</span><span>：</span>弱アルカリ性～中性</li>
-                <li><span>・温度</span><span>：</span>15-25℃</li>
-                <li><span>・太陽光</span><span>：</span>必要</li>
-                <li><span>・水やり</span><span>：</span>土が乾いたら多めに（過湿NG）。</li>
-                <li><span>・肥料</span><span>：</span>元肥は少なめ、追肥は定期的。</li>
-                <li><span>・病害虫</span><span>：</span>アブラムシ<br>ハモグリバエ<br>ヨトウムシ</li>
-                <li><span>・収穫</span><span>：</span>種まきから約60-70日<br>下から順に外側の葉を摘む。</li>
-                <li><span>・再収穫</span><span>：</span>可能<br>株の中心から新芽が出てくる。</li>
-                <li><span>・栄養</span><span>：</span>ビタミンC<br>ビタミンK<br>葉酸</li>
-                <li><span>・その他</span><span>：</span>葉も栄養豊富で食べれる。</li>
-              </ul>
-          <!-------------------------------------------  👇️ 🥬親トグルを「閉じる」ボタン  -->
+            <!-- ミニウィンドウ -->
+              <div class="mini-window">
+                <ul>
+                  <li><span>アブラナ科</span><span></span></li>
+                  <li><span>・種蒔き</span><span>：</span>春／秋</li>
+                  <li><span>・サイズ</span><span>：</span>約15-20cm<br>葉の幅10-15cm</li>
+                  <li><span>・傾向pH</span><span>：</span>弱アルカリ性～中性</li>
+                  <li><span>・温度</span><span>：</span>15-25℃</li>
+                  <li><span>・太陽光</span><span>：</span>必要</li>
+                  <li><span>・水やり</span><span>：</span>土が乾いたら多めに（過湿NG）。</li>
+                  <li><span>・肥料</span><span>：</span>元肥は少なめ、追肥は定期的。</li>
+                  <li><span>・病害虫</span><span>：</span>アブラムシ<br>ハモグリバエ<br>ヨトウムシ</li>
+                  <li><span>・収穫</span><span>：</span>種まきから約60-70日<br>下から順に外側の葉を摘む。</li>
+                  <li><span>・再収穫</span><span>：</span>可能<br>株の中心から新芽が出てくる。</li>
+                  <li><span>・栄養</span><span>：</span>ビタミンC<br>ビタミンK<br>葉酸</li>
+                  <li><span>・その他</span><span>：</span>葉も栄養豊富で食べれる。</li>
+               </ul>
+               <!--------------------------------------  👇️ 🥬親トグルを「閉じる」ボタン  -->
 
               <div style=" text-align: center;">
                 <button class="close-btn"
                 onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
               </div>
-               </div>
+            </div>
           </details>
 
             <!-----------------------------------------  👇️ 🥬関連情報  -->
@@ -390,7 +413,8 @@
               <ul style="white-space: nowrap;" >
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
-                <li><span>・ツール</span><span>：</span>TUAH<br>TUAL</li>
+                 <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水</li>
+               <li><span>・ツール</span><span>：</span>TUAH<br>TUAL</li>
                 <li><span>・プランタ</span><span>：</span>ワイヤネット</li>
               </ul>
             </details>
@@ -490,26 +514,30 @@
 
             <details class="vege-info" >
             <summary>ℹ️野菜情報</summary>
-              <ul>
-                <li><span>アブラナ科</span><span></span></li>
-                <li><span>・種蒔き</span><span>：</span>春／秋</li>
-                <li><span>・サイズ</span><span>：</span>根の長さ15〜20cm<br>葉の幅20〜30cm</li>
-                <li><span>・傾向pH</span><span>：</span>弱酸性〜中性（6.0〜7.0）</li>
-                <li><span>・温度</span><span>：</span>15-25℃</li>
-                <li><span>・太陽光</span><span>：</span>必要</li>
-                <li><span>・水やり</span><span>：</span>土の表面が乾いたら多めに</li>
-                <li><span>・肥料</span><span>：</span>元肥は普通、追肥は少量</li>
-                <li><span>・病害虫</span><span>：</span>アブラムシ<br>ヨトウムシ</li>
-                <li><span>・収穫</span><span>：</span>種まきから約50〜60日</li>
-                <li><span>・再収穫</span><span>：</span>不可（葉物野菜として栽培するなら長期的に可能。）</li>
-                <li><span>・栄養</span><span>：</span>ビタミンC<br>ジアスターゼ</li>
-                <li><span>・その他</span><span>：</span>土が硬いと根が割れる。<br>葉の方が栄養豊富。</li>
-              </ul>
-          <!-------------------------------------------  👇️ 🌿親トグルを「閉じる」ボタン  --> 
-          <div style=" text-align: center;">
-            <button class="close-btn"
-               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
-          </div>
+            <!-- ミニウィンドウ -->
+              <div class="mini-window">
+                <ul>
+                  <li><span>アブラナ科</span><span></span></li>
+                  <li><span>・種蒔き</span><span>：</span>春／秋</li>
+                  <li><span>・サイズ</span><span>：</span>根の長さ15〜20cm<br>葉の幅20〜30cm</li>
+                  <li><span>・傾向pH</span><span>：</span>弱酸性〜中性（6.0〜7.0）</li>
+                  <li><span>・温度</span><span>：</span>15-25℃</li>
+                  <li><span>・太陽光</span><span>：</span>必要</li>
+                  <li><span>・水やり</span><span>：</span>土の表面が乾いたら多めに</li>
+                  <li><span>・肥料</span><span>：</span>元肥は普通、追肥は少量</li>
+                  <li><span>・病害虫</span><span>：</span>アブラムシ<br>ヨトウムシ</li>
+                  <li><span>・収穫</span><span>：</span>種まきから約50〜60日</li>
+                  <li><span>・再収穫</span><span>：</span>不可（葉物野菜として栽培するなら長期的に可能。）</li>
+                  <li><span>・栄養</span><span>：</span>ビタミンC<br>ジアスターゼ</li>
+                  <li><span>・その他</span><span>：</span>土が硬いと根が割れる。<br>葉の方が栄養豊富。</li>
+                </ul>
+
+                <!-------------------------------------  👇️ 🌿親トグルを「閉じる」ボタン  --> 
+                <div style=" text-align: center;">
+                  <button class="close-btn"
+                    onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+                </div>
+              </div>
             </details>
 
             <!-----------------------------------------  👇️ 🌿関連情報  -->
@@ -519,6 +547,7 @@
               <ul style="white-space: nowrap;" >
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
+                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
                 <li><span>・ツール</span><span>：</span>TUAH<br>TUAL</li>
                 <li><span>・プランタ</span><span>：</span>かご型</li>
               </ul>
@@ -618,26 +647,30 @@
 
             <details class="vege-info" >
             <summary>ℹ️野菜情報</summary>
-              <ul>
-                <li><span>セリ科</span><span></span></li>
-                <li><span>・種蒔き</span><span>：</span>春／秋</li>
-                <li><span>・サイズ</span><span>：</span>根の長さ約15cm<br>葉の幅20〜25cm</li>
-                <li><span>・傾向pH</span><span>：</span>弱酸性〜中性（6.0〜6.8）</li>
-                <li><span>・温度</span><span>：</span>15-25℃</li>
-                <li><span>・太陽光</span><span>：</span>必要</li>
-                <li><span>・水やり</span><span>：</span>土が乾いたら控えめに（過湿NG）。</li>
-                <li><span>・肥料</span><span>：</span>元肥は控えめ、追肥は少量。</li>
-                <li><span>・病害虫</span><span>：</span>うどんこ病<br>ネコブセンチュウ<br>キアゲハ幼虫</li>
-                <li><span>・収穫</span><span>：</span>種まきから約70〜90日</li>
-                <li><span>・再収穫</span><span>：</span>不可（葉物野菜として栽培するなら長期的に可能）</li>
-                <li><span>・栄養</span><span>：</span>βカロテン<br>食物繊維<br>カリウム</li>
-                <li><span>・その他</span><span>：</span>酸性すぎると根が曲がりやすい。<br>葉も栄養豊富で食べれる。</li>
-              </ul>
-          <!-------------------------------------------  👇️ 🥕親トグルを「閉じる」ボタン  --> 
-          <div style=" text-align: center;">
-            <button class="close-btn"
-               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
-          </div>
+            <!-- ミニウィンドウ -->
+              <div class="mini-window">
+                <ul>
+                  <li><span>セリ科</span><span></span></li>
+                  <li><span>・種蒔き</span><span>：</span>春／秋</li>
+                  <li><span>・サイズ</span><span>：</span>根の長さ約15cm<br>葉の幅20〜25cm</li>
+                  <li><span>・傾向pH</span><span>：</span>弱酸性〜中性（6.0〜6.8）</li>
+                  <li><span>・温度</span><span>：</span>15-25℃</li>
+                  <li><span>・太陽光</span><span>：</span>必要</li>
+                  <li><span>・水やり</span><span>：</span>土が乾いたら控えめに（過湿NG）。</li>
+                  <li><span>・肥料</span><span>：</span>元肥は控えめ、追肥は少量。</li>
+                  <li><span>・病害虫</span><span>：</span>うどんこ病<br>ネコブセンチュウ<br>キアゲハ幼虫</li>
+                  <li><span>・収穫</span><span>：</span>種まきから約70〜90日</li>
+                  <li><span>・再収穫</span><span>：</span>不可（葉物野菜として栽培するなら長期的に可能）</li>
+                  <li><span>・栄養</span><span>：</span>βカロテン<br>食物繊維<br>カリウム</li>
+                  <li><span>・その他</span><span>：</span>酸性すぎると根が曲がりやすい。<br>葉も栄養豊富で食べれる。</li>
+                </ul>
+
+                <!-------------------------------------  👇️ 🥕親トグルを「閉じる」ボタン  --> 
+                <div style=" text-align: center;">
+                  <button class="close-btn"
+                   onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+                </div>
+              </div>
             </details>
 
             <!-----------------------------------------  👇️ 🥕関連情報  -->
@@ -647,6 +680,7 @@
               <ul style="white-space: nowrap;" >
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
+                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
                 <li><span>・ツール</span><span>：</span>TUAL</li>
                 <li><span>・プランタ</span><span>：</span>パック</li>
               </ul>
@@ -746,26 +780,30 @@
 
             <details class="vege-info" >
             <summary>ℹ️野菜情報</summary>
-              <ul>
-                <li><span>マメ科</span><span></span></li>
-                <li><span>・種蒔き</span><span>：</span>５～６月</li>
-                <li><span>・サイズ</span><span>：</span>高さ30〜50cm（早生は小型）</li>
-                <li><span>・傾向pH</span><span>：</span>弱酸性（6.0〜6.5）</li>
-                <li><span>・温度</span><span>：</span>20〜30℃</li>
-                <li><span>・太陽光</span><span>：</span>必要</li>
-                <li><span>・水やり</span><span>：</span>乾燥に弱いのでこまめに。</li>
-                <li><span>・肥料</span><span>：</span>元肥は控えめ、追肥も控えめ。</li>
-                <li><span>・病害虫</span><span>：</span>カメムシ<br>ハダニ</li>
-                <li><span>・収穫</span><span>：</span>種まきから約60〜70日（早生は早い）</li>
-                <li><span>・再収穫</span><span>：</span>不可</li>
-                <li><span>・栄養</span><span>：</span>タンパク質<br>ビタミンＢ群<br>カリウム</li>
-                <li><span>・その他</span><span>：</span>菌根菌と共存する環境では肥料を控えめに。</li>
-              </ul>
-          <!-------------------------------------------  👇️ 🌱親トグルを「閉じる」ボタン  --> 
-          <div style=" text-align: center;">
-            <button class="close-btn"
-               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
-          </div>
+              <!-- ミニウィンドウ -->
+              <div class="mini-window">
+                <ul>
+                  <li><span>マメ科</span><span></span></li>
+                  <li><span>・種蒔き</span><span>：</span>５～６月</li>
+                  <li><span>・サイズ</span><span>：</span>高さ30〜50cm（早生は小型）</li>
+                  <li><span>・傾向pH</span><span>：</span>弱酸性（6.0〜6.5）</li>
+                  <li><span>・温度</span><span>：</span>20〜30℃</li>
+                  <li><span>・太陽光</span><span>：</span>必要</li>
+                  <li><span>・水やり</span><span>：</span>乾燥に弱いのでこまめに。</li>
+                  <li><span>・肥料</span><span>：</span>元肥は控えめ、追肥も控えめ。</li>
+                  <li><span>・病害虫</span><span>：</span>カメムシ<br>ハダニ</li>
+                  <li><span>・収穫</span><span>：</span>種まきから約60〜70日（早生は早い）</li>
+                  <li><span>・再収穫</span><span>：</span>不可</li>
+                  <li><span>・栄養</span><span>：</span>タンパク質<br>ビタミンＢ群<br>カリウム</li>
+                  <li><span>・その他</span><span>：</span>菌根菌と共存する環境では肥料を控えめに。</li>
+                </ul>
+
+                <!-------------------------------------  👇️ 🌱親トグルを「閉じる」ボタン  --> 
+                <div style=" text-align: center;">
+                  <button class="close-btn"
+                   onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+                </div>
+              </div>
             </details>
 
             <!-----------------------------------------  👇️ 🌱関連情報  -->
@@ -775,6 +813,7 @@
               <ul style="white-space: nowrap;" >
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん<br>根粒菌さん</li>
+                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
                 <li><span>・ツール</span><span>：</span>TUAL</li>
                 <li><span>・プランタ</span><span>：</span>TMLP</li>
               </ul>
@@ -874,26 +913,30 @@
 
             <details class="vege-info" >
             <summary>ℹ️野菜情報</summary>
-              <ul>
-                <li><span>ナス科</span><span></span></li>
-                <li><span>・種蒔き</span><span>：</span>３～４月</li>
-                <li><span>・サイズ</span><span>：</span>高さ80〜120cm（ミニトマトは小型）</li>
-                <li><span>・傾向pH</span><span>：</span>弱酸性（6.0〜6.8）</li>
-                <li><span>・温度</span><span>：</span>20〜30℃</li>
-                <li><span>・太陽光</span><span>：</span>強い日光が必要</li>
-                <li><span>・水やり</span><span>：</span>乾燥気味に。</li>
-                <li><span>・肥料</span><span>：</span>元肥はしっかり、追肥は定期的。</li>
-                <li><span>・病害虫</span><span>：</span>うどんこ病<br>モザイクウィルス<br>ハダニ</li>
-                <li><span>・収穫</span><span>：</span>種まきから約70～90日</li>
-                <li><span>・再収穫</span><span>：</span>可能（脇芽から）</li>
-                <li><span>・栄養</span><span>：</span>リコピン<br>ビタミンＣ</li>
-                <li><span>・その他</span><span>：</span>通常栽培では支柱が必要</li>
-              </ul>
-          <!-------------------------------------------  👇️ 🍅親トグルを「閉じる」ボタン  --> 
-          <div style=" text-align: center;">
-            <button class="close-btn"
-               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
-          </div>
+              <!-- ミニウィンドウ -->
+              <div class="mini-window">
+                <ul>
+                  <li><span>ナス科</span><span></span></li>
+                  <li><span>・種蒔き</span><span>：</span>３～４月</li>
+                  <li><span>・サイズ</span><span>：</span>高さ80〜120cm（ミニトマトは小型）</li>
+                  <li><span>・傾向pH</span><span>：</span>弱酸性（6.0〜6.8）</li>
+                  <li><span>・温度</span><span>：</span>20〜30℃</li>
+                  <li><span>・太陽光</span><span>：</span>強い日光が必要</li>
+                  <li><span>・水やり</span><span>：</span>乾燥気味に。</li>
+                  <li><span>・肥料</span><span>：</span>元肥はしっかり、追肥は定期的。</li>
+                  <li><span>・病害虫</span><span>：</span>うどんこ病<br>モザイクウィルス<br>ハダニ</li>
+                  <li><span>・収穫</span><span>：</span>種まきから約70～90日</li>
+                  <li><span>・再収穫</span><span>：</span>可能（脇芽から）</li>
+                  <li><span>・栄養</span><span>：</span>リコピン<br>ビタミンＣ</li>
+                  <li><span>・その他</span><span>：</span>通常栽培では支柱が必要</li>
+                </ul>
+
+                <!-------------------------------------  👇️ 🍅親トグルを「閉じる」ボタン  --> 
+                <div style=" text-align: center;">
+                  <button class="close-btn"
+                   onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+                </div>
+              </div>
             </details>
 
             <!-----------------------------------------  👇️ 🍅関連情報  -->
@@ -903,6 +946,7 @@
               <ul style="white-space: nowrap;" >
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
+                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
                 <li><span>・ツール</span><span>：</span>TUAL</li>
                 <li><span>・プランタ</span><span>：</span>TMLP</li>
               </ul>
@@ -1002,26 +1046,30 @@
 
             <details class="vege-info" >
             <summary>ℹ️野菜情報</summary>
-              <ul>
-                <li><span>ナス科</span><span></span></li>
-                <li><span>・種蒔き</span><span>：</span>２～４月</li>
-                <li><span>・サイズ</span><span>：</span>高さ30〜60cm</li>
-                <li><span>・傾向pH</span><span>：</span>酸性（5.0〜6.0）</li>
-                <li><span>・温度</span><span>：</span>15-25℃</li>
-                <li><span>・太陽光</span><span>：</span>必要</li>
-                <li><span>・水やり</span><span>：</span>控えめ（過湿NG）。</li>
-                <li><span>・肥料</span><span>：</span>元肥は普通、追肥は少量。</li>
-                <li><span>・病害虫</span><span>：</span>そうか病<br>アブラムシ</li>
-                <li><span>・収穫</span><span>：</span>種まきから約80〜100日</li>
-                <li><span>・再収穫</span><span>：</span>不可</li>
-                <li><span>・栄養</span><span>：</span>ビタミンC<br>炭水化物</li>
-                <li><span>・その他</span><span>：</span>アルカリに弱い（そうか病に注意）。</li>
-              </ul>
-          <!-------------------------------------------  👇️ 🥔親トグルを「閉じる」ボタン  --> 
-          <div style=" text-align: center;">
-            <button class="close-btn"
-               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
-          </div>
+              <!-- ミニウィンドウ -->
+              <div class="mini-window">
+                <ul>
+                  <li><span>ナス科</span><span></span></li>
+                  <li><span>・種蒔き</span><span>：</span>２～４月</li>
+                  <li><span>・サイズ</span><span>：</span>高さ30〜60cm</li>
+                  <li><span>・傾向pH</span><span>：</span>酸性（5.0〜6.0）</li>
+                  <li><span>・温度</span><span>：</span>15-25℃</li>
+                  <li><span>・太陽光</span><span>：</span>必要</li>
+                  <li><span>・水やり</span><span>：</span>控えめ（過湿NG）。</li>
+                  <li><span>・肥料</span><span>：</span>元肥は普通、追肥は少量。</li>
+                  <li><span>・病害虫</span><span>：</span>そうか病<br>アブラムシ</li>
+                  <li><span>・収穫</span><span>：</span>種まきから約80〜100日</li>
+                  <li><span>・再収穫</span><span>：</span>不可</li>
+                  <li><span>・栄養</span><span>：</span>ビタミンC<br>炭水化物</li>
+                  <li><span>・その他</span><span>：</span>アルカリに弱い（そうか病に注意）。</li>
+                </ul>
+
+                <!-------------------------------------  👇️ 🥔親トグルを「閉じる」ボタン  --> 
+                <div style=" text-align: center;">
+                <button class="close-btn"
+                   onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+                </div>
+              </div>
             </details>
 
             <!-----------------------------------------  👇️ 🥔関連情報  -->
@@ -1031,8 +1079,10 @@
               <ul style="white-space: nowrap;" >
                 <li><span>・土成分</span><span>：</span>－</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
+                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
+                <li><span>・殺菌</span><span>：</span>銅イオン</li>
                 <li><span>・ツール</span><span>：</span>－</li>
-                <li><span>・プランタ</span><span>：</span>TBBP</li>
+                <li><span>・プランタ</span><span>：</span>TBBP<br>BTLP</li>
               </ul>
             </details>
           </div>
@@ -1130,26 +1180,30 @@
 
             <details class="vege-info" >
             <summary>ℹ️野菜情報</summary>
-              <ul>
-                <li><span>シナノキ科</span><span></span></li>
-                <li><span>・種蒔き</span><span>：</span>５～６月</li>
-                <li><span>・サイズ</span><span>：</span>高さ1〜1.5m</li>
-                <li><span>・傾向pH</span><span>：</span>弱酸性〜中性（6.0〜7.0）</li>
-                <li><span>・温度</span><span>：</span>25〜35℃（暑さに強い）</li>
-                <li><span>・太陽光</span><span>：</span>必要</li>
-                <li><span>・水やり</span><span>：</span>乾燥に弱いのでこまめに。</li>
-                <li><span>・肥料</span><span>：</span>元肥は普通、追肥は少量。</li>
-                <li><span>・病害虫</span><span>：</span>アブラムシ</li>
-                <li><span>・収穫</span><span>：</span>種まきから約40〜60日</li>
-                <li><span>・再収穫</span><span>：</span>可能（摘芯：50〜60cmになった頃から、先端の15〜20cmほどの柔らかい芽を摘み取る）</li>
-                <li><span>・栄養</span><span>：</span>ビタミンA<br>カルシウム</li>
-                <li><span>・その他</span><span>：</span>成長が早く丈夫。</li>
-              </ul>
-          <!-------------------------------------------  👇️ 🍃親トグルを「閉じる」ボタン  --> 
-          <div style=" text-align: center;">
-            <button class="close-btn"
-               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
-          </div>
+              <!-- ミニウィンドウ -->
+              <div class="mini-window">
+                <ul>
+                  <li><span>シナノキ科</span><span></span></li>
+                  <li><span>・種蒔き</span><span>：</span>５～６月</li>
+                  <li><span>・サイズ</span><span>：</span>高さ1〜1.5m</li>
+                  <li><span>・傾向pH</span><span>：</span>弱酸性〜中性（6.0〜7.0）</li>
+                  <li><span>・温度</span><span>：</span>25〜35℃（暑さに強い）</li>
+                  <li><span>・太陽光</span><span>：</span>必要</li>
+                  <li><span>・水やり</span><span>：</span>乾燥に弱いのでこまめに。</li>
+                  <li><span>・肥料</span><span>：</span>元肥は普通、追肥は少量。</li>
+                  <li><span>・病害虫</span><span>：</span>アブラムシ</li>
+                  <li><span>・収穫</span><span>：</span>種まきから約40〜60日</li>
+                  <li><span>・再収穫</span><span>：</span>可能（摘芯：50〜60cmになった頃から、先端の15〜20cmほどの柔らかい芽を摘み取る）</li>
+                  <li><span>・栄養</span><span>：</span>ビタミンA<br>カルシウム</li>
+                  <li><span>・その他</span><span>：</span>成長が早く丈夫。</li>
+                </ul>
+
+                <!-------------------------------------  👇️ 🍃親トグルを「閉じる」ボタン  --> 
+                <div style=" text-align: center;">
+                <button class="close-btn"
+                   onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+                </div>
+              </div>
             </details>
 
             <!-----------------------------------------  👇️ 🍃関連情報  -->
@@ -1159,6 +1213,7 @@
               <ul style="white-space: nowrap;" >
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
+                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
                 <li><span>・ツール</span><span>：</span>TUAL</li>
                 <li><span>・プランタ</span><span>：</span>パック</li>
               </ul>
@@ -1258,26 +1313,30 @@
 
             <details class="vege-info" >
             <summary>ℹ️野菜情報</summary>
-              <ul>
-                <li><span>ウリ科</span><span></span></li>
-                <li><span>・種蒔き</span><span>：</span>４～５月</li>
-                <li><span>・サイズ</span><span>：</span>つるの長さ1〜2m（地這いは横に広がる）</li>
-                <li><span>・傾向pH</span><span>：</span>弱酸性（5.5〜7.0）</li>
-                <li><span>・温度</span><span>：</span>20〜30℃</li>
-                <li><span>・太陽光</span><span>：</span>必要</li>
-                <li><span>・水やり</span><span>：</span>多めに（よく吸う）</li>
-                <li><span>・肥料</span><span>：</span>元肥は普通、追肥は定期的。</li>
-                <li><span>・病害虫</span><span>：</span>うどんこ病<br>アブラムシ</li>
-                <li><span>・収穫</span><span>：</span>種まきから約50〜60日</li>
-                <li><span>・再収穫</span><span>：</span>可能</li>
-                <li><span>・栄養</span><span>：</span>カリウム</li>
-                <li><span>・その他</span><span>：</span>地這いなのでネット不要。</li>
-              </ul>
-          <!-------------------------------------------  👇️ 🥒親トグルを「閉じる」ボタン  --> 
-          <div style=" text-align: center;">
-            <button class="close-btn"
-               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
-          </div>
+              <!-- ミニウィンドウ -->
+              <div class="mini-window">
+                <ul>
+                  <li><span>ウリ科</span><span></span></li>
+                  <li><span>・種蒔き</span><span>：</span>４～５月</li>
+                  <li><span>・サイズ</span><span>：</span>つるの長さ1〜2m（地這いは横に広がる）</li>
+                  <li><span>・傾向pH</span><span>：</span>弱酸性（5.5〜7.0）</li>
+                  <li><span>・温度</span><span>：</span>20〜30℃</li>
+                  <li><span>・太陽光</span><span>：</span>必要</li>
+                  <li><span>・水やり</span><span>：</span>多めに（よく吸う）</li>
+                  <li><span>・肥料</span><span>：</span>元肥は普通、追肥は定期的。</li>
+                  <li><span>・病害虫</span><span>：</span>うどんこ病<br>アブラムシ</li>
+                  <li><span>・収穫</span><span>：</span>種まきから約50〜60日</li>
+                  <li><span>・再収穫</span><span>：</span>可能</li>
+                  <li><span>・栄養</span><span>：</span>カリウム</li>
+                  <li><span>・その他</span><span>：</span>地面に広がるのでネット不要。</li>
+                </ul>
+
+                <!-------------------------------------  👇️ 🥒親トグルを「閉じる」ボタン  --> 
+                <div style=" text-align: center;">
+                  <button class="close-btn"
+                   onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+                </div>
+              </div>
             </details>
 
             <!-----------------------------------------  👇️ 🥒関連情報  -->
@@ -1287,8 +1346,9 @@
               <ul style="white-space: nowrap;" >
                 <li><span>・土成分</span><span>：</span>－</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
+                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
                 <li><span>・ツール</span><span>：</span>－</li>
-                <li><span>・プランタ</span><span>：</span>TWBL</li>
+                <li><span>・プランタ</span><span>：</span>BTLP</li>
               </ul>
             </details>
           </div>
