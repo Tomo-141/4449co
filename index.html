@@ -168,7 +168,19 @@
       /* ---------------------------------------------------  👇️ CSS個別設定エリア  */
       /* CSS個別設定エリア */
 
- 
+      /* 野菜カテゴリ用箱クラス（作ったけど使ってない） */
+
+      .family {
+          /* box-shadow: 1px 4px 11px
+          rgba(0, 0, 0, 0.4); */
+          text-align: center;
+          font-size: 13px;
+          /* font-weight: bold; */
+          width: 90%;
+          /* padding-left: 2%; */
+          margin: 21px 1% 21px 1%; /* 上右下左 widthの数値と合わせて100%に*/
+          border-radius: 50px;
+      }
       /* 👇️ 情報トグルを並べる箱クラス */
 
       .info-wrap {
@@ -189,11 +201,11 @@
       /* 👇️ 野菜情報トグルクラス */
 
       .vege-info{
-        max-width: fit-content; /* トグルボタンの幅*/
+        max-width: fit-content; /* 幅をコンテツ内容に合わせる */
         box-sizing: border-box; /* 枠のサイズを正確に計算する */
         margin-left:      10px; /* 位置調整 */
         margin-right:     10px; /* 見た目調整 */
-        padding-right:    25px; /* トグルタイトル位置調整 */
+        padding-right:    15px; /* トグルタイトル位置調整 */
         align-self: flex-start; /* トグル並列対応 */
         /*  transition: flex 0.5s ease,
            min-width 0.5s ease; /* 開閉アニメーション。おしゃれだけどコメ化 */
@@ -202,7 +214,7 @@
       /* 👇️ 情報トグルが開いたときのスタイル指定 */
 
         .vege-info[open] {
-        flex:        1 0 100%; /* flex-grow（余白一杯広がる）flex-shrink（サイズ固定） flex-basis（横幅指定）*/
+        flex:        0 1 100%; /* flex-grow（0余白一杯広がる）flex-shrink（0サイズ固定） flex-basis（横幅指定）*/
         /* position: absolute; /* これを指定すると透明化し、全てのコンテンツに被る。なにかに使える予感 */
         /* z-index:        30; /* 優先順位はflexで指定したのでコメ化 */
         }
@@ -234,7 +246,8 @@
         /* 👇️ vege-info li 直下のspan１個目と２個目だけを改行禁止にする */
 
         .vege-info li span:nth-child(1),
-        .vege-info li span:nth-child(2) {
+        .vege-info li span:nth-child(2)
+        {
           white-space: nowrap; /* 改行禁止 */
         }
 
@@ -322,23 +335,24 @@
     <details open="open" style="margin-right: 8px;">
     <summary ><u>🍅Home Garden</u></summary>
 
-    <!-------------------------------------------------------  👇️ 野菜さん別育成状況  -->
+    <!-------------------------------------------------------  👇️ 野菜さん別状況  -->
       <details open="">
       <summary><u>📆野菜さん別状況-2026</u></summary>
 
-        <!-------------------------------------------------  👇️ 芽キャベツさん  -->
-        <details open="" style="margin-right: 5px;" >
-        <summary >🥬芽キャベツさん（アブラナ科）</summary>
+      <!-------------------------------------------------  👇️ 🥬芽キャベツさん  -->
+        <details style="margin-right: 5px;" >
+        <summary >🥬芽キャベツさん</summary>
 
-          <!---------------------------------------------  👇️ 各情報トグルを入れる箱  -->
+          <!---------------------------------------------  👇️ 🥬各情報トグルを入れる箱  -->
 
           <div class="info-wrap" >
 
-            <!-----------------------------------------  👇️ 野菜情報  -->
+            <!-----------------------------------------  👇️ 🥬野菜情報  -->
 
-            <details open="" class="vege-info" >
+            <details class="vege-info" >
             <summary>ℹ️野菜情報</summary>
               <ul>
+                <li><span>アブラナ科</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>春／秋</li>
                 <li><span>・サイズ</span><span>：</span>約15-20cm<br>葉の幅10-15cm</li>
                 <li><span>・傾向pH</span><span>：</span>弱アルカリ性～中性</li>
@@ -346,22 +360,22 @@
                 <li><span>・太陽光</span><span>：</span>必要</li>
                 <li><span>・水やり</span><span>：</span>土が乾いたら多めに（過湿NG）。</li>
                 <li><span>・肥料</span><span>：</span>元肥は少なめ、追肥は定期的。</li>
-                <li><span>・病害虫</span><span>：</span>アブラ虫<br>ハモグリ蠅<br>ヨトウ虫</li>
+                <li><span>・病害虫</span><span>：</span>アブラムシ<br>ハモグリバエ<br>ヨトウムシ</li>
                 <li><span>・収穫</span><span>：</span>種まきから約60-70日<br>下から順に外側の葉を摘む。</li>
                 <li><span>・再収穫</span><span>：</span>可能<br>株の中心から新芽が出てくる。</li>
                 <li><span>・栄養</span><span>：</span>ビタミンC<br>ビタミンK<br>葉酸</li>
                 <li><span>・その他</span><span>：</span>葉も栄養豊富で食べれる。</li>
               </ul>
-          <!-------------------------------------------  👇️ 親トグルを「閉じる」ボタン  --> 
+          <!-------------------------------------------  👇️ 🥬親トグルを「閉じる」ボタン  --> 
           <div style=" text-align: center;">
             <button class="close-btn"
                onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
           </div>
             </details>
 
-            <!-----------------------------------------  👇️ 関連情報  -->
+            <!-----------------------------------------  👇️ 🥬関連情報  -->
 
-            <details open="" class="vege-info scro-target">
+            <details class="vege-info scro-target">
             <summary>📒関連情報</summary>
               <ul style="white-space: nowrap;" >
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
@@ -371,19 +385,19 @@
               </ul>
             </details>
           </div>
-          <!-------------------------------------------  👆️ 各情報トグルを入れる箱  -->
+          <!-------------------------------------------  👆️ 🥬各情報トグルを入れる箱  -->
 
-          <!-------------------------------------------  👇️ カールセルの親  -->
+          <!-------------------------------------------  👇️ 🥬カールセルの親  -->
 
           <div class="carousel">
 
-            <!---------------------------------------  👇️ 左ボタン  -->
+            <!---------------------------------------  👇️ 🥬左ボタン  -->
 
             <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
-            <!---------------------------------------  👇️ 横スクロールの箱  --> 
+            <!---------------------------------------  👇️ 🥬横スクロールの箱  --> 
             <div class="carousel-cont">
-              <!-----------------------------------  👇️ 野菜写真（増やしたいときはこれをコピペ！）  -->
+              <!-----------------------------------  👇️ 🥬野菜写真（増やしたいときはこれをコピペ！）  -->
               <div class="vege-card">
                 <b>7/1</b><br>
                 <img src="10HG_tuah00_Example_use20.webp" alt="写真1" width="500" height="500">
@@ -436,15 +450,15 @@
                 <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
               </div>
             </div>
-            <!---------------------------------------  👆️ 横スクロールの箱 -->
+            <!---------------------------------------  👆️ 🥬横スクロールの箱 -->
 
-            <!-------------------------------------  👇️ 右ボタン  -->
+            <!-------------------------------------  👇️ 🥬右ボタン  -->
             <button class="scro-btn next"
               onclick="scrollPrime(this, 265)">&gt;</button>
 
         </div>
 
-        <!-----------------------------------------------  👇️ 親トグルを「閉じる」ボタン  --> 
+        <!-----------------------------------------------  👇️ 🥬親トグルを「閉じる」ボタン  --> 
           <div style=" text-align: center;">
             <button class="close-btn"
                onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
@@ -453,146 +467,20 @@
         </details>         
         <!-------------------------------------------------  👆️ 🥬芽キャベツさん  -->
 
-        <!-------------------------------------------------  👇️ 🥕五寸人参さん  -->
-        <details open="" style="margin-right: 5px;" >
-        <summary >🥕五寸人参さん（セリ科）</summary>
-
-          <!---------------------------------------------  👇️ 各情報トグルを入れる箱  -->
-
-          <div class="info-wrap" >
-
-            <!-----------------------------------------  👇️ 野菜情報  -->
-
-            <details open="" class="vege-info" >
-            <summary>ℹ️野菜情報</summary>
-              <ul>
-                <li><span>・種蒔き</span><span>：</span>春／秋</li>
-                <li><span>・サイズ</span><span>：</span>根の長さ約15cm<br>葉の幅20〜25cm</li>
-                <li><span>・傾向pH</span><span>：</span>弱酸性〜中性（6.0〜6.8）</li>
-                <li><span>・温度</span><span>：</span>15-25℃</li>
-                <li><span>・太陽光</span><span>：</span>必要</li>
-                <li><span>・水やり</span><span>：</span>土が乾いたら控えめに（過湿NG）。</li>
-                <li><span>・肥料</span><span>：</span>元肥は控えめ、追肥は少量。</li>
-                <li><span>・病害虫</span><span>：</span>キアゲハ幼虫<br>ネコブセンチュウ<br>うどんこ病</li>
-                <li><span>・収穫</span><span>：</span>種まきから約70〜90日<br>株の下の方から順に外側の葉を摘む。</li>
-                <li><span>・再収穫</span><span>：</span>不可<br>※葉物野菜としてなら長期的に可能。</li>
-                <li><span>・栄養</span><span>：</span>βカロテン<br>食物繊維<br>カリウム</li>
-                <li><span>・その他</span><span>：</span>酸性すぎると根が曲がりやすい。<br>葉も栄養豊富で食べれる。</li>
-              </ul>
-          <!-------------------------------------------  👇️ 親トグルを「閉じる」ボタン  --> 
-          <div style=" text-align: center;">
-            <button class="close-btn"
-               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
-          </div>
-            </details>
-
-            <!-----------------------------------------  👇️ 関連情報  -->
-
-            <details open="" class="vege-info scro-target">
-            <summary>📒関連情報</summary>
-              <ul style="white-space: nowrap;" >
-                <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
-                <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
-                <li><span>・ツール</span><span>：</span>TUAL</li>
-                <li><span>・プランタ</span><span>：</span>パック</li>
-              </ul>
-            </details>
-          </div>
-          <!-------------------------------------------  👆️ 各情報トグルを入れる箱  -->
-
-          <!-------------------------------------------  👇️ カールセルの親  -->
-
-          <div class="carousel">
-
-            <!---------------------------------------  👇️ 左ボタン  -->
-
-            <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
-
-            <!---------------------------------------  👇️ 横スクロールの箱  --> 
-            <div class="carousel-cont">
-              <!-----------------------------------  👇️ 野菜写真（増やしたいときはこれをコピペ！）  -->
-              <div class="vege-card">
-                <b>7/1</b><br>
-                <img src="10HG_tuah00_Example_use20.webp" alt="写真1" width="500" height="500">
-                種蒔き：6/10<br>写真は約3週間後の様子
-              </div>
-
-              <div class="vege-card">
-                <b>7/15</b><br>
-                <img src="10HG_tuah00_Example_use20.webp" alt="写真1" width="500" height="500">
-                準備中
-              </div>
-
-              <div class="vege-card">
-                <b>7/29</b><br>
-                <img src="10HG_tuah00_Example_use20.webp" alt="写真2" width="500" height="500">
-              </div>
-
-              <div class="vege-card">
-                <b>8/12</b><br>
-                <img src="10HG_tuah00_Example_use20.webp" alt="写真3"width="500" height="500">
-              </div>
-
-              <div class="vege-card">
-                <b>8/26</b><br>
-                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
-              </div>
-
-              <div class="vege-card">
-                <b>9/9</b><br>
-                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
-              </div>
-
-              <div class="vege-card">
-                <b>9/23</b><br>
-                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
-              </div>
-
-              <div class="vege-card">
-                <b>10/1</b><br>
-                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
-              </div>
-
-              <div class="vege-card">
-                <b>10/15</b><br>
-                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
-              </div>
-
-              <div class="vege-card">
-                <b>10/29</b><br>
-                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
-              </div>
-            </div>
-            <!---------------------------------------  👆️ 横スクロールの箱 -->
-
-            <!-------------------------------------  👇️ 右ボタン  -->
-            <button class="scro-btn next"
-              onclick="scrollPrime(this, 265)">&gt;</button>
-
-        </div>
-
-        <!-----------------------------------------------  👇️ 親トグルを「閉じる」ボタン  --> 
-          <div style=" text-align: center;">
-            <button class="close-btn"
-               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
-          </div>
-
-        </details>
-        <!-------------------------------------------------  👆️ 🥕五寸人参さん  -->
-
         <!-------------------------------------------------  👇️ 🌿ミニ大根さん  -->
-        <details open="" style="margin-right: 5px;" >
-        <summary >🌿ミニ大根さん（アブラナ科）</summary>
+        <details style="margin-right: 5px;" >
+        <summary >🌿ミニ大根さん</summary>
 
-          <!---------------------------------------------  👇️ 各情報トグルを入れる箱  -->
+          <!---------------------------------------------  👇️ 🌿各情報トグルを入れる箱  -->
 
           <div class="info-wrap" >
 
-            <!-----------------------------------------  👇️ 野菜情報  -->
+            <!-----------------------------------------  👇️ 🌿野菜情報  -->
 
-            <details open="" class="vege-info" >
+            <details class="vege-info" >
             <summary>ℹ️野菜情報</summary>
               <ul>
+                <li><span>アブラナ科</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>春／秋</li>
                 <li><span>・サイズ</span><span>：</span>根の長さ15〜20cm<br>葉の幅20〜30cm</li>
                 <li><span>・傾向pH</span><span>：</span>弱酸性〜中性（6.0〜7.0）</li>
@@ -600,22 +488,22 @@
                 <li><span>・太陽光</span><span>：</span>必要</li>
                 <li><span>・水やり</span><span>：</span>土の表面が乾いたら多めに</li>
                 <li><span>・肥料</span><span>：</span>元肥は普通、追肥は少量</li>
-                <li><span>・病害虫</span><span>：</span>アブラ虫<br>ヨトウ虫</li>
+                <li><span>・病害虫</span><span>：</span>アブラムシ<br>ヨトウムシ</li>
                 <li><span>・収穫</span><span>：</span>種まきから約50〜60日</li>
-                <li><span>・再収穫</span><span>：</span>不可<br>※葉物野菜としてなら長期的に可能。</li>
+                <li><span>・再収穫</span><span>：</span>不可（葉物野菜として栽培するなら長期的に可能。）</li>
                 <li><span>・栄養</span><span>：</span>ビタミンC<br>ジアスターゼ</li>
-                <li><span>・その他</span><span>：</span>土が硬いと根が割れる。<br>葉も栄養豊富で食べれる。</li>
+                <li><span>・その他</span><span>：</span>土が硬いと根が割れる。<br>葉の方が栄養豊富。</li>
               </ul>
-          <!-------------------------------------------  👇️ 親トグルを「閉じる」ボタン  --> 
+          <!-------------------------------------------  👇️ 🌿親トグルを「閉じる」ボタン  --> 
           <div style=" text-align: center;">
             <button class="close-btn"
                onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
           </div>
             </details>
 
-            <!-----------------------------------------  👇️ 関連情報  -->
+            <!-----------------------------------------  👇️ 🌿関連情報  -->
 
-            <details open="" class="vege-info scro-target">
+            <details class="vege-info scro-target">
             <summary>📒関連情報</summary>
               <ul style="white-space: nowrap;" >
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
@@ -625,19 +513,531 @@
               </ul>
             </details>
           </div>
-          <!-------------------------------------------  👆️ 各情報トグルを入れる箱  -->
+          <!-------------------------------------------  👆️ 🌿各情報トグルを入れる箱  -->
 
-          <!-------------------------------------------  👇️ カールセルの親  -->
+          <!-------------------------------------------  👇️ 🌿カールセルの親  -->
 
           <div class="carousel">
 
-            <!---------------------------------------  👇️ 左ボタン  -->
+            <!---------------------------------------  👇️ 🌿左ボタン  -->
 
             <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
-            <!---------------------------------------  👇️ 横スクロールの箱  --> 
+            <!---------------------------------------  👇️ 🌿横スクロールの箱  --> 
             <div class="carousel-cont">
-              <!-----------------------------------  👇️ 野菜写真（増やしたいときはこれをコピペ！）  -->
+              <!-----------------------------------  👇️ 🌿野菜写真（増やしたいときはこれをコピペ！）  -->
+              <div class="vege-card">
+                <b>7/1</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真1" width="500" height="500">
+                種蒔き：6/14<br>写真は約3週間後の様子
+              </div>
+
+              <div class="vege-card">
+                <b>7/15</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真1" width="500" height="500">
+                準備中
+              </div>
+
+              <div class="vege-card">
+                <b>7/29</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真2" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>8/12</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3"width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>8/26</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>9/9</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>9/23</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>10/1</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>10/15</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>10/29</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+            </div>
+            <!---------------------------------------  👆️ 🌿横スクロールの箱 -->
+
+            <!-------------------------------------  👇️ 🌿右ボタン  -->
+            <button class="scro-btn next"
+              onclick="scrollPrime(this, 265)">&gt;</button>
+
+        </div>
+
+        <!-----------------------------------------------  👇️ 🌿親トグルを「閉じる」ボタン  --> 
+          <div style=" text-align: center;">
+            <button class="close-btn"
+               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+          </div>
+
+        </details>         
+        <!-------------------------------------------------  👆️ 🌿ミニ大根さん  -->
+
+        <!-------------------------------------------------  👇️ 🥕五寸人参さん  -->
+        <details style="margin-right: 5px;" >
+        <summary >🥕五寸人参さん</summary>
+
+          <!---------------------------------------------  👇️ 🥕各情報トグルを入れる箱  -->
+
+          <div class="info-wrap" >
+
+            <!-----------------------------------------  👇️ 🥕野菜情報  -->
+
+            <details class="vege-info" >
+            <summary>ℹ️野菜情報</summary>
+              <ul>
+                <li><span>セリ科</span><span></span></li>
+                <li><span>・種蒔き</span><span>：</span>春／秋</li>
+                <li><span>・サイズ</span><span>：</span>根の長さ約15cm<br>葉の幅20〜25cm</li>
+                <li><span>・傾向pH</span><span>：</span>弱酸性〜中性（6.0〜6.8）</li>
+                <li><span>・温度</span><span>：</span>15-25℃</li>
+                <li><span>・太陽光</span><span>：</span>必要</li>
+                <li><span>・水やり</span><span>：</span>土が乾いたら控えめに（過湿NG）。</li>
+                <li><span>・肥料</span><span>：</span>元肥は控えめ、追肥は少量。</li>
+                <li><span>・病害虫</span><span>：</span>うどんこ病<br>ネコブセンチュウ<br>キアゲハ幼虫</li>
+                <li><span>・収穫</span><span>：</span>種まきから約70〜90日</li>
+                <li><span>・再収穫</span><span>：</span>不可（葉物野菜として栽培するなら長期的に可能）</li>
+                <li><span>・栄養</span><span>：</span>βカロテン<br>食物繊維<br>カリウム</li>
+                <li><span>・その他</span><span>：</span>酸性すぎると根が曲がりやすい。<br>葉も栄養豊富で食べれる。</li>
+              </ul>
+          <!-------------------------------------------  👇️ 🥕親トグルを「閉じる」ボタン  --> 
+          <div style=" text-align: center;">
+            <button class="close-btn"
+               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+          </div>
+            </details>
+
+            <!-----------------------------------------  👇️ 🥕関連情報  -->
+
+            <details class="vege-info scro-target">
+            <summary>📒関連情報</summary>
+              <ul style="white-space: nowrap;" >
+                <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
+                <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
+                <li><span>・ツール</span><span>：</span>TUAL</li>
+                <li><span>・プランタ</span><span>：</span>パック</li>
+              </ul>
+            </details>
+          </div>
+          <!-------------------------------------------  👆️ 🥕各情報トグルを入れる箱  -->
+
+          <!-------------------------------------------  👇️ 🥕カールセルの親  -->
+
+          <div class="carousel">
+
+            <!---------------------------------------  👇️ 🥕左ボタン  -->
+
+            <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
+
+            <!---------------------------------------  👇️ 🥕横スクロールの箱  --> 
+            <div class="carousel-cont">
+              <!-----------------------------------  👇️ 🥕野菜写真（増やしたいときはこれをコピペ！）  -->
+              <div class="vege-card">
+                <b>7/1</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真1" width="500" height="500">
+                種蒔き：7/1<br>写真は撒いた直後
+              </div>
+
+              <div class="vege-card">
+                <b>7/15</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真1" width="500" height="500">
+                準備中
+              </div>
+
+              <div class="vege-card">
+                <b>7/29</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真2" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>8/12</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3"width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>8/26</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>9/9</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>9/23</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>10/1</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>10/15</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>10/29</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+            </div>
+            <!---------------------------------------  👆️ 🥕横スクロールの箱 -->
+
+            <!-------------------------------------  👇️ 🥕右ボタン  -->
+            <button class="scro-btn next"
+              onclick="scrollPrime(this, 265)">&gt;</button>
+
+        </div>
+
+        <!-----------------------------------------------  👇️ 🥕親トグルを「閉じる」ボタン  --> 
+          <div style=" text-align: center;">
+            <button class="close-btn"
+               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+          </div>
+
+        </details>
+        <!-------------------------------------------------  👆️ 🥕五寸人参さん  -->
+
+        <!-------------------------------------------------  👇️ 🌱早生枝豆さん  -->
+        <details style="margin-right: 5px;" >
+        <summary >🌱早生枝豆さん</summary>
+
+          <!---------------------------------------------  👇️ 🌱各情報トグルを入れる箱  -->
+
+          <div class="info-wrap" >
+
+            <!-----------------------------------------  👇️ 🌱野菜情報  -->
+
+            <details class="vege-info" >
+            <summary>ℹ️野菜情報</summary>
+              <ul>
+                <li><span>マメ科</span><span></span></li>
+                <li><span>・種蒔き</span><span>：</span>５～６月</li>
+                <li><span>・サイズ</span><span>：</span>高さ30〜50cm（早生は小型）</li>
+                <li><span>・傾向pH</span><span>：</span>弱酸性（6.0〜6.5）</li>
+                <li><span>・温度</span><span>：</span>20〜30℃</li>
+                <li><span>・太陽光</span><span>：</span>必要</li>
+                <li><span>・水やり</span><span>：</span>乾燥に弱いのでこまめに。</li>
+                <li><span>・肥料</span><span>：</span>元肥は控えめ、追肥も控えめ。</li>
+                <li><span>・病害虫</span><span>：</span>カメムシ<br>ハダニ</li>
+                <li><span>・収穫</span><span>：</span>種まきから約60〜70日（早生は早い）</li>
+                <li><span>・再収穫</span><span>：</span>不可</li>
+                <li><span>・栄養</span><span>：</span>タンパク質<br>ビタミンＢ群<br>カリウム</li>
+                <li><span>・その他</span><span>：</span>菌根菌と共存する環境では肥料を控えめに。</li>
+              </ul>
+          <!-------------------------------------------  👇️ 🌱親トグルを「閉じる」ボタン  --> 
+          <div style=" text-align: center;">
+            <button class="close-btn"
+               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+          </div>
+            </details>
+
+            <!-----------------------------------------  👇️ 🌱関連情報  -->
+
+            <details class="vege-info scro-target">
+            <summary>📒関連情報</summary>
+              <ul style="white-space: nowrap;" >
+                <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
+                <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん<br>根粒菌さん</li>
+                <li><span>・ツール</span><span>：</span>TUAL</li>
+                <li><span>・プランタ</span><span>：</span>TMLP</li>
+              </ul>
+            </details>
+          </div>
+          <!-------------------------------------------  👆️ 🌱各情報トグルを入れる箱  -->
+
+          <!-------------------------------------------  👇️ 🌱カールセルの親  -->
+
+          <div class="carousel">
+
+            <!---------------------------------------  👇️ 🌱左ボタン  -->
+
+            <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
+
+            <!---------------------------------------  👇️ 🌱横スクロールの箱  --> 
+            <div class="carousel-cont">
+              <!-----------------------------------  👇️ 🌱野菜写真（増やしたいときはこれをコピペ！）  -->
+              <div class="vege-card">
+                <b>7/1</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真1" width="500" height="500">
+                種蒔き：7/1<br>写真は撒いた直後
+              </div>
+
+              <div class="vege-card">
+                <b>7/15</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真1" width="500" height="500">
+                準備中
+              </div>
+
+              <div class="vege-card">
+                <b>7/29</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真2" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>8/12</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3"width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>8/26</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>9/9</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>9/23</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>10/1</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>10/15</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>10/29</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+            </div>
+            <!---------------------------------------  👆️ 🌱横スクロールの箱 -->
+
+            <!-------------------------------------  👇️ 🌱右ボタン  -->
+            <button class="scro-btn next"
+              onclick="scrollPrime(this, 265)">&gt;</button>
+
+        </div>
+
+        <!-----------------------------------------------  👇️ 🌱親トグルを「閉じる」ボタン  --> 
+          <div style=" text-align: center;">
+            <button class="close-btn"
+               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+          </div>
+
+        </details>
+        <!-------------------------------------------------  👆️ 🌱早生枝豆さん  -->
+
+        <!-------------------------------------------------  👇️ 🍅鈴なりトマトさん  -->
+        <details style="margin-right: 5px;" >
+        <summary >🍅鈴なりトマトさん</summary>
+
+          <!---------------------------------------------  👇️ 🍅各情報トグルを入れる箱  -->
+
+          <div class="info-wrap" >
+
+            <!-----------------------------------------  👇️ 🍅野菜情報  -->
+
+            <details class="vege-info" >
+            <summary>ℹ️野菜情報</summary>
+              <ul>
+                <li><span>ナス科</span><span></span></li>
+                <li><span>・種蒔き</span><span>：</span>３～４月</li>
+                <li><span>・サイズ</span><span>：</span>高さ80〜120cm（ミニトマトは小型）</li>
+                <li><span>・傾向pH</span><span>：</span>弱酸性（6.0〜6.8）</li>
+                <li><span>・温度</span><span>：</span>20〜30℃</li>
+                <li><span>・太陽光</span><span>：</span>強い日光が必要</li>
+                <li><span>・水やり</span><span>：</span>乾燥気味に。</li>
+                <li><span>・肥料</span><span>：</span>元肥はしっかり、追肥は定期的。</li>
+                <li><span>・病害虫</span><span>：</span>うどんこ病<br>モザイクウィルス<br>ハダニ</li>
+                <li><span>・収穫</span><span>：</span>種まきから約70～90日</li>
+                <li><span>・再収穫</span><span>：</span>可能（脇芽から）</li>
+                <li><span>・栄養</span><span>：</span>リコピン<br>ビタミンＣ</li>
+                <li><span>・その他</span><span>：</span>通常栽培では支柱が必要</li>
+              </ul>
+          <!-------------------------------------------  👇️ 🍅親トグルを「閉じる」ボタン  --> 
+          <div style=" text-align: center;">
+            <button class="close-btn"
+               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+          </div>
+            </details>
+
+            <!-----------------------------------------  👇️ 🍅関連情報  -->
+
+            <details class="vege-info scro-target">
+            <summary>📒関連情報</summary>
+              <ul style="white-space: nowrap;" >
+                <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
+                <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
+                <li><span>・ツール</span><span>：</span>TUAL</li>
+                <li><span>・プランタ</span><span>：</span>TMLP</li>
+              </ul>
+            </details>
+          </div>
+          <!-------------------------------------------  👆️ 🍅各情報トグルを入れる箱  -->
+
+          <!-------------------------------------------  👇️ 🍅カールセルの親  -->
+
+          <div class="carousel">
+
+            <!---------------------------------------  👇️ 🍅左ボタン  -->
+
+            <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
+
+            <!---------------------------------------  👇️ 🍅横スクロールの箱  --> 
+            <div class="carousel-cont">
+              <!-----------------------------------  👇️ 🍅野菜写真（増やしたいときはこれをコピペ！）  -->
+              <div class="vege-card">
+                <b>7/1</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真1" width="500" height="500">
+                種蒔き：7/1<br>写真は撒いた直後
+              </div>
+
+              <div class="vege-card">
+                <b>7/15</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真1" width="500" height="500">
+                準備中
+              </div>
+
+              <div class="vege-card">
+                <b>7/29</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真2" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>8/12</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3"width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>8/26</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>9/9</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>9/23</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>10/1</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>10/15</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>10/29</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+            </div>
+            <!---------------------------------------  👆️ 🍅横スクロールの箱 -->
+
+            <!-------------------------------------  👇️ 🍅右ボタン  -->
+            <button class="scro-btn next"
+              onclick="scrollPrime(this, 265)">&gt;</button>
+
+        </div>
+
+        <!-----------------------------------------------  👇️ 🍅親トグルを「閉じる」ボタン  --> 
+          <div style=" text-align: center;">
+            <button class="close-btn"
+               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+          </div>
+
+        </details>
+        <!-------------------------------------------------  👆️ 🍅鈴なりトマトさん  -->
+
+      <!-------------------------------------------------  👇️ 🥔ジャガイモさん  -->
+        <details style="margin-right: 5px;" >
+        <summary >🥔ジャガイモさん</summary>
+
+          <!---------------------------------------------  👇️ 🥔各情報トグルを入れる箱  -->
+
+          <div class="info-wrap" >
+
+            <!-----------------------------------------  👇️ 🥔野菜情報  -->
+
+            <details class="vege-info" >
+            <summary>ℹ️野菜情報</summary>
+              <ul>
+                <li><span>ナス科</span><span></span></li>
+                <li><span>・種蒔き</span><span>：</span>２～４月</li>
+                <li><span>・サイズ</span><span>：</span>高さ30〜60cm</li>
+                <li><span>・傾向pH</span><span>：</span>酸性（5.0〜6.0）</li>
+                <li><span>・温度</span><span>：</span>15-25℃</li>
+                <li><span>・太陽光</span><span>：</span>必要</li>
+                <li><span>・水やり</span><span>：</span>控えめ（過湿NG）。</li>
+                <li><span>・肥料</span><span>：</span>元肥は普通、追肥は少量。</li>
+                <li><span>・病害虫</span><span>：</span>そうか病<br>アブラムシ</li>
+                <li><span>・収穫</span><span>：</span>種まきから約80〜100日</li>
+                <li><span>・再収穫</span><span>：</span>不可</li>
+                <li><span>・栄養</span><span>：</span>ビタミンC<br>炭水化物</li>
+                <li><span>・その他</span><span>：</span>アルカリに弱い（そうか病に注意）。</li>
+              </ul>
+          <!-------------------------------------------  👇️ 🥔親トグルを「閉じる」ボタン  --> 
+          <div style=" text-align: center;">
+            <button class="close-btn"
+               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+          </div>
+            </details>
+
+            <!-----------------------------------------  👇️ 🥔関連情報  -->
+
+            <details class="vege-info scro-target">
+            <summary>📒関連情報</summary>
+              <ul style="white-space: nowrap;" >
+                <li><span>・土成分</span><span>：</span>－</li>
+                <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
+                <li><span>・ツール</span><span>：</span>－</li>
+                <li><span>・プランタ</span><span>：</span>TBBP</li>
+              </ul>
+            </details>
+          </div>
+          <!-------------------------------------------  👆️ 🥔各情報トグルを入れる箱  -->
+
+          <!-------------------------------------------  👇️ 🥔カールセルの親  -->
+
+          <div class="carousel">
+
+            <!---------------------------------------  👇️ 🥔左ボタン  -->
+
+            <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
+
+            <!---------------------------------------  👇️ 🥔横スクロールの箱  --> 
+            <div class="carousel-cont">
+              <!-----------------------------------  👇️ 🥔野菜写真（増やしたいときはこれをコピペ！）  -->
               <div class="vege-card">
                 <b>7/1</b><br>
                 <img src="10HG_tuah00_Example_use20.webp" alt="写真1" width="500" height="500">
@@ -690,116 +1090,279 @@
                 <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
               </div>
             </div>
-            <!---------------------------------------  👆️ 横スクロールの箱 -->
+            <!---------------------------------------  👆️ 🥔横スクロールの箱 -->
 
-            <!-------------------------------------  👇️ 右ボタン  -->
+            <!-------------------------------------  👇️ 🥔右ボタン  -->
             <button class="scro-btn next"
               onclick="scrollPrime(this, 265)">&gt;</button>
 
         </div>
 
-        <!-----------------------------------------------  👇️ 親トグルを「閉じる」ボタン  --> 
+        <!-----------------------------------------------  👇️ 🥔親トグルを「閉じる」ボタン  --> 
           <div style=" text-align: center;">
             <button class="close-btn"
                onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
           </div>
 
         </details>         
-        <!-------------------------------------------------  👆️ 🌿ミニ大根さん  -->
+        <!-------------------------------------------------  👆️ 🥔ジャガイモさん  -->
 
+      <!-------------------------------------------------  👇️ 🍃モロヘイヤさん  -->
+        <details style="margin-right: 5px;" >
+        <summary >🍃モロヘイヤさん</summary>
 
+          <!---------------------------------------------  👇️ 🍃各情報トグルを入れる箱  -->
 
+          <div class="info-wrap" >
 
+            <!-----------------------------------------  👇️ 🍃野菜情報  -->
 
+            <details class="vege-info" >
+            <summary>ℹ️野菜情報</summary>
+              <ul>
+                <li><span>シナノキ科</span><span></span></li>
+                <li><span>・種蒔き</span><span>：</span>５～６月</li>
+                <li><span>・サイズ</span><span>：</span>高さ1〜1.5m</li>
+                <li><span>・傾向pH</span><span>：</span>弱酸性〜中性（6.0〜7.0）</li>
+                <li><span>・温度</span><span>：</span>25〜35℃（暑さに強い）</li>
+                <li><span>・太陽光</span><span>：</span>必要</li>
+                <li><span>・水やり</span><span>：</span>乾燥に弱いのでこまめに。</li>
+                <li><span>・肥料</span><span>：</span>元肥は普通、追肥は少量。</li>
+                <li><span>・病害虫</span><span>：</span>アブラムシ</li>
+                <li><span>・収穫</span><span>：</span>種まきから約40〜60日</li>
+                <li><span>・再収穫</span><span>：</span>可能（摘芯：50〜60cmになった頃から、先端の15〜20cmほどの柔らかい芽を摘み取る）</li>
+                <li><span>・栄養</span><span>：</span>ビタミンA<br>カルシウム</li>
+                <li><span>・その他</span><span>：</span>成長が早く丈夫。</li>
+              </ul>
+          <!-------------------------------------------  👇️ 🍃親トグルを「閉じる」ボタン  --> 
+          <div style=" text-align: center;">
+            <button class="close-btn"
+               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+          </div>
+            </details>
 
+            <!-----------------------------------------  👇️ 🍃関連情報  -->
 
+            <details class="vege-info scro-target">
+            <summary>📒関連情報</summary>
+              <ul style="white-space: nowrap;" >
+                <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
+                <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
+                <li><span>・ツール</span><span>：</span>TUAL</li>
+                <li><span>・プランタ</span><span>：</span>パック</li>
+              </ul>
+            </details>
+          </div>
+          <!-------------------------------------------  👆️ 🍃各情報トグルを入れる箱  -->
 
+          <!-------------------------------------------  👇️ 🍃カールセルの親  -->
 
+          <div class="carousel">
 
+            <!---------------------------------------  👇️ 🍃左ボタン  -->
 
+            <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
+            <!---------------------------------------  👇️ 🍃横スクロールの箱  --> 
+            <div class="carousel-cont">
+              <!-----------------------------------  👇️ 🍃野菜写真（増やしたいときはこれをコピペ！）  -->
+              <div class="vege-card">
+                <b>7/1</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真1" width="500" height="500">
+                種蒔き：6/10<br>写真は約3週間後の様子
+              </div>
 
+              <div class="vege-card">
+                <b>7/15</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真1" width="500" height="500">
+                準備中
+              </div>
 
+              <div class="vege-card">
+                <b>7/29</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真2" width="500" height="500">
+              </div>
 
+              <div class="vege-card">
+                <b>8/12</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3"width="500" height="500">
+              </div>
 
-         <!--五寸人参さん-------------------------------------------------->
-        <details>
-          <summary>🥕五寸人参さん</summary>
-          種まき：7/1
-          <table">
-            <tbody>
-              <tr style="position: sticky; top: 0; background: #f0f0f0;
-                z-index: 10;">
-                <!-- 表のヘッダー部 --> <th>7/1</th>
-                <th>7/15</th>
-                <th>7/29</th>
-                <th>8/12</th>
-                <th>8/26</th>
-                <th>9/9</th>
-              </tr>
-              <tr>
-                <!-- 以下、表のデータ部 --> <td>写真１</td>
-                <td>写真２</td>
-                <td>写真３</td>
-                <td>写真４</td>
-                <td>写真５</td>
-                <td>写真６</td>
-              </tr>
-            </tbody>
-          </table>
+              <div class="vege-card">
+                <b>8/26</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>9/9</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>9/23</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>10/1</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>10/15</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>10/29</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+            </div>
+            <!---------------------------------------  👆️ 🍃横スクロールの箱 -->
+
+            <!-------------------------------------  👇️ 🍃右ボタン  -->
+            <button class="scro-btn next"
+              onclick="scrollPrime(this, 265)">&gt;</button>
+
+        </div>
+
+        <!-----------------------------------------------  👇️ 🍃親トグルを「閉じる」ボタン  --> 
+          <div style=" text-align: center;">
+            <button class="close-btn"
+               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+          </div>
+
+        </details>         
+        <!-------------------------------------------------  👆️ 🍃モロヘイヤさん  -->
+
+        <!-------------------------------------------------  👇️ 🥒地這いキュウリさん  -->
+        <details style="margin-right: 5px;" >
+        <summary >🥒地這いキュウリさん</summary>
+
+          <!---------------------------------------------  👇️ 🥒各情報トグルを入れる箱  -->
+
+          <div class="info-wrap" >
+
+            <!-----------------------------------------  👇️ 🥒野菜情報  -->
+
+            <details class="vege-info" >
+            <summary>ℹ️野菜情報</summary>
+              <ul>
+                <li><span>ウリ科</span><span></span></li>
+                <li><span>・種蒔き</span><span>：</span>４～５月</li>
+                <li><span>・サイズ</span><span>：</span>つるの長さ1〜2m（地這いは横に広がる）</li>
+                <li><span>・傾向pH</span><span>：</span>弱酸性（5.5〜7.0）</li>
+                <li><span>・温度</span><span>：</span>20〜30℃</li>
+                <li><span>・太陽光</span><span>：</span>必要</li>
+                <li><span>・水やり</span><span>：</span>多めに（よく吸う）</li>
+                <li><span>・肥料</span><span>：</span>元肥は普通、追肥は定期的。</li>
+                <li><span>・病害虫</span><span>：</span>うどんこ病<br>アブラムシ</li>
+                <li><span>・収穫</span><span>：</span>種まきから約50〜60日</li>
+                <li><span>・再収穫</span><span>：</span>可能</li>
+                <li><span>・栄養</span><span>：</span>カリウム</li>
+                <li><span>・その他</span><span>：</span>地這いなのでネット不要。</li>
+              </ul>
+          <!-------------------------------------------  👇️ 🥒親トグルを「閉じる」ボタン  --> 
+          <div style=" text-align: center;">
+            <button class="close-btn"
+               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+          </div>
+            </details>
+
+            <!-----------------------------------------  👇️ 🥒関連情報  -->
+
+            <details class="vege-info scro-target">
+            <summary>📒関連情報</summary>
+              <ul style="white-space: nowrap;" >
+                <li><span>・土成分</span><span>：</span>－</li>
+                <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
+                <li><span>・ツール</span><span>：</span>－</li>
+                <li><span>・プランタ</span><span>：</span>TWBL</li>
+              </ul>
+            </details>
+          </div>
+          <!-------------------------------------------  👆️ 🥒各情報トグルを入れる箱  -->
+
+          <!-------------------------------------------  👇️ 🥒カールセルの親  -->
+
+          <div class="carousel">
+
+            <!---------------------------------------  👇️ 🥒左ボタン  -->
+
+            <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
+
+            <!---------------------------------------  👇️ 🥒横スクロールの箱  --> 
+            <div class="carousel-cont">
+              <!-----------------------------------  👇️ 🥒野菜写真（増やしたいときはこれをコピペ！）  -->
+              <div class="vege-card">
+                <b>7/1</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真1" width="500" height="500">
+                種蒔き：7/1<br>写真は撒いた直後
+              </div>
+
+              <div class="vege-card">
+                <b>7/15</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真1" width="500" height="500">
+                準備中
+              </div>
+
+              <div class="vege-card">
+                <b>7/29</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真2" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>8/12</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3"width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>8/26</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>9/9</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>9/23</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>10/1</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>10/15</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+
+              <div class="vege-card">
+                <b>10/29</b><br>
+                <img src="10HG_tuah00_Example_use20.webp" alt="写真3" width="500" height="500">
+              </div>
+            </div>
+            <!---------------------------------------  👆️ 🥒横スクロールの箱 -->
+
+            <!-------------------------------------  👇️ 🥒右ボタン  -->
+            <button class="scro-btn next"
+              onclick="scrollPrime(this, 265)">&gt;</button>
+
+        </div>
+
+        <!-----------------------------------------------  👇️ 🥒親トグルを「閉じる」ボタン  --> 
+          <div style=" text-align: center;">
+            <button class="close-btn"
+               onclick="this.closest('details').removeAttribute('open');">▲ 閉じる</button>
+          </div>
+
         </details>
-        <!--ミニ大根さん-------------------------------------------------->
-        <details>
-          <summary>🌿ミニ大根さん</summary>
-          種まき：7/1
-          <table style="border: 2px #000000; ">
-            <tbody>
-              <tr style="position: sticky; top: 0; background: #f0f0f0;
-                z-index: 10;">
-                <!-- 表のヘッダー部 --> <th>7/1</th>
-                <th>7/15</th>
-                <th>7/29</th>
-                <th>8/12</th>
-                <th>8/26</th>
-                <th>9/9</th>
-              </tr>
-              <tr>
-                <!-- 以下、表のデータ部 --> <td>写真１</td>
-                <td>写真２</td>
-                <td>写真３</td>
-                <td>写真４</td>
-                <td>写真５</td>
-                <td>写真６</td>
-              </tr>
-            </tbody>
-          </table>
-        </details>
-        <!--五寸人参さん-------------------------------------------------->
-        <details>
-          <summary>🌱枝豆さん</summary>
-          種まき：6/10
-          <table style="border: 2px #000000; ">
-            <tbody>
-              <tr style="position: sticky; top: 0; background: #f0f0f0;
-                z-index: 10;">
-                <!-- 表のヘッダー部 --> <th>7/1</th>
-                <th>7/15</th>
-                <th>7/29</th>
-                <th>8/12</th>
-                <th>8/26</th>
-                <th>9/9</th>
-              </tr>
-              <tr>
-                <!-- 以下、表のデータ部 --> <td>写真１</td>
-                <td>写真２</td>
-                <td>写真３</td>
-                <td>写真４</td>
-                <td>写真５</td>
-                <td>写真６</td>
-              </tr>
-            </tbody>
-          </table>
-        </details>
+        <!-------------------------------------------------  👆️ 🥒地這いキュウリさん  -->
+
       </details>
     </details>
     <!-- License ------------------------------------------------------------->
