@@ -153,9 +153,10 @@
     height:         0;
     opacity:        0;
     transition:
-    height  2s   ease,
-    opacity 1s   ease;
+    height  1s   ease, /* 設定はしてあるけど、 */
+    opacity 1s   ease; /* ＪＳのゆっくり開閉で上書き */
   }
+  
 
   /* 👇️ トグルが開いたときの表示設定 */
 
@@ -167,7 +168,7 @@
 
   .mini-window {
     overflow-y:        auto; /* スクロール */
-    scroll-behavior: smooth; /* スクロールをスムーズにする */
+    scroll-behavior: smooth; /* スムーズに */
     max-height:       250px; /* 親トグルより約-50pxで使う */
     border-radius:     12px; /* 共通の丸み */
   }
@@ -207,7 +208,7 @@
  /* box-shadow: 1px 4px 11px
           rgba(0, 0, 0, 0.4); /* 調整時はこれをアクティブ化 */
     display:            flex; /* 要素を横に並べる */
-    margin-top:         0px; /* 位置調整 */
+    margin-top:          0px; /* 位置調整 */
     overflow-x:         auto; /* 横スクロールを有効にする */
     border-radius:      11px; /* 見えないけど一応丸み */
 
@@ -274,11 +275,11 @@
     overflow-x:           auto; /* 横スクロールを有効にする */
     scroll-behavior:    smooth; /* スクロールをスムーズにする */
     /* スクロールバー非表示 */
-    -ms-overflow-style: none; /* IE, Firefox用 */
-    scrollbar-width:    none; /* Firefox用 */
+    -ms-overflow-style:   none; /* IE, Firefox用 */
+    scrollbar-width:      none; /* Firefox用 */
     }
     .carousel-cont::-webkit-scrollbar {
-      display:          none; /* Chrome, Safari用 */
+      display:            none; /* Chrome, Safari用 */
     }
 
   /* 👇️ 野菜さん別情報カード用クラス */
@@ -310,8 +311,8 @@
   /* 👇️ ライセンストグル用クラス：全体を中央寄せにする */
 
   .license-base {
-    text-align: center;
-    line-height:   1.5; /* 行間を少し広げて読みやすく */
+    text-align:  center;
+    line-height:    1.5; /* 行間を少し広げて読みやすく */
      padding: 10px 15px; /* 見た目調整 */
   }
 
@@ -1466,7 +1467,7 @@
   </details>
 
 <script>
-  // トグルが開いたとき、縦は動かさず、限界の右端まで一気にスクロールする
+// トグルが開いたとき、縦は動かさず、限界の右端まで一気にスクロールする
   document.querySelectorAll('.scro-target').forEach(details => {
     details.addEventListener('toggle', function() {
       if (this.open) {
@@ -1561,6 +1562,31 @@
         content.removeEventListener('transitionend', onOpenEnd);
         content.style.height = 'auto';
         animating = false;
+
+        document.querySelectorAll('details').forEach(detail => {
+          detail.addEventListener('toggle', () => {
+            if (detail.open) {
+              setTimeout(() => {
+                content.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+             // window.scrollBy(350, 20); // さらに下に20pxスクロール
+              }, 100);
+            }
+          });
+        });
+
+        開き終わった後に下へゆっくりスクロール
+        // requestAnimationFrame(() => {
+        // detail.scrollIntoView({});
+        // detail.scrollIntoView({ behavior: 'smooth'});
+        // detail.scrollIntoView({ behavior: 'smooth', block: 'top' });
+        // content.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // content.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        // content.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        // window.scrollBy({ behavior: 'smooth' , block: 'end' });
+        // window.scrollBy({ top: -400, left: 0, behavior: 'smooth'});
+        // window.scrollBy({ top: 280, left: 0, behavior: 'smooth' });
+        // window.scrollBy({ top: 280, left: 0, behavior: 'smooth' });
+        // });
       };
       content.addEventListener('transitionend', onOpenEnd);
     };
