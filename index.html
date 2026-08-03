@@ -104,7 +104,7 @@
     cursor:        pointer; /* マウスカーソルを指マークにする */
     font-size:        14px;
     border:           none;
-    width:             80%; /* 左右どちらでも押しやすいサイズ */
+    width:             50%; /* 左右どちらでも押しやすいサイズ */
     margin-top:        5px; /* 位置調整 */
     margin-bottom:    11px; /* 位置調整 */
     margin-left:      25px; /* 位置調整 */
@@ -151,7 +151,9 @@
     overflow:  hidden;
     height:         0;
     opacity:        0;
-    transition: height 2s    ease, opacity 0.3s ease;
+    transition:
+    height  2s   ease,
+    opacity 1s   ease;
   }
 
   /* 👇️ トグルが開いたときの表示設定 */
@@ -159,80 +161,63 @@
   details[open] .content {
     opacity: 1;
   }
-
-  /* 👇️ ミニウィンドウ用の箱クラス */
+  
+    /* 👇️ トグル内ミニウィンドウ用の箱クラス */
 
   .mini-window {
-    overflow-y:  auto;
-    max-height: 250px;
+    overflow-y:        auto; /* スクロール */
+    scroll-behavior: smooth; /* スクロールをスムーズにする */
+    max-height:       250px; /* 親トグルより約-50pxで使う */
+    border-radius:     12px; /* 共通の丸み */
+  }
+
+  /* 👇️ 野菜情報トグルクラス */
+
+  .vege-info{
+    overflow-y:         auto; /* 縦スクロールを有効にする */
+    max-width:         300px; /* ミニウィンドウと相談 */
+    max-height:        350px; /* ミニウィンドウと相談 */
+    align-self:   flex-start; /* トグル並列対応 */
+    margin-left:         4px; /* 位置調整 */
+    margin-right:       15px; /* 見た目調整 */
+    padding-right:      15px; /* トグルタイトル位置調整 */
+    border-radius:      12px; /* 共通の丸み */
+    /* スクロールバー非表示 */
+    -ms-overflow-style: none; /* IE, Firefox用 */
+    scrollbar-width:    none; /* Firefox用 */
+  }
+  .info-wrap::-webkit-scrollbar {
+    display:            none; /* Chrome, Safari用 */
+  }
+
+  /* 👇️ 情報トグルが開いたときのスタイル指定 */
+
+  .vege-info[open] {
+/*  並列要素の割合などを設定する
+    flex-grow   並列要素の幅割合（0サイズ固定？）
+    flex-shrink  0:max 1:均等 2:min
+    flex-basis  フォーカス時の横幅指定 */
+    flex:        0 0 100%;
   }
 
   /* 👇️ 情報トグルを並べる箱クラス */
 
   .info-wrap {
-  /* min-width:            1; /* 横幅を自動で親の枠に合わせる これがないと自動横スクロールしないっぽい */
-  /* box-shadow: 1px 4px 11px
+ /* box-shadow: 1px 4px 11px
           rgba(0, 0, 0, 0.4); /* 調整時はこれをアクティブ化 */
     display:            flex; /* 要素を横に並べる */
-    margin-top:         10px; /* 位置調整 */
-    border-radius:      11px; /* 見えないけど一応丸み */
+    margin-top:         0px; /* 位置調整 */
     overflow-x:         auto; /* 横スクロールを有効にする */
+    border-radius:      11px; /* 見えないけど一応丸み */
 
-    /* 👇️ スクロールバーを非表示にする */
+    /* 👇️ スクロールバー非表示 */
     -ms-overflow-style: none; /* IE, Firefox用 */
     scrollbar-width:    none; /* Firefox用 */
-  } .info-wrap::-webkit-scrollbar {
+  }
+   .info-wrap::-webkit-scrollbar {
     display:            none; /* Chrome, Safari用 */
     }
 
-  /* 👇️ 野菜情報トグルクラス */
-
-  .vege-info{
-    max-width:     fit-content; /* 幅をコンテツ内容に合わせる */
-    box-sizing:     border-box; /* 枠のサイズを正確に計算する */
-    margin-left:          10px; /* 位置調整 */
-    margin-right:         15px; /* 見た目調整 */
-    padding-right:        15px; /* トグルタイトル位置調整 */
-    align-self:     flex-start; /* トグル並列対応 */
-    /* transition: flex 0.5s ease,
-    /* min-width 0.5s     ease,
-    /* min-hitht 0.5s     ease; /* 開閉アニメーション。おしゃれだけどコメ化 */
-    /* overflow-y:        auto; /* 縦スクロールを有効にする */
- 
-    /* 👇️ スクロールバーを非表示にする */
-    -ms-overflow-style:   none; /* IE, Firefox用 */
-    scrollbar-width:      none; /* Firefox用 */
-  }
-  .info-wrap::-webkit-scrollbar {
-    display:              none; /* Chrome, Safari用 */
-  }
-
-    /* 👇️ 情報トグルが開いたときのスタイル指定 */
-
-  .vege-info[open] {
-/*
-    flex-grow  （0余白一杯広がる）
-    flex-shrink（0サイズ固定）
-    flex-basis （横幅指定）*/
-    flex:        1 0 100%;
-/*
-    position:    absolute;
-    /*これを指定すると透明化し、
-    全てのコンテンツに被る。
-    なにかに使える予感 */
-/*
-    z-index:           30; /* 優先順位はflexで指定したのでコメ化 */
-  }
-.vege-info .mini-window {
-  width: 350px;
-  height: 350px;
-  margin:0;
-  padding: 0;
-  /* border: 1px solid #ccc; */
-  border-radius: 12px;
-  /* background: #fff; */
-  overflow: auto;
-}
   /* 👇️ リスト全体を「見えない自動調整テーブル」にする */
 
   .vege-info ul {
@@ -269,7 +254,6 @@
 
   .carousel {
     width:         100%; /* 横幅を最大値にする */
-    min-width:        0; /* 横幅を自動で親の枠に合わせる */
     margin-bottom: 10px; /* 下の隙間 */
     margin-right:  10px; /* 右の隙間 */
     position:  relative; /* スクロールボタンの位置を絶対位置で指定するための基準 */
@@ -282,14 +266,13 @@
 
   .carousel-cont {
     width:                100%; /* 横幅を最大値にする */
-    padding:              10px; /* 上下左右に適度な余白を作る */
+    padding: 10px 4px 10px 4px; /* 上右下左 */
     display:              flex; /* 中に入れた要素を同じ縦サイズにして横並びにする */ 
     /* align-items: flex-start; /* 文字量に応じた高さで表示される */
     gap:                  15px; /* カード同士の隙間 */
     overflow-x:           auto; /* 横スクロールを有効にする */
     scroll-behavior:    smooth; /* スクロールをスムーズにする */
-
-    /* 👇️ スクロールバーを非表示にする */
+    /* スクロールバー非表示 */
     -ms-overflow-style: none; /* IE, Firefox用 */
     scrollbar-width:    none; /* Firefox用 */
     }
@@ -304,7 +287,7 @@
     rgba(0, 0, 0, 0.4); /* 共通の影 */
     flex:       0 0 220px; /* カードの横幅をpxに固定して型崩れを防ぐ（中央の「0」） */
     text-align:      left; /* 左寄せ */
-    padding:     8px 15px; /* 見た目調整  */
+    padding:   11px  15px; /* 上下 左右  */
     border-radius:   11px; /* 共通の丸み */
   }
 
@@ -316,12 +299,13 @@
     width:           100%; /* 横幅いっぱいに広げる */
     height:          auto; /* 縦横比を維持して自動調整 */
     display:        block; /*  */
-    transition: transform 0.25s ease;
+/*  transition: transform 0.25s ease; */
     border-radius:   11px; /* 共通の丸み */
   }
+  /*  ホバーさせたいときはアクティブに
   .vege-card img:hover {
     transform: scale(1.10);
-  }
+  } */
   /* 👇️ ライセンストグル用クラス：全体を中央寄せにする */
 
   .license-base {
@@ -330,6 +314,13 @@
      padding: 10px 15px; /* 見た目調整 */
   }
 
+  /* 👇️ サイト最下段スペース用 */
+  .free-area {
+    text-shadow: 1px 4px 8px
+        rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 4px 11px
+        rgba(0, 0, 0, 0.4);
+  }
 </style>
 </head>
 
@@ -353,17 +344,17 @@
 <!------------------------------  👇️ コンテンツエリア  -->
 
   <!------------------------------  👇️ Home garden  -->
-  <details  style="margin-right: 8px;">
+  <details open  style="margin-right: 8px;">
   <summary ><u>🍅Home Garden</u></summary>
   <div class="content">
 
     <!------------------------------  👇️ 野菜さん別状況  -->
-    <details>
+    <details open>
     <summary><u>📆野菜さん別状況-2026</u></summary>
     <div class="content">
 
       <!------------------------------  👇️ 🥬芽キャベツさん  -->
-      <details style="margin-right: 5px;" >
+      <details open style="margin-right: 5px;" >
       <summary >🥬芽キャベツさん</summary>
       <div class="content">
 
@@ -371,7 +362,7 @@
         <div class="info-wrap" >
 
           <!------------------------------  👇️ 🥬野菜情報  -->
-          <details class="vege-info" >
+          <details open class="vege-info" >
           <summary >ℹ️野菜情報</summary>
             <!-- ミニウィンドウ -->
             <div class="mini-window">
@@ -380,7 +371,7 @@
                 <li><span>アブラナ科</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>春／秋</li>
                 <li><span>・サイズ</span><span>：</span>約15-20cm<br>葉の幅10-15cm</li>
-                <li><span>・傾向pH</span><span>：</span>弱アルカリ性～中性</li>
+                <li><span>・傾向pH</span><span>：</span>弱アルカリ性～中性（6.5〜7.5）</li>
                 <li><span>・温度</span><span>：</span>15-25℃</li>
                 <li><span>・太陽光</span><span>：</span>必要</li>
                 <li><span>・水やり</span><span>：</span>土が乾いたら多めに（過湿NG）。</li>
@@ -392,10 +383,11 @@
                 <li><span>・その他</span><span>：</span>葉も栄養豊富で食べれる。</li>
               </ul>
 
-              <!------------------------------  👇️ 🥬親トグルを「閉じる」ボタン  -->
+              <!------------------------------  👇️ 🥬親トグルを「閉じる」ボタン 使うときはここ -->
+              <!-- ミニウィンドウを固定サイズにしたので、不使用に。
               <div style=" text-align: center;">
                 <button class="close-btn">▲ 閉じる</button>
-              </div>
+              </div> -->
             </div>
             </div>
           </details>
@@ -527,10 +519,7 @@
                 <li><span>・その他</span><span>：</span>土が硬いと根が割れる。<br>葉の方が栄養豊富。</li>
               </ul>
 
-              <!------------------------------  👇️ 🌿親トグルを「閉じる」ボタン  -->
-              <div style=" text-align: center;">
-                <button class="close-btn">▲ 閉じる</button>
-              </div>
+              <!------------------------------  👇️ 🌿親トグルを「閉じる」ボタン 使うときはここ -->
             </div>
             </div>
           </details>
@@ -623,7 +612,7 @@
         <!------------------------------  👆️ 🌿カールセルの親  -->
         </div>
 
-        <!------------------------------  👇️ 🌿親トグルを「閉じる」ボタン  --> 
+        <!------------------------------  👇️ 🌿親トグルを「閉じる」ボタン --> 
         <div style=" text-align: center;">
           <button class="close-btn">▲ 閉じる</button>
         </div>
@@ -661,10 +650,7 @@
                 <li><span>・その他</span><span>：</span>酸性すぎると根が曲がりやすい。<br>葉も栄養豊富で食べれる。</li>
               </ul>
 
-              <!------------------------------  👇️ 🥕親トグルを「閉じる」ボタン  -->
-              <div style=" text-align: center;">
-                <button class="close-btn">▲ 閉じる</button>
-              </div>
+              <!------------------------------  👇️ 🥕親トグルを「閉じる」ボタン 使うときはここ -->
             </div>
             </div>
           </details>
@@ -796,10 +782,7 @@
                 <li><span>・その他</span><span>：</span>菌根菌と共存する環境では肥料を控えめに。</li>
               </ul>
 
-              <!------------------------------  👇️ 🌱親トグルを「閉じる」ボタン  -->
-              <div style=" text-align: center;">
-                <button class="close-btn">▲ 閉じる</button>
-              </div>
+              <!------------------------------  👇️ 🌱親トグルを「閉じる」ボタン 使うときはここ -->
             </div>
             </div>
           </details>
@@ -931,10 +914,7 @@
                 <li><span>・その他</span><span>：</span>通常栽培では支柱が必要</li>
               </ul>
 
-              <!------------------------------  👇️ 🍅親トグルを「閉じる」ボタン  -->
-              <div style=" text-align: center;">
-                <button class="close-btn">▲ 閉じる</button>
-              </div>
+              <!------------------------------  👇️ 🍅親トグルを「閉じる」ボタン 使うときはここ -->
             </div>
             </div>
           </details>
@@ -1066,10 +1046,7 @@
                 <li><span>・その他</span><span>：</span>アルカリに弱い（そうか病に注意）。</li>
               </ul>
 
-              <!------------------------------  👇️ 🥔親トグルを「閉じる」ボタン  -->
-              <div style=" text-align: center;">
-                <button class="close-btn">▲ 閉じる</button>
-              </div>
+              <!------------------------------  👇️ 🥔親トグルを「閉じる」ボタン 使うときはここ -->
             </div>
             </div>
           </details>
@@ -1202,10 +1179,7 @@
                 <li><span>・その他</span><span>：</span>成長が早く丈夫。</li>
               </ul>
 
-              <!------------------------------  👇️ 🍃親トグルを「閉じる」ボタン  -->
-              <div style=" text-align: center;">
-                <button class="close-btn">▲ 閉じる</button>
-              </div>
+              <!------------------------------  👇️ 🍃親トグルを「閉じる」ボタン 使うときはここ -->
             </div>
             </div>
           </details>
@@ -1337,10 +1311,7 @@
                 <li><span>・その他</span><span>：</span>地面に広がるのでネット不要。</li>
               </ul>
 
-              <!------------------------------  👇️ 🥒親トグルを「閉じる」ボタン  -->
-              <div style=" text-align: center;">
-                <button class="close-btn">▲ 閉じる</button>
-              </div>
+              <!------------------------------  👇️ 🥒親トグルを「閉じる」ボタン 使うときはここ -->
             </div>
             </div>
           </details>
