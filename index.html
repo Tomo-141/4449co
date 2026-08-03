@@ -107,12 +107,15 @@
     cursor:        pointer; /* マウスカーソルを指マークにする */
     font-size:        14px;
     border:           none;
-    width:             50%; /* 左右どちらでも押しやすいサイズ */
+    width:             25px; /* 左右どちらでも押しやすいサイズ */
     margin-top:        5px; /* 位置調整 */
     margin-bottom:    11px; /* 位置調整 */
-    margin-left:      25px; /* 位置調整 */
+    margin-left:      91%; /* 位置調整 */
     padding:           3px; /* 位置調整 */
-    border-radius:    11px; /* 共通の丸み */
+    border-radius:    50px; /* 共通の丸み */
+  }
+  .close-btn::before {
+    content: "✖️";
   }
 
   /* 👇️ トグル（details）全体の設定 */
@@ -385,7 +388,7 @@
               <!------------------------------  👇️ 🥬親トグルを「閉じる」ボタン 使うときはここ -->
               <!-- ミニウィンドウを固定サイズにしたので、不使用に。
               <div style=" text-align: center;">
-                <button class="close-btn">▲ 閉じる</button>
+                <button class="close-btn"></button>
               </div> -->
             </div>
             </div>
@@ -484,7 +487,7 @@
 
         <!------------------------------  👇️ 🥬親トグルを「閉じる」ボタン  --> 
         <div style=" text-align: center;">
-          <button class="close-btn">▲ 閉じる</button>
+          <button class="close-btn"></button>
         </div>
 
       </div>
@@ -618,7 +621,7 @@
 
         <!------------------------------  👇️ 🌿親トグルを「閉じる」ボタン --> 
         <div style=" text-align: center;">
-          <button class="close-btn">▲ 閉じる</button>
+          <button class="close-btn"></button>
         </div>
       </div>
       </details>
@@ -752,7 +755,7 @@
 
         <!------------------------------  👇️ 🥕親トグルを「閉じる」ボタン  --> 
         <div style=" text-align: center;">
-          <button class="close-btn">▲ 閉じる</button>
+          <button class="close-btn"></button>
         </div>
 
       </div>
@@ -887,7 +890,7 @@
 
         <!------------------------------  👇️ 🌱親トグルを「閉じる」ボタン  --> 
         <div style=" text-align: center;">
-          <button class="close-btn">▲ 閉じる</button>
+          <button class="close-btn"></button>
         </div>
 
       </div>
@@ -1022,7 +1025,7 @@
 
         <!------------------------------  👇️ 🍅親トグルを「閉じる」ボタン  --> 
         <div style=" text-align: center;">
-          <button class="close-btn">▲ 閉じる</button>
+          <button class="close-btn"></button>
         </div>
 
       </div>
@@ -1158,7 +1161,7 @@
 
         <!------------------------------  👇️ 🥔親トグルを「閉じる」ボタン  --> 
         <div style=" text-align: center;">
-          <button class="close-btn">▲ 閉じる</button>
+          <button class="close-btn"></button>
         </div>
 
       </div>
@@ -1293,7 +1296,7 @@
 
         <!------------------------------  👇️ 🍃親トグルを「閉じる」ボタン  --> 
         <div style=" text-align: center;">
-          <button class="close-btn">▲ 閉じる</button>
+          <button class="close-btn"></button>
         </div>
 
       </div>
@@ -1428,15 +1431,23 @@
 
         <!------------------------------  👇️ 🥒親トグルを「閉じる」ボタン  --> 
         <div style=" text-align: center;">
-          <button class="close-btn">▲ 閉じる</button>
+          <button class="close-btn"></button>
         </div>
 
       </div>
       </details>
       <!------------------------------  👆️ 🥒地這いキュウリさん  -->
+              <div style=" text-align: center;">
+          <button class="close-btn"></button>
+        </div>
+
     </div>
     </details>
     <!------------------------------  👆️ 野菜さん別情報  -->
+            <div style=" text-align: center;">
+          <button class="close-btn"></button>
+        </div>
+
   </div>
   </details>
   <!------------------------------  👆️ Home garden  -->
@@ -1571,27 +1582,15 @@
           detail.addEventListener('toggle', () => {
             if (detail.open) {
               setTimeout(() => {
-                detail.scrollIntoView({ behavior: 'smooth', block: 'end' });
+              //   detail.scrollIntoView({ behavior: 'smooth', block: 'end' });
+                detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                 // content.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-              window.scrollBy(0, 15); // 下に20pxスクロール
-              }, 100);
+              // window.scrollBy(0, 20); // 下に20pxスクロール
+               window.scrollBy(0, 20); // 下に20pxスクロール
+             }, 100);
             }
           });
         });
-
-        // 開き終わった後に下へゆっくりスクロール
-        // requestAnimationFrame(() => {
-        // detail.scrollIntoView({});
-        // detail.scrollIntoView({ behavior: 'smooth'});
-        // detail.scrollIntoView({ behavior: 'smooth', block: 'top' });
-        // content.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        // content.scrollIntoView({ behavior: 'smooth', block: 'end' });
-        // content.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        // window.scrollBy({ behavior: 'smooth' , block: 'end' });
-        // window.scrollBy({ top: -400, left: 0, behavior: 'smooth'});
-        // window.scrollBy({ top: 280, left: 0, behavior: 'smooth' });
-        // window.scrollBy({ top: 280, left: 0, behavior: 'smooth' });
-        // });
 
       // トグルが開いたとき、右端までスクロールする
         document.querySelectorAll('.scro-target').forEach(details => {
