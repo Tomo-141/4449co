@@ -1514,7 +1514,7 @@
       });
     });
 
-    // ゆっくりスクロール
+    // ゆっくり開閉
     const content = detail.querySelector('.content');
     const summary = detail.querySelector('summary');
     if (!content || !summary) return;
@@ -1522,7 +1522,8 @@
     let animating = false;
 
     content.style.overflow = 'hidden';
-    content.style.transition = 'height 0.4s ease, opacity 0.3s ease';
+    // ここで開閉時間を指定する 👇️ //
+    content.style.transition = 'height 1s ease, opacity 1s ease';
     content.style.height = detail.hasAttribute('open') ? 'auto' : '0px';
     content.style.opacity = detail.hasAttribute('open') ? '1' : '0';
 
