@@ -15,7 +15,7 @@
 
 <!--  👇️ グーグルフォント -->
 <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap"> 
+  href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap">
 
   <!--  👇️ お気に入りアイコン（ファビコン）の設定  -->
 <link rel="icon" href="favicon.ico">
@@ -30,14 +30,16 @@
   /* 👇️ サイトベース設定 */
 
   body {
-    background:   #ffffff; /* 背景色を白に */
-    color:        #000000; /* 文字色を黒に */
-    margin:           0 auto; /* 上下マージン0、左右を「auto」にすると画面中央に配置  */
-    max-width:         700px; /* 横幅を最大700pxでストップ */
-    box-sizing:   border-box; /* 枠のサイズを正確に計算する */
-    border-radius:       5px; /* 角を丸くする */
-    font-family: 'M PLUS Rounded 1c',
-                  sans-serif; /* 丸文字フォントを読み込む */
+    text-shadow: 1px 4px 8px 
+         rgba(0, 0, 0, 0.4); /* 共通文字影 */
+    background:     #fafcfc; /* 背景色 */
+    color:          #000000; /* 文字色 */
+    margin:             0 auto; /* 上下マージン0、左右を「auto」にすると画面中央に配置  */
+    max-width:           700px; /* 横幅を最大700pxでストップ */
+    box-sizing:     border-box; /* 枠のサイズを正確に計算する */
+    font-family:  Noto Sans JP,
+                    sans-serif;
+    font-weight:           500;
   }
 
   /* ---------------------------------------------------  👇️ CSS共通設定エリア  */
@@ -47,9 +49,9 @@
 
   .main-title {
     box-shadow:  1px 1px 11px 
-            rgba(0, 0, 0, 0.4); /* カードに影をつけて立体感を出す */
+            rgba(0, 0, 0, 0.4); /* タイトル専用 */
     text-shadow: 2px 4px 11px 
-            rgba(0, 0, 0, 0.9); /* 文字にうっすら黒い影をつける */
+            rgba(0, 0, 0, 0.9); /* タイトル専用 */
     color:             #fcfff0; /* 文字色を白に */
     background-image:linear-gradient(
      rgba(172, 205, 255, 0.15),
@@ -57,11 +59,11 @@
        url("IHUWBH1200x900.png"); /* 画像を指定 */
     text-align:           center; /* 真ん中寄せ */
     margin:                  7px; 
-    padding:            4px 11px; /* 文字の上下左右に適度な余白を作る */
+    padding:            4px 11px; /* 上下 左右に適度な余白を作る */
     background-position:  center; /* 画像を中央に寄せる */
     background-repeat: no-repeat; /* 画像を繰り返さない */
     background-size:       cover; /* 箱のサイズに画像をフィットさせる */
-    border-radius:          11px; /* 丸みをつける */
+    border-radius:          11px; /* 共通の丸み */
   }
 
   /* 👇️ スクロール用クラス */
@@ -96,11 +98,12 @@
 
   .close-btn {
     text-shadow: 1px 4px 8px  
-      rgba(0, 0, 0, 0.8); /* 文字に影をつける */
+      rgba(0, 0, 0, 0.5); /* 文字に影をつける */
     box-shadow: 1px 4px 11px
       rgba(0, 0, 0, 0.4); /* 共通の影 */
     background:  #ffffff;       
     color:       #000000;
+    font-weight:       500;
     cursor:        pointer; /* マウスカーソルを指マークにする */
     font-size:        14px;
     border:           none;
@@ -115,8 +118,6 @@
   /* 👇️ トグル（details）全体の設定 */
 
   details {
-    text-shadow: 1px 4px 8px  
-          rgba(0, 0, 0, 0.4); /* 文字に影をつける */
     box-shadow: 1px 4px 11px 
           rgba(0, 0, 0, 0.4); /* 共通の影 */
     margin-top:           10px; /* 上の隙間 */
@@ -316,8 +317,6 @@
 
   /* 👇️ サイト最下段スペース用 */
   .free-area {
-    text-shadow: 1px 4px 8px
-        rgba(0, 0, 0, 0.4);
     box-shadow: 1px 4px 11px
         rgba(0, 0, 0, 0.4);
   }
@@ -344,17 +343,17 @@
 <!------------------------------  👇️ コンテンツエリア  -->
 
   <!------------------------------  👇️ Home garden  -->
-  <details open  style="margin-right: 8px;">
+  <details style="margin-right: 8px;">
   <summary ><u>🍅Home Garden</u></summary>
   <div class="content">
 
     <!------------------------------  👇️ 野菜さん別状況  -->
-    <details open>
+    <details>
     <summary><u>📆野菜さん別状況-2026</u></summary>
     <div class="content">
 
       <!------------------------------  👇️ 🥬芽キャベツさん  -->
-      <details open style="margin-right: 5px;" >
+      <details style="margin-right: 5px;" >
       <summary >🥬芽キャベツさん</summary>
       <div class="content">
 
@@ -362,7 +361,7 @@
         <div class="info-wrap" >
 
           <!------------------------------  👇️ 🥬野菜情報  -->
-          <details open class="vege-info" >
+          <details class="vege-info" >
           <summary >ℹ️野菜情報</summary>
             <!-- ミニウィンドウ -->
             <div class="mini-window">
@@ -371,9 +370,9 @@
                 <li><span>アブラナ科</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>春／秋</li>
                 <li><span>・サイズ</span><span>：</span>約15-20cm<br>葉の幅10-15cm</li>
-                <li><span>・傾向pH</span><span>：</span>弱アルカリ性～中性（6.5〜7.5）</li>
+                <li><span>・土壌pH</span><span>：</span>弱アルカリ性～中性（6.5〜7.5）</li>
                 <li><span>・温度</span><span>：</span>15-25℃</li>
-                <li><span>・太陽光</span><span>：</span>必要</li>
+                <li><span>・太陽光</span><span>：</span>普通</li>
                 <li><span>・水やり</span><span>：</span>土が乾いたら多めに（過湿NG）。</li>
                 <li><span>・肥料</span><span>：</span>元肥は少なめ、追肥は定期的。</li>
                 <li><span>・病害虫</span><span>：</span>アブラムシ<br>ハモグリバエ<br>ヨトウムシ</li>
@@ -507,9 +506,9 @@
                 <li><span>アブラナ科</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>春／秋</li>
                 <li><span>・サイズ</span><span>：</span>根の長さ15〜20cm<br>葉の幅20〜30cm</li>
-                <li><span>・傾向pH</span><span>：</span>弱酸性〜中性（6.0〜7.0）</li>
+                <li><span>・土壌pH</span><span>：</span>弱酸性〜中性（6.0〜7.0）</li>
                 <li><span>・温度</span><span>：</span>15-25℃</li>
-                <li><span>・太陽光</span><span>：</span>必要</li>
+                <li><span>・太陽光</span><span>：</span>普通</li>
                 <li><span>・水やり</span><span>：</span>土の表面が乾いたら多めに</li>
                 <li><span>・肥料</span><span>：</span>元肥は普通、追肥は少量</li>
                 <li><span>・病害虫</span><span>：</span>アブラムシ<br>ヨトウムシ</li>
@@ -638,9 +637,9 @@
                 <li><span>セリ科</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>春／秋</li>
                 <li><span>・サイズ</span><span>：</span>根の長さ約15cm<br>葉の幅20〜25cm</li>
-                <li><span>・傾向pH</span><span>：</span>弱酸性〜中性（6.0〜6.8）</li>
+                <li><span>・土壌pH</span><span>：</span>弱酸性〜中性（6.0〜6.8）</li>
                 <li><span>・温度</span><span>：</span>15-25℃</li>
-                <li><span>・太陽光</span><span>：</span>必要</li>
+                <li><span>・太陽光</span><span>：</span>普通</li>
                 <li><span>・水やり</span><span>：</span>土が乾いたら控えめに（過湿NG）。</li>
                 <li><span>・肥料</span><span>：</span>元肥は控えめ、追肥は少量。</li>
                 <li><span>・病害虫</span><span>：</span>うどんこ病<br>ネコブセンチュウ<br>キアゲハ幼虫</li>
@@ -770,16 +769,16 @@
                 <li><span>マメ科</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>５～６月</li>
                 <li><span>・サイズ</span><span>：</span>高さ30〜50cm（早生は小型）</li>
-                <li><span>・傾向pH</span><span>：</span>弱酸性（6.0〜6.5）</li>
+                <li><span>・土壌pH</span><span>：</span>弱酸性（6.0〜6.5）</li>
                 <li><span>・温度</span><span>：</span>20〜30℃</li>
-                <li><span>・太陽光</span><span>：</span>必要</li>
+                <li><span>・太陽光</span><span>：</span>普通</li>
                 <li><span>・水やり</span><span>：</span>乾燥に弱いのでこまめに。</li>
                 <li><span>・肥料</span><span>：</span>元肥は控えめ、追肥も控えめ。</li>
                 <li><span>・病害虫</span><span>：</span>カメムシ<br>ハダニ</li>
                 <li><span>・収穫</span><span>：</span>種まきから約60〜70日（早生は早い）</li>
                 <li><span>・再収穫</span><span>：</span>不可</li>
                 <li><span>・栄養</span><span>：</span>タンパク質<br>ビタミンＢ群<br>カリウム</li>
-                <li><span>・その他</span><span>：</span>菌根菌と共存する環境では肥料を控えめに。</li>
+                <li><span>・その他</span><span>：</span>根粒菌と共存する環境では肥料を控えめに。</li>
               </ul>
 
               <!------------------------------  👇️ 🌱親トグルを「閉じる」ボタン 使うときはここ -->
@@ -902,9 +901,9 @@
                 <li><span>ナス科</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>３～４月</li>
                 <li><span>・サイズ</span><span>：</span>高さ80〜120cm（ミニトマトは小型）</li>
-                <li><span>・傾向pH</span><span>：</span>弱酸性（6.0〜6.8）</li>
+                <li><span>・土壌pH</span><span>：</span>弱酸性（6.0〜6.8）</li>
                 <li><span>・温度</span><span>：</span>20〜30℃</li>
-                <li><span>・太陽光</span><span>：</span>強い日光が必要</li>
+                <li><span>・太陽光</span><span>：</span>強め</li>
                 <li><span>・水やり</span><span>：</span>乾燥気味に。</li>
                 <li><span>・肥料</span><span>：</span>元肥はしっかり、追肥は定期的。</li>
                 <li><span>・病害虫</span><span>：</span>うどんこ病<br>モザイクウィルス<br>ハダニ</li>
@@ -1034,9 +1033,9 @@
                 <li><span>ナス科</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>２～４月</li>
                 <li><span>・サイズ</span><span>：</span>高さ30〜60cm</li>
-                <li><span>・傾向pH</span><span>：</span>酸性（5.0〜6.0）</li>
+                <li><span>・土壌pH</span><span>：</span>酸性（5.0〜6.0）</li>
                 <li><span>・温度</span><span>：</span>15-25℃</li>
-                <li><span>・太陽光</span><span>：</span>必要</li>
+                <li><span>・太陽光</span><span>：</span>普通</li>
                 <li><span>・水やり</span><span>：</span>控えめ（過湿NG）。</li>
                 <li><span>・肥料</span><span>：</span>元肥は普通、追肥は少量。</li>
                 <li><span>・病害虫</span><span>：</span>そうか病<br>アブラムシ</li>
@@ -1167,9 +1166,9 @@
                 <li><span>シナノキ科</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>５～６月</li>
                 <li><span>・サイズ</span><span>：</span>高さ1〜1.5m</li>
-                <li><span>・傾向pH</span><span>：</span>弱酸性〜中性（6.0〜7.0）</li>
+                <li><span>・土壌pH</span><span>：</span>弱酸性〜中性（6.0〜7.0）</li>
                 <li><span>・温度</span><span>：</span>25〜35℃（暑さに強い）</li>
-                <li><span>・太陽光</span><span>：</span>必要</li>
+                <li><span>・太陽光</span><span>：</span>普通</li>
                 <li><span>・水やり</span><span>：</span>乾燥に弱いのでこまめに。</li>
                 <li><span>・肥料</span><span>：</span>元肥は普通、追肥は少量。</li>
                 <li><span>・病害虫</span><span>：</span>アブラムシ</li>
@@ -1299,9 +1298,9 @@
                 <li><span>ウリ科</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>４～５月</li>
                 <li><span>・サイズ</span><span>：</span>つるの長さ1〜2m（地這いは横に広がる）</li>
-                <li><span>・傾向pH</span><span>：</span>弱酸性（5.5〜7.0）</li>
+                <li><span>・土壌pH</span><span>：</span>弱酸性（5.5〜7.0）</li>
                 <li><span>・温度</span><span>：</span>20〜30℃</li>
-                <li><span>・太陽光</span><span>：</span>必要</li>
+                <li><span>・太陽光</span><span>：</span>普通</li>
                 <li><span>・水やり</span><span>：</span>多めに（よく吸う）</li>
                 <li><span>・肥料</span><span>：</span>元肥は普通、追肥は定期的。</li>
                 <li><span>・病害虫</span><span>：</span>うどんこ病<br>アブラムシ</li>
