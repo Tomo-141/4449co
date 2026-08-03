@@ -178,7 +178,7 @@
   .vege-info{
     overflow-y:         auto; /* 縦スクロールを有効にする */
     max-width:         300px; /* ミニウィンドウと相談 */
-    max-height:        350px; /* ミニウィンドウと相談 */
+    max-height:        300px; /* ミニウィンドウと相談 */
     align-self:   flex-start; /* トグル並列対応 */
     margin-left:         4px; /* 位置調整 */
     margin-right:       15px; /* 見た目調整 */
@@ -211,14 +211,13 @@
     margin-top:          0px; /* 位置調整 */
     overflow-x:         auto; /* 横スクロールを有効にする */
     border-radius:      11px; /* 見えないけど一応丸み */
-
     /* 👇️ スクロールバー非表示 */
     -ms-overflow-style: none; /* IE, Firefox用 */
     scrollbar-width:    none; /* Firefox用 */
   }
-   .info-wrap::-webkit-scrollbar {
+  .info-wrap::-webkit-scrollbar {
     display:            none; /* Chrome, Safari用 */
-    }
+  }
 
   /* 👇️ リスト全体を「見えない自動調整テーブル」にする */
 
@@ -363,7 +362,7 @@
 
           <!------------------------------  👇️ 🥬野菜情報  -->
           <details class="vege-info" >
-          <summary >ℹ️野菜情報</summary>
+          <summary style="text-align: center;"  >ℹ️野菜情報</summary>
             <!-- ミニウィンドウ -->
             <div class="mini-window">
             <div class="content">
@@ -378,7 +377,7 @@
                 <li><span>・肥料</span><span>：</span>元肥は少なめ、追肥は定期的。</li>
                 <li><span>・病害虫</span><span>：</span>アブラムシ<br>ハモグリバエ<br>ヨトウムシ</li>
                 <li><span>・収穫</span><span>：</span>種まきから約60-70日<br>下から順に外側の葉を摘む。</li>
-                <li><span>・再収穫</span><span>：</span>可能<br>株の中心から新芽が出てくる。</li>
+                <li><span>・再収穫</span><span>：</span>可能（株の中心から新芽が出てくる。）</li>
                 <li><span>・栄養</span><span>：</span>ビタミンC<br>ビタミンK<br>葉酸</li>
                 <li><span>・その他</span><span>：</span>葉も栄養豊富で食べれる。</li>
               </ul>
@@ -395,16 +394,19 @@
           <!------------------------------  👇️ 🥬関連情報  -->
           <details class="vege-info scro-target">
           <summary>📒関連情報</summary>
-          <div class="content">
+            <!-- ミニウィンドウ -->
+            <div class="mini-window">
+            <div class="content">
             <!-- リスト化 -->
-            <ul style="white-space: nowrap;" >
-              <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
-              <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
-              <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水</li>
-              <li><span>・ツール</span><span>：</span>TUAH<br>TUAL</li>
-              <li><span>・プランタ</span><span>：</span>ワイヤネット</li>
-            </ul>
-          </div>
+              <ul>
+                <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
+                <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
+                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水</li>
+                <li><span>・ツール</span><span>：</span>TUAH<br>TUAL</li>
+                <li><span>・プランタ</span><span>：</span>ワイヤネット</li>
+              </ul>
+            </div>
+            </div>
           </details>
         <!------------------------------  👆️ 🥬各情報トグルを入れる箱  -->
         </div>
@@ -527,16 +529,18 @@
           <!------------------------------  👇️ 🌿関連情報  -->
           <details class="vege-info scro-target">
           <summary>📒関連情報</summary>
-          <div class="content">
-            <!-- リスト化 -->
-            <ul style="white-space: nowrap;" >
-              <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
-              <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
-              <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
-              <li><span>・ツール</span><span>：</span>TUAH<br>TUAL</li>
-              <li><span>・プランタ</span><span>：</span>かご型</li>
-            </ul>
-          </div>
+            <div class="mini-window">
+            <div class="content">
+              <!-- リスト化 -->
+              <ul style="white-space: nowrap;" >
+                <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
+                <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
+                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
+                <li><span>・ツール</span><span>：</span>TUAH<br>TUAL</li>
+                <li><span>・プランタ</span><span>：</span>かご型</li>
+              </ul>
+            </div>
+            </div>
           </details>
         <!------------------------------  👆️ 🌿各情報トグルを入れる箱  -->
         </div>
@@ -658,16 +662,19 @@
           <!------------------------------  👇️ 🥕関連情報  -->
           <details class="vege-info scro-target">
           <summary>📒関連情報</summary>
-          <div class="content">
-            <!-- リスト化 -->
-            <ul style="white-space: nowrap;" >
-              <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
-              <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
-              <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
-              <li><span>・ツール</span><span>：</span>TUAL</li>
-              <li><span>・プランタ</span><span>：</span>パック</li>
-            </ul>
-          </div>
+            <!-- ミニウィンドウ -->
+            <div class="mini-window">
+            <div class="content">
+              <!-- リスト化 -->
+              <ul style="white-space: nowrap;" >
+                <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
+                <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
+                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
+                <li><span>・ツール</span><span>：</span>TUAL</li>
+                <li><span>・プランタ</span><span>：</span>パック</li>
+              </ul>
+            </div>
+            </div>
           </details>
         <!------------------------------  👆️ 🥕各情報トグルを入れる箱  -->
         </div>
@@ -790,16 +797,19 @@
           <!------------------------------  👇️ 🌱関連情報  -->
           <details class="vege-info scro-target">
           <summary>📒関連情報</summary>
-          <div class="content">
-            <!-- リスト化 -->
-            <ul style="white-space: nowrap;" >
-              <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
-              <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん<br>根粒菌さん</li>
-              <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
-              <li><span>・ツール</span><span>：</span>TUAL</li>
-              <li><span>・プランタ</span><span>：</span>TMLP</li>
-            </ul>
-          </div>
+            <!-- ミニウィンドウ -->
+            <div class="mini-window">
+            <div class="content">
+              <!-- リスト化 -->
+              <ul style="white-space: nowrap;" >
+                <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
+                <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん<br>根粒菌さん</li>
+                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
+                <li><span>・ツール</span><span>：</span>TUAL</li>
+                <li><span>・プランタ</span><span>：</span>TMLP</li>
+              </ul>
+            </div>
+            </div>
           </details>
         <!------------------------------  👆️ 🌱各情報トグルを入れる箱  -->
         </div>
@@ -922,16 +932,19 @@
           <!------------------------------  👇️ 🍅関連情報  -->
           <details class="vege-info scro-target">
           <summary>📒関連情報</summary>
-          <div class="content">
-            <!-- リスト化 -->
-            <ul style="white-space: nowrap;" >
-              <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
-              <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
-              <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
-              <li><span>・ツール</span><span>：</span>TUAL</li>
-              <li><span>・プランタ</span><span>：</span>TMLP</li>
-            </ul>
-          </div>
+            <!-- ミニウィンドウ -->
+            <div class="mini-window">
+            <div class="content">
+              <!-- リスト化 -->
+              <ul style="white-space: nowrap;" >
+                <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
+                <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
+                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
+                <li><span>・ツール</span><span>：</span>TUAL</li>
+                <li><span>・プランタ</span><span>：</span>TMLP</li>
+              </ul>
+            </div>
+            </div>
           </details>
         <!------------------------------  👆️ 🍅各情報トグルを入れる箱  -->
         </div>
@@ -1054,17 +1067,20 @@
           <!------------------------------  👇️ 🥔関連情報  -->
           <details class="vege-info scro-target">
           <summary>📒関連情報</summary>
-          <div class="content">
-            <!-- リスト化 -->
-            <ul style="white-space: nowrap;" >
-              <li><span>・土成分</span><span>：</span>－</li>
-              <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
-              <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
-              <li><span>・殺菌</span><span>：</span>銅イオン</li>
-              <li><span>・ツール</span><span>：</span>－</li>
-              <li><span>・プランタ</span><span>：</span>TBBP<br>BTLP</li>
-            </ul>
-          </div>
+            <!-- ミニウィンドウ -->
+            <div class="mini-window">
+            <div class="content">
+              <!-- リスト化 -->
+              <ul style="white-space: nowrap;" >
+                <li><span>・土成分</span><span>：</span>－</li>
+                <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
+                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
+                <li><span>・殺菌</span><span>：</span>銅イオン</li>
+                <li><span>・ツール</span><span>：</span>－</li>
+                <li><span>・プランタ</span><span>：</span>TBBP<br>BTLP</li>
+              </ul>
+            </div>
+            </div>
           </details>
         <!------------------------------  👆️ 🥔各情報トグルを入れる箱  -->
         </div>
@@ -1187,16 +1203,19 @@
           <!------------------------------  👇️ 🍃関連情報  -->
           <details class="vege-info scro-target">
           <summary>📒関連情報</summary>
-          <div class="content">
-            <!-- リスト化 -->
-            <ul style="white-space: nowrap;" >
-              <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
-              <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
-              <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
-              <li><span>・ツール</span><span>：</span>TUAL</li>
-              <li><span>・プランタ</span><span>：</span>パック</li>
-            </ul>
-          </div>
+            <!-- ミニウィンドウ -->
+            <div class="mini-window">
+            <div class="content">
+              <!-- リスト化 -->
+              <ul style="white-space: nowrap;" >
+                <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
+                <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
+                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
+                <li><span>・ツール</span><span>：</span>TUAL</li>
+                <li><span>・プランタ</span><span>：</span>パック</li>
+              </ul>
+            </div>
+            </div>
           </details>
         <!------------------------------  👆️ 🍃各情報トグルを入れる箱  -->
         </div>
@@ -1319,16 +1338,19 @@
           <!------------------------------  👇️ 🥒関連情報  -->
           <details class="vege-info scro-target">
           <summary>📒関連情報</summary>
-          <div class="content">
-            <!-- リスト化 -->
-            <ul style="white-space: nowrap;" >
-              <li><span>・土成分</span><span>：</span>－</li>
-              <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
-              <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
-              <li><span>・ツール</span><span>：</span>－</li>
-              <li><span>・プランタ</span><span>：</span>BTLP</li>
-            </ul>
-          </div>
+            <!-- ミニウィンドウ -->
+            <div class="mini-window">
+            <div class="content">
+              <!-- リスト化 -->
+              <ul style="white-space: nowrap;" >
+                <li><span>・土成分</span><span>：</span>－</li>
+                <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
+                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
+                <li><span>・ツール</span><span>：</span>－</li>
+                <li><span>・プランタ</span><span>：</span>BTLP</li>
+              </ul>
+            </div>
+            </div>
           </details>
         <!------------------------------  👆️ 🥒各情報トグルを入れる箱  -->
         </div>
@@ -1467,25 +1489,6 @@
   </details>
 
 <script>
-// トグルが開いたとき、縦は動かさず、限界の右端まで一気にスクロールする
-  document.querySelectorAll('.scro-target').forEach(details => {
-    details.addEventListener('toggle', function() {
-      if (this.open) {
-        const wrapper = this.closest('.info-wrap');
-        if (wrapper) {
-          // 💡【大本命】親の箱の「全体の横幅」から「見えている横幅」を引いて、限界の右端の数値を自動計算します
-          const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
-          
-          // 💡 縦（上下）は1ミリも動かさず、横だけ計算した限界の右端へスイーっと動かします
-          wrapper.scrollTo({
-          left: maxScrollLeft,
-          top: wrapper.scrollTop,
-          behavior: 'smooth'
-          });
-        }
-      }
-    });
-  });
 
   // 左右ボタン
   function scrollPrime(button, distance) {
@@ -1524,7 +1527,7 @@
 
     content.style.overflow = 'hidden';
     // ここで開閉時間を指定する 👇️ //
-    content.style.transition = 'height 1s ease, opacity 1s ease';
+    content.style.transition = 'height 0.7s ease, opacity 1s ease';
     content.style.height = detail.hasAttribute('open') ? 'auto' : '0px';
     content.style.opacity = detail.hasAttribute('open') ? '1' : '0';
 
@@ -1563,18 +1566,20 @@
         content.style.height = 'auto';
         animating = false;
 
+        // 開き終わった後に下へゆっくりスクロール
         document.querySelectorAll('details').forEach(detail => {
           detail.addEventListener('toggle', () => {
             if (detail.open) {
               setTimeout(() => {
-                content.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-             // window.scrollBy(350, 20); // さらに下に20pxスクロール
+                detail.scrollIntoView({ behavior: 'smooth', block: 'end' });
+                // content.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+              window.scrollBy(0, 15); // 下に20pxスクロール
               }, 100);
             }
           });
         });
 
-        開き終わった後に下へゆっくりスクロール
+        // 開き終わった後に下へゆっくりスクロール
         // requestAnimationFrame(() => {
         // detail.scrollIntoView({});
         // detail.scrollIntoView({ behavior: 'smooth'});
@@ -1587,6 +1592,23 @@
         // window.scrollBy({ top: 280, left: 0, behavior: 'smooth' });
         // window.scrollBy({ top: 280, left: 0, behavior: 'smooth' });
         // });
+
+      // トグルが開いたとき、右端までスクロールする
+        document.querySelectorAll('.scro-target').forEach(details => {
+          details.addEventListener('toggle', function() {
+            if (this.open) {
+              const wrapper = this.closest('.info-wrap');
+              if (wrapper) {
+
+                // 親の箱の「全体の横幅」から「見えている横幅」を引いて、右端の数値を自動計算
+                const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
+          
+                // 横だけ計算した右端へ動かす
+                wrapper.scrollTo({ left: maxScrollLeft,top: wrapper.scrollTop,behavior: 'smooth' });
+              }
+            }
+          });
+        });
       };
       content.addEventListener('transitionend', onOpenEnd);
     };
