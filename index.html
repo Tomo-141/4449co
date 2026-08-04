@@ -181,7 +181,7 @@
   .vege-info{
     overflow-y:         auto; /* 縦スクロールを有効にする */
     max-width:         300px; /* ミニウィンドウと相談 */
-    max-height:        300px; /* ミニウィンドウと相談 */
+    max-height:        250px; /* ミニウィンドウと相談 */
     align-self:   flex-start; /* トグル並列対応 */
     margin-left:         4px; /* 位置調整 */
     margin-right:       15px; /* 見た目調整 */
@@ -1578,17 +1578,29 @@
         animating = false;
 
         // 開き終わった後に下へゆっくりスクロール
+
         document.querySelectorAll('details').forEach(detail => {
           detail.addEventListener('toggle', () => {
-            if (detail.open) {
-              setTimeout(() => {
-              //   detail.scrollIntoView({ behavior: 'smooth', block: 'end' });
-                detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                // content.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-              // window.scrollBy(0, 20); // 下に20pxスクロール
-               window.scrollBy(0, 20); // 下に20pxスクロール
-             }, 100);
-            }
+            if (!detail.open) return;
+
+            const content = detail.querySelector(':scope > .content');
+
+            // 子トグル（vege-info）は即スクロール
+            if (!content) return;
+
+            // 親トグルは content の高さが伸び終わるまで待つ
+            content.addEventListener('transitionend', () => {
+              const h = window.innerHeight;
+              const targetTop = h * 0.2;
+
+              const absoluteTop = content.offsetTop;
+              const currentScroll = window.scrollY;
+
+              const targetScroll = absoluteTop - targetTop;
+              const diff = targetScroll - currentScroll;
+
+              window.scrollBy({ top: diff, behavior: 'smooth' });
+            }, { once: true });
           });
         });
 
