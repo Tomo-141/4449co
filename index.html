@@ -42,7 +42,7 @@
     font-weight:           500;
   }
 
-  /* ---------------------------------------------------  👇️ CSS共通設定エリア  */
+  /*------------------------------  👇️ CSS共通設定エリア  */
   /* CSS共通設定エリア */
 
   /* 👇️ メインタイトルのデザイン */
@@ -57,16 +57,16 @@
      rgba(172, 205, 255, 0.15),
            rgba(0, 0, 0, 0.1)), 
        url("IHUWBH1200x900.png"); /* 画像を指定 */
-    text-align:           center; /* 真ん中寄せ */
-    margin:                  7px; 
-    padding:            4px 11px; /* 上下 左右に適度な余白を作る */
     background-position:  center; /* 画像を中央に寄せる */
     background-repeat: no-repeat; /* 画像を繰り返さない */
     background-size:       cover; /* 箱のサイズに画像をフィットさせる */
+    text-align:           center; /* 真ん中寄せ */
+    margin:                  7px; 
+    padding:            4px 11px; /* 上下／左右に適度な余白を作る */
     border-radius:          11px; /* 共通の丸み */
   }
 
-  /* 👇️ スクロール用クラス */
+  /* 👇️ 左右スクロール用クラス */
 
   .scro{
     overflow-x:                  auto; /* 横スクロールを有効にする */
@@ -94,7 +94,7 @@
   .scro-btn.prev { left : 3px; } /* 左ボタンの位置を左端に寄せる */
   .scro-btn.next { right: 3px; } /* 右ボタンの位置を右端に寄せる */
 
-  /* 👇️ 親トグルを閉じるボタン */
+  /* 👇️ 親トグルを閉じるボタン用クラス */
 
   .close-btn {
     text-shadow: 1px 4px 8px  
@@ -108,14 +108,14 @@
     font-size:        14px;
     border:           none;
     width:             25px; /* 左右どちらでも押しやすいサイズ */
-    margin-top:        5px; /* 位置調整 */
-    margin-bottom:    11px; /* 位置調整 */
+    margin-top:        7px; /* 位置調整 */
+    margin-bottom:    10px; /* 位置調整 */
     margin-left:       87%; /* 位置調整 */
     padding:           3px; /* 位置調整 */
     border-radius:    50px; /* 共通の丸み */
   }
   .close-btn::before {
-    content: "✖️";
+    content:         "✖️"; /* 文字設定 */
   }
 
   /* 👇️ トグル（details）全体の設定 */
@@ -124,11 +124,12 @@
     box-shadow: 1px 4px 11px 
           rgba(0, 0, 0, 0.4); /* 共通の影 */
     margin-top:           10px; /* 上の隙間 */
-    margin-bottom:        10px; /* 下の隙間 */
+    margin-bottom:        8px; /* 下の隙間 */
     margin-left:           5px; /* 位置調整 */
-    padding:               7px; /* サイズ調整 */
-    padding-left:          1px; /* 見た目調整 */
-    padding-right:         0px; /* 見た目調整 */
+    padding: 7px 0px 7px  0px;
+  /*   padding:               7px; /* サイズ調整 */
+  /*   padding-left:          1px; /* 見た目調整 */
+  /*   padding-right:         0px; /* 見た目調整 */
     border-radius:        11px; /* 枠に丸みをつける */
   }
 
@@ -143,16 +144,16 @@
     padding-left:  10px; /* ▶位置調整 */
   }
 
-  /* ---------------------------------------------------  👇️ CSS個別設定エリア  */
+  /*------------------------------  👇️ CSS個別設定エリア  */
   /* CSS個別設定エリア */
 
-  /* 👇️ ①ゆっくり開閉用のdiv設定 */
-  /* 👇️ ②ゆっくり表示用のdiv設定 */
+  /* 👇️ ゆっくり開閉・表示用の箱 */
+  /* 超重要！これがないとズボラできない！！ */
 
   details .content {
     padding:        0;
     margin:         0;
-    overflow:  hidden;
+    overflow:  hidden; /* 枠外の文字は非表示 */
     height:         0;
     opacity:        0;
     transition:
@@ -160,38 +161,38 @@
     opacity 1s   ease; /* ＪＳのゆっくり開閉で上書き */
   }
   
-
   /* 👇️ トグルが開いたときの表示設定 */
 
   details[open] .content {
     opacity: 1;
   }
   
-    /* 👇️ トグル内ミニウィンドウ用の箱クラス */
+  /* 👇️ トグル内ミニウィンドウ用の箱クラス */
 
   .mini-window {
-    overflow-y:        auto; /* スクロール */
+    overflow-y:        auto; /* 縦スクロール */
     scroll-behavior: smooth; /* スムーズに */
     max-height:       250px; /* 親トグルより約-50pxで使う */
+    margin-top:         5px; /* contentとの隙間用 */
     border-radius:     12px; /* 共通の丸み */
   }
 
-  /* 👇️ 野菜情報トグルクラス */
-
+  /* 👇️ 野菜・関連情報トグルクラス */
+  /*    中身はmini-windowで表示    */
   .vege-info{
-    overflow-y:         auto; /* 縦スクロールを有効にする */
+/*  overflow-y:         auto; /* 縦スクロール */
     max-width:         300px; /* ミニウィンドウと相談 */
-    max-height:        250px; /* ミニウィンドウと相談 */
+    max-height:        350px; /* ミニウィンドウと相談 */
     align-self:   flex-start; /* トグル並列対応 */
     margin-left:         4px; /* 位置調整 */
     margin-right:       15px; /* 見た目調整 */
     padding-right:      15px; /* トグルタイトル位置調整 */
     border-radius:      12px; /* 共通の丸み */
-    /* スクロールバー非表示 */
+    /* 👇️ スクロールバー非表示 */
     -ms-overflow-style: none; /* IE, Firefox用 */
     scrollbar-width:    none; /* Firefox用 */
   }
-  .info-wrap::-webkit-scrollbar {
+  .vege-info::-webkit-scrollbar {
     display:            none; /* Chrome, Safari用 */
   }
 
@@ -208,7 +209,7 @@
   /* 👇️ 情報トグルを並べる箱クラス */
 
   .info-wrap {
- /* box-shadow: 1px 4px 11px
+/* box-shadow: 1px 4px 11px
           rgba(0, 0, 0, 0.4); /* 調整時はこれをアクティブ化 */
     display:            flex; /* 要素を横に並べる */
     margin-top:          0px; /* 位置調整 */
@@ -258,7 +259,7 @@
 
   .carousel {
     width:         100%; /* 横幅を最大値にする */
-    margin-bottom: 10px; /* 下の隙間 */
+/*  margin-bottom:  5px; /* 下の隙間 */
     margin-right:  10px; /* 右の隙間 */
     position:  relative; /* スクロールボタンの位置を絶対位置で指定するための基準 */
     display:       flex; /* 中に入れた要素を「横並び」のモードにする */
@@ -272,7 +273,7 @@
     width:                100%; /* 横幅を最大値にする */
     padding: 10px 4px 10px 4px; /* 上右下左 */
     display:              flex; /* 中に入れた要素を同じ縦サイズにして横並びにする */ 
-    /* align-items: flex-start; /* 文字量に応じた高さで表示される */
+/*  align-items:    flex-start; /* 文字量に応じた高さで表示される */
     gap:                  15px; /* カード同士の隙間 */
     overflow-x:           auto; /* 横スクロールを有効にする */
     scroll-behavior:    smooth; /* スクロールをスムーズにする */
@@ -343,7 +344,7 @@
     </h4>
   </div>
 
-<!------------------------------  👇️ コンテンツエリア  -->
+  <!------------------------------  👇️ コンテンツエリア  -->
 
   <!------------------------------  👇️ Home garden  -->
   <details style="margin-right: 8px;">
@@ -365,7 +366,7 @@
 
           <!------------------------------  👇️ 🥬野菜情報  -->
           <details class="vege-info" >
-          <summary style="text-align: center;"  >ℹ️野菜情報</summary>
+          <summary>ℹ️野菜情報</summary>
             <!-- ミニウィンドウ -->
             <div class="mini-window">
             <div class="content">
@@ -375,14 +376,14 @@
                 <li><span>・サイズ</span><span>：</span>約15-20cm<br>葉の幅10-15cm</li>
                 <li><span>・土壌pH</span><span>：</span>弱アルカリ性～中性（6.5〜7.5）</li>
                 <li><span>・温度</span><span>：</span>15-25℃</li>
-                <li><span>・太陽光</span><span>：</span>普通</li>
+                <li><span>・太陽光</span><span>：</span>普通に</li>
                 <li><span>・水やり</span><span>：</span>土が乾いたら多めに（過湿NG）。</li>
-                <li><span>・肥料</span><span>：</span>元肥は少なめ、追肥は定期的。</li>
+                <li><span>・肥料</span><span>：</span>元肥は少なめに、追肥は定期的。</li>
                 <li><span>・病害虫</span><span>：</span>アブラムシ<br>ハモグリバエ<br>ヨトウムシ</li>
                 <li><span>・収穫</span><span>：</span>種まきから約60-70日<br>下から順に外側の葉を摘む。</li>
-                <li><span>・再収穫</span><span>：</span>可能（株の中心から新芽が出てくる。）</li>
+                <li><span>・再収穫</span><span>：</span>可能（株の中心から新芽が出てくる）</li>
                 <li><span>・栄養</span><span>：</span>ビタミンC<br>ビタミンK<br>葉酸</li>
-                <li><span>・その他</span><span>：</span>葉も栄養豊富で食べれる。</li>
+                <li><span>・その他</span><span>：</span>葉も栄養豊富。</li>
               </ul>
 
               <!------------------------------  👇️ 🥬親トグルを「閉じる」ボタン 使うときはここ -->
@@ -514,12 +515,12 @@
                 <li><span>・サイズ</span><span>：</span>根の長さ15〜20cm<br>葉の幅20〜30cm</li>
                 <li><span>・土壌pH</span><span>：</span>弱酸性〜中性（6.0〜7.0）</li>
                 <li><span>・温度</span><span>：</span>15-25℃</li>
-                <li><span>・太陽光</span><span>：</span>普通</li>
-                <li><span>・水やり</span><span>：</span>土の表面が乾いたら多めに</li>
-                <li><span>・肥料</span><span>：</span>元肥は普通、追肥は少量</li>
+                <li><span>・太陽光</span><span>：</span>普通に</li>
+                <li><span>・水やり</span><span>：</span>土の表面が乾いたら多めに。</li>
+                <li><span>・肥料</span><span>：</span>元肥は普通に、追肥は少量</li>
                 <li><span>・病害虫</span><span>：</span>アブラムシ<br>ヨトウムシ</li>
                 <li><span>・収穫</span><span>：</span>種まきから約50〜60日</li>
-                <li><span>・再収穫</span><span>：</span>不可（葉物野菜として栽培するなら長期的に可能。）</li>
+                <li><span>・再収穫</span><span>：</span>不可（葉物野菜として栽培するなら長期的に可能）</li>
                 <li><span>・栄養</span><span>：</span>ビタミンC<br>ジアスターゼ</li>
                 <li><span>・その他</span><span>：</span>土が硬いと根が割れる。<br>葉の方が栄養豊富。</li>
               </ul>
@@ -647,7 +648,7 @@
                 <li><span>・サイズ</span><span>：</span>根の長さ約15cm<br>葉の幅20〜25cm</li>
                 <li><span>・土壌pH</span><span>：</span>弱酸性〜中性（6.0〜6.8）</li>
                 <li><span>・温度</span><span>：</span>15-25℃</li>
-                <li><span>・太陽光</span><span>：</span>普通</li>
+                <li><span>・太陽光</span><span>：</span>普通に</li>
                 <li><span>・水やり</span><span>：</span>土が乾いたら控えめに（過湿NG）。</li>
                 <li><span>・肥料</span><span>：</span>元肥は控えめ、追肥は少量。</li>
                 <li><span>・病害虫</span><span>：</span>うどんこ病<br>ネコブセンチュウ<br>キアゲハ幼虫</li>
@@ -782,7 +783,7 @@
                 <li><span>・サイズ</span><span>：</span>高さ30〜50cm（早生は小型）</li>
                 <li><span>・土壌pH</span><span>：</span>弱酸性（6.0〜6.5）</li>
                 <li><span>・温度</span><span>：</span>20〜30℃</li>
-                <li><span>・太陽光</span><span>：</span>普通</li>
+                <li><span>・太陽光</span><span>：</span>普通に</li>
                 <li><span>・水やり</span><span>：</span>乾燥に弱いのでこまめに。</li>
                 <li><span>・肥料</span><span>：</span>元肥は控えめ、追肥も控えめ。</li>
                 <li><span>・病害虫</span><span>：</span>カメムシ<br>ハダニ</li>
@@ -917,7 +918,7 @@
                 <li><span>・サイズ</span><span>：</span>高さ80〜120cm（ミニトマトは小型）</li>
                 <li><span>・土壌pH</span><span>：</span>弱酸性（6.0〜6.8）</li>
                 <li><span>・温度</span><span>：</span>20〜30℃</li>
-                <li><span>・太陽光</span><span>：</span>強め</li>
+                <li><span>・太陽光</span><span>：</span>強めに</li>
                 <li><span>・水やり</span><span>：</span>乾燥気味に。</li>
                 <li><span>・肥料</span><span>：</span>元肥はしっかり、追肥は定期的。</li>
                 <li><span>・病害虫</span><span>：</span>うどんこ病<br>モザイクウィルス<br>ハダニ</li>
@@ -1048,13 +1049,13 @@
             <div class="content">
               <ul>
                 <li><span>ナス科</span><span></span></li>
-                <li><span>・種蒔き</span><span>：</span>２～４月</li>
+                <li><span>・種蒔き</span><span>：</span>春／秋</li>
                 <li><span>・サイズ</span><span>：</span>高さ30〜60cm</li>
                 <li><span>・土壌pH</span><span>：</span>酸性（5.0〜6.0）</li>
                 <li><span>・温度</span><span>：</span>15-25℃</li>
-                <li><span>・太陽光</span><span>：</span>普通</li>
-                <li><span>・水やり</span><span>：</span>控えめ（過湿NG）。</li>
-                <li><span>・肥料</span><span>：</span>元肥は普通、追肥は少量。</li>
+                <li><span>・太陽光</span><span>：</span>普通に</li>
+                <li><span>・水やり</span><span>：</span>控えめに（過湿NG）。</li>
+                <li><span>・肥料</span><span>：</span>元肥は普通に、追肥は少量。</li>
                 <li><span>・病害虫</span><span>：</span>そうか病<br>アブラムシ</li>
                 <li><span>・収穫</span><span>：</span>種まきから約80〜100日</li>
                 <li><span>・再収穫</span><span>：</span>不可</li>
@@ -1188,9 +1189,9 @@
                 <li><span>・サイズ</span><span>：</span>高さ1〜1.5m</li>
                 <li><span>・土壌pH</span><span>：</span>弱酸性〜中性（6.0〜7.0）</li>
                 <li><span>・温度</span><span>：</span>25〜35℃（暑さに強い）</li>
-                <li><span>・太陽光</span><span>：</span>普通</li>
+                <li><span>・太陽光</span><span>：</span>普通に</li>
                 <li><span>・水やり</span><span>：</span>乾燥に弱いのでこまめに。</li>
-                <li><span>・肥料</span><span>：</span>元肥は普通、追肥は少量。</li>
+                <li><span>・肥料</span><span>：</span>元肥は普通に、追肥は少量。</li>
                 <li><span>・病害虫</span><span>：</span>アブラムシ</li>
                 <li><span>・収穫</span><span>：</span>種まきから約40〜60日</li>
                 <li><span>・再収穫</span><span>：</span>可能（摘芯：50〜60cmになった頃から、先端の15〜20cmほどの柔らかい芽を摘み取る）</li>
@@ -1320,17 +1321,17 @@
               <ul>
                 <li><span>ウリ科</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>４～５月</li>
-                <li><span>・サイズ</span><span>：</span>つるの長さ1〜2m（地這いは横に広がる）</li>
+                <li><span>・サイズ</span><span>：</span>つるの長さ1〜2m（横に広がる）</li>
                 <li><span>・土壌pH</span><span>：</span>弱酸性（5.5〜7.0）</li>
                 <li><span>・温度</span><span>：</span>20〜30℃</li>
-                <li><span>・太陽光</span><span>：</span>普通</li>
-                <li><span>・水やり</span><span>：</span>多めに（よく吸う）</li>
-                <li><span>・肥料</span><span>：</span>元肥は普通、追肥は定期的。</li>
+                <li><span>・太陽光</span><span>：</span>普通に</li>
+                <li><span>・水やり</span><span>：</span>よく吸うので多めに。</li>
+                <li><span>・肥料</span><span>：</span>元肥は普通に、追肥は定期的。</li>
                 <li><span>・病害虫</span><span>：</span>うどんこ病<br>アブラムシ</li>
                 <li><span>・収穫</span><span>：</span>種まきから約50〜60日</li>
                 <li><span>・再収穫</span><span>：</span>可能</li>
                 <li><span>・栄養</span><span>：</span>カリウム</li>
-                <li><span>・その他</span><span>：</span>地面に広がるのでネット不要。</li>
+                <li><span>・その他</span><span>：</span>地面に広がる。</li>
               </ul>
 
               <!------------------------------  👇️ 🥒親トグルを「閉じる」ボタン 使うときはここ -->
@@ -1458,7 +1459,7 @@
   <details style="background-color: #ffe1e1">
   <summary><u>⚠️ライセンスについて</u></summary>
     <div class="license-base">
-      <h2><u><b>License：<br>Creative Commons CC BY-SA 4.0<br>（表示-継承 4.0 国際）</b></u></h2>
+      <h2><u><b>License：<br>Creative Commons<br>CC BY-SA 4.0<br>（表示-継承 4.0 国際）</b></u></h2>
       <u><b>帰属および同一条件許諾条項</b></u><br>
       サイト内コンテンツの共有、改変は１と２、販売は全ての条件を厳守しなければなりません。<br>
       <br>
@@ -1467,7 +1468,7 @@
       <br>
       ※「moTo」は「Tomo」を逆から読んだものです。
       日本語で「moto」（元／素）は「起源」、万物の源を意味し、また「本質」、「基礎」を表します。
-      「Tomo」（友／共／智）は友情、一体感、そして知恵を意味し、著者の名前の一部でもあ ります。<br>
+      「Tomo」（友／共／智）は友情、一体感、そして知恵を意味し、著者の名前の一部でもあります。<br>
       <br>
       <u><b>２．同一条件許諾（SA）</b></u><br>
       改変、リミックスされたバージョンは、すべて「CC BY-SA 4.0」
@@ -1499,77 +1500,78 @@
     </div>
   </details>
 
-<script>
+  <script>
+  /*------------------------------  👇️ 以下ＪＳエリア  --*/
 
-  // 左右ボタン
-  function scrollPrime(button, distance) {
-  // querySelector('ここに対象を指定する')      
-  const container = button.parentElement.querySelector('.carousel-cont');
-    container.scrollBy({ left: distance, behavior: 'smooth' });
-  }
+    // 左右ボタン判定
+    function scrollPrime(button, distance) {
+    // querySelector('ここに対象を指定する')      
+      const container = button.parentElement.querySelector('.carousel-cont');
+      container.scrollBy({ left: distance, behavior: 'smooth' });
+    }
 
-  // トグルの設定
-  (() => {
-    function setupDetail(detail) {
+    // トグル判定全般
+    (() => {
+      function setupDetail(detail) {
 
-    // 閉じるボタン
-    const closeBtns = Array.from(detail.querySelectorAll('.close-btn'))
-    .filter((button) => button.closest('details') === detail);
+      // トグル閉じるボタン
+      const closeBtns = Array.from(detail.querySelectorAll('.close-btn'))
+      .filter((button) => button.closest('details') === detail);
 
-    closeBtns.forEach((closeBtn) => {
-      closeBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        closeDetail();
+      closeBtns.forEach((closeBtn) => {
+        closeBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          closeDetail();
 
-        const summary = detail.querySelector('summary');
-        if (summary) {
-        summary.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+          const summary = detail.querySelector('summary');
+          if (summary) {
+            summary.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
       });
-    });
 
-    // ゆっくり開閉
-    const content = detail.querySelector('.content');
-    const summary = detail.querySelector('summary');
-    if (!content || !summary) return;
+      // トグルゆっくり開閉
+      const content = detail.querySelector('.content');
+      const summary = detail.querySelector('summary');
+      if (!content || !summary) return;
 
-    let animating = false;
+      let animating = false;
 
-    content.style.overflow = 'hidden';
-    // ここで開閉時間を指定する 👇️ //
-    content.style.transition = 'height 0.7s ease, opacity 1s ease';
-    content.style.height = detail.hasAttribute('open') ? 'auto' : '0px';
-    content.style.opacity = detail.hasAttribute('open') ? '1' : '0';
+      content.style.overflow = 'hidden';
+      // ここで開閉時間を指定する 👇️
+      content.style.transition = 'height 0.7s ease, opacity 1s ease';
+      content.style.height = detail.hasAttribute('open') ? 'auto' : '0px';
+      content.style.opacity = detail.hasAttribute('open') ? '1' : '0';
 
-    const closeDetail = () => {
-      animating = true;
-      content.style.height = content.scrollHeight + 'px';
-      content.offsetHeight;
-      content.style.opacity = '0';
-      content.style.height = '0px';
-      content.offsetHeight; // ← ここでレイアウトを強制
-
-      const onCloseEnd = (ev) => {
-        if (ev.target !== content || ev.propertyName !== 'height') return;
-        content.removeEventListener('transitionend', onCloseEnd);
-        detail.removeAttribute('open');
-        content.style.height = '0px';
-        animating = false;
-      };
-      content.addEventListener('transitionend', onCloseEnd);
-    };
-
-    const openDetail = () => {
-      animating = true;
-      detail.setAttribute('open', '');
-      content.style.height = '0px';
-      content.style.opacity = '0';
-
-      requestAnimationFrame(() => {
+      const closeDetail = () => {
+        animating = true;
         content.style.height = content.scrollHeight + 'px';
-        content.style.opacity = '1';
-      });
+        content.offsetHeight;
+        content.style.opacity = '0';
+        content.style.height = '0px';
+        content.offsetHeight; // ← ここでレイアウトを強制
+
+        const onCloseEnd = (ev) => {
+          if (ev.target !== content || ev.propertyName !== 'height') return;
+          content.removeEventListener('transitionend', onCloseEnd);
+          detail.removeAttribute('open');
+          content.style.height = '0px';
+          animating = false;
+        };
+        content.addEventListener('transitionend', onCloseEnd);
+      };
+
+      const openDetail = () => {
+        animating = true;
+        detail.setAttribute('open', '');
+        content.style.height  = '0px';
+        content.style.opacity = '0';
+
+        requestAnimationFrame(() => {
+          content.style.height = content.scrollHeight + 'px';
+          content.style.opacity = '1';
+        });
 
       const onOpenEnd = (ev) => {
         if (ev.target !== content || ev.propertyName !== 'height') return;
@@ -1578,7 +1580,6 @@
         animating = false;
 
         // 開き終わった後に下へゆっくりスクロール
-
         document.querySelectorAll('details').forEach(detail => {
           detail.addEventListener('toggle', () => {
             if (!detail.open) return;
@@ -1591,7 +1592,7 @@
             // 親トグルは content の高さが伸び終わるまで待つ
             content.addEventListener('transitionend', () => {
               const h = window.innerHeight;
-              const targetTop = h * 0.2;
+              const targetTop = h * 0.2; // ← ここで高さを調節
 
               const absoluteTop = content.offsetTop;
               const currentScroll = window.scrollY;
@@ -1604,7 +1605,7 @@
           });
         });
 
-      // トグルが開いたとき、右端までスクロールする
+        // トグルが開いたとき、右端までスクロールする
         document.querySelectorAll('.scro-target').forEach(details => {
           details.addEventListener('toggle', function() {
             if (this.open) {
@@ -1624,23 +1625,22 @@
       content.addEventListener('transitionend', onOpenEnd);
     };
 
-    summary.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      if (animating) return;
+      summary.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (animating) return;
 
-      if (detail.hasAttribute('open')) {
-        closeDetail();
-      } else {
-        openDetail();
-      }
-    });
-  }
+        if (detail.hasAttribute('open')) {
+          closeDetail();
+        } else {
+          openDetail();
+        }
+      });
+    }
 
-  document.querySelectorAll('details').forEach(setupDetail);
+    document.querySelectorAll('details').forEach(setupDetail);
   
-})();
-
-</script>
+  })();
+  </script>
 </body>
 </html>
