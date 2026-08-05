@@ -31,15 +31,15 @@
 
   body {
     text-shadow: 1px 4px 8px 
-         rgba(0, 0, 0, 0.3); /* 共通文字影 */
-    background:     #fafcfc; /* 背景色 */
-    color:          #000000; /* 文字色 */
-    margin:             0 auto; /* 上下マージン0、左右を「auto」にすると画面中央に配置  */
-    max-width:           700px; /* 横幅を最大700pxでストップ */
-    box-sizing:     border-box; /* 枠のサイズを正確に計算する */
-    font-family:  Noto Sans JP,
-                    sans-serif;
-    font-weight:           500;
+           rgba(0, 0, 0, 0.3); /* 共通文字影 */
+    background:       #f9ffff; /* 背景色 */
+    color:            #000000; /* 文字色 */
+    margin:              0 auto; /* 上下マージン0、左右を「auto」にすると画面中央に配置  */
+    max-width:            700px; /* 横幅を最大700pxでストップ */
+    box-sizing:      border-box; /* 枠のサイズを正確に計算する */
+    font-family: "Noto Sans JP",
+                     sans-serif;
+    font-weight:            500;
   }
 
   /*------------------------------  👇️ CSS共通設定エリア  */
@@ -98,10 +98,10 @@
 
   .close-btn {
     text-shadow: 1px 4px 8px  
-      rgba(0, 0, 0, 0.5); /* 文字に影をつける */
+      rgba(0, 0, 0, 0.8); /* 文字に影をつける */
     box-shadow: 1px 4px 11px
-      rgba(0, 0, 0, 0.4); /* 共通の影 */
-    background:  #fafcfc; /* 背景色 */
+      rgba(0, 0, 0, 0.5); /* 共通の影 */
+    background:  #dfdfdf; /* 背景色 */
     color:       #000000;
     font-weight:       500;
     cursor:        pointer; /* マウスカーソルを指マークにする */
@@ -144,11 +144,9 @@
     padding-left:  10px; /* ▶位置調整 */
   }
 
-  /*------------------------------  👇️ CSS個別設定エリア  */
-  /* CSS個別設定エリア */
-
-  /* 👇️ ゆっくり開閉・表示用の箱 */
-  /* 超重要！これがないとズボラできない！！ */
+  /* 超重要！これがないとズボラできないぞ！！ＪＳ */
+  /* 👇️コンテンツ格納兼、ゆっくり開閉・表示用の箱 */
+  /* -------トグルの中に必ず仕込むこと！！------- */
 
   details .content {
     padding:        0;
@@ -161,11 +159,15 @@
     opacity 1s   ease; /* ＪＳのゆっくり開閉で上書き */
   }
   
-  /* 👇️ トグルが開いたときの表示設定 */
+  /* 👇️ contentの親トグルが開いたときの表示設定 */
 
   details[open] .content {
     opacity: 1;
   }
+
+  /*------------------------------  👇️ CSS個別設定エリア  */
+  /* CSS個別設定エリア */
+
   
   /* 👇️ トグル内ミニウィンドウ用の箱クラス */
 
@@ -181,7 +183,7 @@
   /*    中身はmini-windowで表示    */
   .vege-info{
 /*  overflow-y:         auto; /* 縦スクロール */
-    max-width:         300px; /* ミニウィンドウと相談 */
+    max-width:         350px; /* ミニウィンドウと相談 */
     max-height:        350px; /* ミニウィンドウと相談 */
     align-self:   flex-start; /* トグル並列対応 */
     margin-left:         4px; /* 位置調整 */
@@ -203,7 +205,7 @@
     flex-grow   並列要素の幅割合（0サイズ固定？）
     flex-shrink  0:max 1:均等 2:min
     flex-basis  フォーカス時の横幅指定 */
-    flex:        0 0 100%;
+    flex:        1 0 350px;
   }
 
   /* 👇️ 情報トグルを並べる箱クラス */
@@ -1592,7 +1594,7 @@
             // 親トグルは content の高さが伸び終わるまで待つ
             content.addEventListener('transitionend', () => {
               const h = window.innerHeight;
-              const targetTop = h * 0.2; // ← ここで高さを調節
+              const targetTop = h * 0.35; // ← ここで高さを調節
 
               const absoluteTop = content.offsetTop;
               const currentScroll = window.scrollY;
