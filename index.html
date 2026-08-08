@@ -137,8 +137,14 @@
     display:      block; /* ← 幅を持たせるために必須      */
     white-space: nowrap; /* 文字が長くても横1行で表示する  */
     cursor:     pointer; /* マウスカーソルを指マークにする */
+    text-align:  center; /* とりあえずセンターにしておく   */
     font-weight:   bold; /* 太字にする                     */
     padding:   0px 10px; /* ▶位置調整                      */
+  }
+  summary.indent-title {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 中央寄せ */
   }
 
   /* 超重要！これがないとズボラできないぞ！ＪＳ */
@@ -172,6 +178,7 @@
     overflow-y:        auto; /* 縦スクロール              */
     scroll-behavior: smooth; /* スムーズに                */
     max-height:       300px; /* 親トグルより約-50pxで使う */
+    max-width:        310px;
     margin-top:         5px; /* contentとの隙間用         */
     border-radius:     11px; /* 共通の丸み                */
   }
@@ -179,8 +186,8 @@
   /* 👇️ 野菜・栽培環境トグルクラス */
   /*    中身はmini-windowで表示    */
   .vege-info{
-    max-width:        300px; /* ミニウィンドウと相談   */
     max-height:       350px; /* ミニウィンドウと相談   */
+    max-width:  330px; /* ミニウィンドウと相談   */
     align-self:  flex-start; /* 要素の高さを個別にする */
     border-radius:     11px; /* 共通の丸み             */
     /* 👇️ スクロールバー非表示                         */
@@ -308,9 +315,9 @@
   /* 👇️ ライセンストグル用クラス：全体を中央寄せにする */
 
   .license-base {
-    text-align:  center;
-    line-height:    1.5; /* 行間を少し広げて読みやすく */
-     padding: 10px 15px; /* 見た目調整 */
+    text-align: center;
+    line-height:   1.5; /* 行間を少し広げて読みやすく */
+    padding: 10px 15px; /* 見た目調整 */
   }
 
   /* 👇️ 最小構成確認用クラス定義置き場 */
@@ -336,7 +343,7 @@
   </div>
 
   <!------------------------------  👇️ Home garden  -->
-  <details style="margin-right: 8px;"><summary ><u>🍅Home Garden</u></summary>
+  <details style="margin-right: 8px;"><summary><u>🍅Home Garden</u></summary>
   <div class="content">
 
     <!------------------------------  👇️ 野菜さん別状況  -->
@@ -344,7 +351,7 @@
     <div class="content">
 
       <!------------------------------  👇️ 🥬芽キャベツ（10hg_10Brussels sprouts）さん  -->
-      <details style="margin-right: 5px;" ><summary >🥬芽キャベツさん</summary>
+      <details style="margin-right: 5px;" ><summary>🥬芽キャベツさん</summary>
       <div class="content">
 
         <!------------------------------  👇️ 🥬各情報トグルを入れる箱  -->
@@ -354,7 +361,7 @@
           <details class="vege-info" ><summary>ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
             <div class="content" ><div class="mini-window">
-              【アブラナ科】
+              <p style="text-align: center;" >【アブラナ科】</p>
               <ul>
                 <li><span>・種蒔き</span><span>：</span>春／秋</li>
                 <li><span>・サイズ</span><span>：</span>約15-20cm<br>葉の幅10-15cm</li>
@@ -378,9 +385,8 @@
           <details class="vege-info  scro-target" ><summary>📝関連</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
             <div class="content" ><div class="mini-window">
-             【栽培環境】
+              <p style="text-align: center;" >【栽培環境】</p>
               <ul>
-                <li><span></span><span></span></li>
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
                 <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
@@ -455,7 +461,7 @@
       <!------------------------------  👆️ 🥬芽キャベツさん  -->
 
       <!------------------------------  👇️ 🥕五寸人参さん（10hg_10carrots）  -->
-      <details style="margin-right: 5px;" ><summary >🥕五寸人参さん</summary>
+      <details style="margin-right: 5px;" ><summary>🥕五寸人参さん</summary>
       <div class="content">
 
         <!------------------------------  👇️ 🥕各情報トグルを入れる箱  -->
@@ -465,8 +471,8 @@
           <details class="vege-info" ><summary >ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
             <div class="content" ><div class="mini-window">
+              <p style="text-align: center;" >【セリ科】</p>
               <ul>
-                <li><span>【セリ科】</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>春／秋</li>
                 <li><span>・サイズ</span><span>：</span>根の長さ約15cm<br>葉の幅20〜25cm</li>
                 <li><span>・土壌pH</span><span>：</span>弱酸性〜中性（6.0〜6.8）</li>
@@ -490,9 +496,8 @@
           <details class="vege-info scro-target"><summary>📝関連</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
             <div class="content" ><div class="mini-window">
-              <!-- リスト化 -->
+              <p style="text-align: center;" >【栽培環境】</p>
               <ul style="white-space: nowrap;" >
-                <li><span>【栽培環境】</span><span></span></li>
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
                 <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
@@ -577,8 +582,8 @@
           <details class="vege-info" ><summary >ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
             <div class="content" ><div class="mini-window">
+              <p style="text-align: center;" >【ナス科】</p>
               <ul>
-                <li><span>【ナス科】</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>３～４月</li>
                 <li><span>・サイズ</span><span>：</span>高さ80〜120cm（ミニトマトは小型）</li>
                 <li><span>・土壌pH</span><span>：</span>弱酸性（6.0〜6.8）</li>
@@ -602,8 +607,8 @@
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
             <div class="content" ><div class="mini-window">
               <!-- リスト化 -->
+              <p style="text-align: center;" >【栽培環境】</p>
               <ul style="white-space: nowrap;" >
-                <li><span>【栽培環境】</span><span></span></li>
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
                 <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
@@ -689,8 +694,8 @@
           <details class="vege-info" ><summary >ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
             <div class="content" ><div class="mini-window">
+              <p style="text-align: center;" >【ウリ科】</p>
               <ul>
-                <li><span>【ウリ科】</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>４～５月</li>
                 <li><span>・サイズ</span><span>：</span>つるの長さ1〜2m（横に広がる）</li>
                 <li><span>・土壌pH</span><span>：</span>弱酸性（5.5〜7.0）</li>
@@ -714,9 +719,8 @@
           <summary>📝関連</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
             <div class="content" ><div class="mini-window">
-              <!-- リスト化 -->
+              <p style="text-align: center;" >【栽培環境】</p>
               <ul style="white-space: nowrap;" >
-                <li><span>【栽培環境】</span><span></span></li>
                 <li><span>・土成分</span><span>：</span>－</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
                 <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
@@ -801,8 +805,8 @@
           <details class="vege-info" ><summary >ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
             <div class="content" ><div class="mini-window">
+              <p style="text-align: center;" >【マメ科】</p>
               <ul>
-                <li><span>【マメ科】</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>５～６月</li>
                 <li><span>・サイズ</span><span>：</span>高さ30〜50cm（早生は小型）</li>
                 <li><span>・土壌pH</span><span>：</span>弱酸性（6.0〜6.5）</li>
@@ -826,10 +830,8 @@
           <summary>📝関連</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
             <div class="content" ><div class="mini-window">
-              <!-- リスト化 -->
+              <p style="text-align: center;" >【栽培環境】</p>
               <ul style="white-space: nowrap;" >
-                <li><span>【栽培環境】</span><span></span></li>
-                <li><span>・栽培開始</span><span>：</span>2026/06/10</li>
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん<br>根粒菌さん</li>
                 <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
@@ -913,8 +915,8 @@
           <details class="vege-info" ><summary >ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
             <div class="content" ><div class="mini-window">
+              <p style="text-align: center;" >【アブラナ科】</p>
               <ul>
-                <li><span>アブラナ科</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>春／秋</li>
                 <li><span>・サイズ</span><span>：</span>根の長さ15〜20cm<br>葉の幅20〜30cm</li>
                 <li><span>・土壌pH</span><span>：</span>弱酸性〜中性（6.0〜7.0）</li>
@@ -937,8 +939,8 @@
           <details class="vege-info scro-target"><summary>📝関連</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
             <div class="content" ><div class="mini-window">
+              <p style="text-align: center;" >【栽培環境】</p>
               <ul style="white-space: nowrap;" >
-                <li><span>・開始日</span><span>：</span>2026/06/14</li>
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
                 <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
@@ -1021,8 +1023,8 @@
           <details class="vege-info" ><summary >ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
             <div class="content" ><div class="mini-window">
+              <p style="text-align: center;" >【シナノキ科】</p>
               <ul>
-                <li><span>シナノキ科</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>５～６月</li>
                 <li><span>・サイズ</span><span>：</span>高さ1〜1.5m</li>
                 <li><span>・土壌pH</span><span>：</span>弱酸性〜中性（6.0〜7.0）</li>
@@ -1045,9 +1047,8 @@
           <details class="vege-info scro-target"><summary>📝関連</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
             <div class="content" ><div class="mini-window">
-              <!-- リスト化 -->
+              <p style="text-align: center;" >【栽培環境】</p>
               <ul style="white-space: nowrap;" >
-                <li><span>栽培環境</span><span></span></li>
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
                 <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
@@ -1131,8 +1132,8 @@
           <details class="vege-info" ><summary >ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
             <div class="mini-window"><div class="content">
+              <p style="text-align: center;" >【ナス科】</p>
               <ul>
-                <li><span>ナス科</span><span></span></li>
                 <li><span>・種蒔き</span><span>：</span>春／秋</li>
                 <li><span>・サイズ</span><span>：</span>高さ30〜60cm</li>
                 <li><span>・土壌pH</span><span>：</span>酸性（5.0〜6.0）</li>
@@ -1155,7 +1156,7 @@
           <details class="vege-info scro-target"><summary>📝関連</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
             <div class="mini-window"><div class="content">
-              <!-- リスト化 -->
+              <p style="text-align: center;" >【栽培環境】</p>
               <ul style="white-space: nowrap;" >
                 <li><span>・土成分</span><span>：</span>－</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
@@ -1389,7 +1390,7 @@
               // 親トグルは content の高さが伸び終わるまで待つ
                 content.addEventListener('transitionend', () => {
                   const h = window.innerHeight;
-                  const targetTop = h * 0.35; // ← ここで高さを調節
+                  const targetTop = h * 0.4; // ← ここで高さを調節
 
                   const absoluteTop = content.offsetTop;
                   const currentScroll = window.scrollY;
