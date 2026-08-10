@@ -28,7 +28,6 @@
 <style>
 
   /* 👇️ サイトベース設定 */
-
   body {
     text-shadow: 1px 4px 8px 
            rgba(0, 0, 0, 0.3); /* 共通文字影                 */
@@ -46,28 +45,27 @@
   /* CSS共通設定エリア */
 
   /* 👇️ メインタイトルのデザイン */
-
   .main-title {
     box-shadow:  1px 1px 11px 
             rgba(0, 0, 0, 0.4); /* タイトル専用         */
     text-shadow: 2px 4px 11px 
             rgba(0, 0, 0, 0.9); /* タイトル専用         */
     color:             #fcfff0; /* 文字色               */
-    background-image:linear-gradient(
+    background-image:
+    linear-gradient(
      rgba(172, 205, 255, 0.15),
            rgba(0, 0, 0, 0.1)), 
-       url("00_title.png");       /* 画像を指定           */
+             url("00_title.png"); /* 画像を指定           */
     background-position:  center; /* 中央に寄せる         */
     background-repeat: no-repeat; /* 繰り返さない         */
     background-size:       cover; /* 箱のサイズにフィット */
     text-align:           center; /* 中寄せ               */
-    margin:                  7px; 
+    margin:                  7px; /* メインサイトの外枠   */
     padding:            4px 11px; /* 上下／左右           */
     border-radius:          11px; /* 共通の丸み           */
   }
 
   /* 👇️ 左右スクロール用クラス */
-
   .scro{
     overflow-x:                  auto; /* 横スクロールを有効にする     */
     -webkit-overflow-scrolling: touch; /* スマホでのスムーズスクロール */
@@ -75,12 +73,11 @@
   }
 
   /* 👇️ 左右スクロールボタン用クラス */
-
   .scro-btn {
     box-shadow:1px 4px 11px 
     rgba(0, 0, 0, 0.4);
     background:
-    rgba(0, 0, 0, 0.6); /* 背景色（半透明）   */
+    rgba(143, 145, 163, 0.6); /* 背景色（半透明）   */
     color:       white; /* 文字色             */
     position:   absolute; /* 絶対位置で配置する */
     z-index:          20; /* 前面に表示する     */
@@ -95,7 +92,6 @@
   .scro-btn.next { right: 3px; } /* 右ボタンの位置を右端に寄せる */
 
   /* 👇️ 親トグルを閉じるボタン用クラス */
-
   .close-btn {
     text-shadow: 1px 4px 8px  
       rgba(0, 0, 0, 0.5); /* 文字に影をつける */
@@ -119,7 +115,6 @@
   }
 
   /* 👇️ トグル（details）全体の設定 */
-
   details {
     box-shadow: 1px 4px 11px 
           rgba(0, 0, 0, 0.4); /* 共通の影   */
@@ -131,19 +126,18 @@
   }
 
   /* 👇️ トグルタイトル（summary）のデザイン */
-
   summary {
     min-width:        0; /* 横幅を自動で親の枠に合わせる   */
     display:      block; /* ← 幅を持たせるために必須      */
     white-space: nowrap; /* 文字が長くても横1行で表示する  */
     cursor:     pointer; /* マウスカーソルを指マークにする */
-    text-align:  center; /* とりあえずセンターにしておく   */
+    text-align:    left; /* 配置はまた今度考える           */
     font-weight:   bold; /* 太字にする                     */
     padding:   0px 10px; /* ▶位置調整                      */
   }
   summary.indent-title {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center; /* 中央寄せ */
   }
 
@@ -164,16 +158,13 @@
   }
   
   /* 👇️ contentの親トグルが開いたときの表示設定 */
-
   details[open] .content {
     opacity: 1;
   }
   /*------------------------------  👇️ CSS個別設定エリア  */
   /* CSS個別設定エリア */
 
-  
   /* 👇️ content内で内容を表示する用の箱クラス */
-
   .mini-window {
     overflow-y:        auto; /* 縦スクロール              */
     scroll-behavior: smooth; /* スムーズに                */
@@ -187,10 +178,10 @@
   /*    中身はmini-windowで表示    */
   .vege-info{
     max-height:       350px; /* ミニウィンドウと相談   */
-    max-width:  330px; /* ミニウィンドウと相談   */
+    max-width:        98%; /* ミニウィンドウと相談   */
     align-self:  flex-start; /* 要素の高さを個別にする */
     border-radius:     11px; /* 共通の丸み             */
-    /* 👇️ スクロールバー非表示                         */
+    /* スクロールバー非表示                            */
    -ms-overflow-style: none; /* IE, Firefox            */
     scrollbar-width:   none; /* Firefox                */
   }
@@ -199,7 +190,6 @@
   }
 
   /* 👇️ 情報トグルが開いたときのスタイル指定 */
-
    .vege-info[open] {
    /*  並列要素の割合などを設定する
     flex-grow   並列要素の幅割合（0サイズ固定？）
@@ -208,16 +198,38 @@
     flex:  1 0 100%;
    }
 
-  /* 👇️ 情報トグルを並べる箱クラス */
+  /* 👇️ 情報トグル内のテーブクラス */
+  .vege-info-table {
+  /*border-collapse: collapse; */
+     box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);
+   /*  border: 1px solid #333; /* doubleにするには3px以上必要 */
+    width:       max-content;
+    border-radius: 11px;
+  }
 
+  /* 👇️ 情報トグル内のヘッダ・データ部クラス */
+  .vege-info-table th,
+  .vege-info-table td{
+  /*   box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4); */
+    border: 1px solid #333; 
+    text-align:       center;
+    vertical-align:   middle; 
+    width:       fit-content;
+    line-height:         1.5;
+    padding:        2px 10px;
+    border-radius:      11px;
+  }
+
+  /* 👇️ 情報トグルを並べる箱クラス */
   .info-wrap {
     overflow-x:         auto; /* 横スクロールを有効にする */
     display:            flex; /* 要素を横に並べる         */
+    justify-content:    left; /* 要素を左寄せ             */
     width:              auto; /* 横幅は要素に合わせる     */
     margin-top:          0px; /* 位置調整                 */
     gap:                15px; /* 要素間の隙間を設定する   */
     border-radius:      11px; /* 見えないけど一応丸み     */
-    /* 👇️ スクロールバー非表示                            */
+    /* スクロールバー非表示                               */
     -ms-overflow-style: none; /* IE, Firefox              */
     scrollbar-width:    none; /* Firefox                  */
    }
@@ -226,7 +238,6 @@
    }
 
   /* 👇️ リスト全体を「見えない自動調整テーブル」にする */
-
   .vege-info ul {
     font-size: auto; /* 文字サイズを自動調整 */
     display:  table; /* テーブル化           */
@@ -236,27 +247,23 @@
   }
 
   /* 👇️ 行(li)を「テーブルの行」にする（中点は消える） */
-
   .vege-info li {
     display: table-row; /* リストをテーブル行化 */
   }
 
   /* 👇️ vege-info li 直下のspanを全てテーブルのマスにする */
-
   .vege-info li > span{
     display: table-cell; /* テーブルマス化 */
     padding-top: 8px   ; /* リスト間調整   */
   }
 
   /* 👇️ vege-info li 直下のspan１個目と２個目だけを改行禁止にする */
-
   .vege-info li span:nth-child(1),
   .vege-info li span:nth-child(2) {
     white-space: nowrap; /* 改行禁止 */
   }
 
   /* 👇️ カールセルクラス：全体の設定 （位置の基準）*/
-
   .carousel {
     width:         100%; /* 横幅を最大値にする                         */
     margin-right:  10px; /* 右の隙間                                   */
@@ -267,7 +274,6 @@
   }
 
   /* 👇️ 写真カード用クラス：横に並ぶスクロールの箱 */
-
   .carousel-content {
     width:                100%; /* 横幅を最大値にする         */
     padding: 10px 4px 10px 4px; /* 上右下左                   */
@@ -285,7 +291,6 @@
     }
 
   /* 👇️ 野菜さん別情報カード用クラス */
-
   .vege-card {
     box-shadow: 1px 4px 11px 
      rgba(0, 0, 0, 0.4); /* 共通の影       */
@@ -296,7 +301,6 @@
   }
 
   /* 👇️ カード内の画像 */
-
   .vege-card img {
     box-shadow: 1px 4px 11px 
     rgba(0, 0, 0, 0.4); /* 共通の影                 */
@@ -313,7 +317,6 @@
   } */
 
   /* 👇️ ライセンストグル用クラス：全体を中央寄せにする */
-
   .license-base {
     text-align: center;
     line-height:   1.5; /* 行間を少し広げて読みやすく */
@@ -342,77 +345,34 @@
     </h4>
   </div>
 
+  
+  <!-- 👆️ 最小構成確認エリア  -->
   <!------------------------------  👇️ Home garden  -->
-  <details style="margin-right: 8px;"><summary><u>🍅Home Garden</u></summary>
+  <details open style="margin-right: 8px;"><summary><u>🍅Home Garden</u></summary>
   <div class="content">
 
     <!------------------------------  👇️ 野菜さん別状況  -->
-    <details ><summary><u>📆野菜さん別状況-2026</u></summary>
+    <details open><summary><u>📆野菜さん別状況-2026</u></summary>
     <div class="content">
 
-      <!------------------------------  👇️ 🥬芽キャベツ（10hg_10Brussels sprouts）さん  -->
-      <details style="margin-right: 5px;" ><summary>🥬芽キャベツさん</summary>
+      <!------------------------------  👇️ 🥬芽キャベツさん（10hg_10Brussels sprouts）  -->
+      <details open style="margin-right: 5px;" ><summary>🥬芽キャベツさん</summary>
       <div class="content">
 
-        <!------------------------------  👇️ 🥬各情報トグルを入れる箱  -->
-        <div class="info-wrap" >
-
-          <!------------------------------  👇️ 🥬野菜情報  -->
-          <details class="vege-info" ><summary>ℹ️野菜情報</summary>
-            <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content" ><div class="mini-window">
-              <p style="text-align: center;" >【アブラナ科】</p>
-              <ul>
-                <li><span>・種蒔き</span><span>：</span>春／秋</li>
-                <li><span>・サイズ</span><span>：</span>約15-20cm<br>葉の幅10-15cm</li>
-                <li><span>・土壌pH</span><span>：</span>弱アルカリ性～中性（6.5〜7.5）</li>
-                <li><span>・温度</span><span>：</span>15-25℃</li>
-                <li><span>・太陽光</span><span>：</span>普通に</li>
-                <li><span>・水やり</span><span>：</span>土が乾いたら多めに（過湿NG）。</li>
-                <li><span>・肥料</span><span>：</span>元肥は少なめに、追肥は定期的。</li>
-                <li><span>・病害虫</span><span>：</span>アブラムシ<br>ハモグリバエ<br>ヨトウムシ</li>
-                <li><span>・収穫</span><span>：</span>種まきから約60-70日<br>下から順に外側の葉を摘む。</li>
-                <li><span>・再収穫</span><span>：</span>可能（株の中心から新芽が出てくる）</li>
-                <li><span>・栄養</span><span>：</span>ビタミンC<br>ビタミンK<br>葉酸</li>
-                <li><span>・その他</span><span>：</span>葉も栄養豊富。</li>
-              </ul>
-              <!------------------------------  👇️ 🥬親トグルを「閉じる」ボタン 使うときはここ -->
-
-            </div></div>
-          </details>
-
-          <!------------------------------  👇️ 🥬栽培環境  -->
-          <details class="vege-info  scro-target" ><summary>📝関連</summary>
-            <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content" ><div class="mini-window">
-              <p style="text-align: center;" >【栽培環境】</p>
-              <ul>
-                <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
-                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水</li>
-                <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
-                <li><span>・ツール</span><span>：</span>TUAH<br>TUAL</li>
-                <li><span>・プランタ</span><span>：</span>ワイヤネット</li>
-              </ul>
-            </div></div>
-          </details>
-        <!------------------------------  👆️ 🥬各情報トグルを入れる箱  -->
-        </div>
-
-        <!------------------------------  👇️ 🥬カールセルの親  -->
+        <!------------------------------  👇️ 🥬写真カールセルの親  -->
         <div class="carousel">
 
           <!------------------------------  👇️ 🥬左ボタン  -->
           <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
-          <!------------------------------  👇️ 🥬横スクロールの箱  --> 
+          <!------------------------------  👇️ 🥬写真横スクロールの箱  --> 
           <div class="carousel-content">
 
             <!------------------------------  👇️ 🥬野菜写真（増やしたいときはこれをコピペ！）  -->
-
             <div class="vege-card">
-                <b>7/1</b><br>
-                <img src="10hg_10Brussels sprouts_20260701.webp" alt="栽培中" width="500" height="500">
-                種蒔きは6月10日。季節が違うけど、芽は育ってる。土の水分が見えるように囲いはビニールで作ってみた、遮光性が心配。種はダイソーさんで購入。
+              <b>7/1</b><br>
+              <img src="10hg_10Brussels sprouts_20260701.webp" alt="栽培中" width="500" height="500">
+              種蒔きは6月10日。季節が違うけど、芽は育ってる。土の水分が見えるように囲いはビニールで作ってみた、遮光性が心配。種はダイソーさんで購入。
             </div>
 
             <div class="vege-card">
@@ -448,13 +408,107 @@
           <button class="scro-btn next"
             onclick="scrollPrime(this, 265)">&gt;</button>
 
+        <!------------------------------  👆️ 🥬写真カールセルの親  -->
+        </div>
+
+
+        <!------------------------------  👇️ 🥬野菜情報トグル  -->
+
+        <details class="vege-info  scro-target" ><summary>ℹ️野菜情報</summary>
+            <!-- コンテンツウィンドウ＆ミニウィンドウ-->
+            <div class="content" >
+
+
+
+
+        <!------------------------------  👇️ 🥬野菜情報カールセルの親  -->
+        <div class="carousel">
+
+          <!------------------------------  👇️ 🥬左ボタン  -->
+          <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
+
+          <!------------------------------  👇️ 🥬野菜情報横スクロールの箱  --> 
+          <div class="carousel-content">
+
+
+
+
+            <div style="white-space:nowrap ;text-align: center;" >
+  <table class="vege-info-table"  >
+    <tr >
+      <th>所属</th>
+      <th>季節</th>
+      <th>温度</th>
+      <th>サイズ</th>
+      <th>土壌(pH)</th>
+      <th>太陽光</th>
+      <th>水</th>
+      <th>肥料</th>
+      <th>収穫</th>
+      <th>再収穫</th>
+      <th>栄養(実)</th>
+      <th>栄養(葉)</th>
+      <th>その他</th>
+    </tr>
+    <tbody >
+    <tr>
+      <td>アブラナ科</td>
+      <td>春／秋</td>
+      <td>15-25℃</td>
+      <td>株：15-20cm<br>葉：10-15cm</td>
+      <td>弱アルカリ～中性<br>(6.5〜7.5)</td>
+      <td>普通に</td>
+      <td>土が乾いたら<br>(加湿NG)</td>
+      <td>元肥：少なめ<br>追肥：定期的</td>
+      <td>60-70日<br>(種から)</td>
+      <td>可能</td>
+      <td>葉酸<br>ビタミンC<br>ビタミンK</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody></table>
+  </div>
+          </div>
+          <!------------------------------  👆️ 🥬横スクロールの箱 -->
+
+          <!------------------------------  👇️ 🥬右ボタン  -->
+          <button class="scro-btn next"
+            onclick="scrollPrime(this, 265)">&gt;</button>
+
         <!------------------------------  👆️ 🥬カールセルの親  -->
         </div>
+
+        </div>
+        </details>
+
+
+
+
+
+
+          <!------------------------------  👇️ 🥬栽培環境  -->
+          <details class="vege-info  scro-target" ><summary>📝関連情報</summary>
+            <!-- コンテンツウィンドウ＆ミニウィンドウ-->
+            <div class="content" ><div class="mini-window">
+              <p style="text-align: center;" >【栽培環境】</p>
+              <ul>
+                <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
+                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水</li>
+                <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
+                <li><span>・ツール</span><span>：</span>TUAH<br>TUAL</li>
+                <li><span>・プランタ</span><span>：</span>ワイヤネット</li>
+              </ul>
+            </div></div>
+          </details>
+        <!------------------------------  👆️ 🥬各情報トグルを入れる箱  -->
+        </div>
+
 
         <!------------------------------  👇️ 🥬親トグルを「閉じる」ボタン  --> 
         <div style=" text-align: center;">
           <button class="close-btn"></button>
         </div>
+
 
       </div>
       </details>
