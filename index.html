@@ -129,8 +129,10 @@
   details {
     box-shadow: 1px 4px 11px
           rgba(0, 0, 0, 0.4); /* 共通の影   */
+        overflow:  hidden; /* 枠外の文字は非表示         */
+
     justify-content:    center; /* 中央配置   */
-    /* margin:   10px 2px 8px 2px; */
+    margin:   4px 3px 4px 3px; 
     padding:   7px 0px 7px 0px; /* 上右下左   */
     border-radius:        80px; /* 共通の丸み */
   }
@@ -164,8 +166,8 @@
           rgba(0, 0, 0, 0.2);
     min-width:               0;
     border-radius:        33px;
-    margin:               10px;
-    padding: 3px 33px 7px 33px;
+    margin:            3px 0px;
+    padding: 3px 33px 4px 33px;
   }
 
   /* 超重要！これがないとズボラできないぞ！ＪＳ */
@@ -395,7 +397,7 @@
   <details open><summary><div>🍅Home Garden</div></summary>
   <div class="content">
     <!------------------------------  👇️ 野菜さん別状況  -->
-    <details open><summary>📆野菜さん別状況</summary>
+    <details open><summary><div>📆栽培記録</div></summary>
     <div class="content">
       <!------------------------------  👇️ 🥬芽キャベツさん（10hg_10Brussels sprouts）  -->
       <details open><summary>🥬芽キャベツさん</summary>
