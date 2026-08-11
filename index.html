@@ -77,8 +77,8 @@
     box-shadow:1px 4px 11px 
     rgba(0, 0, 0, 0.4);
     background:
-    rgba(143, 145, 163, 0.6); /* 背景色（半透明）   */
-    color:       white; /* 文字色             */
+    rgba(229, 229, 233, 0.6); /* 背景色（半透明）   */
+    color:       rgb(77, 77, 77); /* 文字色             */
     position:   absolute; /* 絶対位置で配置する */
     z-index:          20; /* 前面に表示する     */
     cursor:      pointer; /* 指マークにする     */
@@ -91,54 +91,81 @@
   .scro-btn.prev { left : 3px; } /* 左ボタンの位置を左端に寄せる */
   .scro-btn.next { right: 3px; } /* 右ボタンの位置を右端に寄せる */
 
-  /* 👇️ 親トグルを閉じるボタン用クラス */
+  /* 👇️ 閉じるボタン用クラス */
   .close-btn {
     text-shadow: 1px 4px 8px  
-      rgba(0, 0, 0, 0.5); /* 文字に影をつける */
-    box-shadow: 1px 4px 11px
-      rgba(0, 0, 0, 0.5); /* 共通の影         */
-    background:  #dfdfdf; /* 背景色           */
-    color:       #000000; /* 文字の色         */
-    font-weight:       500;
-    cursor:        pointer; /* 指マークにする   */
-    font-size:        14px;
-    border:           none;
-    width:            25px; 
-    margin-top:        7px; /* 位置調整         */
-    margin-bottom:    10px; /* 位置調整         */
-    margin-left:       87%; /* 位置調整         */
-    padding:           3px; /* 位置調整         */
-    border-radius:    50px; /* 共通の丸み       */
+         rgba(0, 0, 0, 0.5); /* 文字に影をつける */
+    box-shadow: 1px 3px 5px
+         rgba(0, 0, 0, 0.5); /* 共通の影         */
+    background:     #dfdfdf; /* 背景色           */
+    color:          #000000; /* 文字の色         */
+    font-weight:          500;
+    cursor:           pointer; /* 指マークにする   */
+    font-size:           14px;
+    border:              none;
+    /* margin: 7px 70px 7px 70px; */
+    width:               25px; 
+    /* margin-top:        7px; /* 位置調整         */
+    /* margin-bottom:    10px; /* 位置調整         */
+    /* margin-left:       87%; /* 位置調整         */
+    padding:              3px; /* 位置調整         */
+    border-radius:       50px; /* 共通の丸み       */
   }
   .close-btn::before {
     content:         "✖️"; /* 文字設定 */
   }
 
-  /* 👇️ トグル（details）全体の設定 */
-  details {
-    box-shadow: 1px 4px 11px 
-          rgba(0, 0, 0, 0.4); /* 共通の影   */
-    margin-top:           10px; /* 上の隙間   */
-    margin-bottom:         8px; /* 下の隙間   */
-    margin-left:           5px; /* 位置調整   */
-    padding:   7px 0px 7px 0px; /* 上右下左   */
-    border-radius:        11px; /* 共通の丸み */
+  /* 閉じるボタンの左右配置クラス */
+  .LR-set {
+    box-shadow: 1px 4px 11px
+              rgba(0, 0, 0, 0.4);
+    display:                  flex; /* 横並び           */
+    justify-content: space-between; /* 左右配置         */
+    width:                     64%; /* 繊細な位置調整   */
+    padding:               5px 18%; /* 繊細な位置調整   */
   }
+
+  /* 👇️ トグル（details）の設定 */
+  details {
+    box-shadow: 1px 4px 11px
+          rgba(0, 0, 0, 0.4); /* 共通の影   */
+    justify-content:    center; /* 中央配置   */
+    /* margin:   10px 2px 8px 2px; */
+    padding:   7px 0px 7px 0px; /* 上右下左   */
+    border-radius:        80px; /* 共通の丸み */
+  }
+
+  /* 👇️ 第２トグル（details）の設定 */
+  .tggle-1 {
+    box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);
+  }
+
+
+
+
+  /* 👇️ 第３トグル（details）の設定 */
+
+
 
   /* 👇️ トグルタイトル（summary）のデザイン */
   summary {
-    min-width:        0; /* 横幅を自動で親の枠に合わせる   */
-    display:      block; /* ← 幅を持たせるために必須      */
-    white-space: nowrap; /* 文字が長くても横1行で表示する  */
-    cursor:     pointer; /* マウスカーソルを指マークにする */
-    text-align:    left; /* 配置はまた今度考える           */
-    font-weight:   bold; /* 太字にする                     */
-    padding:   0px 10px; /* ▶位置調整                      */
+    min-width:            0; /* 横幅を自動で親の枠に合わせる   */
+    white-space:     nowrap; /* 文字が長くても横１行で表示する */
+    cursor:         pointer; /* マウスカーソルを指マークにする */
+    text-align:      center; /* 配置はまた今度考える           */
+    display:           flex; /* 横並び                         */
+    justify-content: center; /* 中央配置                       */
+    font-weight:       bold; /* 太字にする                     */
+/*     padding:       3px 10px; /* ▶位置調整                     */
   }
-  summary.indent-title {
-  display: flex;
-  /* align-items: center; */
-  justify-content: center; /* 中央寄せ */
+
+  summary div {
+    box-shadow:     1px 4px 7px
+          rgba(0, 0, 0, 0.2);
+    min-width:               0;
+    border-radius:        33px;
+    margin:               10px;
+    padding: 3px 33px 7px 33px;
   }
 
   /* 超重要！これがないとズボラできないぞ！ＪＳ */
@@ -198,28 +225,40 @@
     flex:  1 0 100%;
    }
 
-  /* 👇️ 情報トグル内のテーブクラス */
+  /* 👇️ 情報トグル内のテーブルクラス */
   .vege-info-table {
   /*border-collapse: collapse; */
-     box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);
-   /*  border: 1px solid #333; /* doubleにするには3px以上必要 */
-    width:       max-content;
+  /*box-shadow:
+     1px 4px 11px rgba(0, 0, 0, 0.4);
+  /*border:    1px solid #333; /* doubleにするには3px以上必要 */
+    width:  max-content;
+    border-spacing: 4px;
     border-radius: 11px;
   }
 
   /* 👇️ 情報トグル内のヘッダ・データ部クラス */
   .vege-info-table th,
-  .vege-info-table td{
-  /*   box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4); */
-    border: 1px solid #333; 
+  .vege-info-table td {
+    box-shadow: 2px 2px 11px 2px
+        rgba(0, 0, 0, 0.4);
+    /* border: 1px solid #333;  */
     text-align:       center;
     vertical-align:   middle; 
     white-space:      nowrap;
     width:       fit-content;
-    line-height:         1.5;
+    line-height:         1.2;
     padding:        2px 10px;
     border-radius:      11px;
   }
+
+  .vege-info-table thead {
+    background: #dfffe9; 
+  }
+
+  .vege-info-table tbody {
+    background: #f2fffd; 
+  }
+
 
   /* 👇️ 情報トグルを並べる箱クラス */
   .info-wrap {
@@ -266,17 +305,21 @@
 
   /* 👇️ カールセルクラス：全体の設定 （位置の基準）*/
   .carousel {
-    width:         100%; /* 横幅を最大値にする                         */
-    margin-right:  10px; /* 右の隙間                                   */
+    box-shadow: inset 1px 4px 11px
+   rgba(0, 0, 0, 0.4);
+    overflow:    hidden; /* 枠外の文字は非表示                         */
+    width:          96%; /* 横幅を最大値にする                         */
+    margin:     15px 2%; /* 右の隙間                                   */
+    padding:        2px;
     position:  relative; /* スクロールボタンの位置を絶対位置で指定する */
     display:       flex; /* 要素を横並びにする                         */
     align-items: center; /* 要素を縦方向の中央に揃える                 */
-    border-radius: 11px; /* 共通の丸み                                 */
+    border-radius: 50px; /* 共通の丸み                                 */
   }
 
   /* 👇️ 写真カード用クラス：横に並ぶスクロールの箱 */
   .carousel-content {
-    width:                100%; /* 横幅を最大値にする         */
+    width:                97%; /* 横幅を最大値にする         */
     padding: 10px 4px 10px 4px; /* 上右下左                   */
     display:              flex; /* 要素を横並びにする         */ 
 /*  align-items:    flex-start; /* 要素を同じ高さに揃える     */
@@ -349,13 +392,13 @@
   
   <!-- 👆️ 最小構成確認エリア  -->
   <!------------------------------  👇️ Home garden  -->
-  <details open style="margin-right: 8px;"><summary><u>🍅Home Garden</u></summary>
+  <details open><summary><div>🍅Home Garden</div></summary>
   <div class="content">
     <!------------------------------  👇️ 野菜さん別状況  -->
-    <details open><summary><u>📆野菜さん別状況-2026</u></summary>
+    <details open><summary>📆野菜さん別状況</summary>
     <div class="content">
       <!------------------------------  👇️ 🥬芽キャベツさん（10hg_10Brussels sprouts）  -->
-      <details open style="margin-right: 5px;" ><summary>🥬芽キャベツさん</summary>
+      <details open><summary>🥬芽キャベツさん</summary>
       <div class="content">
         <!------------------------------  👇️ 🥬写真カールセル  -->
         <div class="carousel">
@@ -435,7 +478,7 @@
         <!------------------------------  👆️ 🥬野菜情報トグル ＆ コンテンツ END  -->
 
         <!------------------------------  👇️ 🥬環境情報トグル ＆ コンテンツ -->
-        <details open class="vege-info" ><summary>📝環境情報</summary><div class="content" >
+        <details class="vege-info" ><summary>📝環境情報</summary><div class="content" >
 
           <!------------------------------  👇️ 🥬環境情報カールセル  -->
           <div class="carousel">
@@ -463,7 +506,9 @@
         <!------------------------------  👆️ 🥬環境情報トグル ＆ コンテンツ END  -->
 
         <!------------------------------  👇️ 🥬親トグルを「閉じる」ボタン  --> 
-        <div style=" text-align: center;"><button class="close-btn"></button>
+        <div class="LR-set">
+        <div style=" text-align: center;"><button class="close-btn"></button></div>
+        <div style=" text-align: center;"><button class="close-btn"></button></div>
         </div>
 
       </div>
@@ -471,7 +516,7 @@
       <!------------------------------  👆️ 🥬芽キャベツさん  -->
 
       <!------------------------------  👇️ 🥕五寸人参さん（10hg_10carrots）  -->
-      <details style="margin-right: 5px;" ><summary>🥕五寸人参さん</summary>
+      <details ><summary>🥕五寸人参さん</summary>
       <div class="content">
 
         <!------------------------------  👇️ 🥕各情報トグルを入れる箱  -->
@@ -582,7 +627,7 @@
       <!------------------------------  👆️ 🥕五寸人参さん  -->
 
       <!------------------------------  👇️ 🍅鈴なりトマトさん（10hg_10Cherry tomatoes）  -->
-      <details style="margin-right: 5px;" ><summary >🍅鈴なりトマトさん</summary>
+      <details ><summary >🍅鈴なりトマトさん</summary>
       <div class="content">
 
         <!------------------------------  👇️ 🍅各情報トグルを入れる箱  -->
@@ -694,7 +739,7 @@
 
 
       <!------------------------------  👇️ 🥒地這いキュウリさん（10hg_10cucumbers）  -->
-      <details style="margin-right: 5px;" ><summary >🥒地這いキュウリさん</summary>
+      <details ><summary >🥒地這いキュウリさん</summary>
       <div class="content">
 
         <!------------------------------  👇️ 🥒各情報トグルを入れる箱  -->
@@ -805,7 +850,7 @@
       <!------------------------------  👆️ 🥒地這いキュウリさん  -->
 
       <!------------------------------  👇️ 🌱早生枝豆さん（10hg_10Glycine max）  -->
-      <details style="margin-right: 5px;" ><summary >🌱早生枝豆さん</summary>
+      <details ><summary >🌱早生枝豆さん</summary>
       <div class="content">
 
         <!------------------------------  👇️ 🌱各情報トグルを入れる箱  -->
@@ -915,7 +960,7 @@
       <!------------------------------  👆️ 🌱早生枝豆さん  -->
 
       <!------------------------------  👇️ 🌿ミニ大根さん  -->
-      <details style="margin-right: 5px;" ><summary >🌿ミニ大根さん</summary>
+      <details ><summary >🌿ミニ大根さん</summary>
       <div class="content">
 
         <!------------------------------  👇️ 🌿各情報トグルを入れる箱  -->
@@ -1023,7 +1068,7 @@
       <!------------------------------  👆️ 🌿ミニ大根さん  -->
 
       <!------------------------------  👇️ 🍃モロヘイヤさん（10hg_10molokhia）  -->
-      <details style="margin-right: 5px;" ><summary >🍃モロヘイヤさん</summary>
+      <details ><summary >🍃モロヘイヤさん</summary>
         <div class="content">
 
         <!------------------------------  👇️ 🍃各情報トグルを入れる箱  -->
@@ -1132,7 +1177,7 @@
       <!------------------------------  👆️ 🍃モロヘイヤさん  -->
 
       <!------------------------------  👇️ 🥔ジャガイモさん（10hg_10potato）  -->
-      <details style="margin-right: 5px;" ><summary >🥔ジャガイモさん</summary>
+      <details ><summary >🥔ジャガイモさん</summary>
       <div class="content">
 
         <!------------------------------  👇️ 🥔各情報トグルを入れる箱  -->
