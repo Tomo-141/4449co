@@ -151,7 +151,7 @@
     min-width:             50%;
     margin:            3px 0px;
     padding: 3px 33px 4px 33px;
-    border-radius:        33px;
+    border-radius:        11px;
   }
 
   /* 👇️ テーブル設定エリア */
@@ -159,9 +159,9 @@
   table td {
     box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);
   /*border: 1px solid #333; /* 線を表示する */
-    line-height:       1.5; /* 行間の調整   */
+    line-height:       1.2; /* 行間の調整   */
     padding:       8px 8px; /* サイズ調整   */
-    border-radius:    33px; /* 共通の丸み   */
+    border-radius:    11px; /* 共通の丸み   */
   }
   /* ヘッダー部専用 */
   table th {
@@ -187,8 +187,8 @@
     padding:        0;
     opacity:        0; /* 初期非表示設定        */
     transition:
-    height  1s   ease, /* 設定はしてあるけど、  */
-    opacity 1s   ease; /* ＪＳで上書き          */
+    height  1s  1.5s ease, /* 設定はしてあるけど、  */
+    opacity 1s  0.5s ease; /* ＪＳで上書き          */
   }
   
   /* contentの親トグルが開いたときの表示設定 */
@@ -239,8 +239,9 @@
     width:              auto; /* 横幅は要素に合わせる     */
   /*margin-top:          0px; /* 位置調整                 */
     gap:                15px; /* 要素間の隙間を設定する   */
-    padding: 0 15px;
+    padding:   0 15px;
     border-radius:      11px; /* 見えないけど一応丸み     */
+    transition: width 2s ease, flex-basis 2s ease;
     /* スクロールバー非表示                               */
     -ms-overflow-style: none; /* IE, Firefox              */
     scrollbar-width:    none; /* Firefox                  */
@@ -253,9 +254,9 @@
   /*    中身はmini-windowで表示    */
   .vege-info{
     max-height:        100%; /* ミニウィンドウと相談   */
-    max-width:          98%; /* ミニウィンドウと相談   */
+    max-width:          99%; /* ミニウィンドウと相談   */
     align-self:  flex-start; /* 要素の高さを個別にする */
-    padding: 5px;
+    padding:            5px;
     border-radius:     22px; /* 共通の丸み             */
     /* スクロールバー非表示                            */
    -ms-overflow-style: none; /* IE, Firefox            */
@@ -531,26 +532,29 @@
       <div class="content">
 
         <div class="info-wrap" >
-          <details open class="tgl-3 vege-info" ><summary>ℹ️野菜情報</summary>
+          <details class="tgl-3 vege-info" ><summary>ℹ️野菜情報</summary>
           <div class="content" >
             <table>
               <tr><th scope="row">所属    </th><td colspan="2">セリ科</td></tr>
               <tr><th scope="row">季節    </th><td colspan="2">春／秋</td></tr>
               <tr><th scope="row">温度    </th><td colspan="2">15-25℃</td></tr>
-              <!-- 親項目を分ける -->
-              <tr><th scope="row" rowspan="2">サイズ</th><th>根</th><td>15-20cm</td></tr>
+              <!-- 子項目有り -->
+              <tr><th scope="row" rowspan="2">サイズ</th><th scope="row">根</th><td>15-20cm</td></tr>
               <tr><th scope="row">葉      </th><td>20-25cm</td></tr>
+
               <tr><th scope="row">土壌(pH)</th><td colspan="2">弱酸性〜中性(6.0〜6.8)</td></tr>
               <tr><th scope="row">太陽光  </th><td colspan="2">普通に</td></tr>
               <tr><th scope="row">水      </th><td colspan="2">土が乾いたら控えめに(加湿NG)</td></tr>
-              <!-- 親項目を分ける -->
-              <tr><th scope="row" rowspan="2">肥料</th><th>元肥</th><td>少なめ</td></tr>
-              <tr><th scope="row">追肥    </th><td>定期的</td></tr>
+              <!-- 子項目有り -->
+              <tr><th scope="row" rowspan="2">肥料</th><th scope="row">元肥</th><td colspan="2">少なめ</td></tr>
+              <tr><th scope="row">追肥    </th><td colspan="2">定期的</td></tr>
+
               <tr><th scope="row">収穫    </th><td colspan="2">70-90日(種から)</td></tr>
               <tr><th scope="row">再収穫  </th><td colspan="2">不可(葉は可能)</td></tr>
-              <!-- 親項目を分ける -->
-              <tr><th scope="row" rowspan="2">栄養</th><th>根</th><td >βカロテン<br>食物繊維<br>カリウム</td></tr>
+              <!-- 子項目有り -->
+              <tr><th scope="row" rowspan="2">栄養</th><th scope="row">根</th><td colspan="2">βカロテン<br>食物繊維<br>カリウム</td></tr>
               <tr><th scope="row">葉      </th><td colspan="2">ビタミンA<br>ビタミンC<br>食物繊維</td></tr>
+
               <tr><th scope="row">備考    </th><td colspan="2">葉物として育てるなら長期間収穫できる</td></tr>
             </table>
  
@@ -562,27 +566,22 @@
 
           </div>
           </details>
-          <details open class="tgl-3 vege-info" ><summary>ℹ️野菜情報</summary>
+          <details open class="tgl-3 vege-info scro-target" ><summary>✍栽培環境</summary>
           <div class="content" >
             <table>
-              <tr><th scope="row">所属    </th><td colspan="2">セリ科</td></tr>
-              <tr><th scope="row">季節    </th><td colspan="2">春／秋</td></tr>
-              <tr><th scope="row">温度    </th><td colspan="2">15-25℃</td></tr>
-              <!-- 親項目を分ける -->
-              <tr><th scope="row" rowspan="2">サイズ</th><th>根</th><td>15-20cm</td></tr>
-              <tr><th scope="row">葉      </th><td>20-25cm</td></tr>
-              <tr><th scope="row">土壌(pH)</th><td colspan="2">弱酸性〜中性(6.0〜6.8)</td></tr>
-              <tr><th scope="row">太陽光  </th><td colspan="2">普通に</td></tr>
-              <tr><th scope="row">水      </th><td colspan="2">土が乾いたら控えめに(加湿NG)</td></tr>
-              <!-- 親項目を分ける -->
-              <tr><th scope="row" rowspan="2">肥料</th><th>元肥</th><td>少なめ</td></tr>
-              <tr><th scope="row">追肥    </th><td>定期的</td></tr>
-              <tr><th scope="row">収穫    </th><td colspan="2">70-90日(種から)</td></tr>
-              <tr><th scope="row">再収穫  </th><td colspan="2">不可(葉は可能)</td></tr>
-              <!-- 親項目を分ける -->
-              <tr><th scope="row" rowspan="2">栄養</th><th>根</th><td >βカロテン<br>食物繊維<br>カリウム</td></tr>
-              <tr><th scope="row">葉      </th><td colspan="2">ビタミンA<br>ビタミンC<br>食物繊維</td></tr>
-              <tr><th scope="row">備考    </th><td colspan="2">葉物として育てるなら長期間収穫できる</td></tr>
+              <!-- 2項目 -->
+              <tr><th scope="row" rowspan="2">土成分<br>(比率)</th><th scope="row">COCOブリック</th><td colspan="2">7</td></tr>
+              <tr><th scope="row">バーミキュライト</th><td>3</td></tr>
+              <!-- 3項目 -->
+              <tr><th scope="row" rowspan="3">追肥<br>(希釈率)</th><th scope="row">HYPONeX</th><td colspan="2">1000倍</td></tr>
+              <tr><th scope="row">ヨモギ水</th><td>1000倍</td></tr>
+              <tr><th scope="row">ブドウ糖</th><td>1000倍</td></tr>
+              <!-- 2項目 -->
+              <tr><th scope="row" rowspan="2">コラボ菌</th><td colspan="2">納豆菌さん</td></tr>
+              <tr><td colspan="2">菌根菌さん</td></tr>
+              <!-- 1項目 -->
+              <tr><th scope="row">プランタ</th><td colspan="2">ワイヤネット</td></tr>
+              <tr><th scope="row">ツール  </th><td colspan="2">TUAL</td></tr>
             </table>
  
             <!------------------------------  👇️ 🥕親トグルを「閉じる」ボタン  --> 
@@ -1432,9 +1431,9 @@
 
         content.style.overflow = 'hidden';
         // ここで開閉時間を指定する 👇️
-        content.style.transition = 'height 0.7s ease, opacity 1s ease';
-        content.style.height = detail.hasAttribute('open') ? 'auto' : '0px';
-        content.style.opacity = detail.hasAttribute('open') ? '1' : '0';
+        content.style.transition = 'height 1s ease, opacity 0.7s ease';
+        content.style.height     = detail.hasAttribute('open') ? 'auto' : '0px';
+        content.style.opacity    = detail.hasAttribute('open') ? '1' : '0';
 
         const closeDetail = () => {
           animating = true;
@@ -1485,7 +1484,7 @@
               // 親トグルは content の高さが伸び終わるまで待つ
                 content.addEventListener('transitionend', () => {
                   const h = window.innerHeight;
-                  const targetTop = h * 0.45; // ← ここで高さを調節
+                  const targetTop = h * 0.35; // ← ここで高さを調節
 
                   const absoluteTop = content.offsetTop;
                   const currentScroll = window.scrollY;
@@ -1506,16 +1505,16 @@
       details.addEventListener('toggle', function() {
         const wrapper = this.closest('.info-wrap');
         if (!wrapper) return;
-
-        if (this.open) {
+ 
         //  開いたら右端へ
+        if (this.open) {
           wrapper.scrollTo({
             left: wrapper.scrollWidth,
             behavior: 'smooth'
           });
 
-        } else {
         // 閉じたら左端へ
+        } else {
           wrapper.scrollLeft = 0;
           requestAnimationFrame(() => {
           wrapper.scrollLeft = 0;
