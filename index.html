@@ -29,16 +29,15 @@
 
   /* 👇️ サイトベース設定 */
   body {
-    text-shadow: 1px 4px 8px 
-           rgba(0, 0, 0, 0.3); /* 共通文字影                 */
-    background:       #f9ffff; /* 背景色                     */
-    color:            #000000; /* 文字色                     */
-    margin:              0 auto; /* 画面中央に配置             */
-    max-width:            750px; /* サイトの横幅               */
-    box-sizing:      border-box; /* 枠のサイズを正確に計算する */
-    font-family: "Noto Sans JP", /* 第１フォント               */
-                     sans-serif; /* 第２フォント               */
-    font-weight:            500; /* 文字の濃さ                 */
+    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+    background:       #f9ffff; /* 背景色                 */
+    color:            #000000; /* 文字色                 */
+    margin:              0 auto; /* 画面中央に配置         */
+    max-width:            750px; /* サイトの横幅           */
+    box-sizing:      border-box; /* サイズを正確に計算する */
+    font-family: "Noto Sans JP", /* 第１フォント           */
+                     sans-serif; /* 第２フォント           */
+    font-weight:            500; /* 文字の濃さ             */
   }
 
   /*------------------------------  👇️ CSS共通設定エリア  */
@@ -124,12 +123,12 @@
   }
 
   /* 第２トグルの設定 */
-  .tgl-2 {
+  .tgl2 {
     width: 99%;
   }
 
   /* 第３トグルの設定 */
-  .tgl-3 {
+  .tgl3 {
     width: 96%;
   }
 
@@ -146,8 +145,7 @@
 
   /* <sammary><div>の設定（複合セパレータ） */
   summary div {
-    box-shadow:     1px 4px 7px
-          rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.2);
     min-width:             50%;
     margin:            3px 0px;
     padding: 3px 33px 4px 33px;
@@ -158,20 +156,34 @@
   table th,
   table td {
     box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);
-  /*border: 1px solid #333; /* 線を表示する */
-    line-height:       1.2; /* 行間の調整   */
-    padding:       8px 8px; /* サイズ調整   */
-    border-radius:    11px; /* 共通の丸み   */
+    border: 5px solid #333; /* 線を表示する */
+    line-height:       1.2;   /* 行間の調整   */
+    padding:       8px 8px;   /* サイズ調整   */
+    border-radius:    11px;   /* 丸み         */
   }
-  /* ヘッダー部専用 */
+
+  table tr {
+      border: 10px solid #333; /* 線を表示する */
+
+  }
+
+  /* 親ヘッダー項目 */
   table th {
-    background: #dfffe9;
+    background: #defbff;
     white-space:   nowrap;
+  }
+
+  /* 子ヘッダー項目 */
+  table th.th2 {
+    background: #fafce4;
+    width: 80px;
+    font-weight:600;
+    text-align: center;
   }
 
   /* データ部専用 */
   table td {
-    background: #f2fffd;
+    background: #f8feff;
     width:           100%;
   }
 
@@ -407,11 +419,81 @@
   <details open><summary><u>🍅Home Garden</u></summary>
   <div class="content">
     <!------------------------------  👇️ 野菜さん別状況  -->
-    <details open class="tgl-2" ><summary><u>📆栽培記録</u></summary>
+    <details open class="tgl2"><summary><u>📆栽培記録</u></summary>
     <div class="content">
       <!------------------------------  👇️ 🥬芽キャベツさん（10hg_10Brussels sprouts）  -->
-      <details class="tgl-2" ><summary>🥬芽キャベツさん</summary>
+      <details open class="tgl2"><summary>🥬芽キャベツさん</summary>
       <div class="content">
+        <!-- 🥬情報エリア -->
+        <div class="info-wrap">
+          <details class="tgl3 vege-info"><summary>🥬野菜情報</summary>
+          <div class="content">
+            <table>
+              <!-- 1項目 -->
+              <tr><th scope="row">所属</th><td colspan="2">アブラナ科</td></tr>
+              <tr><th scope="row">時期</th><td colspan="2">春／秋</td></tr>
+              <tr><th scope="row">温度</th><td colspan="2">15-25℃</td></tr>
+              <!-- 2項目 -->
+              <tr><th scope="row" rowspan="2">サイズ</th>
+                  <th scope="row" class="th2">株    </th><td>15-20cm</td></tr>
+              <tr><th scope="row" class="th2">葉    </th><td>10-15cm</td></tr>
+              <!-- 1項目 -->
+              <tr><th scope="row">土壌(pH)</th><td colspan="2">弱酸性-中性<br>(6.5-7.5)</td></tr>
+              <tr><th scope="row">太陽光  </th><td colspan="2">普通に</td></tr>
+              <tr><th scope="row">水やり  </th><td colspan="2">土が乾いたら多めに<br>(加湿NG)</td></tr>
+              <!-- 2項目 -->
+              <tr><th scope="row" rowspan="2">肥料</th>
+                  <th scope="row" class="th2">元肥</th><td>少なめ</td></tr>
+              <tr><th scope="row" class="th2">追肥</th><td>定期的</td></tr>
+              <!-- 1項目 -->
+              <tr><th scope="row">収穫    </th><td colspan="2">種植えから60-70日<br>下から外側の芽を摘む</td></tr>
+              <tr><th scope="row">再収穫  </th><td colspan="2">可能</td></tr>
+              <!-- 2項目 -->
+              <tr><th scope="row" rowspan="2">栄養</th>
+                  <th scope="row" class="th2">芽  </th><td>葉酸<br>ビタミンC<br>ビタミンK<br>キャベジン</td></tr>
+              <tr><th scope="row" class="th2">葉  </th><td>ルテイン<br>ミネラル<br>βカロテン</td></tr>
+              <!-- 1項目 -->
+              <tr><th scope="row">害虫</th><td colspan="2">アブラムシ<br>ヨトウムシ<br>ハモグリバエ</td></tr>
+              <tr><th scope="row">病気</th><td colspan="2">べと病<br>菌核病<br>根こぶ病<br>モザイク病</td></tr>
+              <tr><th scope="row">備考</th><td colspan="2">葉もとても栄養豊富</td></tr>
+            </table>
+ 
+            <!------------------------------  👇️ 🥬トグルを「閉じる」ボタン  --> 
+            <div class="LR-set">
+              <div style=" text-align: center;"><button class="close-btn"></button></div>
+              <div style=" text-align: center;"><button class="close-btn"></button></div>
+            </div>
+
+          </div>
+          </details>
+          <details class="tgl3 vege-info scro-target"><summary>📝栽培環境</summary>
+          <div class="content">
+            <table>
+              <!-- 2項目 -->
+              <tr><th scope="row" rowspan="2">土成分<br>比率</th>
+                  <th scope="row" class="th2">COCOブリック    </th><td>7</td></tr>
+              <tr><th scope="row" class="th2">バーミキュライト</th><td>3</td></tr>
+              <!-- 3項目 -->
+              <tr><th scope="row" rowspan="3">追肥<br>希釈率</th>
+                  <th scope="row" class="th2">HYPONeX </th><td>1000倍</td></tr>
+              <tr><th scope="row" class="th2">ヨモギ水</th><td>1000倍</td></tr>
+              <tr><th scope="row" class="th2">ブドウ糖</th><td>1000倍</td></tr>
+              <!-- 1項目 -->
+              <tr><th scope="row">コラボ菌</th><td colspan="2">納豆菌さん</td></tr>
+              <tr><th scope="row">プランタ</th><td colspan="2">ワイヤネット</td></tr>
+              <tr><th scope="row">ツール  </th><td colspan="2">TUAL<br>TUAH</td></tr>
+            </table>
+ 
+            <!------------------------------  👇️ 🥬親トグルを「閉じる」ボタン  --> 
+            <div class="LR-set">
+              <div style=" text-align: center;"><button class="close-btn"></button></div>
+              <div style=" text-align: center;"><button class="close-btn"></button></div>
+            </div>
+
+          </div>
+          </details>
+        </div>
+
         <!------------------------------  👇️ 🥬写真カールセル  -->
         <div class="carousel">
           <!------------------------------  👇️ 🥬左ボタン  -->
@@ -457,67 +539,8 @@
         </div>
         <!------------------------------  👆️ 🥬写真カールセル END  -->
 
-        <!------------------------------  👇️ 🥬野菜情報トグル ＆ コンテンツ -->
-        <details class="tgl-3"><summary>ℹ️野菜情報</summary><div class="content" >
 
-          <!------------------------------  👇️ 🥬野菜情報カールセル  -->
-          <div class="carousel">
-          <!------------------------------  👇️ 🥬左ボタン  -->
-            <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
-            <!------------------------------  👇️ 🥬野菜情報横スクロールの箱  --> 
-            <div class="carousel-content">
-              <!------------------------------ 👇️ 🥬野菜情報テーブル  -->
-              <table class="vege-info-table" style="white-space:nowrap; text-align: center;">
-                <!-- ヘッダ部(thead) -->
-                <thead><tr>
-                  <th>所属</th><th>季節</th><th>温度</th><th>サイズ</th><th>土壌(pH)</th><th>太陽光</th>
-                  <th>水</th><th>肥料</th><th>収穫</th><th>再収穫</th><th>栄養(実)</th><th>栄養(葉)</th>
-                  <th>その他</th>
-                </tr></thead>
-                <!-- データ部(tbody) -->
-                <tbody><tr>
-                  <td>アブラナ科</td><td>春／秋</td><td>15-25℃</td><td>株：15-20cm<br>葉：10-15cm</td>
-                  <td>弱アルカリ～中性<br>(6.5〜7.5)</td><td>普通に</td><td>土が乾いたら<br>(加湿NG)</td>
-                  <td>元肥：少なめ<br>追肥：定期的</td><td>60-70日<br>(種から)</td><td>可能</td>
-                  <td>葉酸<br>ビタミンC<br>ビタミンK</td><td>－</td><td>－</td>
-                </tr></tbody>
-              </table>
-            </div>
-            <!------------------------------  👇️ 🥬右ボタン  -->
-            <button class="scro-btn next"onclick="scrollPrime(this, 265)">&gt;</button>
-          </div>
-        </div></details>
-        <!------------------------------  👆️ 🥬野菜情報トグル ＆ コンテンツ END  -->
-
-        <!------------------------------  👇️ 🥬環境情報トグル ＆ コンテンツ -->
-        <details class="tgl-3" ><summary>📝環境情報</summary><div class="content" >
-
-          <!------------------------------  👇️ 🥬環境情報カールセル  -->
-          <div class="carousel">
-          <!------------------------------  👇️ 🥬左ボタン  -->
-            <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
-            <!------------------------------  👇️ 🥬環境情報横スクロールの箱  --> 
-            <div class="carousel-content">
-              <!------------------------------ 👇️ 🥬環境情報テーブル  -->
-              <table class="vege-info-table" style="white-space:nowrap; text-align: center;">
-                <!-- ヘッダ部(thead) -->
-                <thead><tr>
-                  <th>土成分</th><th>追肥</th><th>コラボ</th><th>ツール</th><th>プランタ</th>
-                </tr></thead>
-                <!-- データ部(tbody) -->
-                <tbody><tr>
-                  <td>Coco ブリック(7)<br>バーミキュライト(3)</td><td>HYPONeX<br>ヨモギ水<br>ブドウ糖</td>
-                  <td>納豆菌さん</td><td>TUAH<br>TUAL</td><td>ワイヤネット</td>
-                </tr></tbody>
-              </table>
-            </div>
-            <!------------------------------  👇️ 🥬右ボタン  -->
-            <button class="scro-btn next"onclick="scrollPrime(this, 265)">&gt;</button>
-          </div>
-        </div></details>
-        <!------------------------------  👆️ 🥬環境情報トグル ＆ コンテンツ END  -->
-
-        <!------------------------------  👇️ 🥬親トグルを「閉じる」ボタン  --> 
+        <!------------------------------  👇️ 🥬トグルを「閉じる」ボタン  --> 
         <div class="LR-set">
           <div style=" text-align: center;"><button class="close-btn"></button></div>
           <div style=" text-align: center;"><button class="close-btn"></button></div>
@@ -531,31 +554,35 @@
       <details open><summary>🥕五寸人参さん</summary>
       <div class="content">
 
-        <div class="info-wrap" >
-          <details class="tgl-3 vege-info" ><summary>ℹ️野菜情報</summary>
-          <div class="content" >
+        <div class="info-wrap">
+          <details class="tgl3 vege-info"><summary>🥕野菜情報</summary>
+          <div class="content">
             <table>
-              <tr><th scope="row">所属    </th><td colspan="2">セリ科</td></tr>
-              <tr><th scope="row">季節    </th><td colspan="2">春／秋</td></tr>
-              <tr><th scope="row">温度    </th><td colspan="2">15-25℃</td></tr>
-              <!-- 子項目有り -->
-              <tr><th scope="row" rowspan="2">サイズ</th><th scope="row">根</th><td>15-20cm</td></tr>
-              <tr><th scope="row">葉      </th><td>20-25cm</td></tr>
-
-              <tr><th scope="row">土壌(pH)</th><td colspan="2">弱酸性〜中性(6.0〜6.8)</td></tr>
+              <!-- 1項目 -->
+              <tr><th scope="row">所属</th><td colspan="2">セリ科</td></tr>
+              <tr><th scope="row">季節</th><td colspan="2">春／秋</td></tr>
+              <tr><th scope="row">適温</th><td colspan="2">15-25℃</td></tr>
+              <!-- 2項目 -->
+              <tr><th scope="row" rowspan="2">サイズ</th>
+                  <th scope="row" class="th2">根    </th><td>15-20cm</td></tr>
+              <tr><th scope="row" class="th2">葉    </th><td>20-25cm</td></tr>
+              <!-- 1項目 -->
+              <tr><th scope="row">土壌(pH)</th><td colspan="2">弱酸性-中性<br>(6.0-6.8)</td></tr>
               <tr><th scope="row">太陽光  </th><td colspan="2">普通に</td></tr>
-              <tr><th scope="row">水      </th><td colspan="2">土が乾いたら控えめに(加湿NG)</td></tr>
-              <!-- 子項目有り -->
-              <tr><th scope="row" rowspan="2">肥料</th><th scope="row">元肥</th><td colspan="2">少なめ</td></tr>
-              <tr><th scope="row">追肥    </th><td colspan="2">定期的</td></tr>
-
-              <tr><th scope="row">収穫    </th><td colspan="2">70-90日(種から)</td></tr>
+              <tr><th scope="row">水      </th><td colspan="2">土が乾いたら控えめに<br>(加湿NG)</td></tr>
+              <!-- 2項目 -->
+              <tr><th scope="row" rowspan="2">肥料</th>
+                  <th scope="row" class="th2">元肥</th><td colspan="2">少なめ</td></tr>
+              <tr><th scope="row" class="th2">追肥</th><td colspan="2">定期的</td></tr>
+              <!-- 1項目 -->
+              <tr><th scope="row">収穫    </th><td colspan="2">種植えから70-90日</td></tr>
               <tr><th scope="row">再収穫  </th><td colspan="2">不可(葉は可能)</td></tr>
-              <!-- 子項目有り -->
-              <tr><th scope="row" rowspan="2">栄養</th><th scope="row">根</th><td colspan="2">βカロテン<br>食物繊維<br>カリウム</td></tr>
-              <tr><th scope="row">葉      </th><td colspan="2">ビタミンA<br>ビタミンC<br>食物繊維</td></tr>
-
-              <tr><th scope="row">備考    </th><td colspan="2">葉物として育てるなら長期間収穫できる</td></tr>
+              <!-- 2項目 -->
+              <tr><th scope="row" rowspan="2">栄養</th>
+                  <th scope="row" class="th2">根  </th><td colspan="2">βカロテン<br>カリウム<br>食物繊維</td></tr>
+              <tr><th scope="row" class="th2">葉  </th><td colspan="2">ビタミンA<br>ビタミンC<br>食物繊維</td></tr>
+              <!-- 1項目 -->
+              <tr><th scope="row">備考    </th><td colspan="2">葉物として育てるなら長期収穫が可能</td></tr>
             </table>
  
             <!------------------------------  👇️ 🥕親トグルを「閉じる」ボタン  --> 
@@ -566,21 +593,21 @@
 
           </div>
           </details>
-          <details open class="tgl-3 vege-info scro-target" ><summary>✍栽培環境</summary>
-          <div class="content" >
+          <details open class="tgl3 vege-info scro-target"><summary>📝栽培環境</summary>
+          <div class="content">
             <table>
               <!-- 2項目 -->
-              <tr><th scope="row" rowspan="2">土成分<br>(比率)</th><th scope="row">COCOブリック</th><td colspan="2">7</td></tr>
-              <tr><th scope="row">バーミキュライト</th><td>3</td></tr>
+              <tr><th scope="row" rowspan="2">土成分<br>比率</th>
+                  <th scope="row" class="th2">COCOブリック    </th><td>7</td></tr>
+              <tr><th scope="row" class="th2">バーミキュライト</th><td>3</td></tr>
               <!-- 3項目 -->
-              <tr><th scope="row" rowspan="3">追肥<br>(希釈率)</th><th scope="row">HYPONeX</th><td colspan="2">1000倍</td></tr>
-              <tr><th scope="row">ヨモギ水</th><td>1000倍</td></tr>
-              <tr><th scope="row">ブドウ糖</th><td>1000倍</td></tr>
-              <!-- 2項目 -->
-              <tr><th scope="row" rowspan="2">コラボ菌</th><td colspan="2">納豆菌さん</td></tr>
-              <tr><td colspan="2">菌根菌さん</td></tr>
+              <tr><th scope="row" rowspan="3">追肥<br>希釈率</th>
+                  <th scope="row" class="th2">HYPONeX         </th><td>1000倍</td></tr>
+              <tr><th scope="row" class="th2">ヨモギ水        </th><td>1000倍</td></tr>
+              <tr><th scope="row" class="th2">ブドウ糖        </th><td>1000倍</td></tr>
               <!-- 1項目 -->
-              <tr><th scope="row">プランタ</th><td colspan="2">ワイヤネット</td></tr>
+              <tr><th scope="row">コラボ菌</th><td colspan="2">納豆菌さん<br>菌根菌さん</td></tr>
+              <tr><th scope="row">プランタ</th><td colspan="2">パック</td></tr>
               <tr><th scope="row">ツール  </th><td colspan="2">TUAL</td></tr>
             </table>
  
@@ -659,17 +686,17 @@
       <!------------------------------  👆️ 🥕五寸人参さん  -->
 
       <!------------------------------  👇️ 🍅鈴なりトマトさん（10hg_10Cherry tomatoes）  -->
-      <details><summary >🍅鈴なりトマトさん</summary>
+      <details><summary>🍅鈴なりトマトさん</summary>
       <div class="content">
 
         <!------------------------------  👇️ 🍅各情報トグルを入れる箱  -->
-        <div class="info-wrap" >
+        <div class="info-wrap">
 
           <!------------------------------  👇️ 🍅野菜情報  -->
-          <details class="vege-info" ><summary>ℹ️野菜情報</summary>
+          <details class="vege-info"><summary>ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content" ><div class="mini-window">
-              <p style="text-align: center;" >【ナス科】</p>
+            <div class="content"><div class="mini-window">
+              <p style="text-align: center;">【ナス科】</p>
               <ul>
                 <li><span>・種蒔き</span><span>：</span>３～４月</li>
                 <li><span>・サイズ</span><span>：</span>高さ80〜120cm（ミニトマトは小型）</li>
@@ -692,10 +719,10 @@
           <!------------------------------  👇️ 🍅栽培環境  -->
           <details class="vege-info scro-target"><summary>📝関連</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content" ><div class="mini-window">
+            <div class="content"><div class="mini-window">
               <!-- リスト化 -->
-              <p style="text-align: center;" >【栽培環境】</p>
-              <ul style="white-space: nowrap;" >
+              <p style="text-align: center;">【栽培環境】</p>
+              <ul style="white-space: nowrap;">
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
                 <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
@@ -772,17 +799,17 @@
 
 
       <!------------------------------  👇️ 🥒地這いキュウリさん（10hg_10cucumbers）  -->
-      <details ><summary >🥒地這いキュウリさん</summary>
+      <details><summary>🥒地這いキュウリさん</summary>
       <div class="content">
 
         <!------------------------------  👇️ 🥒各情報トグルを入れる箱  -->
-        <div class="info-wrap" >
+        <div class="info-wrap">
 
           <!------------------------------  👇️ 🥒野菜情報  -->
-          <details class="vege-info" ><summary >ℹ️野菜情報</summary>
+          <details class="vege-info"><summary>ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content" ><div class="mini-window">
-              <p style="text-align: center;" >【ウリ科】</p>
+            <div class="content"><div class="mini-window">
+              <p style="text-align: center;">【ウリ科】</p>
               <ul>
                 <li><span>・種蒔き</span><span>：</span>４～５月</li>
                 <li><span>・サイズ</span><span>：</span>つるの長さ1〜2m（横に広がる）</li>
@@ -806,9 +833,9 @@
           <details class="vege-info scro-target">
           <summary>📝関連</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content" ><div class="mini-window">
-              <p style="text-align: center;" >【栽培環境】</p>
-              <ul style="white-space: nowrap;" >
+            <div class="content"><div class="mini-window">
+              <p style="text-align: center;">【栽培環境】</p>
+              <ul style="white-space: nowrap;">
                 <li><span>・土成分</span><span>：</span>－</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
                 <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
@@ -884,17 +911,17 @@
       <!------------------------------  👆️ 🥒地這いキュウリさん  -->
 
       <!------------------------------  👇️ 🌱早生枝豆さん（10hg_10Glycine max）  -->
-      <details ><summary >🌱早生枝豆さん</summary>
+      <details><summary>🌱早生枝豆さん</summary>
       <div class="content">
 
         <!------------------------------  👇️ 🌱各情報トグルを入れる箱  -->
-        <div class="info-wrap" >
+        <div class="info-wrap">
 
           <!------------------------------  👇️ 🌱野菜情報  -->
-          <details class="vege-info" ><summary >ℹ️野菜情報</summary>
+          <details class="vege-info"><summary>ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content" ><div class="mini-window">
-              <p style="text-align: center;" >【マメ科】</p>
+            <div class="content"><div class="mini-window">
+              <p style="text-align: center;">【マメ科】</p>
               <ul>
                 <li><span>・種蒔き</span><span>：</span>５～６月</li>
                 <li><span>・サイズ</span><span>：</span>高さ30〜50cm（早生は小型）</li>
@@ -918,9 +945,9 @@
           <details class="vege-info scro-target">
           <summary>📝関連</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content" ><div class="mini-window">
-              <p style="text-align: center;" >【栽培環境】</p>
-              <ul style="white-space: nowrap;" >
+            <div class="content"><div class="mini-window">
+              <p style="text-align: center;">【栽培環境】</p>
+              <ul style="white-space: nowrap;">
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん<br>根粒菌さん</li>
                 <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
@@ -995,17 +1022,17 @@
       <!------------------------------  👆️ 🌱早生枝豆さん  -->
 
       <!------------------------------  👇️ 🌿ミニ大根さん  -->
-      <details ><summary >🌿ミニ大根さん</summary>
+      <details><summary>🌿ミニ大根さん</summary>
       <div class="content">
 
         <!------------------------------  👇️ 🌿各情報トグルを入れる箱  -->
-        <div class="info-wrap" >
+        <div class="info-wrap">
 
           <!------------------------------  👇️ 🌿野菜情報  -->
-          <details class="vege-info" ><summary >ℹ️野菜情報</summary>
+          <details class="vege-info"><summary>ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content" ><div class="mini-window">
-              <p style="text-align: center;" >【アブラナ科】</p>
+            <div class="content"><div class="mini-window">
+              <p style="text-align: center;">【アブラナ科】</p>
               <ul>
                 <li><span>・種蒔き</span><span>：</span>春／秋</li>
                 <li><span>・サイズ</span><span>：</span>根の長さ15〜20cm<br>葉の幅20〜30cm</li>
@@ -1028,9 +1055,9 @@
           <!------------------------------  👇️ 🌿栽培環境  -->
           <details class="vege-info scro-target"><summary>📝関連</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content" ><div class="mini-window">
-              <p style="text-align: center;" >【栽培環境】</p>
-              <ul style="white-space: nowrap;" >
+            <div class="content"><div class="mini-window">
+              <p style="text-align: center;">【栽培環境】</p>
+              <ul style="white-space: nowrap;">
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
                 <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
@@ -1104,17 +1131,17 @@
       <!------------------------------  👆️ 🌿ミニ大根さん  -->
 
       <!------------------------------  👇️ 🍃モロヘイヤさん（10hg_10molokhia）  -->
-      <details ><summary >🍃モロヘイヤさん</summary>
+      <details><summary>🍃モロヘイヤさん</summary>
         <div class="content">
 
         <!------------------------------  👇️ 🍃各情報トグルを入れる箱  -->
-        <div class="info-wrap" >
+        <div class="info-wrap">
 
           <!------------------------------  👇️ 🍃野菜情報  -->
-          <details class="vege-info" ><summary >ℹ️野菜情報</summary>
+          <details class="vege-info"><summary>ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content" ><div class="mini-window">
-              <p style="text-align: center;" >【シナノキ科】</p>
+            <div class="content"><div class="mini-window">
+              <p style="text-align: center;">【シナノキ科】</p>
               <ul>
                 <li><span>・種蒔き</span><span>：</span>５～６月</li>
                 <li><span>・サイズ</span><span>：</span>高さ1〜1.5m</li>
@@ -1137,9 +1164,9 @@
           <!------------------------------  👇️ 🍃栽培環境  -->
           <details class="vege-info scro-target"><summary>📝関連</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content" ><div class="mini-window">
-              <p style="text-align: center;" >【栽培環境】</p>
-              <ul style="white-space: nowrap;" >
+            <div class="content"><div class="mini-window">
+              <p style="text-align: center;">【栽培環境】</p>
+              <ul style="white-space: nowrap;">
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
                 <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
@@ -1214,17 +1241,17 @@
       <!------------------------------  👆️ 🍃モロヘイヤさん  -->
 
       <!------------------------------  👇️ 🥔ジャガイモさん（10hg_10potato）  -->
-      <details ><summary >🥔ジャガイモさん</summary>
+      <details><summary>🥔ジャガイモさん</summary>
       <div class="content">
 
         <!------------------------------  👇️ 🥔各情報トグルを入れる箱  -->
-        <div class="info-wrap" >
+        <div class="info-wrap">
 
           <!------------------------------  👇️ 🥔野菜情報  -->
-          <details class="vege-info" ><summary >ℹ️野菜情報</summary>
+          <details class="vege-info"><summary>ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
             <div class="mini-window"><div class="content">
-              <p style="text-align: center;" >【ナス科】</p>
+              <p style="text-align: center;">【ナス科】</p>
               <ul>
                 <li><span>・種蒔き</span><span>：</span>春／秋</li>
                 <li><span>・サイズ</span><span>：</span>高さ30〜60cm</li>
@@ -1248,8 +1275,8 @@
           <details class="vege-info scro-target"><summary>📝関連</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
             <div class="mini-window"><div class="content">
-              <p style="text-align: center;" >【栽培環境】</p>
-              <ul style="white-space: nowrap;" >
+              <p style="text-align: center;">【栽培環境】</p>
+              <ul style="white-space: nowrap;">
                 <li><span>・土成分</span><span>：</span>－</li>
                 <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
                 <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
