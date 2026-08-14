@@ -129,7 +129,7 @@
 
   /* 第３トグルの設定 */
   .tgl3 {
-    width: 96%;
+    width: 98%;
   }
 
   /* 👇️ トグルタイトルのデザイン */
@@ -169,16 +169,19 @@
 
   /* 親ヘッダー項目 */
   table th {
-    background: #defbff;
+    background: #d8f7ff;
     white-space:   nowrap;
   }
 
   /* 子ヘッダー項目 */
   table th.th2 {
-    background: #fafce4;
-    width: 80px;
-    font-weight:600;
-    text-align: center;
+    background: #e8ffe5;
+    white-space:normal;
+  }
+
+  table th.th3 {
+    background: #f5ffca;
+    white-space:normal;
   }
 
   /* データ部専用 */
@@ -466,31 +469,44 @@
 
           </div>
           </details>
-          <details open class="tgl3 vege-info scro-target"><summary>📝栽培環境</summary>
+          <details open class="tgl3 vege-info scro-target"><summary>📝栽培情報</summary>
           <div class="content">
             <table>
-              <tr><th scope="row">日照<br>時間</th><td colspan="2">14:30-16:30</td></tr>
+              <!-- 1項目 -->
+              <tr><th scope="row">場所        </th><td colspan="2">ベランダ床</td></tr>
+              <tr><th scope="row">プランタ    </th><td colspan="2">ワイヤネット</td></tr>
+              <tr><th scope="row">日照時間</th><td colspan="2">14:30-16:30<br></td></tr>
+              <!-- 1項目 2要素 -->
+              <tr><th scope="row" rowspan="2">アイテム</th><th rowspan="2" class="th2">酸素供給</th>
+                  <td colspan="2">TUAL</td></tr>
+              <tr><td colspan="2">TUAH</td></tr>
               <!-- 2項目 -->
               <tr><th scope="row" rowspan="2">土成分<br>比率</th>
-                  <th scope="row" class="th2">COCOブリック    </th><td>7</td></tr>
-              <tr><th scope="row" class="th2">バーミキュライト</th><td>3</td></tr>
+                  <th scope="row" class="th3">COCOブリック    </th><td>7</td></tr>
+              <tr><th scope="row" class="th3">バーミキュライト</th><td>3</td></tr>
               <!-- 4項目 -->
               <tr><th scope="row" rowspan="4">肥料<br>希釈率<br>(水1L)</th>
                   <th scope="row" class="th2">HYPONeX </th><td>1000倍(1ml)</td></tr>
-              <tr><th scope="row" class="th2">ヨモギ水</th><td>500倍 </td></tr>
+              <tr><th scope="row" class="th2">お酢    </th><td>1000倍(1ml)</td></tr>
               <tr><th scope="row" class="th2">ブドウ糖</th><td>1500倍(0.5g-1g)</td></tr>
-              <tr><th scope="row" class="th2">お酢    </th><td>1000倍</td></tr>
+              <tr><th scope="row" class="th2">ヨモギ水<br>(自家製)</th><td>希釈なし<br>(市販のヨモギエキスは要希釈)</td></tr>
+              <!-- 3項目 -->
+              <tr><th scope="row" rowspan="3">肥料<br>頻度</th>
+                  <th scope="row" class="th3">発芽</th><td colspan="2">芽が育つまでは水のみ</td></tr>
+              <tr><th scope="row" class="th3">通常</th><td>肥料を週1回</td></tr>
+              <tr><th scope="row" class="th3">最終</th><td>肥料を週-回</td></tr>
+              <!-- 2項目 1要素-->
+              <tr><th scope="row">肥料<br>補助</th><th scope="row" class="th2">活性剤</th>
+                  <td colspan="2">苗が弱っているときに与える</td></tr>
               <!-- 1項目 -->
-              <tr><th scope="row">肥料<br>頻度</th><td colspan="2">週1回</td></tr>
-              <tr><th scope="row">共存菌  </th><td colspan="2">納豆菌</td></tr>
-              <tr><th scope="row">プランタ</th><td colspan="2">ワイヤネット</td></tr>
-              <tr><th scope="row">アイテム</th><td colspan="2">TUAL<br>TUAH</td></tr>
+              <tr><th scope="row">共存菌  </th><td colspan="2">納豆菌<br>(バチルス菌)<br></td></tr>
               <!-- 2項目 -->
-              <tr><th scope="row" rowspan="2">病気予防<br>(カビ細菌)</th>
+              <tr><th scope="row" rowspan="2">各種<br>予防</th>
                   <th scope="row" class="th2">うどんこ病</th><td>お酢スプレー</td></tr>
-              <tr><th scope="row" class="th2">モザイク病</th><td>納豆菌スプレー</td></tr>
+              <tr><th scope="row" class="th2">カビ雑菌<br>土壌改善</th><td>納豆菌スプレー<br>(バチルス菌)</td></tr>
               <!-- 1項目 -->
-              <tr><th scope="row">備考</th><td colspan="2">ブドウ糖は納豆菌スプレーとセットで使用しないと、カビが繁殖しやすい</td></tr>
+              <tr><th scope="row">備考</th>
+                  <td colspan="2">ブドウ糖は納豆菌スプレーとセットで使用しないと、カビが繁殖しやすい</td></tr>
             </table>
  
             <!------------------------------  👇️ 🥬親トグルを「閉じる」ボタン  --> 
