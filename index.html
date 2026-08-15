@@ -17,8 +17,11 @@
 <link rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap">
 
-  <!--  👇️ お気に入りアイコン（ファビコン）の設定  -->
+<!--  👇️ お気に入りアイコン（ファビコン）の設定  -->
 <link rel="icon" href="favicon.ico">
+
+<!--  👇️ 世界共通アイコン（Font Awesome）の読み込みコード -->
+<link rel="stylesheet" href="https://cloudflare.com">
 
 <!--  👇️ CSSの外部ファイルを読み込む設定（style.css）  -->
 <link rel="stylesheet" href="style.css">
@@ -134,7 +137,9 @@
 
   /* 👇️ トグルタイトルのデザイン */
   summary {
-    min-width:            0; /* 横幅を自動で親の枠に合わせる   */
+    position: sticky; top: 0;
+    min-width:             0; /* 横幅を自動で親の枠に合わせる   */
+/*     margin-bottom: 55px; /* スクロ対応の一時的な設定 */
     white-space:     nowrap; /* 文字が長くても横１行で表示する */
     cursor:         pointer; /* マウスカーソルを指マークにする */
     text-align:      center; /* 配置はまた今度考える           */
@@ -146,10 +151,10 @@
   /* <sammary><div>の設定（複合セパレータ） */
   summary div {
     box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.2);
-    min-width:             50%;
-    margin:            3px 0px;
-    padding: 3px 33px 4px 33px;
-    border-radius:        11px;
+    min-width:           50%;
+    margin:          3px 0px;
+    padding: 3px 3px 4px 3px;
+    border-radius:      11px;
   }
 
   /* 👇️ テーブル設定エリア */
@@ -157,37 +162,37 @@
   table td {
     box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);
     border: 5px solid #333; /* 線を表示する */
-    line-height:       1.2;   /* 行間の調整   */
-    padding:       8px 8px;   /* サイズ調整   */
-    border-radius:    11px;   /* 丸み         */
+  /*   word-break:   break-word;
+    line-height:         1.2; /* 行間の調整   */
+    width: auto;
+    padding:         8px 8px; /* サイズ調整   */
+    border-radius:      11px; /* 丸み         */
   }
 
   table tr {
-      border: 10px solid #333; /* 線を表示する */
-
+    border: 10px solid #333; /* 線を表示する */
   }
 
   /* 親ヘッダー項目 */
   table th {
-    background: #d8f7ff;
-    white-space:   nowrap;
+    background:  #d8f7ff;
+  /*   white-space:    normal; /* 英語化対策：必要なら折り返し */
   }
-
-  /* 子ヘッダー項目 */
+  /* 子ヘッダー項目１ */
   table th.th2 {
-    background: #e8ffe5;
-    white-space:normal;
+    background:  #e8ffe5;
+    white-space:    nowrap; /* 英語化対策：必要なら折り返し */
   }
-
+  /* 子ヘッダー項目２ */
   table th.th3 {
-    background: #f5ffca;
-    white-space:normal;
+    background:  #f5ffca;
+  /*   white-space:    normal; /* 英語化対策：必要なら折り返し */
   }
-
-  /* データ部専用 */
+  /* データ部項目 */
   table td {
-    background: #f8feff;
-    width:           100%;
+    background:  #f8feff;
+    word-break: break-word; /* 英語化対策：必要なら折り返し */
+    width:            100%;
   }
 
   /* 超重要！これがないとズボラできないぞ！ＪＳ */
@@ -196,19 +201,29 @@
   /* スペース有り：子孫セレクタ                 */
   /* スペース無し：複合セレクタ                 */
   details .content {
-    overflow:  hidden; /* 枠外の文字は非表示    */
-    height:         0;
-    margin-top:   5px;
-    padding:        0;
-    opacity:        0; /* 初期非表示設定        */
-    transition:
-    height  1s  1.5s ease, /* 設定はしてあるけど、  */
-    opacity 1s  0.5s ease; /* ＪＳで上書き          */
+    overflow: hidden; /* 枠外の文字は非表示    */
+    height:        0;
+    margin-top:  5px;
+    padding:       0;
+    opacity:       0; /* 初期非表示設定        */
+/*     transition:
+/*     height   1s ease, /* 設定はしてあるけど、  */
+/*     opacity  1s ease; /* ＪＳで上書き          */
   }
   
   /* contentの親トグルが開いたときの表示設定 */
   details[open] .content {
     opacity: 1;
+  }
+
+  /* 👇️ content内で内容を表示する用の箱クラス */
+  .mini-window {
+    overflow-y:        auto; /* 縦スクロール      */
+    scroll-behavior: smooth; /* スムーズに        */
+    max-height:        auto; /* 関わる要素と相談  */
+    max-width:         auto; /* 関わる要素と相談  */
+    margin-top:         5px; /* contentとの隙間用 */
+    border-radius:     11px; /* 丸み              */
   }
 
   /* 👇️ カールセルクラス関連：全体の設定 （位置の基準）*/
@@ -219,9 +234,9 @@
     position:  relative; /* 位置を絶対位置で指定する   */
     display:       flex; /* 要素を横並びにする         */
     align-items: center; /* 要素を縦方向の中央に揃える */
-    width:          96%; /* 横幅を最大値にする         */
-    margin:      0 auto;
-    padding:      1% 1%;
+    width:          96%; /* 見た目調整                 */
+    margin:      0 auto; /* 中央寄せ                   */
+    padding:      1% 1%; /* 見た目調整                 */
 /*  border-radius: 11px; /* 共通の丸み                 */
   }
 
@@ -252,11 +267,9 @@
     display:            flex; /* 要素を横に並べる         */
     justify-content:    left; /* 要素を左寄せ             */
     width:              auto; /* 横幅は要素に合わせる     */
-  /*margin-top:          0px; /* 位置調整                 */
     gap:                15px; /* 要素間の隙間を設定する   */
-    padding:   0 15px;
+    padding:            0 1%; /* カールセルが気になる     */
     border-radius:      11px; /* 見えないけど一応丸み     */
-    transition: width 2s ease, flex-basis 2s ease;
     /* スクロールバー非表示                               */
     -ms-overflow-style: none; /* IE, Firefox              */
     scrollbar-width:    none; /* Firefox                  */
@@ -268,14 +281,15 @@
   /* 👇️ 野菜・栽培環境トグルクラス */
   /*    中身はmini-windowで表示    */
   .vege-info{
-    max-height:        100%; /* ミニウィンドウと相談   */
-    max-width:          99%; /* ミニウィンドウと相談   */
-    align-self:  flex-start; /* 要素の高さを個別にする */
-    padding:            5px;
-    border-radius:     22px; /* 共通の丸み             */
+    overflow-y:         auto; 
+  /*   max-height:        500px; /* ミニウィンドウと相談   */
+    width:              100%;
+    align-self:   flex-start; /* 要素の高さを個別にする */
+    padding:             5px;
+    border-radius:      22px; /* 共通の丸み             */
     /* スクロールバー非表示                            */
-   -ms-overflow-style: none; /* IE, Firefox            */
-    scrollbar-width:   none; /* Firefox                */
+    -ms-overflow-style: none; /* IE, Firefox            */
+    scrollbar-width:    none; /* Firefox                */
   }
   .vege-info::-webkit-scrollbar {
     display:           none; /* Chrome, Safari         */
@@ -302,12 +316,12 @@
   }
 
   /* 情報トグル内のヘッダ・データ部共通 */
-  .vege-info-table th,
+  /* .vege-info-table th,
   .vege-info-table td {
     box-shadow: 2px 2px 11px 2px rgba(0, 0, 0, 0.4);
     border-collapse: collapse;
   /*border:   1px solid #333; /* 線を表示 */
-    text-align:       center;
+  /*   text-align:       center;
     vertical-align:   middle; 
     white-space:      nowrap;
     width:       fit-content;
@@ -351,15 +365,6 @@
     transform: scale(1.10);
   } */
 
-  /* 👇️ content内で内容を表示する用の箱クラス */
-  .mini-window {
-    overflow-y:        auto; /* 縦スクロール      */
-    scroll-behavior: smooth; /* スムーズに        */
-    max-height:        100%; /* 関わる要素と相談  */
-    max-width:        310px; /* 関わる要素と相談  */
-    margin-top:         5px; /* contentとの隙間用 */
-    border-radius:     11px; /* 丸み              */
-  }
  
   /* 👇️ リスト全体を「見えない自動調整テーブル」にする */
   .vege-info ul {
@@ -429,36 +434,44 @@
       <div class="content">
         <!-- 🥬情報エリア -->
         <div class="info-wrap">
-          <details class="tgl3 vege-info"><summary>🥬野菜情報</summary>
+          <details open class="tgl3 vege-info"><summary>🥬野菜情報</summary>
           <div class="content">
             <table>
               <!-- 1項目 -->
-              <tr><th scope="row">科目</th><td colspan="2">アブラナ科</td></tr>
-              <tr><th scope="row">時期</th><td colspan="2">春／秋</td></tr>
-              <tr><th scope="row">温度</th><td colspan="2">15-25℃</td></tr>
+              <tr><th scope="row">👨‍👦‍👦Fam </th><td colspan="2">アブラナ科</td></tr>
+              <tr><th scope="row">📅SEAS</th><td colspan="2">春／秋</td></tr>
+              <tr><th scope="row">🌡️TEMP </th><td colspan="2">15-25℃</td></tr>
               <!-- 2項目 -->
-              <tr><th scope="row" rowspan="2">サイズ</th>
-                  <th scope="row" class="th2">株    </th><td>15-20cm</td></tr>
-              <tr><th scope="row" class="th2">葉    </th><td>10-15cm</td></tr>
+              <tr><th scope="row" rowspan="2">📐<br>SIZE</th>
+                  <th scope="row" class="th2">🥬<br>PLNT</th><td>15-20cm</td></tr>
+              <tr><th scope="row" class="th2">🍃<br>LEAF</th><td>10-15cm</td></tr>
               <!-- 1項目 -->
-              <tr><th scope="row">性質<br>(pH)</th><td colspan="2">弱酸性-中性<br>(6.5-7.5)</td></tr>
-              <tr><th scope="row">太陽光  </th><td colspan="2">普通に</td></tr>
-              <tr><th scope="row">水やり  </th><td colspan="2">土が乾いたら多めに<br>(加湿NG)</td></tr>
+              <tr><th scope="row">🧬<br>(pH) </th><td colspan="2">弱酸性-中性<br>(6.5-7.5)</td></tr>
+              <tr><th scope="row">🌞<br>SUN  </th><td colspan="2">やや強めに</td></tr>
+              <tr><th scope="row">🚿<br>H2O  </th><td colspan="2">土が乾いたら多めに<br>(加湿NG)</td></tr>
               <!-- 2項目 -->
-              <tr><th scope="row" rowspan="2">肥料</th>
-                  <th scope="row" class="th2">元肥</th><td>少なめ</td></tr>
-              <tr><th scope="row" class="th2">追肥</th><td>定期的</td></tr>
+              <tr><th scope="row" rowspan="2">🍽️<br>FEED</th>
+                  <th scope="row" class="th3">🧃<br>BASE</th><td>少なめ</td></tr>
+              <tr><th scope="row" class="th3">🧪<br>POST</th><td>定期的</td></tr>
               <!-- 1項目 -->
-              <tr><th scope="row">収穫    </th><td colspan="2">種植えから60-70日<br>下から外側の芽を摘む</td></tr>
-              <tr><th scope="row">再収穫  </th><td colspan="2">可能</td></tr>
+              <tr><th scope="row">💖🤏<br>HARV</th><td colspan="2">種植えから60-70日<br>下から外側の芽を摘む</td></tr>
+              <tr><th scope="row">🔄🤏<br>REGW</th><td colspan="2">可能</td></tr>
               <!-- 2項目 -->
-              <tr><th scope="row" rowspan="2">栄養</th>
-                  <th scope="row" class="th2">芽  </th><td>葉酸<br>ビタミンC<br>ビタミンK<br>キャベジン</td></tr>
-              <tr><th scope="row" class="th2">葉  </th><td>ルテイン<br>ミネラル<br>βカロテン</td></tr>
-              <!-- 1項目 -->
-              <tr><th scope="row">害虫</th><td colspan="2">アブラムシ<br>ヨトウムシ<br>ハモグリバエ</td></tr>
-              <tr><th scope="row">病気</th><td colspan="2">べと病<br>菌核病<br>根こぶ病<br>モザイク病</td></tr>
-              <tr><th scope="row">備考</th><td colspan="2">葉もとても栄養豊富</td></tr>
+              <tr><th scope="row" rowspan="2">📊<br>NUTR</th>
+                  <th scope="row" class="th2">🥬<br>PLNT</th><td>葉酸<br>ビタミンC<br>ビタミンK<br>キャベジン</td></tr>
+              <tr><th scope="row" class="th2">🍃<br>LEAF</th><td>ルテイン<br>ミネラル<br>βカロテン<br>食物繊維</td></tr>
+              <!-- 3項目 2要素 -->
+              <tr><th scope="row" rowspan="3">🐛<br>PEST<br>&<br>DMG</th>
+                  <th scope="row" class="th3">アブラ虫<br></th><td>食害<br>すす病<br>ウイルス媒介</td></tr>
+              <tr><th scope="row" class="th3">ヨトウ虫</th><td  rowspan="2">食害<br>成長阻害<br>光合成阻害</td></tr>
+              <tr><th scope="row" class="th3">葉潜り蝿</th></tr>
+              <!-- 4項目 2要素 -->
+              <tr><th scope="row" rowspan="4">👾<br>SICK<br>&<br>CAUS</th>
+                  <th scope="row" class="th2">ベト病</th><td rowspan="3">カビ菌</td>
+              <tr><th scope="row" class="th2">菌核病</th></tr>
+              <tr><th scope="row" class="th2">根コブ病</th></tr>
+              <tr><th scope="row" class="th2">モザイク病</th><td>アブラ虫</td></tr>
+              <tr><th scope="row">ℹ️<br>ETC </th><td colspan="2">葉も栄養豊富</tr>
             </table>
  
             <!------------------------------  👇️ 🥬トグルを「閉じる」ボタン  --> 
@@ -469,43 +482,46 @@
 
           </div>
           </details>
-          <details open class="tgl3 vege-info scro-target"><summary>📝栽培情報</summary>
+          <details class="tgl3 vege-info scro-target"><summary>📝栽培情報</summary>
           <div class="content">
             <table>
               <!-- 1項目 -->
-              <tr><th scope="row">場所        </th><td colspan="2">ベランダ床</td></tr>
-              <tr><th scope="row">プランタ    </th><td colspan="2">ワイヤネット</td></tr>
-              <tr><th scope="row">日照時間</th><td colspan="2">14:30-16:30<br></td></tr>
+              <tr><th scope="row">📍    <br>LOC</th><td colspan="2">ベランダ床</td></tr>
+              <tr><th scope="row">🔳   <br>POT</th><td colspan="2">ワイヤネット プランタ</td></tr>
+              <tr><th scope="row">🌞⌚<br>SUN</th><td colspan="2">14:30-16:30<br></td></tr>
               <!-- 1項目 2要素 -->
-              <tr><th scope="row" rowspan="2">アイテム</th><th rowspan="2" class="th2">酸素供給</th>
+              <tr><th scope="row" rowspan="2">⚙️<br>TOOL</th>
+                  <th rowspan="2" class="th2">酸素供給</th>
                   <td colspan="2">TUAL</td></tr>
               <tr><td colspan="2">TUAH</td></tr>
               <!-- 2項目 -->
-              <tr><th scope="row" rowspan="2">土成分<br>比率</th>
+              <tr><th scope="row" rowspan="2">🟫📊SOIL<br></th>
                   <th scope="row" class="th3">COCOブリック    </th><td>7</td></tr>
               <tr><th scope="row" class="th3">バーミキュライト</th><td>3</td></tr>
               <!-- 4項目 -->
-              <tr><th scope="row" rowspan="4">肥料<br>希釈率<br>(水1L)</th>
-                  <th scope="row" class="th2">HYPONeX </th><td>1000倍(1ml)</td></tr>
-              <tr><th scope="row" class="th2">お酢    </th><td>1000倍(1ml)</td></tr>
-              <tr><th scope="row" class="th2">ブドウ糖</th><td>1500倍(0.5g-1g)</td></tr>
-              <tr><th scope="row" class="th2">ヨモギ水<br>(自家製)</th><td>希釈なし<br>(市販のヨモギエキスは要希釈)</td></tr>
+              <tr><th scope="row" rowspan="4">🧪POST<br>(Mix💧1L)</th>
+                  <th scope="row" class="th2">HYPONeX </th><td>1ml(1000倍希釈)</td></tr>
+              <tr><th scope="row" class="th2">お酢    </th><td>1ml(1000倍希釈)</td></tr>
+              <tr><th scope="row" class="th2">ブドウ糖</th><td>0.5g-1g(1500倍希釈)</td></tr>
+              <tr><th scope="row" class="th2">ヨモギ水<br>(自家製1L)</th><td>希釈不要<br>(市販のヨモギエキスは要希釈)</td></tr>
               <!-- 3項目 -->
-              <tr><th scope="row" rowspan="3">肥料<br>頻度</th>
-                  <th scope="row" class="th3">発芽</th><td colspan="2">芽が育つまでは水のみ</td></tr>
-              <tr><th scope="row" class="th3">通常</th><td>肥料を週1回</td></tr>
-              <tr><th scope="row" class="th3">最終</th><td>肥料を週-回</td></tr>
+              <tr><th scope="row" rowspan="3">🧪📅<br>FREQ</th>
+                  <th scope="row" class="th3">発芽時</th><td colspan="2">芽が育つまでは水のみ</td></tr>
+              <tr><th scope="row" class="th3">通常時</th><td>🧪を週1回</td></tr>
+              <tr><th scope="row" class="th3">最盛期</th><td>🧪を週-回</td></tr>
               <!-- 2項目 1要素-->
-              <tr><th scope="row">肥料<br>補助</th><th scope="row" class="th2">活性剤</th>
+              <tr><th scope="row">🧪➕️<br>ADD</th><th scope="row" class="th2">活性剤</th>
                   <td colspan="2">苗が弱っているときに与える</td></tr>
-              <!-- 1項目 -->
-              <tr><th scope="row">共存菌  </th><td colspan="2">納豆菌<br>(バチルス菌)<br></td></tr>
+              <!-- 2項目 1要素-->
+              <tr><th scope="row">💗🦠<br>PALS  </th>
+                <th scope="row" class="th3">納豆菌(バチルス菌)</th><td colspan="2">土壌改善<br>カビ・雑菌予防<br></td></tr>
               <!-- 2項目 -->
-              <tr><th scope="row" rowspan="2">各種<br>予防</th>
-                  <th scope="row" class="th2">うどんこ病</th><td>お酢スプレー</td></tr>
-              <tr><th scope="row" class="th2">カビ雑菌<br>土壌改善</th><td>納豆菌スプレー<br>(バチルス菌)</td></tr>
+              <tr><th scope="row" rowspan="3">🛡️<br>PREV</th>
+                  <th scope="row" class="th2">🍂<br>病気</th><td>お酢スプレー<br>(要希釈)</td></tr>
+              <tr><th scope="row" class="th2">👾<br>カビ</th><td>納豆菌スプレー<br>(希釈不要)</td></tr>
+              <tr><th scope="row" class="th2">🐛<br>害虫</th><td>虫除けプレート</td></tr>
               <!-- 1項目 -->
-              <tr><th scope="row">備考</th>
+              <tr><th scope="row">💡ETC</th>
                   <td colspan="2">ブドウ糖は納豆菌スプレーとセットで使用しないと、カビが繁殖しやすい</td></tr>
             </table>
  
