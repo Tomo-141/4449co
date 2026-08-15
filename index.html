@@ -181,7 +181,7 @@
   /* 子ヘッダー項目１ */
   table th.th2 {
     background:  #e8ffe5;
-    white-space:    nowrap; /* 英語化対策：必要なら折り返し */
+  /*   white-space:    nowrap; /* 英語化対策：必要なら折り返し */
   }
   /* 子ヘッダー項目２ */
   table th.th3 {
@@ -434,7 +434,7 @@
       <div class="content">
         <!-- 🥬情報エリア -->
         <div class="info-wrap">
-          <details open class="tgl3 vege-info"><summary>🥬野菜情報</summary>
+          <details class="tgl3 vege-info"><summary>🥬野菜情報</summary>
           <div class="content">
             <table>
               <!-- 1項目 -->
@@ -462,16 +462,20 @@
               <tr><th scope="row" class="th2">🍃<br>LEAF</th><td>ルテイン<br>ミネラル<br>βカロテン<br>食物繊維</td></tr>
               <!-- 3項目 2要素 -->
               <tr><th scope="row" rowspan="3">🐛<br>PEST<br>&<br>DMG</th>
-                  <th scope="row" class="th3">アブラ虫<br></th><td>食害<br>すす病<br>ウイルス媒介</td></tr>
-              <tr><th scope="row" class="th3">ヨトウ虫</th><td rowspan="2">食害<br>成長阻害<br>光合成阻害</td></tr>
-              <tr><th scope="row" class="th3">葉潜り蝿</th></tr>
+                  <th scope="row" class="th3">アブラ虫<br>(Aphid)</th><td>食害<br>すす病<br>ウイルス媒介</td></tr>
+              <tr><th scope="row" class="th3">ヨトウ虫<br>(Cutworm)</th><td rowspan="2">食害<br>成長阻害<br>光合成阻害</td></tr>
+              <tr><th scope="row" class="th3">葉潜り蝿<br>(Leafminer)</th></tr>
               <!-- 4項目 2要素 -->
-              <tr><th scope="row" rowspan="4">👾<br>SICK<br>&<br>CAUS</th>
-                  <th scope="row" class="th2">ベト病</th><td rowspan="3">カビ菌</td>
+              <tr><th scope="row" rowspan="4">🤢<br>SICK<br>&<br>CAUS</th>
+                  <th scope="row" class="th2">ベト病</th><td rowspan="3">👾カビ菌</td>
               <tr><th scope="row" class="th2">菌核病</th></tr>
               <tr><th scope="row" class="th2">根コブ病</th></tr>
               <tr><th scope="row" class="th2">モザイク病</th><td>アブラ虫</td></tr>
-              <tr><th scope="row">ℹ️<br>ETC </th><td colspan="2">葉も栄養豊富</td></tr>
+              <tr><th scope="row">ℹ️<br>ETC </th><td colspan="2">
+                モザイク病は治療不可、ただし、似たような症状の病気もあるので
+                落ち着いて症状を確認してから判断する。
+                モザイク病だった場合は可哀想だけど処分する😭。
+              </td></tr>
             </table>
  
             <!------------------------------  👇️ 🥬トグルを「閉じる」ボタン  --> 
@@ -482,24 +486,23 @@
 
           </div>
           </details>
-          <details class="tgl3 vege-info scro-target"><summary>📝栽培情報</summary>
+          <details open class="tgl3 vege-info scro-target"><summary>📝栽培情報</summary>
           <div class="content">
             <table>
               <!-- 1項目 -->
               <tr><th scope="row">📍    <br>LOC</th><td colspan="2">ベランダ床</td></tr>
               <tr><th scope="row">🔳   <br>POT</th><td colspan="2">ワイヤネット プランタ</td></tr>
               <tr><th scope="row">🌞⌚<br>SUN</th><td colspan="2">14:30-16:30<br></td></tr>
-              <!-- 1項目 2要素 -->
-              <tr><th scope="row" rowspan="2">⚙️<br>TOOL</th>
-                  <th rowspan="2" class="th2">酸素供給</th>
-                  <td colspan="2">TUAL</td></tr>
-              <tr><td colspan="2">TUAH</td></tr>
+              <!-- 2項目 2要素 -->
+              <tr><th scope="row" rowspan="2">➕️<br>OPT</th>
+                  <th scope="row" class="th2">TUAL</th><td rowspan="2">土中へ酸素を供給する補助ツール</td></tr>
+              <tr><th scope="row" class="th2">TUAH</th></tr>
               <!-- 2項目 -->
               <tr><th scope="row" rowspan="2">🟫📊SOIL<br></th>
                   <th scope="row" class="th3">COCOブリック    </th><td>7</td></tr>
               <tr><th scope="row" class="th3">バーミキュライト</th><td>3</td></tr>
               <!-- 4項目 -->
-              <tr><th scope="row" rowspan="4">🧪POST<br>(Mix💧1L)</th>
+              <tr><th scope="row" rowspan="4">🧪POST:<br>Mix(1L)</th>
                   <th scope="row" class="th2">HYPONeX </th><td>1ml(1000倍希釈)</td></tr>
               <tr><th scope="row" class="th2">お酢    </th><td>1ml(1000倍希釈)</td></tr>
               <tr><th scope="row" class="th2">ブドウ糖</th><td>0.5g-1g(1500倍希釈)</td></tr>
@@ -508,21 +511,22 @@
               <tr><th scope="row" rowspan="3">🧪📅<br>FREQ</th>
                   <th scope="row" class="th3">発芽時</th><td colspan="2">芽が育つまでは水のみ</td></tr>
               <tr><th scope="row" class="th3">通常時</th><td>🧪を週1回</td></tr>
-              <tr><th scope="row" class="th3">最盛期</th><td>🧪を週-回</td></tr>
-              <!-- 2項目 1要素-->
+              <tr><th scope="row" class="th3">最盛期</th><td>-</td></tr>
+              <!-- 2項目 1要素 -->
               <tr><th scope="row">🧪➕️<br>ADD</th><th scope="row" class="th2">活性剤</th>
-                  <td colspan="2">苗が弱っているときに与える</td></tr>
-              <!-- 2項目 1要素-->
+                  <td colspan="2">苗が弱っているときは与える</td></tr>
+              <!-- 2項目 1要素 -->
               <tr><th scope="row">💗🦠<br>PALS  </th>
                 <th scope="row" class="th3">納豆菌(バチルス菌)</th><td colspan="2">土壌改善<br>カビ・雑菌予防<br></td></tr>
-              <!-- 2項目 -->
+              <!-- 3項目 2要素 -->
               <tr><th scope="row" rowspan="3">🛡️<br>PREV</th>
-                  <th scope="row" class="th2">🍂<br>病気</th><td>お酢スプレー<br>(要希釈)</td></tr>
-              <tr><th scope="row" class="th2">👾<br>カビ</th><td>納豆菌スプレー<br>(希釈不要)</td></tr>
+                  <th scope="row" class="th2">🤢<br>病気</th><td rowspan="2">
+                    お酢スプレー(1000倍希釈)<br>納豆菌スプレー(希釈不要)<br>などを週1-2回吹きかける</td></tr>
+              <tr><th scope="row" class="th2">👾<br>カビ</th></tr>
               <tr><th scope="row" class="th2">🐛<br>害虫</th><td>虫除けプレート</td></tr>
               <!-- 1項目 -->
               <tr><th scope="row">💡ETC</th>
-                  <td colspan="2">ブドウ糖は納豆菌スプレーとセットで使用しないと、カビが繁殖しやすい</td></tr>
+                  <td colspan="2">ブドウ糖はスプレーとセットで使用しないと、カビが繁殖しやすい</td></tr>
             </table>
  
             <!------------------------------  👇️ 🥬親トグルを「閉じる」ボタン  --> 
