@@ -30,35 +30,31 @@
 <!--  CSS設定エリア  -->
 <style>
 
-  /* 👇️ サイトベース設定                              */
-  body {/*                                           */
+  /* 👇️ サイトベース設定 */
+  body {/*                                        */
     text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);/**/
-    background:       #f9ffff;/* 背景色           */
-    color:            #000000;/* 文字色           */
-    margin:              0 auto;/* 中央配置         */
-    /* max-width:         450px;/* PC横幅           */
-    max-width:            320px;/* スマホ横幅       */
-    width:                 100%;/*                  */
-    box-sizing:      border-box;/* ジャストサイズ   */
-    font-family:   ui-monospace,/* 等幅フォント群   */
-                 SFMono-Regular,/*                  */
-                  Menlo, Monaco,/*                  */
-                       Consolas,/*                  */
-                 "BIZ UDMincho",/*                  */
-                    "MS Gothic",/*                  */
-                      monospace;/*                  */
-    font-variant-numeric:/*                         */
-                   tabular-nums;/*                  */
-    font-size:             13px;/*                  */
-    font-weight:            570;/* 文字の濃さ       */
-  }/*                                               */
-/* 
+    background:        #f9ffff;/*             */
+    color:             #000000;/*            */
+    margin:               0 auto;/* 中央配置   */
+    /* max-width:          450px;/* PC        */
+    max-width:             320px;/* スマホ   */
+    width:                  100%;/*         */
+    box-sizing:       border-box;/*        */
+    font-family: 'Noto Serif JP',/*       */
+                  'BIZ UDMincho',/*      */
+                     'MS Gothic',/*     */
+                     'monospace';/*    */
+    font-variant-numeric:/*           */
+                    tabular-nums;/*  */
+    font-size:              13px;/* */
+    font-weight:             700;/**/
+  }/**/
 /*------------------------------  👇️ CSS共通設定エリア  */
 /* CSS共通設定エリア */
 
-  /* 👇️ メインタイトルのデザイン                          */
-  .main-title {/*                                        */
-    background-image:/*                                 */
+  /* 👇️ メインタイトルのデザイン */
+  .main-title {/*                                         */
+    background-image:/*                                  */
       linear-gradient(rgba(172, 205, 255, 0.15),/*    */
      rgba(0, 0, 0, 0.1)), url("00_title.png");/*     */
     box-shadow:  1px 1px 11px rgba(0, 0, 0, 0.4);/* */
@@ -71,16 +67,16 @@
     margin:                  7px;/* 外枠       */
     padding:            4px 11px;/*           */
     border-radius:          11px;/*          */
-  }/*                                       */
+  }/**/
 
-  /* 👇️ 左右スクロール用クラス              */
+               /* 👇️ 左右スクロール用クラス */
   .scro{/*                                 */
     overflow-x:                  auto;/*  */
     -webkit-overflow-scrolling: touch;/* */
     white-space:               nowrap;/**/
-  }/*                                  */
+  }/**/
 
-  /* 👇️ 左右スクロールボタン用クラス                  */
+                      /* 左右スクロールボタン用クラス */
   .scro-btn {/*                                      */
     box-shadow:1px 4px 11px rgba(0, 0, 0, 0.4);/* */
     background:rgba(229, 229, 233, 0.2); /*      */
@@ -93,12 +89,13 @@
     width:          35px;/* 横幅            */
     height:         35px;/* 縦幅           */
     border-radius:   50%;/*               */
-  }/*                                    */
-  /* スクロールボタン位置                         */
-  .scro-btn.prev { left : 3px; }/* 左端に寄せる  */
-  .scro-btn.next { right: 3px; }/* 右端に寄せる */
+  }/**/
 
-  /* 👇️ 閉じるボタン関連の設定                         */
+            /* スクロールボタン位置 */
+  .scro-btn.prev { left : 3px; }/* */
+  .scro-btn.next { right: 3px; }/**/
+
+                            /* 閉じるボタン関連の設定  */
   .close-btn {/*                                      */
     text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);/* */
     box-shadow:  1px 3px 5px rgba(0, 0, 0, 0.5);/**/
@@ -107,8 +104,8 @@
     border:          none;/* 境界線非表示        */
     cursor:       pointer;/* 指マーク           */
     font-weight:      570;/* 文字の濃さ        */
-    font-size:       14px;/* デザイン調整     */
-    width:           25px;/* デザイン調整    */
+    font-size:       12px;/* デザイン調整     */
+    width:           21px;/* デザイン調整    */
     padding:          3px;/* 位置調整       */
     border-radius:   50px;/*               */
   }/*                                     */
@@ -116,24 +113,26 @@
   .close-btn::before {/*                */
     /* 文字設定                        */
     content:        "✖️";/*           */
-  }/*                                */
+  }/**/
 
-  /* 👇️ 閉じるボタンの左右配置クラス      */
+          /* 閉じるボタンの左右配置クラス */
   .LR-set {/*                            */
     display:    flex;/* 横並び          */
     /* 左右配置                        */
     justify-content: space-between;/* */
     width:       64%;/* 位置調整     */
     padding: 5px 18%;/* 位置調整    */
-  }/*                              */
+  }/**/
 
-  /* 👇️ ゆっくりスクロ用の箱クラス */
-  /* トグルの中に必ず仕込む       */
-  /* スペース有：子孫セレクタ    */
-  /* スペース無：複合セレクタ   */
-  .content {/*                 */
-    overflow: hidden;/*       */
-  }/*                      */
+     /* 👇️ ゆっくりスクロ用の箱クラス */
+  /* トグルの中に必ず仕込む          */
+  /* スペース有：子孫セレクタ       */
+  /* スペース無：複合セレクタ      */
+  .content {/*                    */
+    overflow: hidden;/*          */
+    width: 100%;
+    margin-top: 3px;/* 位置調整 */
+  }/**/
 
   /* 👇️ content内で内容をスクロールする用のクラス  */
   /*  heightはコンテンツ内容に応じてクラスで指定  */
@@ -141,8 +140,8 @@
     overflow-y:         auto;/*                 */
     scroll-behavior:  smooth;/* スムーズスクロ */
     width:              100%;/*               */
-    /* margin-top:       5px;/* 位置調整     */
-    border-radius:       11px;/*             */
+    margin-top:          2px;/* 位置調整     */
+    border-radius:      11px;/*             */
     /* スクロールバー非表示                */
     /* IE, Firefox                        */
     /* Firefox用                         */
@@ -152,43 +151,47 @@
   /* Chrome, Safari                  */
   .carousel-content::-webkit-scrollbar {/**/
     display:            none;/*    */
-  }/*                             */
+  }/**/
 
-  /* トグル関連の共通設定 */
-  /* 👇️ 第1トグルの設定                                  */
-  details {/*                                           */
+                                  /* 👇️ トグル関連の設定 */
+                                            /* 基本設定 */
+  details {/*                                          */
     box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);/*  */
-    overflow:          hidden;/* 枠外の文字非表示    */
-    justify-content:   center;/* 中央配置           */
-    text-align:        center;/* 中央寄せ          */
-    margin:          7px auto;/* 中央寄せ         */
-    padding:  7px 0px 9px 0px;/* 上右下左        */
-    border-radius:       22px;/* 共通の丸み     */
-  }/*                                          */
+    background-color: #f1f6ff;/*                   */
+    overflow:            hidden;/* 枠外の文字非表示 */
+    justify-content:     center;/* 中央配置        */
+    text-align:          center;/* 中央寄せ       */
+    margin:            7px auto;/* 中央寄せ      */
+    padding:    7px 0px 9px 0px;/* 上右下左     */
+    border-radius:         22px;/* 共通の丸み  */
+  }/**/
 
-  /* 👇️ 第2トグルの設定  */
-  .tgl2 {/*             */
-    width: 99%;/*      */
-  }/*                 */
+       /* トグル 2 */
+  .tgl2 {/*       */
+    width: 100%;/**/
+  }/**/
 
-  /* 👇️ 第3トグルの設定  */
-  .tgl3 {/*             */
-    width: 100%;/*     */
-  }/*                 */
+        /* トグル 3 */
+  .tgl3 {/*        */
+    width: 100%;/**/
+  }/**/
 
-  /* 👇️ 野菜・環境情報 content          */
-  details.tgl3.info-box > .content {/* */
-     padding: 0px;/*                  */
-  }/*                                */
+  /* 野菜・環境情報 content */
+  /* details.tgl2.info-box >/**/
+  .info-box {
+  /*.content {/*            */
+    padding: 0px;/*      */
+  }/**/
 
-  /* 👇️ 野菜・環境情報 scro-box */
-  details.tgl3.info-box >/*    */
-  .content > .scro-box {/*    */
+     /* 野菜・環境情報 scro-box */ 
+  /* details.tgl2.info-box >/*    */
+  /* .content > .scro-box {/*    */
+  .scro-box{
     max-height: 400px;/*     */
-    padding: 0px 0px;/*     */
-  }/*                      */
+    padding:  0px 0px;/*    */
+  }/**/
 
-  /* 👇️ トグルタイトルのデザイン                     */
+                      /* 👇️ トグルタイトルのデザイン */
   summary {/*                                       */
   /*position: sticky; top: 0;/* タイトル上部固定   */
     display:            flex;/* 横並び            */
@@ -200,89 +203,112 @@
     width:              auto;/*             */
     font-weight:        bold;/* 太字       */
     border-radius:      22px;/*           */
-  }/*                                    */
+  }/**/
 
-  /* 👇️ <sammary><div>の設定（複合セパレータ）       */
+                             /* <sammary><div>の設定 */
   summary div {/*                                   */
     box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.2);/**/
     min-width:           50%;/*                   */
     margin:          3px 0px;/*                  */
     padding: 3px 3px 4px 3px;/*                 */
     border-radius:      11px;/*                */
-  }/*                                         */
+  }/**/
 
-  /* 👇️ テーブル設定エリア                             */
+                              /* 👇️ テーブル設定エリア */
+  .table-prev{
+    width: 97%;
+  }
+
   table th,/*                                         */
   table td {/*                                       */
     box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.7);/* */
     border: 4px ridge rgba(178, 181, 216, 0.5);/**/
     line-height:         1.2;/* 行間の調整        */
-    width:              auto;/*                  */
-    padding: 4px 4px 1px 3px;/* サイズ調整      */
-    border-radius:      11px;/* 丸み           */
-  }/*                                         */
+    padding: 4px 4px 3px 3px;/* サイズ調整       */
+    border-radius:      11px;/* 丸み            */
+  }/**/
 
-  /* 👇️ ヘッダー項目別設定      */
-  /* 親ヘッダー行 黄緑         */
+  /* 項目別設定 */
+     /* 親ヘッダ行 36px 黄緑色 */
   table th {/*                */
     background:  #e6ffac;/**/
-    min-width: 36px;/*      */
-  }/*                      */
+    min-width: 36px;
+  }/**/
 
-  /* 親列ヘッダ width 36px     */
-  th.th-36px{/*                 */
+       /* 親ヘッダ列 36px 青色 */
+  th.th-36px{/*               */
     background:  #dee5ff;/**/
     /* 絵文字2文字用        */
-    min-width: 36px;/*     */
-  }/*                     */
+  }/**/
   
-  /* 親列ヘッダ width 100%     */
+      /* 親列ヘッダ width 100% */
   th.th-max {/*               */
     background:  #dee5ff;/**/
     width: 100%;/*          */
-  }/*                      */
+  }/**/
 
-  /* 👇️ サブヘッダー1 タイプA 緑   */
+            /* サブヘッダ部 1 緑色 */
   th.th2a {/*                     */
     background:  #95ff87;/*    */
-    /* 最小幅必須               */
-    min-width:        36px;/*  */
-    /* 英語化対策             */
-  }/*                        */
+  }/**/
 
-  /* 👇️ サブヘッダー2 タイプB 黄   */
-  th.th2b {/*               */
-    background:   #39ffff;/*   */
-    /* 最小幅必須               */
-    min-width: 36px;/*         */
-    /* 英語化対策             */
-  }/*                        */
+          /* サブヘッダ部 2 黄色 */
+  th.th2b {/*                   */
+    background: #39ffff;/*   */
+  }/**/
 
-  /* 👇️ データ部項目              */
+               /* データ部 0 無色 */
   table td {/*                   */
-    background:  #fff7f7;/*   */
+    background:  #ffffff;/*   */
     /* 英語化対策              */
     word-break: break-word;/* */
     width:            100%;/**/
-  }/*                       */
+  }/**/
 
-  /* 子データ2 タイプA */
+               /* データ部 1 紫色 */
   td.td2a {/*                    */
     background:  #dab9fc;/*   */
     /* 英語化対策              */
     word-break: break-word;/* */
     width:            100%;/**/
-  }/*                       */
+  }/**/
 
-  /* 子データ2 タイプB */
+               /* データ部 2 桃色 */
   td.td2b {/*                    */
     background:  #ff84a3;/*   */
     /* 英語化対策              */
     word-break: break-word;/* */
     width:            100%;/**/
-  }/*                       */
+  }/**/
 
-  /* 👇️ カールセルクラス関連：全体の設定（位置の基準 ）  */
+  /* 👇️ テーブル内リストをテーブル化 */
+  table ul {/*              */
+    /* テーブル化          */
+    display:    table;/*  */
+    /*   インデント      */
+    padding-left: 5px;/**/
+  }/**/
+
+  /* li を「行」にする（中点は消える） */
+  table li {/*             */
+  /* リストをテーブル行化 */
+    display: table-row;/**/
+    text-align:  left;/**/  
+  }/**/
+
+  /* li 直下のspanをテーブルマス化 */
+  table li > span{/*        */
+    /* テーブルマス化      */
+    display: table-cell;/**/
+  }/**/
+
+  /* vege-info li 直下のspan１個目と２個目 */
+  /*table li span:nth-child(1),/*  */
+  /*      li span:nth-child(2) {/**/
+  /*      white-space: nowrap;/* */
+  /*}/**/
+
+                              /* 👇️ カールセルクラス関連 */
   .carousel {/*                                         */
     overflow:    hidden;/* 枠外の文字は非表示          */
     position:  relative;/* 位置を絶対位置で指定       */
@@ -292,13 +318,9 @@
     margin:      0 auto;/* 中央寄せ               */
     padding:      1% 1%;/* 見た目調整            */
   /*border-radius: 11px;/* 共通の丸み           */
-  }/*                                          */
+  }/**/
 
-  ul li {
-    text-align:  left;
-  }
-
-  /* 👇️ スクロールさせる箱                                 */
+                                     /* スクロールさせる箱 */
   .carousel-content {/*                                   */
     display:            flex;/* 要素を横並び             */ 
   /*align-items:  flex-start;/* 要素の高さ合わせ        */
@@ -317,82 +339,74 @@
   /* Chrome, Safari                        */
   .carousel-content::-webkit-scrollbar {/**/
     display:            none;/*          */
-  }/*                                   */
+  }/**/
 /* 
 /*------------------------------  👇️ CSS個別設定エリア  */
 /* CSS個別設定エリア */
 
-  /* 👇️ 情報トグルを並べる箱クラス                 */
+                  /* 👇️ 情報トグルを並べる箱クラス */
   .info-wrap {/*                                  */
     overflow-x:         auto;/*                  */
     display:            flex;/* 要素を横並び    */
     justify-content:    left;/* 要素を左寄せ   */
     width:              auto;/*               */
     gap:                10px;/* 要素間の隙間 */
-    padding:            0 2%;/* 位置調整    */
-    /* スクロールバー非表示                */
-    /* IE, Firefox                        */
-    -ms-overflow-style: none;/*          */
-    /* Firefox                          */
-    scrollbar-width:    none;/*        */
-   }/*                                */
-  /* Chrome, Safari                  */
-   .info-wrap::-webkit-scrollbar {/**/
-    display:            none;/*    */
-   }/*                            */
-
-  /* 👇️ 野菜・栽培環境トグルクラス              */
+    /* スクロールバー非表示                 */
+    /* IE, Firefox                         */
+    -ms-overflow-style: none;/*           */
+    /* Firefox用                         */
+    scrollbar-width:    none;/*         */
+  }/*                                  */
+    /* Chrome, Safari                 */
+  .carousel-content::-webkit-scrollbar {/**/
+    display:            none;/*     */
+  }/**/
+             /* 野菜info-wrap専用 */
+  .vege{/*                       */
+    padding: 0 3%;/* 位置調整   */
+  }/**/
+                               /* 👇️ 情報トグル */
   /* このトグルは子要素の大きさに合わせるだけ  */
   .info-box{/*                                */
     align-self:   flex-start;/* 個別の高さ   */
     width:              100%;/*             */
     padding:             5px;/*            */
     border-radius:      22px;/*           */
-    /* スクロールバー非表示              */
-    /* IE, Firefox                      */
-    -ms-overflow-style: none;/*        */
-    /* Firefox                        */
-    scrollbar-width:    none;/*      */
-  }/*                               */
-  /* Chrome, Safari                */
-  .info-box::-webkit-scrollbar {/**/
-    display:            none;/*  */
-  }/*                           */
-
-  /* 👇️ 情報トグルが開いたときのスタイル指定 */
+  }/**/
+                     /* 情報トグルオープン時 */
   .info-box[open] {/*                       */
   /* 並列要素の割合などを設定する/*        */
   /* flex-grow   要素の幅割合/*           */
   /* flex-shrink  0:max 1:均等 2:min/*   */
   /* flex-basis  フォーカス時横幅       */
-    flex:  1 0 97%;/*                 */
-  }/*                                 */
+    flex:  1 0 97%;/*                  */
+  }/**/
 
-  /* 👇️ 野菜さん別情報カード用クラス                  */
+                   /* 👇️ 野菜さん別情報カード用クラス */
   .vege-card {/*                                     */
     box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);/**/
     flex:       0 0 220px;/* 横幅をpxに固定        */
     text-align:      left;/* 左寄せ               */
     padding:    11px 15px;/* 上下 左右           */
     border-radius:   11px;/*                    */
-  }/*                                          */
+  }/**/
 
-  /* 👇️ カード内の画像                                 */
-  .vege-card img {/*                                  */
+                                    /* カード内の画像 */
+  .vege-card img {/*                                 */
     box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);/**/
     width:          100%;/*                        */
     height:         auto;/*                       */
     display:       block;/* 要素の前後改行       */
     margin:      7px 0px;/* 位置調整            */
     border-radius:  11px;/*                    */
-  }
+  }/**/
  
-  /* 👇️ ライセンストグル用クラス       */
+        /* 👇️ ライセンストグル用クラス */
   .license-base {/*                   */
     text-align: center;/*            */ 
     line-height:   1.5;/* 行間      */
     padding: 10px 15px;/* 位置調整 */
-  }/*                             */
+  }/**/
 /*
 /*------------------------------  👇️ コメント化クラス置き場  --*/
 /*
@@ -452,38 +466,6 @@
   /*   background: #f2fffd;     /**/
   /* }                          /**/
 
-  /* 👇️ テーブル内リストを自動調整テーブル化 */
-  table ul {/*                   */
-    /* テーブル化               */
-    display:     table;/*      */
-    text-align: center;/*     */
-    /*   位置調整            */
-  /*margin-top:    5px;/*   */
-    /*   インデント        */
-  /*margin-left:    3%;/* */
-    padding-left:  5px;/**/
-  }/*                   */
-
-  /* 👇️ 行(li)を「テーブルの行」にする（中点は消える） */
-  table li {/*             */
-  /* リストをテーブル行化 */
-    display: table-row;/**/
-  }/*                   */
-
-  /* 👇️ vege-info li 直下のspan１個目と２個目 */
-  /*table li span:nth-child(1),/*  */
-  /*      li span:nth-child(2) {/**/
-  /*      white-space: nowrap;/* */
-  /*}/*                         */
-
-  /* 👇️ vege-info li 直下のspanを全てテーブルマスにする */
-  table li > span{/*         */
-    /* テーブルマス化       */
-    display: table-cell;/* */
-  /*padding-top: 8px   ;/**/
-  }/*                    */
-
-
   /* 👇️ 最小構成確認用クラス定義置き場 */
 
 </style>
@@ -519,15 +501,15 @@
       <div class="content">
 
         <!-- 👇️ 🥬情報エリア -->
-        <div class="info-wrap">
+        <div class="info-wrap vege">
 
           <!-- 👇️ 🥬野菜情報 -->
-          <details open class="tgl3 info-box"><summary>ℹ️VEGE INFO</summary>
+          <details open class="tgl2 info-box"><summary>ℹ️VEGE INFO</summary>
             <div class="content">
 
               <!-- 列ヘッダ -->
               <table>
-                <tr><th class="th-36px">ITME</th><th colspan="2" class="th-max">INFO</th><tr>
+                <tr><th class="th-36px">ITEM</th><th colspan="2" class="th-max">INFO</th><tr>
                 <!-- 1項目 -->
               </table>
 
@@ -592,12 +574,12 @@
           </details>
 
           <!-- 👇️ 📝環境情報 -->
-          <details class="tgl3 info-box scro-target"><summary>📝Zone Info</summary>
+          <details class="tgl2 info-box  scro-target"><summary>📝ZONE INFO</summary>
             <div class="content">
 
               <!-- 列ヘッダ -->
               <table>
-                <tr><th class="th-36px">ITME</th><th colspan="2" class="th-max">INFO</th><tr>
+                <tr><th class="th-36px">ITEM</th><th colspan="2" class="th-max">INFO</th><tr>
                 <!-- 1項目 -->
               </table>
               
@@ -618,16 +600,15 @@
                 <tr><th class="th2b">バーミキュライト</th><td>3</td></tr>
                 <!-- 4項目 -->
                 <tr><th rowspan="4">🧪POST-COMP:<br>Mix<br>💧1L</th>
-                    <th class="th2a">HYPONeX </th><td>1ml:<br>(1000倍希釈)</td></tr>
+                    <th class="th2a">HYPO<br>NeX </th><td>1ml:<br>(1000倍希釈)</td></tr>
                 <tr><th class="th2a">お酢    </th><td>1ml:<br>(1000倍希釈)</td></tr>
                 <tr><th class="th2a">ブドウ糖</th><td>0.5g-1g:<br>(1500倍希釈)</td></tr>
                 <tr><th class="th2a">ヨモギ水<br>💧1L</th>
                     <td>自家製(希釈不要)<br>※市販のヨモギエキスは要希釈</td></tr>
                 <!-- 3項目 -->
-                <tr><th rowspan="3">🧪📅<br>FREQ</th>
+                <tr><th rowspan="2">🧪📅<br>FREQ</th>
                     <th class="th2b">初期</th><td colspan="2">芽が育つまでは水のみ</td></tr>
                 <tr><th class="th2b">普段</th><td>🧪を週1回</td></tr>
-                <tr><th class="th2b">ピーク</th><td>-</td></tr>
                 <!-- 2項目 1要素 -->
                 <tr><th>🧪➕️<br>ADD</th><th class="th2a">活性剤</th>
                     <td colspan="2">苗に元気がないときは与えてみる</td></tr>
@@ -723,7 +704,7 @@
       <details><summary>🥕五寸人参さん</summary>
       <div class="content"><div class="scro-box">
 
-        <div class="info-wrap">
+        <div class="info-wrap vege">
           <!-- 👇️ 🥕野菜情報 -->
           <details class="tgl3 info-box"><summary>🥕野菜情報</summary>
             <div class="content"><div class="scro-box">
@@ -780,7 +761,7 @@
           </details>
 
           <!-- 👇️ 🥕環境情報 -->
-          <details class="tgl3 info-box scro-target"><summary>📝環境情報</summary>
+          <details class="tgl2 info-box scro-target"><summary>📝環境情報</summary>
             <div class="content"><div class="scro-box">
 
               <table>
@@ -908,7 +889,7 @@
       <div class="content">
 
         <!------------------------------  👇️ 🍅各情報トグルを入れる箱  -->
-        <div class="info-wrap">
+        <div class="info-wrap vege">
 
           <!------------------------------  👇️ 🍅野菜情報  -->
           <details class="info-box"><summary>ℹ️野菜情報</summary>
@@ -1021,7 +1002,7 @@
       <div class="content">
 
         <!------------------------------  👇️ 🥒各情報トグルを入れる箱  -->
-        <div class="info-wrap">
+        <div class="info-wrap vege">
 
           <!------------------------------  👇️ 🥒野菜情報  -->
           <details class="info-box"><summary>ℹ️野菜情報</summary>
@@ -1133,7 +1114,7 @@
       <div class="content">
 
         <!------------------------------  👇️ 🌱各情報トグルを入れる箱  -->
-        <div class="info-wrap">
+        <div class="info-wrap vege">
 
           <!------------------------------  👇️ 🌱野菜情報  -->
           <details class="info-box"><summary>ℹ️野菜情報</summary>
@@ -1244,7 +1225,7 @@
       <div class="content">
 
         <!------------------------------  👇️ 🌿各情報トグルを入れる箱  -->
-        <div class="info-wrap">
+        <div class="info-wrap vege">
 
           <!------------------------------  👇️ 🌿野菜情報  -->
           <details class="info-box"><summary>ℹ️野菜情報</summary>
@@ -1353,7 +1334,7 @@
         <div class="content">
 
         <!------------------------------  👇️ 🍃各情報トグルを入れる箱  -->
-        <div class="info-wrap">
+        <div class="info-wrap vege">
 
           <!------------------------------  👇️ 🍃野菜情報  -->
           <details class="info-box"><summary>ℹ️野菜情報</summary>
@@ -1463,7 +1444,7 @@
       <div class="content">
 
         <!------------------------------  👇️ 🥔各情報トグルを入れる箱  -->
-        <div class="info-wrap">
+        <div class="info-wrap vege">
 
           <!------------------------------  👇️ 🥔野菜情報  -->
           <details class="info-box"><summary>ℹ️野菜情報</summary>
@@ -1581,21 +1562,21 @@
     <!------------------------------  👆️ 🗓️野菜さん別情報  -->
 
     <!-- 👇️ 👾病気害虫 Info🐛 -->
-    <details open class="tgl2"><summary><u>👾病気害虫 Info🐛</u></summary>
+    <details open class="tgl2"><summary><u>👾病気害虫🐛</u></summary>
     <div class="content">
 
       <!-- 👇️ 🛡️対策⛑️ -->
       <div class="info-wrap">
-      <details open class="tgl3 info-box"><summary><u>🛡️対策⛑️</u></summary>
+      <details open class="tgl2" ><summary><u>🛡️対策⛑️</u></summary>
 
-        <!-- 列ヘッダ専用構造 -->
-        <div class="content">
+        <!-- 専用構造 -->
+        <div class="info-box content">
 
-          <table><tr><th class="th-36px">TGT</th><th class="th-max">ACT</td></tr></table>
+          <table class="table-prev"><tr><th class="th-36px">TGT</th><th class="th-max">PREV</td></tr></table>
 
         <div class="scro-box">
 
-          <table>
+          <table class="table-prev">
           <!-- 3項目 4データ リストテーブル-->
             <tr><th>🤢<br>病気</th>
               <td rowspan="2"><ul>
@@ -1611,7 +1592,7 @@
             <tr><td>ハッカ油の芳香剤<br>(💡自作可能)</td></tr>
             <tr><td>✨️キラキラ輝くもの</td></tr>
 
-            <!-- 💡 備考専用エリア -->
+            <!-- 💡 備考専用エリア tr td ul-->
             <tr><td colspan="3"><ul>
               <li><span>💡</span>追記</li>
               <li><span>・</span>市販のスプレーは色々効果がある。</li>
@@ -1630,25 +1611,25 @@
           <div style=" text-align: center;"><button class="close-btn"></button></div>
         </div>
 
-      </details>
-      </div>
+      </details><!-- 🛡️対策⛑️ -->
+      </div><!-- info-wrap -->
 
 
       <!-- 👇️ 👾病気🤢 -->
       <div class="info-wrap">
-      <details open class="tgl3 info-box"><summary><u>👾病気🤢</u></summary>
+      <details open class="tgl2"><summary><u>👾病気🤢</u></summary>
 
-        <!-- 列ヘッダ専用構造 -->
-        <div class="content">
+        <!-- 専用構造 -->
+        <div class="info-box content">
 
-          <table>
-            <tr><th class="th-36px">CAUS</th><th colspan="2" class="th-36px">SICK</th><th class="th-max">SYMP</th></tr>
+          <table class="table-prev">
+            <tr><th class="th-36px">CAUS</th><th colspan="2" class="th-max">SICK & SYMP</th></tr>
           </table>
 
         <div class="scro-box">
 
           <!-- 5親項目 1子項目 2データ -->
-          <table>
+          <table class="table-prev">
             <tr><th rowspan="5">👾<br>カビ</th><td><ul>
               <li><span>🤢</span>すす病</li>
               <li><span>・ </span>害虫の排泄物にカビが生え葉が黒くなる。</li>
@@ -1681,17 +1662,18 @@
 
             <tr><th>🦟<br>SUCK</th><td rowspan="2"><ul>
               <li><span>🤢</span>モザイク病</li>
-              <li><span>・ </span>吸汁性害虫の食害から感染。または人の手から感染。</li>
+              <li><span>・ </span>吸汁性害虫の食害からウィルス感染。または人の手から感染。</li>
               <li><span>・ </span>葉に緑と黄色のモザイク模様。</li>
               <li><span>・ </span>進行すると葉が縮む。</li>
               <li><span>・ </span>成長が止まる。</li>
             </td></ul></tr>
 
             <tr><th>🚬<br>煙草</th></tr>
-            <!-- 💡 備考専用エリア -->
+            <!-- 💡 備考専用エリア tr td ul -->
             <tr><td colspan="3"><ul>
-              <li><span>💡</span>追記</ul></li>
-              <li><span>・</span>野菜別にモザイクウィルス病がある。</li>
+              <li><span>💡</span>モザイク病について:</li>
+              <li><span></span></li>
+              <li><span>・</span>野菜別にモザイク病がある。</li>
               <li><span>・</span>感染すると治療できない。</li>
               <li><span>・</span>土に残るので早期発見が大事。</li>
               <li><span>・</span>似たような症状がカビ性の病気や栄養不足、
@@ -1709,27 +1691,29 @@
           <div style=" text-align: center;"><button class="close-btn"></button></div>
         </div>
 
-      </details>
-      </div>
+      </details><!-- 👾病気🤢 👆️-->
+      </div><!-- info-wrap -->
 
-      <!-- 👇️ 🔠害虫🐛 -->
+      <!-- 👇️ 🦟害虫🐛 -->
       <div class="info-wrap">
-      <details open class="tgl3 info-box"><summary><u>🔠害虫🐛</u></summary>
+      <details open class="tgl2"><summary><u>🦟害虫🐛</u></summary>
 
-        <!-- 列ヘッダ専用構造 -->
-        <div class="content">
+        <!-- 専用構造 -->
+        <div class="info-box content">
 
-          <table>
-            <tr><th class="th-36px">TYPE</th><th class="th-36px">PEST</th><th class="th-max">DMG</th></tr>
+          <table class="table-prev">
+            <tr><th class="th-36px">TYPE</th><th class="th-max">PEST & DMG</th></tr>
           </table>        
 
         <div class="scro-box">
 
           <!-- 5親項目 1子項目 2データ -->
-          <table>
+          <table class="table-prev">
             <tr><th>🦟<br>SUCK</th><td><ul>
               <li><span>🟢</span>アブラ虫(Aphid)</li>
-              <li><span>・ </span>モザイクウィルスを媒介する。</li>
+              <li><span>⚪️</span>コナジラミ</li>
+              <li><span>🟤</span>アザミウマ</li>
+              <li><span>・ </span>モザイク病を媒介する。</li>
               <li><span>・ </span>排泄物に生えたカビが「すす病」を引き起こす。</li>
               <li><span>・ </span>✨️キラキラが嫌い。</li>
             </td></ul></tr>
@@ -1747,15 +1731,14 @@
               <li><span>・ </span>軽度なら問題ないけど、重度になると葉枯や枯死が起きる。</li>
             </ul></td></tr>
 
-            <!-- 💡 備考専用エリア -->
+            <!-- 💡 備考専用エリア tr td ul -->
             <tr><td colspan="3"><ul>
-              <li><span>💡</span>追記</li>
+              <li><span>📝</span>メモ</li>
               <li><span>・</span>市販の虫除けアイテムはかなり有効。</li>
-              <li><span>・</span>虫除け対策は難しくないので、すぐやる。</li>
+              <li><span>・</span>虫除け対策は難しくないと思う。</li>
               <li><span>・</span>ダイソーで買った虫よけプレートでベランダからヨトウ虫がいなくなった。</li>
             </ul></td></tr>
           </table>
-
 
         </div><!-- content -->
         </div><!-- scro-box -->
@@ -1766,8 +1749,8 @@
           <div style=" text-align: center;"><button class="close-btn"></button></div>
         </div>
 
-      </div>
-      </details>
+      </details><!-- 🦟害虫🐛 👆️ -->
+      </div><!-- info-wrap -->
 
       <!-- 👇️ 👾病気害虫 Info🐛を閉じる -->
       <div class="LR-set">
@@ -1775,17 +1758,18 @@
         <div style=" text-align: center;"><button class="close-btn"></button></div>
       </div>
 
-    </div>
-    </details>
+    </div><!-- content -->
+    </details><!-- 👇️ 👾病気害虫🐛 👆️ -->
+
+
     <!------------------------------  👇️ 🍅Home Gardenを「閉じる」ボタン  --> 
     <div class="LR-set">
       <div style=" text-align: center;"><button class="close-btn"></button></div>
       <div style=" text-align: center;"><button class="close-btn"></button></div>
     </div>
 
-  </div>
-  </details>
-  <!------------------------------  👆️ 🍅Home Garden  -->
+  </div><!-- content -->
+  </details><!------------------------------  🍅Home Garden 👆️  -->
 
   <!------------------------------  👇️ LICENSE  -->
 
