@@ -30,11 +30,11 @@
 <!--  CSS設定エリア  -->
 <style>
 
-  /* 👇️ サイトベース設定 */
+                            /* 👇️ サイトベース設定 */
   body {/*                                        */
     text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);/**/
-    background:        #f9ffff;/*             */
-    color:             #000000;/*            */
+    background:        #f9ffff;                /**/
+    color:             #000000;               /**/
     margin:               0 auto;/* 中央配置   */
     /* max-width:          450px;/* PC        */
     max-width:             320px;/* スマホ   */
@@ -52,21 +52,21 @@
 /*------------------------------  👇️ CSS共通設定エリア  */
 /* CSS共通設定エリア */
 
-  /* 👇️ メインタイトルのデザイン */
-  .main-title {/*                                         */
-    background-image:/*                                  */
-      linear-gradient(rgba(172, 205, 255, 0.15),/*    */
-     rgba(0, 0, 0, 0.1)), url("00_title.png");/*     */
-    box-shadow:  1px 1px 11px rgba(0, 0, 0, 0.4);/* */
+                   /* 👇️ メインタイトルのデザイン */
+  .main-title {/*                                */
+    background-image:/*                         */
+      linear-gradient(rgba(172, 205, 255, 0.15),    /**/
+     rgba(0, 0, 0, 0.1)), url("00_title.png");     /**/
+    box-shadow:  1px 1px 11px rgba(0, 0, 0, 0.4); /**/
     text-shadow: 2px 4px 11px rgba(0, 0, 0, 0.9);/**/
-    color:             #fcfff0;/*                 */
-    background-position:  center;/* 背景中央       */
-    background-repeat: no-repeat;/*               */
-    background-size:       cover;/* フィット     */
-    text-align:           center;/* 中寄せ      */
-    margin:                  7px;/* 外枠       */
-    padding:            4px 11px;/*           */
-    border-radius:          11px;/*          */
+    color:             #fcfff0;                 /**/
+    background-position:  center;/*       */
+    background-repeat: no-repeat;/*      */
+    background-size:       cover;/*     */
+    text-align:           center;/*    */
+    margin:                  7px;/*   */
+    padding:            4px 11px;/*  */
+    border-radius:          11px;/* */
   }/**/
 
                /* 👇️ 左右スクロール用クラス */
@@ -76,47 +76,47 @@
     white-space:               nowrap;/**/
   }/**/
 
-                      /* 左右スクロールボタン用クラス */
-  .scro-btn {/*                                      */
-    box-shadow:1px 4px 11px rgba(0, 0, 0, 0.4);/* */
-    background:rgba(229, 229, 233, 0.2); /*      */
-    color:     rgb(77, 77, 77);/*               */
-    position:   absolute;/* 絶対位置             */
-    z-index:          20;/* 前面表示            */
-    cursor:      pointer;/* 指マーク           */
-    border:         none;/* 枠線を消す        */
-    font-size:      25px;/* 文字サイズ       */
-    width:          35px;/* 横幅            */
-    height:         35px;/* 縦幅           */
-    border-radius:   50%;/*               */
+        /* 左右スクロールボタン用クラス */
+  .scro_btn {/*                        */
+    box-shadow:1px 4px 11px rgba(0, 0, 0, 0.4);/**/
+    background:rgba(229, 229, 233, 0.2);      /**/
+    color:     rgb(77, 77, 77);              /**/
+    position:   absolute;/*        */
+    z-index:          20;/*       */
+    cursor:      pointer;/*      */
+    border:         none;/*     */
+    font-size:      25px;/*    */
+    width:          35px;/*   */
+    height:         35px;/*  */
+    border-radius:   50%;/* */
   }/**/
 
             /* スクロールボタン位置 */
-  .scro-btn.prev { left : 3px; }/* */
-  .scro-btn.next { right: 3px; }/**/
+  .scro_btn.prev { left : 3px; }/* */
+  .scro_btn.next { right: 3px; }/**/
 
-                            /* 閉じるボタン関連の設定  */
-  .close-btn {/*                                      */
-    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);/* */
+                  /* 閉じるボタン関連の設定  */
+  .close_btn {/*                            */
+    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5); /**/
     box-shadow:  1px 3px 5px rgba(0, 0, 0, 0.5);/**/
-    background: #dfdfdf;/* 背景色                */
-    color:      #000000;/* 文字の色             */
-    border:          none;/* 境界線非表示        */
-    cursor:       pointer;/* 指マーク           */
-    font-weight:      570;/* 文字の濃さ        */
-    font-size:       12px;/* デザイン調整     */
-    width:           21px;/* デザイン調整    */
-    padding:          3px;/* 位置調整       */
-    border-radius:   50px;/*               */
-  }/*                                     */
-  /* 閉じるボタンの見た目                */
-  .close-btn::before {/*                */
-    /* 文字設定                        */
-    content:        "✖️";/*           */
+    background: #dfdfdf;                       /**/
+    color:      #000000;                      /**/
+    border:          none;/*            */
+    cursor:       pointer;/*           */
+    font-weight:      570;/*          */
+    font-size:       12px;/*         */
+    width:           21px;/*        */
+    padding:          3px;/*       */
+    border-radius:   50px;/*      */
+  }/*                            */
+  /* 閉じるボタングラ           */
+  .close_btn::before {/*       */
+    /* 文字設定               */
+    content:        "✖️";/* */
   }/**/
 
           /* 閉じるボタンの左右配置クラス */
-  .LR-set {/*                            */
+  .LR_set {/*                            */
     display:    flex;/* 横並び          */
     /* 左右配置                        */
     justify-content: space-between;/* */
@@ -124,21 +124,19 @@
     padding: 5px 18%;/* 位置調整    */
   }/**/
 
-     /* 👇️ ゆっくりスクロ用の箱クラス */
-  /* トグルの中に必ず仕込む          */
-  /* スペース有：子孫セレクタ       */
-  /* スペース無：複合セレクタ      */
-  .content {/*                    */
-    overflow: hidden;/*          */
-    width: 100%;
-    margin-top: 3px;/* 位置調整 */
+  /* 👇️ ゆっくりスクロ用の箱クラス */
+            /* トグル内必須クラス */
+  .content {/*                   */
+    overflow: hidden;/*         */
+    width: 100%;/*             */
+    margin-top: 3px;/*        */
   }/**/
 
-  /* 👇️ content内で内容をスクロールする用のクラス  */
-  /*  heightはコンテンツ内容に応じてクラスで指定  */
-  .scro-box {/*                                  */
+  /*         👇️ content内で内容をスクロールする箱  */
+  /*          heightは内容に応じて別クラスで指定  */
+  .scro_box {/*                                  */
     overflow-y:         auto;/*                 */
-    scroll-behavior:  smooth;/* スムーズスクロ */
+    scroll-behavior:  smooth;/* スムーズ       */
     width:              100%;/*               */
     margin-top:          2px;/* 位置調整     */
     border-radius:      11px;/*             */
@@ -149,25 +147,24 @@
     scrollbar-width:    none;/*        */
   }/*                                 */
   /* Chrome, Safari                  */
-  .carousel-content::-webkit-scrollbar {/**/
+  .carousel_content::-webkit-scrollbar {/**/
     display:            none;/*    */
   }/**/
 
-                                  /* 👇️ トグル関連の設定 */
-                                            /* 基本設定 */
-  details {/*                                          */
-    box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);/*  */
-    background-color: #f1f6ff;/*                   */
-    overflow:            hidden;/* 枠外の文字非表示 */
-    justify-content:     center;/* 中央配置        */
-    text-align:          center;/* 中央寄せ       */
-    margin:            7px auto;/* 中央寄せ      */
-    padding:    7px 0px 9px 0px;/* 上右下左     */
-    border-radius:         22px;/* 共通の丸み  */
+                    /* 👇️ トグル関連の設定 */
+  details {/*                             */
+    box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);/**/
+    background-color: #f1f6ff;                 /**/
+    overflow:            hidden;/*      */
+    justify-content:     center;/*     */
+    text-align:          center;/*    */
+    margin:            7px auto;/*   */
+    padding:    7px 0px 9px 0px;/*  */
+    border-radius:         22px;/* */
   }/**/
 
-       /* トグル 2 */
-  .tgl2 {/*       */
+        /* トグル 2 */
+  .tgl2 {/*        */
     width: 100%;/**/
   }/**/
 
@@ -177,129 +174,128 @@
   }/**/
 
   /* 野菜・環境情報 content */
-  /* details.tgl2.info-box >/**/
-  .info-box {
-  /*.content {/*            */
-    padding: 0px;/*      */
+  .info_box {/*            */
+    padding: 0px;/*       */
   }/**/
 
-     /* 野菜・環境情報 scro-box */ 
-  /* details.tgl2.info-box >/*    */
-  /* .content > .scro-box {/*    */
-  .scro-box{
-    max-height: 400px;/*     */
-    padding:  0px 0px;/*    */
+  /* 野菜・環境情報 scro_box */ 
+  .scro_box{/*              */
+    max-height: 400px;/*   */
+    padding:  0px 0px;/*  */
   }/**/
 
-                      /* 👇️ トグルタイトルのデザイン */
-  summary {/*                                       */
-  /*position: sticky; top: 0;/* タイトル上部固定   */
-    display:            flex;/* 横並び            */
-    cursor:          pointer;/* 指マーク         */
-    justify-content:  center;/* 中央配置        */
-    text-align:       center;/* 配置はまた今度 */
-    white-space:      nowrap;/* 折り返し禁止  */
-    min-width:             0;/*              */
-    width:              auto;/*             */
-    font-weight:        bold;/* 太字       */
-    border-radius:      22px;/*           */
+            /* 👇️ トグルタイトルのデザイン */
+  summary {/*                             */
+  /*position: sticky; top: 0;/* 固定     */
+    display:            flex;/* 横並び  */
+    cursor:          pointer;/*        */
+    justify-content:  center;/*       */
+    text-align:       center;/*      */
+    white-space:      nowrap;/*     */
+    min-width:             0;/*    */
+    width:              auto;/*   */
+    font-weight:        bold;/*  */
+    border-radius:      22px;/* */
   }/**/
 
-                             /* <sammary><div>の設定 */
-  summary div {/*                                   */
+              /* <sammary><div>の設定 */
+  summary div {/*                    */
     box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.2);/**/
-    min-width:           50%;/*                   */
-    margin:          3px 0px;/*                  */
-    padding: 3px 3px 4px 3px;/*                 */
-    border-radius:      11px;/*                */
+    min-width:           50%;/*    */
+    margin:          3px 0px;/*   */
+    padding: 3px 3px 4px 3px;/*  */
+    border-radius:      11px;/* */
   }/**/
 
-                              /* 👇️ テーブル設定エリア */
-  .table-prev{
-    width: 97%;
-  }
+  /* 👇️ テーブル設定エリア */
+  /* 病気害虫対策用       */
+  .table_prev{/*         */
+    width: 97%;/*       */
+  }/**/
 
-  table th,/*                                         */
-  table td {/*                                       */
-    box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.7);/* */
+           /* ヘッダ・データ部共通設定 */
+  table th,/*                         */
+  table td {/*                       */
+    box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.7); /**/
     border: 4px ridge rgba(178, 181, 216, 0.5);/**/
-    line-height:         1.2;/* 行間の調整        */
-    padding: 4px 4px 3px 3px;/* サイズ調整       */
-    border-radius:      11px;/* 丸み            */
+    line-height:         1.2;/*   */
+    padding: 4px 4px 3px 3px;/*  */
+    border-radius:      11px;/* */
   }/**/
 
-  /* 項目別設定 */
-     /* 親ヘッダ行 36px 黄緑色 */
-  table th {/*                */
-    background:  #e6ffac;/**/
-    min-width: 36px;
+                 /* 個別設定 */
+  /* 親ヘッダ行 36px 黄緑色 */
+  table th {/*             */
+    background:#e6ffac;/**/
+    min-width: 36px;/*   */
   }/**/
 
-       /* 親ヘッダ列 36px 青色 */
-  th.th-36px{/*               */
-    background:  #dee5ff;/**/
-    /* 絵文字2文字用        */
+  /* 親ヘッダ列 36px 青色 */
+  th.th36px{/*           */
+    background:#dee5ff;/**/
   }/**/
   
-      /* 親列ヘッダ width 100% */
-  th.th-max {/*               */
-    background:  #dee5ff;/**/
-    width: 100%;/*          */
+  /* 親列ヘッダ width 100% */
+  th.thMax {/*            */
+    background:#dee5ff;  /**/
+    width: 100%;/*      */
   }/**/
 
-            /* サブヘッダ部 1 緑色 */
-  th.th2a {/*                     */
-    background:  #95ff87;/*    */
+  /* サブヘッダ部 1 緑色 */
+  th.th2a {/*           */
+    background:#95ff87;/**/
   }/**/
 
-          /* サブヘッダ部 2 黄色 */
-  th.th2b {/*                   */
-    background: #39ffff;/*   */
+  /* サブヘッダ部 2 黄色 */
+  th.th2b {/*           */
+    background: #39ffff;/**/
   }/**/
 
-               /* データ部 0 無色 */
-  table td {/*                   */
-    background:  #ffffff;/*   */
-    /* 英語化対策              */
-    word-break: break-word;/* */
+              /* データ部 0 無色 */
+  table td {/*                  */
+    background:#ffffff;       /**/
+    word-break: break-word; /**/
     width:            100%;/**/
   }/**/
 
                /* データ部 1 紫色 */
   td.td2a {/*                    */
-    background:  #dab9fc;/*   */
-    /* 英語化対策              */
-    word-break: break-word;/* */
+    background:#dab9fc;       /**/
+    word-break: break-word; /**/
     width:            100%;/**/
   }/**/
 
-               /* データ部 2 桃色 */
-  td.td2b {/*                    */
-    background:  #ff84a3;/*   */
-    /* 英語化対策              */
-    word-break: break-word;/* */
+              /* データ部 2 桃色 */
+  td.td2b {/*                   */
+    background:#ff84a3;       /**/
+    word-break: break-word; /**/
     width:            100%;/**/
   }/**/
 
   /* 👇️ テーブル内リストをテーブル化 */
-  table ul {/*              */
-    /* テーブル化          */
-    display:    table;/*  */
-    /*   インデント      */
-    padding-left: 5px;/**/
+  table ul {/*                      */
+    display:    table;/*           */
+    box-sizing: border-box;/*     */
+    /* 短い内容は内容幅にする    */
+    /* width:   max-content;/*  */
+    /* 内容はセル幅を超えない  */
+    max-width:  100%;/*       */
+    /* 短い内容を中央寄せ    */
+    margin:     0 auto;/*   */
+    /*   インデント        */
+    padding-left: 5px;/*  */
   }/**/
 
   /* li を「行」にする（中点は消える） */
-  table li {/*             */
-  /* リストをテーブル行化 */
-    display: table-row;/**/
-    text-align:  left;/**/  
+  table li {/*                        */
+  /* リストをテーブル行化            */
+    display: table-row;/*           */
+    text-align:  left;/*           */  
   }/**/
 
   /* li 直下のspanをテーブルマス化 */
-  table li > span{/*        */
-    /* テーブルマス化      */
-    display: table-cell;/**/
+  table li > span{/*              */
+    display: table-cell;/*       */
   }/**/
 
   /* vege-info li 直下のspan１個目と２個目 */
@@ -308,104 +304,109 @@
   /*      white-space: nowrap;/* */
   /*}/**/
 
-                              /* 👇️ カールセルクラス関連 */
-  .carousel {/*                                         */
-    overflow:    hidden;/* 枠外の文字は非表示          */
-    position:  relative;/* 位置を絶対位置で指定       */
-    display:       flex;/* 要素を横並び              */
-    align-items: center;/* 要素を縦方向中央に       */
-    width:          96%;/* 見た目調整              */
-    margin:      0 auto;/* 中央寄せ               */
-    padding:      1% 1%;/* 見た目調整            */
-  /*border-radius: 11px;/* 共通の丸み           */
+               /* 👇️ カールセル関連 */
+  .carousel {/*                    */
+    overflow:    hidden;/*        */
+    position:  relative;/*       */
+    display:       flex;/*      */
+    align-items: center;/*     */
+    width:          96%;/*    */
+    margin:      0 auto;/*   */
+    padding:      1% 1%;/*  */
+  /*border-radius: 11px;/* */
   }/**/
 
-                                     /* スクロールさせる箱 */
-  .carousel-content {/*                                   */
-    display:            flex;/* 要素を横並び             */ 
-  /*align-items:  flex-start;/* 要素の高さ合わせ        */
-    overflow-x:         auto;/* 横スクロール有効       */
-    scroll-behavior:  smooth;/* スマホスムーズ        */
-    width:              100%;/*                      */
-    gap:                15px;/* 要素間の隙間        */
-    padding:             3px;/*                    */
-    border-radius:      11px;/*                   */
-    /* スクロールバー非表示                      */
-    /* IE, Firefox                              */
-    -ms-overflow-style: none;/*                */
-    /* Firefox用                              */
-    scrollbar-width:    none;/*              */
-  }/*                                       */
-  /* Chrome, Safari                        */
-  .carousel-content::-webkit-scrollbar {/**/
-    display:            none;/*          */
+                            /* スクロールさせる箱 */
+  .carousel_content {/*                          */
+    display:            flex;/*                 */ 
+  /*align-items:  flex-start;/* 高さ合わせ     */
+    overflow-x:         auto;/*               */
+    scroll-behavior:  smooth;/*              */
+    width:              100%;/*             */
+    gap:                15px;/*            */
+    padding:             3px;/*           */
+    border-radius:      11px;/*          */
+    /* スクロールバー非表示             */
+    /* IE, Firefox                     */
+    -ms-overflow-style: none;/*       */
+    /* Firefox用                     */
+    scrollbar-width:    none;/*     */
+  }/*                              */
+  /* Chrome, Safari               */
+  .carousel_content::-webkit-scrollbar {/**/
+    display:            none;/* */
   }/**/
 /* 
 /*------------------------------  👇️ CSS個別設定エリア  */
 /* CSS個別設定エリア */
 
-                  /* 👇️ 情報トグルを並べる箱クラス */
-  .info-wrap {/*                                  */
-    overflow-x:         auto;/*                  */
-    display:            flex;/* 要素を横並び    */
-    justify-content:    left;/* 要素を左寄せ   */
-    width:              auto;/*               */
-    gap:                10px;/* 要素間の隙間 */
-    /* スクロールバー非表示                 */
-    /* IE, Firefox                         */
-    -ms-overflow-style: none;/*           */
-    /* Firefox用                         */
-    scrollbar-width:    none;/*         */
-  }/*                                  */
-    /* Chrome, Safari                 */
-  .carousel-content::-webkit-scrollbar {/**/
-    display:            none;/*     */
+                /* 👇️ 情報トグルを並べる箱クラス */
+  .info_wrap {/*                                */
+    overflow-x:         auto;/* 横スクロ       */
+    display:            flex;/* 横並び        */
+    justify-content:    left;/* 左寄せ       */
+    width:              auto;/*             */
+    gap:                10px;/* 要素間     */
+    /* スクロールバー非表示               */
+    /* IE, Firefox                       */
+    -ms-overflow-style: none;/*         */
+    /* Firefox用                       */
+    scrollbar-width:    none;/*       */
+  }/*                                */
+    /* Chrome, Safari               */
+  .carousel_content::-webkit-scrollbar {/**/
+    display:            none;/*   */
+  }/*                            */
+          /* 野菜info_wrap専用  */
+  .vege{/*                     */
+    padding: 0 3%;/* 位置調整 */
   }/**/
-             /* 野菜info-wrap専用 */
-  .vege{/*                       */
-    padding: 0 3%;/* 位置調整   */
+  
+                              /* 👇️ 情報トグル */
+  /* このトグルは子要素の大きさに合わせるだけ */
+  .info_box{/*                               */
+    align-self:   flex-start;/* 個別の高さ  */
+    width:              100%;/*            */
+    padding:             5px;/*           */
+    border-radius:      22px;/*          */
   }/**/
-                               /* 👇️ 情報トグル */
-  /* このトグルは子要素の大きさに合わせるだけ  */
-  .info-box{/*                                */
-    align-self:   flex-start;/* 個別の高さ   */
-    width:              100%;/*             */
-    padding:             5px;/*            */
-    border-radius:      22px;/*           */
-  }/**/
-                     /* 情報トグルオープン時 */
-  .info-box[open] {/*                       */
-  /* 並列要素の割合などを設定する/*        */
-  /* flex-grow   要素の幅割合/*           */
-  /* flex-shrink  0:max 1:均等 2:min/*   */
-  /* flex-basis  フォーカス時横幅       */
-    flex:  1 0 97%;/*                  */
-  }/**/
-
-                   /* 👇️ 野菜さん別情報カード用クラス */
-  .vege-card {/*                                     */
-    box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);/**/
-    flex:       0 0 220px;/* 横幅をpxに固定        */
-    text-align:      left;/* 左寄せ               */
-    padding:    11px 15px;/* 上下 左右           */
-    border-radius:   11px;/*                    */
+  
+                   /* 情報トグルオープン時 */
+  .info_box[open] {/*                     */
+  /* 並列要素の割合などを設定する/*      */
+  /* flex-grow   要素の幅割合/*         */
+  /* flex-shrink  0:max 1:均等 2:min/* */
+  /* flex-basis  フォーカス時横幅     */
+    flex:  1 0 97%;/* 調整           */
+  /*width: max-content;/*           */
+  /*max-width: 100%;/*             */
+  /*padding: auto;/*              */
   }/**/
 
-                                    /* カード内の画像 */
-  .vege-card img {/*                                 */
+                       /* 👇️ 情報カード */
+  .vege_card {/*                       */
     box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);/**/
-    width:          100%;/*                        */
-    height:         auto;/*                       */
-    display:       block;/* 要素の前後改行       */
-    margin:      7px 0px;/* 位置調整            */
-    border-radius:  11px;/*                    */
+    flex:       0 0 220px;/* px固定  */
+    text-align:      left;/*        */
+    padding:    11px 15px;/*       */
+    border-radius:   11px;/*      */
+  }/**/
+
+                        /* カード内の画像 */
+  .vege_card img {/*                     */
+    box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);/**/
+    width:          100%;/*            */
+    height:         auto;/*           */
+    display:       block;/* 前後改行 */
+    margin:      7px 0px;/*         */
+    border-radius:  11px;/*        */
   }/**/
  
-        /* 👇️ ライセンストグル用クラス */
-  .license-base {/*                   */
-    text-align: center;/*            */ 
-    line-height:   1.5;/* 行間      */
-    padding: 10px 15px;/* 位置調整 */
+  /* 👇️ ライセンストグル用クラス */
+  .license-base {/*             */
+    text-align: center;/*      */ 
+    line-height:   1.5;/*     */
+    padding: 10px 15px;/*    */
   }/**/
 /*
 /*------------------------------  👇️ コメント化クラス置き場  --*/
@@ -427,7 +428,7 @@
   /* }/*                            */
 
   /* ホバーさせたいときはアクティブに */
-  /*.vege-card img:hover {/*         */
+  /*.vege_card img:hover {/*         */
   /*  transform: scale(1.10);/*      */
   /*}/*                              */
 
@@ -488,6 +489,141 @@
   </div>
   <!-- 👇️ 最小構成確認エリア  -->
 
+      <!------------------------------  👇️ 🥬芽キャベツさん（10hg_10Brussels sprouts）  -->
+      <details open class="tgl2" data-key1="b_sprout_info" data-key2="b_sprout_zone">
+      <summary>🥬芽キャベツ-さん</summary>
+      <div class="content">
+
+        <!-- 👇️ 情報エリア -->
+        <div class="info_wrap vege">
+
+          <!-- 👇️ 野菜情報 -->
+          <details class="tgl2 info_box"><summary>ℹ️VEGE INFO</summary>
+            <div class="content">
+
+              <!-- 列ヘッダ -->
+              <table>
+                <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
+              </table>
+
+              <!-- 👇️ Json読み込み TBL作成 -->
+              <div class="scro_box" id="b_sprout_info">
+
+              </div>
+            </div>
+
+            <!-- 👇️ 「閉じる」ボタン --> 
+            <div class="LR_set">
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+            </div>
+
+          </details>
+
+          <!-- 👇️ 環境情報 -->
+          <details open class="tgl2 info_box  scro-target"><summary>📝ZONE INFO</summary>
+            <div class="content">
+
+              <!-- 列ヘッダ -->
+              <table>
+                <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
+                <!-- 1項目 -->
+              </table>
+
+              <!-- 👇️ Json読み込み TBL作成 -->
+              <div class="scro_box" id="b_sprout_zone">
+
+              </div>
+            </div>
+
+            <!-- 👇️ 「閉じる」ボタン  --> 
+            <div class="LR_set">
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+            </div>
+
+          <!-- 環境情報 👆️ -->
+          </details>
+
+        <!-- 情報エリア 👆️ -->
+        </div>
+
+        <!-- 👇️ 写真エリア -->
+        <div class="carousel">
+
+          <!-- 👇️ 左ボタン -->
+          <button class="scro_btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
+
+          <!-- 👇️ 写真横スクロールの箱 --> 
+          <div class="carousel_content">
+
+            <!-- 👇️ 野菜写真（増やしたいときはこれをコピペ！） -->
+            <div class="vege_card">
+              <b>7/1</b><br>
+              <img src="10hg_10Brussels sprouts_20260701.webp" alt="栽培中" width="500" height="500">
+              種蒔きは6月10日。種はダイソーで購入。時期が違うけど、芽は育ってる。
+              土の水分が見えるように囲いはビニールで作ってみた。遮光性が心配。
+            </div>
+
+            <div class="vege_card">
+              <b>7/15</b><br>
+              <img src="10hg_10Brussels sprouts_20260715.webp" alt="栽培中" width="500" height="500">
+              順調に育ってるように見える。遮光性も問題なさそう。
+              育ったら中央で被った葉を収穫しようと思ったので、
+              密集させているけど、どうなるだろう。
+            </div>
+
+            <div class="vege_card">
+              <b>7/29</b><br>
+              <img src="10hg_10Brussels sprouts_20260729.webp" alt="栽培中" width="500" height="500">
+              葉が更に大きくなった。
+              プランターの初期の水がなかなか抜けないので、
+              あげる水分量を減らして通気性を上げようと思う。
+            </div>
+
+            <div class="vege_card">
+              <b>8/12</b><br>
+              <img src="10hg_10Brussels sprouts_20260812.webp" alt="栽培中" width="500" height="500">
+            </div>
+
+            <div class="vege_card">
+              <b>8/26</b><br>
+              <img src="10hg_10Brussels sprouts_20260826.webp" alt="栽培中" width="500" height="500">
+            </div>
+
+            <div class="vege_card">
+              <b>9/9</b><br>
+              <img src="10hg_10Brussels sprouts_20260909.webp" alt="栽培中" width="500" height="500">
+            </div>
+          </div>
+
+          <!-- 👇️ 右ボタン -->
+          <button class="scro_btn next"onclick="scrollPrime(this, 265)">&gt;</button>
+
+        <!-- 写真エリア 👆️ -->
+        </div>
+
+        <!-- 👇️ 「閉じる」ボタン --> 
+        <div class="LR_set">
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
+        </div>
+
+      <!------------------------------ 🥬芽キャベツさん 👆️ -->
+      </div>
+      </details>
+
+
+
+
+
+
+
+
+
+
+
+
   <!-- 👆️ 最小構成確認エリア  -->
   <!------------------------------  👇️ Home garden  -->
   <details open><summary><u>🏠️HOME GARDEN🍅</u></summary>
@@ -501,36 +637,36 @@
       <div class="content">
 
         <!-- 👇️ 🥬情報エリア -->
-        <div class="info-wrap vege">
+        <div class="info_wrap vege">
 
           <!-- 👇️ 🥬野菜情報 -->
-          <details open class="tgl2 info-box"><summary>ℹ️VEGE INFO</summary>
+          <details open class="tgl2 info_box"><summary>ℹ️VEGE INFO</summary>
             <div class="content">
 
               <!-- 列ヘッダ -->
               <table>
-                <tr><th class="th-36px">ITEM</th><th colspan="2" class="th-max">INFO</th><tr>
+                <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
                 <!-- 1項目 -->
               </table>
 
-            <div class="scro-box">
+            <div class="scro_box">
 
               <table>
 
                 <!-- 1項目 -->
-                <tr><th>👨‍👦‍👦<br>FAM</th><td colspan="3">アブラナ科</td></tr>
-                <tr><th>📅<br>SEAS</th><td colspan="3">春／秋</td></tr>
-                <tr><th>🌡️ <br>TEMP</th><td colspan="3">15-25℃</td></tr>
+                <tr><th>👨‍👦‍👦<br>FAM</th><td colspan="2">アブラナ科</td></tr>
+                <tr><th>📅<br>SEAS</th><td colspan="2">春／秋</td></tr>
+                <tr><th>🌡️ <br>TEMP</th><td colspan="2">15-25℃</td></tr>
 
                 <!-- 2項目 -->
                 <tr><th rowspan="2">📐<br>SIZE</th>
-                    <th class="th2a">🥬<br>PLNT</th><td colspan="3">15-20cm</td></tr>
-                <tr><th class="th2a">🍃<br>LEAF</th><td colspan="3">10-15cm</td></tr>
+                    <th class="th2a">🥬<br>PLNT</th><td>15-20cm</td></tr>
+                <tr><th class="th2a">🍃<br>LEAF</th><td>10-15cm</td></tr>
 
                 <!-- 1項目 -->
-                <tr><th>🧬<br>(pH)</th><td colspan="3">弱酸性-中性<br>(6.5-7.5)</td></tr>
-                <tr><th>🌞<br>SUN </th><td colspan="3">やや強めに</td></tr>
-                <tr><th>🚿<br>H2O </th><td colspan="3">土が乾いたら多めに<br>(加湿NG)</td></tr>
+                <tr><th>🧬<br>(pH)</th><td colspan="2">弱酸性-中性<br>(6.5-7.5)</td></tr>
+                <tr><th>🌞<br>SUN </th><td colspan="2">やや強めに</td></tr>
+                <tr><th>🚿<br>H2O </th><td colspan="2">土が乾いたら多めに<br>(加湿NG)</td></tr>
 
                 <!-- 2項目 -->
                 <tr><th rowspan="2">🍽️<br>FERT</th>
@@ -538,8 +674,8 @@
                 <tr><th class="th2b">🧪<br>POST</th><td colspan="2">定期的</td></tr>
 
                 <!-- 1項目 -->
-                <tr><th>💖🤏<br>HARV</th><td colspan="3">種植えから60-70日<br>下から外側の芽を摘む</td></tr>
-                <tr><th>🔄🤏<br>REGW</th><td colspan="3">可能<br>中心から新芽が出る</td></tr>
+                <tr><th>💖🤏<br>HARV</th><td colspan="2">種植えから60-70日<br>下から外側の芽を摘む</td></tr>
+                <tr><th>🔄🤏<br>REGW</th><td colspan="2">可能<br>中心から新芽が出る</td></tr>
 
                 <!-- 2項目 ①4子項目 ②4子項目 -->
                 <tr><th rowspan="8">📊<br>NUTR:<br>COMP</th>
@@ -557,7 +693,7 @@
                 <tr><td class="td2b" colspan="2">MINERALS </td></tr>
                 <tr><td class="td2b" colspan="2">FIBER    </td></tr>
                     <!-- 1項目 -->
-                <tr><th>💡<br>etc </th><td colspan="4">芽キャベツは「栄養喰らい」と呼ばれるくらい栄養が必要だそうだ。</td></tr>
+                <tr><th>💡<br>etc </th><td colspan="2">芽キャベツは「栄養喰らい」と呼ばれるくらい栄養が必要だそうだ。</td></tr>
 
               </table>
 
@@ -565,68 +701,72 @@
             </div>
 
             <!-- 👇️ 🥬「閉じる」ボタン --> 
-            <div class="LR-set">
-              <div style=" text-align: center;"><button class="close-btn"></button></div>
-              <div style=" text-align: center;"><button class="close-btn"></button></div>
+            <div class="LR_set">
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
             </div>
 
           <!-- 🥬野菜情報 👆️ -->
           </details>
 
           <!-- 👇️ 📝環境情報 -->
-          <details class="tgl2 info-box  scro-target"><summary>📝ZONE INFO</summary>
+          <details class="tgl2 info_box  scro-target"><summary>📝ZONE INFO</summary>
             <div class="content">
 
               <!-- 列ヘッダ -->
               <table>
-                <tr><th class="th-36px">ITEM</th><th colspan="2" class="th-max">INFO</th><tr>
+                <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
                 <!-- 1項目 -->
               </table>
               
-            <div class="scro-box">
+            <div class="scro_box">
 
-              <table>
-                <!-- 1項目 -->
-                <tr><th>📍    <br>LOC</th><td colspan="2">ベランダ床</td></tr>
-                <tr><th>🔳   <br>POT</th><td colspan="2">ワイヤネット プランタ</td></tr>
-                <tr><th>🌞⌚<br>SUN</th><td colspan="2">14:30-16:30<br></td></tr>
-                <!-- 2項目 2要素 -->
-                <tr><th rowspan="2">➕️<br>OPT</th>
-                    <th class="th2a">TUAL</th><td rowspan="2">土中へ酸素を供給する補助ツール</td></tr>
-                <tr><th class="th2a">TUAH</th></tr>
-                <!-- 2項目 -->
-                <tr><th rowspan="2">🟫📊SOIL<br></th>
-                    <th class="th2b">COCOブリック    </th><td>7</td></tr>
-                <tr><th class="th2b">バーミキュライト</th><td>3</td></tr>
-                <!-- 4項目 -->
-                <tr><th rowspan="4">🧪POST-COMP:<br>Mix<br>💧1L</th>
-                    <th class="th2a">HYPO<br>NeX </th><td>1ml:<br>(1000倍希釈)</td></tr>
-                <tr><th class="th2a">お酢    </th><td>1ml:<br>(1000倍希釈)</td></tr>
-                <tr><th class="th2a">ブドウ糖</th><td>0.5g-1g:<br>(1500倍希釈)</td></tr>
-                <tr><th class="th2a">ヨモギ水<br>💧1L</th>
-                    <td>自家製(希釈不要)<br>※市販のヨモギエキスは要希釈</td></tr>
-                <!-- 3項目 -->
-                <tr><th rowspan="2">🧪📅<br>FREQ</th>
-                    <th class="th2b">初期</th><td colspan="2">芽が育つまでは水のみ</td></tr>
-                <tr><th class="th2b">普段</th><td>🧪を週1回</td></tr>
-                <!-- 2項目 1要素 -->
-                <tr><th>🧪➕️<br>ADD</th><th class="th2a">活性剤</th>
-                    <td colspan="2">苗に元気がないときは与えてみる</td></tr>
-                <!-- 2項目 1要素 -->
-                <tr><th>💗🦠<br>PALS</th>
-                  <th class="th2b">納豆菌(バチルス菌)</th><td colspan="2">土壌改善<br>カビ・雑菌予防<br></td></tr>
-                <!-- 1項目 -->
-                <tr><th>💡<br>etc</th>
+                <table>
+                  <!-- 1-1 -->
+                  <tr><th>📍<br>LOC</th><td colspan="2">ベランダ床</td></tr>
+                  <tr><th>🔳<br>POT</th><td colspan="2">ワイヤネット プランタ</td></tr>
+                  <tr><th>🌞⌚<br>SUN</th><td colspan="2">14:30-16:30<br></td></tr>
+                  <!-- 2-2-1 -->
+                  <tr><th rowspan="2">➕️<br>OPT</th>
+                      <th class="th2a">TUAL</th><td rowspan="2">土中へ酸素を供給する補助ツール</td></tr>
+                  <tr><th class="th2a">TUAH</th></tr>
+                  <!-- 2-2-2 -->
+                  <tr><th rowspan="2">🟫📊SOIL<br></th>
+                      <th class="th2b">7</th><td>COCOブリック</td></tr>
+                  <tr><th class="th2b">3</th><td>バーミキュライト</td></tr>
+                  <!-- 4-4-4 -->
+                  <tr><th rowspan="4">🧪POST-COMP:<br>Mix<br>💧1L</th>
+                      <th class="th2a">1ml</th><td>HYPONeX<br>(1000倍希釈)</td></tr>
+                  <tr><th class="th2a">1ml</th><td>お酢<br>(1000倍希釈)</td></tr>
+                  <tr><th class="th2a">1g弱</th><td>ブドウ糖<br>(1500倍希釈)</td></tr>
+                  <tr><th class="th2a">💧1L</th>
+                      <td>自家製ヨモギ水<br>(市販のヨモギエキスを使う場合は希釈が必要)</td></tr>
+                  <!-- 2-2-2 -->
+                  <tr><th rowspan="2">🧪📅<br>FREQ</th>
+                      <th class="th2b">初期</th><td colspan="2">芽が育つまでは水のみ</td></tr>
+                  <tr><th class="th2b">普段</th><td>🧪を週1回</td></tr>
+                  <!-- 1-1-1 -->
+                  <tr><th>🧪➕️<br>ADD</th><th class="th2a">活性剤</th>
+                      <td colspan="2">苗に元気がないときは与えてみる</td></tr>
+                  <!-- 1-1 -->
+                  <tr><th>💗🦠<br>PALS</th>
+                    <td class="td" colspan="2"><ul>
+                      <li><span>🦠納豆菌(バチルス菌)</span></li>
+                      <li><span>・土壌改善</span></li>
+                      <li><span>・カビ・雑菌予防</span></li>
+                    </ul></td></tr>
+                  <!-- 1-1 -->
+                  <tr><th>💡<br>etc</th>
                     <td colspan="2">-</td></tr>
-              </table>
+                </table>
 
             </div>
             </div>
 
             <!-- 👇️ 🥬「閉じる」ボタン  --> 
-            <div class="LR-set">
-              <div style=" text-align: center;"><button class="close-btn"></button></div>
-              <div style=" text-align: center;"><button class="close-btn"></button></div>
+            <div class="LR_set">
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
             </div>
 
           <!-- 🥬環境情報 👆️ -->
@@ -639,20 +779,20 @@
         <div class="carousel">
 
           <!-- 👇️ 🥬左ボタン -->
-          <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
+          <button class="scro_btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
           <!-- 👇️ 🥬写真横スクロールの箱 --> 
-          <div class="carousel-content">
+          <div class="carousel_content">
 
             <!-- 👇️ 🥬野菜写真（増やしたいときはこれをコピペ！） -->
-            <div class="vege-card">
+            <div class="vege_card">
               <b>7/1</b><br>
               <img src="10hg_10Brussels sprouts_20260701.webp" alt="栽培中" width="500" height="500">
               種蒔きは6月10日。種はダイソーで購入。時期が違うけど、芽は育ってる。
               土の水分が見えるように囲いはビニールで作ってみた。遮光性が心配。
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>7/15</b><br>
               <img src="10hg_10Brussels sprouts_20260715.webp" alt="栽培中" width="500" height="500">
               順調に育ってるように見える。遮光性も問題なさそう。
@@ -660,7 +800,7 @@
               密集させているけど、どうなるだろう。
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>7/29</b><br>
               <img src="10hg_10Brussels sprouts_20260729.webp" alt="栽培中" width="500" height="500">
               葉が更に大きくなった。
@@ -668,32 +808,32 @@
               あげる水分量を減らして通気性を上げようと思う。
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>8/12</b><br>
               <img src="10hg_10Brussels sprouts_20260812.webp" alt="栽培中" width="500" height="500">
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>8/26</b><br>
               <img src="10hg_10Brussels sprouts_20260826.webp" alt="栽培中" width="500" height="500">
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>9/9</b><br>
               <img src="10hg_10Brussels sprouts_20260909.webp" alt="栽培中" width="500" height="500">
             </div>
           </div>
 
           <!-- 👇️ 🥬右ボタン -->
-          <button class="scro-btn next"onclick="scrollPrime(this, 265)">&gt;</button>
+          <button class="scro_btn next"onclick="scrollPrime(this, 265)">&gt;</button>
 
         <!-- 🥬写真エリア 👆️ -->
         </div>
 
         <!-- 👇️ 🥬「閉じる」ボタン --> 
-        <div class="LR-set">
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
+        <div class="LR_set">
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
         </div>
 
       <!------------------------------ 🥬芽キャベツさん 👆️ -->
@@ -702,12 +842,12 @@
 
       <!------------------------------  👇️ 🥕五寸人参さん（10hg_10carrots）  -->
       <details><summary>🥕五寸人参さん</summary>
-      <div class="content"><div class="scro-box">
+      <div class="content"><div class="scro_box">
 
-        <div class="info-wrap vege">
+        <div class="info_wrap vege">
           <!-- 👇️ 🥕野菜情報 -->
-          <details class="tgl3 info-box"><summary>🥕野菜情報</summary>
-            <div class="content"><div class="scro-box">
+          <details class="tgl3 info_box"><summary>🥕野菜情報</summary>
+            <div class="content"><div class="scro_box">
 
               <table>
                 <!-- 1項目 -->
@@ -752,17 +892,17 @@
             </div></div>
 
             <!-- 👇️ 🥕「閉じる」ボタン --> 
-            <div class="LR-set">
-              <div style=" text-align: center;"><button class="close-btn"></button></div>
-              <div style=" text-align: center;"><button class="close-btn"></button></div>
+            <div class="LR_set">
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
             </div>
 
           <!-- 🥕野菜情報 👆️ -->
           </details>
 
           <!-- 👇️ 🥕環境情報 -->
-          <details class="tgl2 info-box scro-target"><summary>📝環境情報</summary>
-            <div class="content"><div class="scro-box">
+          <details class="tgl2 info_box scro-target"><summary>📝環境情報</summary>
+            <div class="content"><div class="scro_box">
 
               <table>
                 <!-- 1項目 -->
@@ -809,9 +949,9 @@
             </div></div>
 
             <!-- 👇️ 🥕「閉じる」ボタン  --> 
-            <div class="LR-set">
-              <div style=" text-align: center;"><button class="close-btn"></button></div>
-              <div style=" text-align: center;"><button class="close-btn"></button></div>
+            <div class="LR_set">
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
             </div>
 
           <!-- 🥕環境情報 👆️ -->
@@ -825,41 +965,41 @@
         <div class="carousel">
 
           <!------------------------------  👇️ 🥕左ボタン  -->
-          <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
+          <button class="scro_btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
           <!------------------------------  👇️ 🥕横スクロールの箱  --> 
-          <div class="carousel-content">
+          <div class="carousel_content">
 
             <!------------------------------  👇️ 🥕野菜写真（増やしたいときはこれをコピペ！）  -->
-            <div class="vege-card">
+            <div class="vege_card">
                 <b>7/1</b><br>
                 <img src="10hg_10carrots_20260701.webp" alt="栽培中" width="500" height="500">
                 種蒔きは7月1日。葉物野菜として育てる。種がすごい小さくて不安。種はダイソーさんで購入。
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>7/15</b><br>
               <img src="10hg_10carrots_20260715.webp" alt="栽培中" width="500" height="500">
               当たり前だけど、種が小さいだけに、芽もすごい小さい。初めて知った。不安！！。
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>7/29</b><br>
               <img src="10hg_10carrots_20260729.webp" alt="栽培中" width="500" height="500">
               芽が育ってきたけど、やっぱりすごい小さいので不安、中央から本芽？が出る。
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>8/12</b><br>
               <img src="10hg_10carrots_20260812.webp" alt="栽培中"width="500" height="500">
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>8/26</b><br>
               <img src="10hg_10carrots_20260826.webp" alt="栽培中" width="500" height="500">
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>9/9</b><br>
               <img src="10hg_10carrots_20260909.webp" alt="栽培中" width="500" height="500">
             </div>
@@ -868,16 +1008,16 @@
           <!------------------------------  👆️ 🥕横スクロールの箱 -->
 
           <!------------------------------  👇️ 🥕右ボタン  -->
-          <button class="scro-btn next"
+          <button class="scro_btn next"
             onclick="scrollPrime(this, 265)">&gt;</button>
 
         <!------------------------------  👆️ 🥕カールセルの親  -->
         </div>
 
         <!------------------------------  👇️ 🥕親トグルを「閉じる」ボタン  --> 
-        <div class="LR-set">
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
+        <div class="LR_set">
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
         </div>
 
       </div>
@@ -889,12 +1029,12 @@
       <div class="content">
 
         <!------------------------------  👇️ 🍅各情報トグルを入れる箱  -->
-        <div class="info-wrap vege">
+        <div class="info_wrap vege">
 
           <!------------------------------  👇️ 🍅野菜情報  -->
-          <details class="info-box"><summary>ℹ️野菜情報</summary>
+          <details class="info_box"><summary>ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro-box">
+            <div class="content"><div class="scro_box">
               <p style="text-align: center;">【ナス科】</p>
               <ul>
                 <li><span>・種蒔き</span><span>：</span>３～４月</li>
@@ -916,9 +1056,9 @@
           </details>
 
           <!------------------------------  👇️ 🍅栽培環境  -->
-          <details class="info-box scro-target"><summary>📝関連</summary>
+          <details class="info_box scro-target"><summary>📝関連</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro-box">
+            <div class="content"><div class="scro_box">
               <!-- リスト化 -->
               <p style="text-align: center;">【栽培環境】</p>
               <ul style="white-space: nowrap;">
@@ -937,41 +1077,41 @@
         <div class="carousel">
 
           <!------------------------------  👇️ 🍅左ボタン  -->
-          <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
+          <button class="scro_btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
           <!------------------------------  👇️ 🍅横スクロールの箱  --> 
-          <div class="carousel-content">
+          <div class="carousel_content">
 
             <!------------------------------  👇️ 🍅野菜写真（増やしたいときはこれをコピペ！）  -->
-            <div class="vege-card">
+            <div class="vege_card">
                 <b>7/1</b><br>
                 <img src="10hg_10Cherry tomatoes_20260701.webp" alt="栽培中" width="500" height="500">
                 種蒔きは6月10日。作成したプランターで逆さ栽培が可能か、検証のお手伝いをしてもらうため、最初から逆さ栽培の種蒔きをする。種はダイソーさんで購入。
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>7/15</b><br>
               <img src="10hg_10Cherry tomatoes_20260715.webp" alt="栽培中" width="500" height="500">
               芽がボトルの口からしっかり出たので逆さ栽培へ移行する。ベランダの日当たりが悪いので位置を考える。このプランターでの逆さ栽培は問題なさそうに思える。
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>7/29</b><br>
               <img src="10hg_10Cherry tomatoes_20260729.webp" alt="栽培中" width="500" height="500">
               うどんこ病が発生したため、感染した箇所をピンポイントでカットする。土の保水力が強すぎて、なかなか乾燥しないのが原因のようだ。一旦逆さ栽培を中止する。
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>8/12</b><br>
               <img src="10hg_10Cherry tomatoes_20260812.webp" alt="栽培中"width="500" height="500">
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>8/26</b><br>
               <img src="10hg_10Cherry tomatoes_20260826.webp" alt="栽培中" width="500" height="500">
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>9/9</b><br>
               <img src="10hg_10Cherry tomatoes_20260909.webp" alt="栽培中" width="500" height="500">
             </div>
@@ -980,16 +1120,16 @@
           <!------------------------------  👆️ 🍅横スクロールの箱 -->
 
           <!------------------------------  👇️ 🍅右ボタン  -->
-          <button class="scro-btn next"
+          <button class="scro_btn next"
             onclick="scrollPrime(this, 265)">&gt;</button>
 
         <!------------------------------  👆️ 🍅カールセルの親  -->
         </div>
 
         <!------------------------------  👇️ 🍅親トグルを「閉じる」ボタン  --> 
-        <div class="LR-set">
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
+        <div class="LR_set">
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
         </div>
 
       </div>
@@ -1002,12 +1142,12 @@
       <div class="content">
 
         <!------------------------------  👇️ 🥒各情報トグルを入れる箱  -->
-        <div class="info-wrap vege">
+        <div class="info_wrap vege">
 
           <!------------------------------  👇️ 🥒野菜情報  -->
-          <details class="info-box"><summary>ℹ️野菜情報</summary>
+          <details class="info_box"><summary>ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro-box">
+            <div class="content"><div class="scro_box">
               <p style="text-align: center;">【ウリ科】</p>
               <ul>
                 <li><span>・種蒔き</span><span>：</span>４～５月</li>
@@ -1029,10 +1169,10 @@
           </details>
 
           <!------------------------------  👇️ 🥒栽培環境  -->
-          <details class="info-box scro-target">
+          <details class="info_box scro-target">
           <summary>📝関連</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro-box">
+            <div class="content"><div class="scro_box">
               <p style="text-align: center;">【栽培環境】</p>
               <ul style="white-space: nowrap;">
                 <li><span>・土成分</span><span>：</span>－</li>
@@ -1050,41 +1190,41 @@
         <div class="carousel">
 
           <!------------------------------  👇️ 🥒左ボタン  -->
-          <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
+          <button class="scro_btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
           <!------------------------------  👇️ 🥒横スクロールの箱  --> 
-          <div class="carousel-content">
+          <div class="carousel_content">
 
             <!------------------------------  👇️ 🥒野菜写真（増やしたいときはこれをコピペ！）  -->
-            <div class="vege-card">
+            <div class="vege_card">
                 <b>8/12</b><br>
                 <img src="10hg_10cucumbers_20260812.webp" alt="栽培中" width="500" height="500">
                 種蒔きは8月12日。水耕栽培用のプランターを検証するのにお手伝いしてもらう。種はダイソーさんで購入。
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>8/26</b><br>
               <img src="10hg_10cucumbers_20260826.webp" alt="栽培中" width="500" height="500">
               
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>9/9</b><br>
               <img src="10hg_10cucumbers_20260909.webp" alt="栽培中" width="500" height="500">
               
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>9/23</b><br>
               <img src="10hg_10cucumbers_20260923.webp" alt="栽培中"width="500" height="500">
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>10/07</b><br>
               <img src="10hg_10cucumbers_20261007.webp" alt="栽培中" width="500" height="500">
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>10/21</b><br>
               <img src="10hg_10cucumbers_20261021.webp" alt="栽培中" width="500" height="500">
             </div>
@@ -1093,16 +1233,16 @@
           <!------------------------------  👆️ 🥒横スクロールの箱 -->
 
           <!------------------------------  👇️ 🥒右ボタン  -->
-          <button class="scro-btn next"
+          <button class="scro_btn next"
             onclick="scrollPrime(this, 265)">&gt;</button>
 
         <!------------------------------  👆️ 🥒カールセルの親  -->
         </div>
 
         <!------------------------------  👇️ 🥒親トグルを「閉じる」ボタン  --> 
-        <div class="LR-set">
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
+        <div class="LR_set">
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
         </div>
 
       </div>
@@ -1114,12 +1254,12 @@
       <div class="content">
 
         <!------------------------------  👇️ 🌱各情報トグルを入れる箱  -->
-        <div class="info-wrap vege">
+        <div class="info_wrap vege">
 
           <!------------------------------  👇️ 🌱野菜情報  -->
-          <details class="info-box"><summary>ℹ️野菜情報</summary>
+          <details class="info_box"><summary>ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro-box">
+            <div class="content"><div class="scro_box">
               <p style="text-align: center;">【マメ科】</p>
               <ul>
                 <li><span>・種蒔き</span><span>：</span>５～６月</li>
@@ -1141,10 +1281,10 @@
           </details>
 
           <!------------------------------  👇️ 🌱栽培環境  -->
-          <details class="info-box scro-target">
+          <details class="info_box scro-target">
           <summary>📝関連</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro-box">
+            <div class="content"><div class="scro_box">
               <p style="text-align: center;">【栽培環境】</p>
               <ul style="white-space: nowrap;">
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
@@ -1162,41 +1302,41 @@
         <div class="carousel">
 
           <!------------------------------  👇️ 🌱左ボタン  -->
-          <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
+          <button class="scro_btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
           <!------------------------------  👇️ 🌱横スクロールの箱  --> 
-          <div class="carousel-content">
+          <div class="carousel_content">
 
             <!------------------------------  👇️ 🌱野菜写真（増やしたいときはこれをコピペ！）  -->
-            <div class="vege-card">
+            <div class="vege_card">
                 <b>7/1</b><br>
                 <img src="10hg_10Glycine max_20260701.webp" alt="栽培中" width="500" height="500">
                 種蒔きは6月10日。写真は3週間後。枝豆さんは最初から芽が強くて、安心感があった。成長スピードもすごい早かった。種のサイズが関係するらしい。
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>7/15</b><br>
               <img src="10hg_10Glycine max_20260715.webp" alt="栽培中" width="500" height="500">
               枝豆さんのお世話中に、芽の一つから種の半分を誤って落としてしまう。この芽は成長がすごい遅くなり、高さも他の芽と比べて小さくなってしまった。ごめんなさい。
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>7/29</b><br>
               <img src="10hg_10Glycine max_20260729.webp" alt="栽培中" width="500" height="500">
               早くも花が咲き始める、枝豆さんの花は受粉を自分でするので、何もしなくていいのだそうだ。茶色くなった花は受粉が終わって房を作る準備ができた花とのこと。
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>8/12</b><br>
               <img src="10hg_10Glycine max_20260812.webp" alt="栽培中"width="500" height="500">
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>8/26</b><br>
               <img src="10hg_10Glycine max_20260826.webp" alt="栽培中" width="500" height="500">
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>9/9</b><br>
               <img src="10hg_10Glycine max_20260909.webp" alt="栽培中" width="500" height="500">
             </div>
@@ -1204,16 +1344,16 @@
           <!------------------------------  👆️ 🌱横スクロールの箱 -->
 
           <!------------------------------  👇️ 🌱右ボタン  -->
-          <button class="scro-btn next"
+          <button class="scro_btn next"
             onclick="scrollPrime(this, 265)">&gt;</button>
 
         <!------------------------------  👆️ 🌱カールセルの親  -->
         </div>
 
         <!------------------------------  👇️ 🌱親トグルを「閉じる」ボタン  --> 
-        <div class="LR-set">
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
+        <div class="LR_set">
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
         </div>
 
       </div>
@@ -1225,12 +1365,12 @@
       <div class="content">
 
         <!------------------------------  👇️ 🌿各情報トグルを入れる箱  -->
-        <div class="info-wrap vege">
+        <div class="info_wrap vege">
 
           <!------------------------------  👇️ 🌿野菜情報  -->
-          <details class="info-box"><summary>ℹ️野菜情報</summary>
+          <details class="info_box"><summary>ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro-box">
+            <div class="content"><div class="scro_box">
               <p style="text-align: center;">【アブラナ科】</p>
               <ul>
                 <li><span>・種蒔き</span><span>：</span>春／秋</li>
@@ -1252,9 +1392,9 @@
           </details>
 
           <!------------------------------  👇️ 🌿栽培環境  -->
-          <details class="info-box scro-target"><summary>📝関連</summary>
+          <details class="info_box scro-target"><summary>📝関連</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro-box">
+            <div class="content"><div class="scro_box">
               <p style="text-align: center;">【栽培環境】</p>
               <ul style="white-space: nowrap;">
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
@@ -1272,41 +1412,41 @@
         <div class="carousel">
 
           <!------------------------------  👇️ 🌿左ボタン  -->
-          <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
+          <button class="scro_btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
           <!------------------------------  👇️ 🌿横スクロールの箱  --> 
-          <div class="carousel-content">
+          <div class="carousel_content">
 
             <!------------------------------  👇️ 🌿野菜写真（増やしたいときはこれをコピペ！）  -->
-            <div class="vege-card">
+            <div class="vege_card">
               <b>7/1</b><br>
               <img src="10hg_10mini radishes_20260701.webp" alt="栽培中" width="500" height="500">
               種蒔きは6月14日。葉物野菜として育てる。ベランダ栽培で大根さんを何本も栽培するのは無理と思う。でも抜かなければ一年位持つらしい。種はダイソーさんで購入。
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>7/15</b><br>
               <img src="10hg_10mini radishes_20260715.webp" alt="栽培中" width="500" height="500">
               葉っぱはかなり丈夫に育ってるように思える。季節が違うけど今のところ問題はなさそう。
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>7/29</b><br>
               <img src="10hg_10mini radishes_20260729.webp" alt="栽培中" width="500" height="500">
               西日に当てすぎたかもしれない。葉っぱはあまり育ってないように見える。多分、根っこの方に栄養を回していると思われる。
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>8/12</b><br>
               <img src="10hg_10mini radishes_20260812.webp" alt="栽培中"width="500" height="500">
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>8/26</b><br>
               <img src="10hg_10mini radishes_20260826.webp" alt="栽培中" width="500" height="500">
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>9/9</b><br>
               <img src="10hg_10mini radishes_20260909.webp" alt="栽培中" width="500" height="500">
             </div>
@@ -1314,16 +1454,16 @@
           <!------------------------------  👆️ 🌿横スクロールの箱 -->
 
           <!------------------------------  👇️ 🌿右ボタン  -->
-          <button class="scro-btn next"
+          <button class="scro_btn next"
             onclick="scrollPrime(this, 265)">&gt;</button>
 
         <!------------------------------  👆️ 🌿カールセルの親  -->
         </div>
 
         <!------------------------------  👇️ 🌿親トグルを「閉じる」ボタン --> 
-        <div class="LR-set">
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
+        <div class="LR_set">
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
         </div>
       </div>
       </details>
@@ -1334,12 +1474,12 @@
         <div class="content">
 
         <!------------------------------  👇️ 🍃各情報トグルを入れる箱  -->
-        <div class="info-wrap vege">
+        <div class="info_wrap vege">
 
           <!------------------------------  👇️ 🍃野菜情報  -->
-          <details class="info-box"><summary>ℹ️野菜情報</summary>
+          <details class="info_box"><summary>ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro-box">
+            <div class="content"><div class="scro_box">
               <p style="text-align: center;">【シナノキ科】</p>
               <ul>
                 <li><span>・種蒔き</span><span>：</span>５～６月</li>
@@ -1361,9 +1501,9 @@
           </details>
 
           <!------------------------------  👇️ 🍃栽培環境  -->
-          <details class="info-box scro-target"><summary>📝関連</summary>
+          <details class="info_box scro-target"><summary>📝関連</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro-box">
+            <div class="content"><div class="scro_box">
               <p style="text-align: center;">【栽培環境】</p>
               <ul style="white-space: nowrap;">
                 <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
@@ -1381,41 +1521,41 @@
         <div class="carousel">
 
           <!------------------------------  👇️ 🍃左ボタン  -->
-          <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
+          <button class="scro_btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
           <!------------------------------  👇️ 🍃横スクロールの箱  --> 
-          <div class="carousel-content">
+          <div class="carousel_content">
 
             <!------------------------------  👇️ 🍃野菜写真（増やしたいときはこれをコピペ！）  -->
-            <div class="vege-card">
+            <div class="vege_card">
               <b>8月12日</b><br>
               <img src="10hg_10molokhia_20260812.webp" alt="栽培中" width="500" height="500">
               種蒔きは8月12日予定。種はダイソーさんで購入。
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>8月26日</b><br>
               <img src="10hg_10molokhia_20260826.webp" alt="栽培中" width="500" height="500">
               
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>9月9日</b><br>
               <img src="10hg_10molokhia_20260909.webp" alt="栽培中" width="500" height="500">
               
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>9月23日</b><br>
               <img src="10hg_10molokhia_20260923.webp" alt="栽培中"width="500" height="500">
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>10月7日</b><br>
               <img src="10hg_10molokhia_20261007.webp" alt="栽培中" width="500" height="500">
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>10月21日</b><br>
               <img src="10hg_10molokhia_20261021.webp" alt="栽培中" width="500" height="500">
             </div>
@@ -1423,16 +1563,16 @@
           <!------------------------------  👆️ 🍃横スクロールの箱 -->
 
           <!------------------------------  👇️ 🍃右ボタン  -->
-          <button class="scro-btn next"
+          <button class="scro_btn next"
             onclick="scrollPrime(this, 265)">&gt;</button>
 
         <!------------------------------  👆️ 🍃カールセルの親  -->
         </div>
 
         <!------------------------------  👇️ 🍃親トグルを「閉じる」ボタン  --> 
-        <div class="LR-set">
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
+        <div class="LR_set">
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
         </div>
 
       </div>
@@ -1444,12 +1584,12 @@
       <div class="content">
 
         <!------------------------------  👇️ 🥔各情報トグルを入れる箱  -->
-        <div class="info-wrap vege">
+        <div class="info_wrap vege">
 
           <!------------------------------  👇️ 🥔野菜情報  -->
-          <details class="info-box"><summary>ℹ️野菜情報</summary>
+          <details class="info_box"><summary>ℹ️野菜情報</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="scro-box"><div class="content">
+            <div class="scro_box"><div class="content">
               <p style="text-align: center;">【ナス科】</p>
               <ul>
                 <li><span>・種蒔き</span><span>：</span>春／秋</li>
@@ -1471,9 +1611,9 @@
           </details>
 
           <!------------------------------  👇️ 🥔栽培環境  -->
-          <details class="info-box scro-target"><summary>📝関連</summary>
+          <details class="info_box scro-target"><summary>📝関連</summary>
             <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="scro-box"><div class="content">
+            <div class="scro_box"><div class="content">
               <p style="text-align: center;">【栽培環境】</p>
               <ul style="white-space: nowrap;">
                 <li><span>・土成分</span><span>：</span>－</li>
@@ -1492,41 +1632,41 @@
         <div class="carousel">
 
           <!------------------------------  👇️ 🥔左ボタン  -->
-          <button class="scro-btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
+          <button class="scro_btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
           <!------------------------------  👇️ 🥔横スクロールの箱  --> 
-          <div class="carousel-content">
+          <div class="carousel_content">
 
             <!------------------------------  👇️ 🥔野菜写真（増やしたいときはこれをコピペ！）  -->
-            <div class="vege-card">
+            <div class="vege_card">
               <b>未定</b><br>
               <img src="10hg_10potato_20260812.webp" alt="栽培中" width="500" height="500">
               栽培は未定。NASAの噴霧耕栽培を半噴霧耕栽培できるのではないかと試しに作ったプランターの検証を手伝ってもらう予定。
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>未定</b><br>
               <img src="10hg_10potato_20260826.webp" alt="栽培中" width="500" height="500">
               
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>未定</b><br>
               <img src="10hg_10potato_20260909.webp" alt="栽培中" width="500" height="500">
               
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>未定</b><br>
               <img src="10hg_10potato_20260923.webp" alt="栽培中"width="500" height="500">
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>未定</b><br>
               <img src="10hg_10potato_20261007.webp" alt="栽培中" width="500" height="500">
             </div>
 
-            <div class="vege-card">
+            <div class="vege_card">
               <b>未定</b><br>
               <img src="10hg_10potato_20261021.webp" alt="栽培中" width="500" height="500">
             </div>
@@ -1534,16 +1674,16 @@
           <!------------------------------  👆️ 🥔横スクロールの箱 -->
 
           <!------------------------------  👇️ 🥔右ボタン  -->
-          <button class="scro-btn next"
+          <button class="scro_btn next"
             onclick="scrollPrime(this, 265)">&gt;</button>
 
         <!------------------------------  👆️ 🥔カールセルの親  -->
         </div>
 
         <!------------------------------  👇️ 🥔親トグルを「閉じる」ボタン  --> 
-        <div class="LR-set">
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
+        <div class="LR_set">
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
         </div>
 
       </div>
@@ -1552,9 +1692,9 @@
 
       <!------------------------------  👇️ 🗓️野菜さん別情報を「閉じる」ボタン  --> 
 
-      <div class="LR-set">
-        <div style=" text-align: center;"><button class="close-btn"></button></div>
-        <div style=" text-align: center;"><button class="close-btn"></button></div>
+      <div class="LR_set">
+        <div style=" text-align: center;"><button class="close_btn"></button></div>
+        <div style=" text-align: center;"><button class="close_btn"></button></div>
       </div>
 
       </div>
@@ -1562,21 +1702,24 @@
     <!------------------------------  👆️ 🗓️野菜さん別情報  -->
 
     <!-- 👇️ 👾病気害虫 Info🐛 -->
-    <details open class="tgl2"><summary><u>👾病気害虫🐛</u></summary>
+    <details class="tgl2"><summary><u>👾病気害虫🐛</u></summary>
     <div class="content">
 
       <!-- 👇️ 🛡️対策⛑️ -->
-      <div class="info-wrap">
-      <details open class="tgl2" ><summary><u>🛡️対策⛑️</u></summary>
+      <div class="info_wrap">
+      <details class="tgl2" ><summary><u>🛡️対策⛑️</u></summary>
 
         <!-- 専用構造 -->
-        <div class="info-box content">
+        <div class="info_box content">
 
-          <table class="table-prev"><tr><th class="th-36px">TGT</th><th class="th-max">PREV</td></tr></table>
+          <table class="table_prev"><tr>
+            <th  class="th36px">TGT</th>
+            <th  class="thMax">PREV</td>
+          </tr></table>
 
-        <div class="scro-box">
+        <div class="scro_box">
 
-          <table class="table-prev">
+          <table class="table_prev">
           <!-- 3項目 4データ リストテーブル-->
             <tr><th>🤢<br>病気</th>
               <td rowspan="2"><ul>
@@ -1603,33 +1746,34 @@
           </table>
 
         </div><!-- content -->
-        </div><!-- scro-box -->
+        </div><!-- scro_box -->
 
         <!-- 👇️ 🛡️対策情報を閉じる -->
-        <div class="LR-set">
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
+        <div class="LR_set">
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
         </div>
 
       </details><!-- 🛡️対策⛑️ -->
-      </div><!-- info-wrap -->
+      </div><!-- info_wrap -->
 
 
       <!-- 👇️ 👾病気🤢 -->
-      <div class="info-wrap">
-      <details open class="tgl2"><summary><u>👾病気🤢</u></summary>
+      <div class="info_wrap">
+      <details class="tgl2"><summary><u>👾病気🤢</u></summary>
 
         <!-- 専用構造 -->
-        <div class="info-box content">
+        <div class="info_box content">
 
-          <table class="table-prev">
-            <tr><th class="th-36px">CAUS</th><th colspan="2" class="th-max">SICK & SYMP</th></tr>
-          </table>
+          <table class="table_prev"><tr>
+            <th  class="th36px">CAUS</th>
+            <th  class="thMax" colspan="2" >SICK & SYMP</th>
+          </tr></table>
 
-        <div class="scro-box">
+        <div class="scro_box">
 
           <!-- 5親項目 1子項目 2データ -->
-          <table class="table-prev">
+          <table class="table_prev">
             <tr><th rowspan="5">👾<br>カビ</th><td><ul>
               <li><span>🤢</span>すす病</li>
               <li><span>・ </span>害虫の排泄物にカビが生え葉が黒くなる。</li>
@@ -1670,9 +1814,8 @@
 
             <tr><th>🚬<br>煙草</th></tr>
             <!-- 💡 備考専用エリア tr td ul -->
-            <tr><td colspan="3"><ul>
+            <tr><td colspan="2"><ul>
               <li><span>💡</span>モザイク病について:</li>
-              <li><span></span></li>
               <li><span>・</span>野菜別にモザイク病がある。</li>
               <li><span>・</span>感染すると治療できない。</li>
               <li><span>・</span>土に残るので早期発見が大事。</li>
@@ -1683,39 +1826,39 @@
           </table>
 
         </div><!-- content -->
-        </div><!-- scro-box -->
+        </div><!-- scro_box -->
 
         <!-- 👇️ 👾病気🤢を閉じる -->
-        <div class="LR-set">
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
+        <div class="LR_set">
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
         </div>
 
       </details><!-- 👾病気🤢 👆️-->
-      </div><!-- info-wrap -->
+      </div><!-- info_wrap -->
 
       <!-- 👇️ 🦟害虫🐛 -->
-      <div class="info-wrap">
-      <details open class="tgl2"><summary><u>🦟害虫🐛</u></summary>
+      <div class="info_wrap">
+      <details class="tgl2"><summary><u>🦟害虫🐛</u></summary>
 
         <!-- 専用構造 -->
-        <div class="info-box content">
+        <div class="info_box content">
 
-          <table class="table-prev">
-            <tr><th class="th-36px">TYPE</th><th class="th-max">PEST & DMG</th></tr>
+          <table class="table_prev">
+            <tr><th class="th36px">TYPE</th><th class="thMax">PEST & DMG</th></tr>
           </table>        
 
-        <div class="scro-box">
+        <div class="scro_box">
 
           <!-- 5親項目 1子項目 2データ -->
-          <table class="table-prev">
+          <table class="table_prev">
             <tr><th>🦟<br>SUCK</th><td><ul>
-              <li><span>🟢</span>アブラ虫(Aphid)</li>
-              <li><span>⚪️</span>コナジラミ</li>
-              <li><span>🟤</span>アザミウマ</li>
+              <li><span>🦗</span>アブラ虫(Aphid)</li>
+              <li><span>🦗</span>コナジラミ</li>
+              <li><span>🐜</span>アザミウマ</li>
               <li><span>・ </span>モザイク病を媒介する。</li>
               <li><span>・ </span>排泄物に生えたカビが「すす病」を引き起こす。</li>
-              <li><span>・ </span>✨️キラキラが嫌い。</li>
+              <li><span>・ </span>✨️キラキラが嫌い。
             </td></ul></tr>
 
             <tr><th rowspan="2">🐛<br>CHEW</th><td><ul>
@@ -1741,21 +1884,21 @@
           </table>
 
         </div><!-- content -->
-        </div><!-- scro-box -->
+        </div><!-- scro_box -->
 
         <!-- 👇️ 🐛害虫情報を閉じる -->
-        <div class="LR-set">
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
-          <div style=" text-align: center;"><button class="close-btn"></button></div>
+        <div class="LR_set">
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
+          <div style=" text-align: center;"><button class="close_btn"></button></div>
         </div>
 
       </details><!-- 🦟害虫🐛 👆️ -->
-      </div><!-- info-wrap -->
+      </div><!-- info_wrap -->
 
       <!-- 👇️ 👾病気害虫 Info🐛を閉じる -->
-      <div class="LR-set">
-        <div style=" text-align: center;"><button class="close-btn"></button></div>
-        <div style=" text-align: center;"><button class="close-btn"></button></div>
+      <div class="LR_set">
+        <div style=" text-align: center;"><button class="close_btn"></button></div>
+        <div style=" text-align: center;"><button class="close_btn"></button></div>
       </div>
 
     </div><!-- content -->
@@ -1763,9 +1906,9 @@
 
 
     <!------------------------------  👇️ 🍅Home Gardenを「閉じる」ボタン  --> 
-    <div class="LR-set">
-      <div style=" text-align: center;"><button class="close-btn"></button></div>
-      <div style=" text-align: center;"><button class="close-btn"></button></div>
+    <div class="LR_set">
+      <div style=" text-align: center;"><button class="close_btn"></button></div>
+      <div style=" text-align: center;"><button class="close_btn"></button></div>
     </div>
 
   </div><!-- content -->
@@ -1819,21 +1962,225 @@
 
   <!------------------------------ 👇️  以下ＪＳエリア   -->
   <script>
+    // テーブル生成 JS は “setupDetail より前” に置く
+    // 📌 STEP 1：JSON を読み込む関数（最初に置く）
+    // １．fetch() で JSON ファイルを読み込む
+    // ２．response.json() で JS オブジェクトに変換
+    // ３．そのオブジェクトを返す
+    // JSONのデータはSTEP3で使用する
 
-    // 左右ボタン判定
+    async function loadJSON(fileName) {
+      // fetch() は COBOL の「ファイル読み込み」そのもの。
+      // response.json() は COBOL の「データエリアに構造体をロードする」動作に相当する。
+      const response = await fetch(fileName);// １ responseがjsonデータを持っている
+
+      // response.json() は「response の中身を JSON として解釈して返す関数」
+      // COBOLの MOVE TO 的な感じで json(WORKSPACE項目)に読み込んだデータを格納しているイメージ
+      const json     = await response.json();        // ２  ()は関数呼び出しのサイン
+      return json;                                   // ３  loadJSONに返す
+    }
+
+    // STEP 2：[buildTable] 読み込んだ JSON を使ってテーブルを作る関数
+    // １．<table> を作る
+    // ２．items をループして tr を生成
+    function buildTable(tblData) {/*------------------------------  buildtable   --*/
+
+      // <tableを作る>                               // ２
+      const table = document.createElement('table');
+
+      // items をループして tr を生成                // ３
+      // COBOLのEvaluate的な感じで下の方の各処理を呼び出す
+      tblData.items.forEach(item => {
+        if (item.type === "single") {
+          /*------------------------------  👇️ createSingleRow シングル項目読み込み  --*/
+          table.appendChild(createSingleRow(item));
+        }
+        if (item.type === "group") {
+          /*------------------------------  👇️ createGroupRows グルーブ項目読み込み  --*/ 
+            createGroupRows(item).forEach(row => table.appendChild(row));
+        }
+        if (item.type === "multi") {
+          /*------------------------------  👇️ createMultiRows グルーブ項目読み込み  --*/ 
+          createMultiRows(item).forEach(row => table.appendChild(row));
+        }
+      });
+
+    return table;
+
+  }
+  
+  // 📌 STEP 3：親トグルが開いたらテーブルを生成する
+  document.querySelectorAll('details[data-key1]').forEach(parent => {
+
+    parent.addEventListener('toggle', async () => {
+
+      if (!parent.open) return;
+
+      // 汎用変数名（トモさん案）
+      const tbl_Data1 = parent.dataset.key1;
+      const tbl_Data2 = parent.dataset.key2;
+
+      // JSON読み込み（汎用ファイル名）STEP1で読み込んだやつ
+      const json = await loadJSON('./data_tbl.json');
+
+      // --- 1つ目のテーブル ---
+      if (tbl_Data1) {
+        const data1 = json[tbl_Data1];
+        const area1 = document.querySelector(`#${tbl_Data1}`);
+        if (data1 && area1) {
+          const table1 = buildTable(data1);
+          area1.replaceChildren(table1);
+        }
+      }
+
+      // --- 2つ目のテーブル ---
+      if (tbl_Data2) {
+        const area2 = document.querySelector(`#${tbl_Data2}`);
+        const data2 = json[tbl_Data2];
+        if (data2 && area2) {
+          const table2 = buildTable(data2);
+          area2.replaceChildren(table2);
+        }
+      }
+
+    });
+  });
+
+    // COBOLのパフォームの中身的な感じSTEP2で呼び出す
+    /*------------------------------  👇️ createSingleRow シングル項目読み込み  --*/
+    function createSingleRow(item) {
+      const tr = document.createElement("tr");
+
+      // --- th の生成 ---
+      const th = document.createElement("th");
+      th.innerHTML = `${item.icon}<br>${item.label}`;
+
+      // th にクラスがあれば付与
+      if (item.class?.th) {
+        th.classList.add(item.class.th);
+      }
+
+      tr.appendChild(th);
+
+      // --- td の生成 ---
+      const td = document.createElement("td");
+      td.innerHTML = item.value;
+
+      // colspan があれば設定（なければ1）
+      td.colSpan = item.colspan ?? 1;
+
+      // td にクラスがあれば付与
+      if (item.class?.td) {
+        td.classList.add(item.class.td);
+      }
+
+      tr.appendChild(td);
+
+      return tr;
+    }
+
+    /*------------------------------  👇️ createGroupRows グルーブ項目読み込み  --*/ 
+    function createGroupRows(item) {
+      const rows = [];
+
+      item.children.forEach((child, index) => {
+        const tr = document.createElement("tr");
+
+        // 親 th は最初の行だけ
+        if (index === 0) {
+          const thParent = document.createElement("th");
+          thParent.innerHTML = `${item.icon}<br>${item.label}`;
+          thParent.rowSpan = item.rowspan;
+
+          if (item.class?.th) {
+            thParent.classList.add(item.class.th);
+          }
+
+          tr.appendChild(thParent);
+        }
+
+        // 子 th
+        const thChild = document.createElement("th");
+        thChild.innerHTML = `${child.icon}<br>${child.label}`;
+
+        if (child.class?.th) {
+          thChild.classList.add(child.class.th);
+        }
+
+        tr.appendChild(thChild);
+
+      // 子 td
+      const td = document.createElement("td");
+      td.innerHTML = child.value;
+      td.colSpan = child.colspan ?? 1;
+
+      if (child.class?.td) {
+        td.classList.add(child.class.td);
+      }
+
+      tr.appendChild(td);
+
+      rows.push(tr);
+    });
+
+    return rows;
+  }
+
+    /*------------------------------  👇️ createMultiRows 複数グループ項目読み込み  --*/
+    function createMultiRows(item) {
+      const rows = [];
+
+      item.groups.forEach((group, groupIndex) => {
+        group.values.forEach((value, valueIndex) => {
+          const tr = document.createElement("tr");
+
+          if (groupIndex === 0 && valueIndex === 0) {
+            const thParent = document.createElement("th");
+            thParent.innerHTML = `${item.icon}<br>${item.label}`;
+            thParent.rowSpan = item.rowspan;
+            if (item.class?.th) thParent.classList.add(item.class.th);
+            tr.appendChild(thParent);
+          }
+
+          if (valueIndex === 0) {
+            const thGroup = document.createElement("th");
+            thGroup.innerHTML = `${group.icon}<br>${group.label}`;
+            thGroup.rowSpan = group.rowspan;
+            if (group.class?.th) thGroup.classList.add(group.class.th);
+            tr.appendChild(thGroup);
+          }
+
+          const td = document.createElement("td");
+          td.innerHTML = value.value;
+          td.colSpan = value.rowspan ?? 1;
+          if (value.class?.td) td.classList.add(value.class.td);
+          tr.appendChild(td);
+          rows.push(tr);
+        });
+      });
+
+      return rows;
+    }
+
+    // テーブル作成処理 👆️
+
+    // 👇️ 左右ボタン判定
     function scrollPrime(button, distance) {
     // querySelector('ここに対象を指定する')      
-      const container = button.parentElement.querySelector('.carousel-content');
+      const container = button.parentElement.querySelector('.carousel_content');
       // スムーズスクロール設定はここ
       container.scrollBy({ left: distance, behavior: 'smooth' });
     }
+
+
+
 
     // トグル判定全般
     (() => {
       function setupDetail(detail) {
 
         // トグル閉じるボタン
-        const closeBtns = Array.from(detail.querySelectorAll('.close-btn'))
+        const closeBtns = Array.from(detail.querySelectorAll('.close_btn'))
         .filter((button) => button.closest('details') === detail);
 
         closeBtns.forEach((closeBtn) => {
@@ -1905,7 +2252,7 @@
               if (!detail.open) return;
               const content = detail.querySelector(':scope > .content');
 
-              // 子トグル（info-box）は即スクロール
+              // 子トグル（info_box）は即スクロール
               if (!content) return;
 
               // 親トグルは content の高さが伸び終わるまで待つ
@@ -1930,7 +2277,7 @@
     // トグルが開いたら右端へ、閉じたら左端へ
     document.querySelectorAll('.scro-target').forEach(details => {
       details.addEventListener('toggle', function() {
-        const wrapper = this.closest('.info-wrap');
+        const wrapper = this.closest('.info_wrap');
         if (!wrapper) return;
  
         //  開いたら右端へ

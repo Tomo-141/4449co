@@ -1,0 +1,343 @@
+{
+  "b_sprout_info": {
+
+      "meta"   : {
+      "comment": "/*------------------------------  👇️ 🥬芽キャベツさん VEGE INFO",
+      "updated": "2024-08-25"
+    },
+
+    "items":[
+      {
+        "type"   : "single",
+        "icon"   : "👨‍👦‍👦","label": "FAM",
+        "value"  : "アブラナ科",
+        "class"  : { "th": null, "td": null },
+        "colspan": 2
+      },
+
+      {
+        "type"   : "single",
+        "icon"   : "📅","label": "SEAS",
+        "value"  : "春／秋",
+        "class"  : { "th": null, "td": null },
+        "colspan": 2
+      },
+
+      {
+        "type"   : "single",
+        "icon"   : "🌡️",
+        "label"  : "TEMP",
+        "value"  : "15-25℃",
+        "class"  : { "th": null, "td": null },
+        "colspan": 2
+      },
+
+      {
+        "type"    : "group",
+        "icon"    : "📐",
+        "label"   : "SIZE",
+        "rowspan" : 2,
+        "class"   : { "th": null },
+        "children": [
+          {
+            "icon" : "🥬",
+            "label": "PLNT",
+            "value": "15-20cm",
+            "class": { "th": "th2a", "td": null }
+          },
+
+          {
+            "icon" : "🍃",
+            "label": "LEAF",
+            "value": "10-15cm",
+            "class": { "th": "th2a", "td": null }
+         }
+        ]
+      },
+
+      {
+        "type"   : "single",
+        "icon"   : "🧬",
+        "label"  : "(pH)",
+        "value"  : "弱酸性-中性 (6.5-7.5)",
+        "class"  : { "th": null, "td": null },
+        "colspan": 2
+      },
+
+      {
+        "type"   : "single",
+        "icon"   : "🌞",
+        "label"  : "SUN",
+        "value"  : "やや強めに",
+        "class"  : { "th": null, "td": null },
+        "colspan": 2
+      },
+
+      {
+        "type"   : "single",
+        "icon"   : "🚿",
+        "label"  : "H2O",
+        "value"  : "土が乾いたら多めに (加湿NG)",
+        "class"  : { "th": null, "td": null },
+        "colspan": 2
+      },
+
+      {
+        "type"    : "group",
+        "icon"    : "🍽️","label": "FERT",
+        "rowspan" : 2,
+        "class"   : { "th": null },
+        "children": [
+          {
+            "icon"   : "🧃","label": "BASE",
+            "value"  : "少なめ",
+            "class"  : { "th": "th2b", "td": null },
+            "colspan": 2
+          },
+
+          {
+            "icon"   : "🧪",
+            "label"  : "POST",
+            "value"  : "定期的",
+            "class"  : { "th": "th2b", "td": null },
+            "colspan": 2
+          }
+        ]
+      },
+
+      {
+        "type"   : "single",
+        "icon"   : "💖🤏",
+        "label"  : "HARV",
+        "value"  : "種植えから60-70日／下から外側の芽を摘む",
+        "class"  : { "th": null, "td": null },
+        "colspan": 2
+      },
+
+      {
+        "type"   : "single",
+        "icon"   : "🔄🤏",
+        "label"  : "REGW",
+        "value"  : "可能／中心から新芽が出る",
+        "class"  : { "th": null, "td": null },
+        "colspan": 2
+      },
+
+      {
+        "type"   : "multi",
+        "icon"   : "📊",
+        "label"  : "NUTR:<br>COMP",
+        "rowspan": 8,
+        "class"  : { "th": null },
+        "groups" : [
+
+          {
+            "icon"   : "🥬","label": "PLNT",
+            "rowspan": 4,
+            "class"  : { "th": "th2a" },
+            "values" : [
+              { "value": "VITAMIN B9", "class": { "td": "td2a" }, "colspan": 2 },
+              { "value": "VITAMIN C",  "class": { "td": "td2a" }, "colspan": 2 },
+              { "value": "VITAMIN K",  "class": { "td": "td2a" }, "colspan": 2 },
+              { "value": "VITAMIN U",  "class": { "td": "td2a" }, "colspan": 2 }
+            ]
+          },
+
+          {
+            "icon"   : "🍃",
+            "label"  : "LEAF",
+            "rowspan": 4,
+            "class"  : { "th": "th2a" },
+            "values" : [
+              { "value": "VITAMIN A", "class": { "td": "td2b" }, "colspan": 2 },
+              { "value": "LUTEIN",    "class": { "td": "td2b" }, "colspan": 2 },
+              { "value": "MINERALS",  "class": { "td": "td2b" }, "colspan": 2 },
+              { "value": "FIBER",     "class": { "td": "td2b" }, "colspan": 2 }
+            ]
+          }
+        ]
+      },
+
+      {
+        "type"   : "single",
+        "icon"   : "💡","label": "etc",
+        "value"  : "芽キャベツは「栄養喰らい」と呼ばれるくらい栄養が必要だそうだ。",
+        "class"  : { "th": null, "td": null },
+        "colspan": 2
+      }
+    ]
+  },
+
+  "b_sprout_zone": {
+
+      "meta"   : {
+      "comment": "/*------------------------------  👇️ 🥬芽キャベツさん ZONE INFO",
+      "updated": "2024-08-25"
+    },
+
+    "items": [
+
+      {
+        "type"   : "single",
+        "icon"   : "📍",
+        "label"  : "LOC",
+        "value"  : "ベランダ床",
+        "colspan": 2
+      },
+
+      {
+        "type"   : "single",
+        "icon"   : "🔳",
+        "label"  : "POT",
+        "value"  : "ワイヤネット プランタ",
+        "colspan": 2
+      },
+
+      {
+        "type"   : "single",
+        "icon"   : "🌞⌚",
+        "label"  : "SUN",
+        "value"  : "14:30-16:30",
+        "colspan": 2
+      },
+
+      {
+        "type"    : "group",
+        "icon"    : "➕️",
+        "label"   : "OPT",
+        "rowspan" : 2,
+        "children": [
+
+          {
+            "icon"   : "TUAL",
+            "label"  : "",
+            "value"  : "土中へ酸素を供給する補助ツール",
+            "class"  : { "th": "th2a", "td": null}
+          },
+
+          {
+            "icon"   : "TUAH",
+            "label"  : "",
+            "value"  : "",
+            "class"  : { "th": "th2a", "td": null }
+          }
+        ]
+      },
+
+      {
+        "type"    : "group",
+        "icon"    : "🟫📊",
+        "label"   : "SOIL",
+        "rowspan" : 2,
+        "children": [
+
+          {
+            "icon" : "7",
+            "label": "",
+            "value": "COCOブリック",
+            "class": { "th": "th2b" }
+          },
+
+          {
+            "icon" : "3",
+            "label": "",
+            "value": "バーミキュライト",
+            "class": { "th": "th2b" }
+          }
+        ]
+      },
+
+      {
+        "type"    : "group",
+        "icon"    : "🧪POST-COMP:",
+        "label"   : "Mix 💧1L",
+        "rowspan" : 4,
+        "children": [
+
+          {
+            "icon" : "1ml",
+            "label": "",
+            "value": "HYPONeX (1000倍希釈)",
+            "class": { "th": "th2a" }
+          },
+
+          {
+            "icon" : "1ml",
+            "label": "",
+            "value": "お酢 (1000倍希釈)",
+            "class": { "th": "th2a" }
+          },
+
+          {
+            "icon" : "1g弱",
+            "label": "",
+            "value": "ブドウ糖 (1500倍希釈)",
+            "class": { "th": "th2a" }
+          },
+
+          {
+            "icon" : "💧1L",
+            "label": "",
+            "value": "自家製ヨモギ水（市販のヨモギエキスは希釈必要）",
+            "class": { "th": "th2a" }
+          }
+        ]
+      },
+
+      {
+        "type"    : "group",
+        "icon"    : "🧪📅",
+        "label"   : "FREQ",
+        "rowspan" : 2,
+        "children": [
+
+          {
+            "icon"   : "初期",
+            "label": "",
+            "value"  : "芽が育つまでは水のみ",
+            "class"  : { "th": "th2b" }
+          },
+
+          {
+            "icon" : "普段",
+            "label": "",
+            "value": "🧪を週1回",
+            "class": { "th": "th2b" }
+          }
+        ]
+      },
+
+      {
+        "type"    : "group",
+        "icon"    : "🧪➕️",
+        "label"   : "ADD",
+        "rowspan" : 1,
+        "children": [
+
+          {
+            "icon"   : "活性剤",
+            "label": "",
+            "value"  : "苗に元気がないときは与えてみる",
+            "class"  : { "th": "th2a" }
+          }
+        ]
+      },
+
+      {
+        "type"   : "single",
+        "icon"   : "💗🦠",
+        "label"  : "PALS",
+        "value"  : "<ul><li>🦠納豆菌(バチルス菌)</li><li>・土壌改善</li><li>・カビ・雑菌予防</li></ul>",
+        "colspan": 2
+      },
+
+      {
+        "type"   : "single",
+        "icon"   : "💡",
+        "label"  : "etc",
+        "value"  : "-",
+        "colspan": 2
+      }
+    ]
+  }
+}
