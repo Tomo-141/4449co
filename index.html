@@ -489,8 +489,16 @@
   </div>
   <!-- 👇️ 最小構成確認エリア  -->
 
+  <!-- 👆️ 最小構成確認エリア  -->
+  <!------------------------------  👇️ Home garden  -->
+  <details ><summary><u>🏠️HOME GARDEN🍅</u></summary>
+  <div class="content">
+    <!------------------------------  👇️ 野菜さん別状況  -->
+    <details class="tgl2"><summary><u>📅栽培記録📸</u></summary>
+    <div class="content">
+
       <!------------------------------  👇️ 🥬芽キャベツさん（10hg_10Brussels sprouts）  -->
-      <details open class="tgl2" data-key1="b_sprout_info" data-key2="b_sprout_zone">
+      <details class="tgl2" data-key1="b_sprout_info" data-key2="b_sprout_zone">
       <summary>🥬芽キャベツ-さん</summary>
       <div class="content">
 
@@ -506,7 +514,7 @@
                 <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
               </table>
 
-              <!-- 👇️ Json読み込み TBL作成 -->
+              <!-- 👇️ Json読み込み VEGE INFO TBL作成 -->
               <div class="scro_box" id="b_sprout_info">
 
               </div>
@@ -521,7 +529,7 @@
           </details>
 
           <!-- 👇️ 環境情報 -->
-          <details open class="tgl2 info_box  scro-target"><summary>📝ZONE INFO</summary>
+          <details class="tgl2 info_box  scro-target"><summary>📝ZONE INFO</summary>
             <div class="content">
 
               <!-- 列ヘッダ -->
@@ -530,7 +538,7 @@
                 <!-- 1項目 -->
               </table>
 
-              <!-- 👇️ Json読み込み TBL作成 -->
+              <!-- 👇️ Json読み込み ZONE INFO TBL作成 -->
               <div class="scro_box" id="b_sprout_zone">
 
               </div>
@@ -613,34 +621,39 @@
       </div>
       </details>
 
-
-
-
-
-
-
-
-
-
-
-
-  <!-- 👆️ 最小構成確認エリア  -->
-  <!------------------------------  👇️ Home garden  -->
-  <details open><summary><u>🏠️HOME GARDEN🍅</u></summary>
-  <div class="content">
-    <!------------------------------  👇️ 野菜さん別状況  -->
-    <details open class="tgl2"><summary><u>📅栽培記録📸</u></summary>
-    <div class="content">
-
-      <!------------------------------  👇️ 🥬芽キャベツさん（10hg_10Brussels sprouts）  -->
-      <details open class="tgl2"><summary>🥬芽キャベツ-さん🥬</summary>
+      <!------------------------------  👇️ 🥕五寸人参さん（10hg_10carrots）  -->
+      <details class="tgl2" data-key1="carrots_info" data-key2="carrots_zone">
+      <summary>🥕ニンジン-さん</summary>
       <div class="content">
 
-        <!-- 👇️ 🥬情報エリア -->
+        <!-- 👇️ 情報エリア -->
         <div class="info_wrap vege">
 
-          <!-- 👇️ 🥬野菜情報 -->
-          <details open class="tgl2 info_box"><summary>ℹ️VEGE INFO</summary>
+          <!-- 👇️ 野菜情報 -->
+          <details class="tgl2 info_box"><summary>ℹ️VEGE INFO</summary>
+            <div class="content">
+
+              <!-- 列ヘッダ -->
+              <table>
+                <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
+              </table>
+
+              <!-- 👇️ Json読み込み VEGE INFO TBL作成 -->
+              <div class="scro_box" id="carrots_info">
+
+              </div>
+            </div>
+
+            <!-- 👇️ 「閉じる」ボタン --> 
+            <div class="LR_set">
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+            </div>
+
+          </details>
+
+          <!-- 👇️ 環境情報 -->
+          <details class="tgl2 info_box scro-target"><summary>📝ZONE INFO</summary>
             <div class="content">
 
               <!-- 列ヘッダ -->
@@ -649,328 +662,35 @@
                 <!-- 1項目 -->
               </table>
 
-            <div class="scro_box">
+              <!-- 👇️ Json読み込み ZONE INFO TBL作成 -->
+              <div class="scro_box" id="carrots_zone">
 
-              <table>
-
-                <!-- 1項目 -->
-                <tr><th>👨‍👦‍👦<br>FAM</th><td colspan="2">アブラナ科</td></tr>
-                <tr><th>📅<br>SEAS</th><td colspan="2">春／秋</td></tr>
-                <tr><th>🌡️ <br>TEMP</th><td colspan="2">15-25℃</td></tr>
-
-                <!-- 2項目 -->
-                <tr><th rowspan="2">📐<br>SIZE</th>
-                    <th class="th2a">🥬<br>PLNT</th><td>15-20cm</td></tr>
-                <tr><th class="th2a">🍃<br>LEAF</th><td>10-15cm</td></tr>
-
-                <!-- 1項目 -->
-                <tr><th>🧬<br>(pH)</th><td colspan="2">弱酸性-中性<br>(6.5-7.5)</td></tr>
-                <tr><th>🌞<br>SUN </th><td colspan="2">やや強めに</td></tr>
-                <tr><th>🚿<br>H2O </th><td colspan="2">土が乾いたら多めに<br>(加湿NG)</td></tr>
-
-                <!-- 2項目 -->
-                <tr><th rowspan="2">🍽️<br>FERT</th>
-                    <th class="th2b">🧃<br>BASE</th><td colspan="2">少なめ</td></tr>
-                <tr><th class="th2b">🧪<br>POST</th><td colspan="2">定期的</td></tr>
-
-                <!-- 1項目 -->
-                <tr><th>💖🤏<br>HARV</th><td colspan="2">種植えから60-70日<br>下から外側の芽を摘む</td></tr>
-                <tr><th>🔄🤏<br>REGW</th><td colspan="2">可能<br>中心から新芽が出る</td></tr>
-
-                <!-- 2項目 ①4子項目 ②4子項目 -->
-                <tr><th rowspan="8">📊<br>NUTR:<br>COMP</th>
-                    <th class="th2a" rowspan="4">🥬<br>PLNT</th>
-                    <!-- ①4子項目 -->
-                    <td class="td2a" colspan="2">VITAMIN B9</td></tr>
-                <tr><td class="td2a" colspan="2">VITAMIN C </td></tr>
-                <tr><td class="td2a" colspan="2">VITAMIN K </td></tr>
-                <tr><td class="td2a" colspan="2">VITAMIN U </td></tr>
-
-                <tr><th class="th2a" rowspan="4">🍃<br>LEAF</th>
-                    <!-- ②4子項目 -->
-                    <td class="td2b" colspan="2">VITAMIN A</td></tr>
-                <tr><td class="td2b" colspan="2">LUTEIN   </td></tr>
-                <tr><td class="td2b" colspan="2">MINERALS </td></tr>
-                <tr><td class="td2b" colspan="2">FIBER    </td></tr>
-                    <!-- 1項目 -->
-                <tr><th>💡<br>etc </th><td colspan="2">芽キャベツは「栄養喰らい」と呼ばれるくらい栄養が必要だそうだ。</td></tr>
-
-              </table>
-
-            </div>
+              </div>
             </div>
 
-            <!-- 👇️ 🥬「閉じる」ボタン --> 
+            <!-- 👇️ 「閉じる」ボタン  --> 
             <div class="LR_set">
               <div style=" text-align: center;"><button class="close_btn"></button></div>
               <div style=" text-align: center;"><button class="close_btn"></button></div>
             </div>
 
-          <!-- 🥬野菜情報 👆️ -->
+          <!-- 環境情報 👆️ -->
           </details>
 
-          <!-- 👇️ 📝環境情報 -->
-          <details class="tgl2 info_box  scro-target"><summary>📝ZONE INFO</summary>
-            <div class="content">
-
-              <!-- 列ヘッダ -->
-              <table>
-                <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
-                <!-- 1項目 -->
-              </table>
-              
-            <div class="scro_box">
-
-                <table>
-                  <!-- 1-1 -->
-                  <tr><th>📍<br>LOC</th><td colspan="2">ベランダ床</td></tr>
-                  <tr><th>🔳<br>POT</th><td colspan="2">ワイヤネット プランタ</td></tr>
-                  <tr><th>🌞⌚<br>SUN</th><td colspan="2">14:30-16:30<br></td></tr>
-                  <!-- 2-2-1 -->
-                  <tr><th rowspan="2">➕️<br>OPT</th>
-                      <th class="th2a">TUAL</th><td rowspan="2">土中へ酸素を供給する補助ツール</td></tr>
-                  <tr><th class="th2a">TUAH</th></tr>
-                  <!-- 2-2-2 -->
-                  <tr><th rowspan="2">🟫📊SOIL<br></th>
-                      <th class="th2b">7</th><td>COCOブリック</td></tr>
-                  <tr><th class="th2b">3</th><td>バーミキュライト</td></tr>
-                  <!-- 4-4-4 -->
-                  <tr><th rowspan="4">🧪POST-COMP:<br>Mix<br>💧1L</th>
-                      <th class="th2a">1ml</th><td>HYPONeX<br>(1000倍希釈)</td></tr>
-                  <tr><th class="th2a">1ml</th><td>お酢<br>(1000倍希釈)</td></tr>
-                  <tr><th class="th2a">1g弱</th><td>ブドウ糖<br>(1500倍希釈)</td></tr>
-                  <tr><th class="th2a">💧1L</th>
-                      <td>自家製ヨモギ水<br>(市販のヨモギエキスを使う場合は希釈が必要)</td></tr>
-                  <!-- 2-2-2 -->
-                  <tr><th rowspan="2">🧪📅<br>FREQ</th>
-                      <th class="th2b">初期</th><td colspan="2">芽が育つまでは水のみ</td></tr>
-                  <tr><th class="th2b">普段</th><td>🧪を週1回</td></tr>
-                  <!-- 1-1-1 -->
-                  <tr><th>🧪➕️<br>ADD</th><th class="th2a">活性剤</th>
-                      <td colspan="2">苗に元気がないときは与えてみる</td></tr>
-                  <!-- 1-1 -->
-                  <tr><th>💗🦠<br>PALS</th>
-                    <td class="td" colspan="2"><ul>
-                      <li><span>🦠納豆菌(バチルス菌)</span></li>
-                      <li><span>・土壌改善</span></li>
-                      <li><span>・カビ・雑菌予防</span></li>
-                    </ul></td></tr>
-                  <!-- 1-1 -->
-                  <tr><th>💡<br>etc</th>
-                    <td colspan="2">-</td></tr>
-                </table>
-
-            </div>
-            </div>
-
-            <!-- 👇️ 🥬「閉じる」ボタン  --> 
-            <div class="LR_set">
-              <div style=" text-align: center;"><button class="close_btn"></button></div>
-              <div style=" text-align: center;"><button class="close_btn"></button></div>
-            </div>
-
-          <!-- 🥬環境情報 👆️ -->
-          </details>
-
-        <!-- 🥬情報エリア 👆️ -->
+        <!-- 情報エリア 👆️ -->
         </div>
 
-        <!-- 👇️ 🥬写真エリア -->
+
+        <!------------------------------  👇️ カールセルの親  -->
         <div class="carousel">
 
-          <!-- 👇️ 🥬左ボタン -->
+          <!------------------------------  👇️ 左ボタン  -->
           <button class="scro_btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
-          <!-- 👇️ 🥬写真横スクロールの箱 --> 
+          <!------------------------------  👇️ 横スクロールの箱  --> 
           <div class="carousel_content">
 
-            <!-- 👇️ 🥬野菜写真（増やしたいときはこれをコピペ！） -->
-            <div class="vege_card">
-              <b>7/1</b><br>
-              <img src="10hg_10Brussels sprouts_20260701.webp" alt="栽培中" width="500" height="500">
-              種蒔きは6月10日。種はダイソーで購入。時期が違うけど、芽は育ってる。
-              土の水分が見えるように囲いはビニールで作ってみた。遮光性が心配。
-            </div>
-
-            <div class="vege_card">
-              <b>7/15</b><br>
-              <img src="10hg_10Brussels sprouts_20260715.webp" alt="栽培中" width="500" height="500">
-              順調に育ってるように見える。遮光性も問題なさそう。
-              育ったら中央で被った葉を収穫しようと思ったので、
-              密集させているけど、どうなるだろう。
-            </div>
-
-            <div class="vege_card">
-              <b>7/29</b><br>
-              <img src="10hg_10Brussels sprouts_20260729.webp" alt="栽培中" width="500" height="500">
-              葉が更に大きくなった。
-              プランターの初期の水がなかなか抜けないので、
-              あげる水分量を減らして通気性を上げようと思う。
-            </div>
-
-            <div class="vege_card">
-              <b>8/12</b><br>
-              <img src="10hg_10Brussels sprouts_20260812.webp" alt="栽培中" width="500" height="500">
-            </div>
-
-            <div class="vege_card">
-              <b>8/26</b><br>
-              <img src="10hg_10Brussels sprouts_20260826.webp" alt="栽培中" width="500" height="500">
-            </div>
-
-            <div class="vege_card">
-              <b>9/9</b><br>
-              <img src="10hg_10Brussels sprouts_20260909.webp" alt="栽培中" width="500" height="500">
-            </div>
-          </div>
-
-          <!-- 👇️ 🥬右ボタン -->
-          <button class="scro_btn next"onclick="scrollPrime(this, 265)">&gt;</button>
-
-        <!-- 🥬写真エリア 👆️ -->
-        </div>
-
-        <!-- 👇️ 🥬「閉じる」ボタン --> 
-        <div class="LR_set">
-          <div style=" text-align: center;"><button class="close_btn"></button></div>
-          <div style=" text-align: center;"><button class="close_btn"></button></div>
-        </div>
-
-      <!------------------------------ 🥬芽キャベツさん 👆️ -->
-      </div>
-      </details>
-
-      <!------------------------------  👇️ 🥕五寸人参さん（10hg_10carrots）  -->
-      <details><summary>🥕五寸人参さん</summary>
-      <div class="content"><div class="scro_box">
-
-        <div class="info_wrap vege">
-          <!-- 👇️ 🥕野菜情報 -->
-          <details class="tgl3 info_box"><summary>🥕野菜情報</summary>
-            <div class="content"><div class="scro_box">
-
-              <table>
-                <!-- 1項目 -->
-                <tr><th>👨‍👦‍👦<br>FAM</th><td colspan="2">セリ科</td></tr>
-                <tr><th>📅<br>SEAS</th><td colspan="2">春／秋</td></tr>
-                <tr><th>🌡️<br>TEMP</th><td colspan="2">15-25℃</td></tr>
-                <!-- 2項目 -->
-                <tr><th rowspan="2">📐<br>SIZE</th>
-                    <th class="th2a">🥕<br>PLNT</th><td>15-20cm</td></tr>
-                <tr><th class="th2a">🍃<br>LEAF</th><td>20-25cm</td></tr>
-                <!-- 1項目 -->
-                <tr><th>🧬<br>(pH) </th><td colspan="2">弱酸性-中性<br>(5.5-6.5)</td></tr>
-                <tr><th>🌞<br>SUN  </th><td colspan="2">普通に</td></tr>
-                <tr><th>🚿<br>H2O  </th><td colspan="2">土が乾いたら控えめに<br>(加湿NG)</td></tr>
-                <!-- 2項目 -->
-                <tr><th rowspan="2">🍽️<br>FERT</th>
-                    <th class="th2b">🧃<br>BASE</th><td>少なめ</td></tr>
-                <tr><th class="th2b">🧪<br>POST</th><td>定期的</td></tr>
-                <!-- 1項目 -->
-                <tr><th>💖🤏<br>HARV</th><td colspan="2">種植えから70-90日<br>下から外側の芽を摘む</td></tr>
-                <tr><th>🔄🤏<br>REGW</th><td colspan="2">不可<br>(葉は可能)</td></tr>
-                <!-- 2項目 -->
-                <tr><th rowspan="2">📊<br>NUTR</th>
-                    <th class="th2a">🥕<br>PLNT</th><td>βカロテン(🥬x20)<br>カリウム<br>食物繊維</td></tr>
-                <tr><th class="th2a">🍃<br>LEAF</th><td>ビタミンA<br>ビタミンC(🥬x4)<br>カルシウム<br>食物繊維</td></tr>
-                <!-- 3項目 2要素 -->
-                <tr><th rowspan="3">🐛<br>PEST<br>&<br>DMG</th>
-                    <th class="th2b">アブラ虫<br>(Aphid)</th><td>食害<br>すす病<br>ウイルス媒介</td></tr>
-                <tr><th class="th2b">ネキリ虫<br>(Cutworm)</th><td rowspan="2">食害<br>成長阻害<br>光合成阻害</td></tr>
-                <tr><th class="th2b">イモムシ<br>(Leafminer)</th></tr>
-                <!-- 4項目 2要素 -->
-                <tr><th rowspan="4">🤢<br>SICK<br>&<br>CAUS</th>
-                    <th class="th2a">軟腐病    </th><td rowspan="3">👾カビ</td>
-                <tr><th class="th2a">黒葉枯れ病</th></tr>
-                <tr><th class="th2a">うどんこ病</th></tr>
-                <tr><th class="th2a">モザイク病<br>※治療不可</th><td>アブラ虫</td></tr>
-                <!-- 1項目 -->
-                <tr><th>💡<br>ETC </th><td colspan="2">
-                    葉物として育てるなら長期間収穫可能<br></td></tr>
-              </table>
-
-            </div></div>
-
-            <!-- 👇️ 🥕「閉じる」ボタン --> 
-            <div class="LR_set">
-              <div style=" text-align: center;"><button class="close_btn"></button></div>
-              <div style=" text-align: center;"><button class="close_btn"></button></div>
-            </div>
-
-          <!-- 🥕野菜情報 👆️ -->
-          </details>
-
-          <!-- 👇️ 🥕環境情報 -->
-          <details class="tgl2 info_box scro-target"><summary>📝環境情報</summary>
-            <div class="content"><div class="scro_box">
-
-              <table>
-                <!-- 1項目 -->
-                <tr><th>📍    <br>LOC</th><td colspan="2">ベランダ床</td></tr>
-                <tr><th>🔳   <br>POT</th><td colspan="2">ワイヤネット プランタ</td></tr>
-                <tr><th>🌞⌚<br>SUN</th><td colspan="2">14:30-16:30<br></td></tr>
-                <!-- 2項目 2要素 -->
-                <tr><th rowspan="2">➕️<br>OPT</th>
-                    <th class="th2a">TUAL</th><td rowspan="2">土中へ酸素を供給する補助ツール</td></tr>
-                <tr><th class="th2a">TUAH</th></tr>
-                <!-- 2項目 -->
-                <tr><th rowspan="2">🟫📊SOIL<br></th>
-                    <th class="th2b">COCOブリック    </th><td>7</td></tr>
-                <tr><th class="th2b">バーミキュライト</th><td>3</td></tr>
-                <!-- 4項目 -->
-                <tr><th rowspan="4">🧪POST:<br>Mix<br>💧1L</th>
-                    <th class="th2a">HYPONeX </th><td>1ml(1000倍希釈)</td></tr>
-                <tr><th class="th2a">お酢    </th><td>1ml(1000倍希釈)</td></tr>
-                <tr><th class="th2a">ブドウ糖</th><td>0.5g-1g(1500倍希釈)</td></tr>
-                <tr><th class="th2a">ヨモギ水<br>💧1L</th>
-                    <td>自家製(希釈不要)<br>※市販のヨモギエキスは要希釈</td></tr>
-                <!-- 3項目 -->
-                <tr><th rowspan="3">🧪📅<br>FREQ</th>
-                    <th class="th2b">発芽時</th><td colspan="2">芽が育つまでは水のみ</td></tr>
-                <tr><th class="th2b">通常時</th><td>🧪を週1回</td></tr>
-                <tr><th class="th2b">最盛期</th><td>-</td></tr>
-                <!-- 2項目 1要素 -->
-                <tr><th>🧪➕️<br>ADD</th><th class="th2a">活性剤</th>
-                    <td colspan="2">苗が弱っていたら与える</td></tr>
-                <!-- 2項目 1要素 -->
-                <tr><th>💗🦠<br>PALS  </th>
-                  <th class="th2b">納豆菌(バチルス菌)</th><td colspan="2">土壌改善<br>カビ・雑菌予防<br></td></tr>
-                <!-- 3項目 2要素 -->
-                <tr><th rowspan="3">🛡️<br>PREV</th>
-                    <th class="th2a">🤢<br>病気</th><td rowspan="2">
-                      お酢スプレー<br>(1000倍希釈)<br>納豆菌スプレー<br>(希釈不要)<br>などを週1-2回吹きかける</td></tr>
-                <tr><th class="th2a">👾<br>カビ</th></tr>
-                <tr><th class="th2a">🐛<br>害虫</th><td>虫除けプレート</td></tr>
-                <!-- 1項目 -->
-                <tr><th>💡<br>ETC</th>
-                    <td colspan="2">ブドウ糖はスプレーとセットで使用しないと、カビが繁殖しやすい</td></tr>
-              </table>
-
-            </div></div>
-
-            <!-- 👇️ 🥕「閉じる」ボタン  --> 
-            <div class="LR_set">
-              <div style=" text-align: center;"><button class="close_btn"></button></div>
-              <div style=" text-align: center;"><button class="close_btn"></button></div>
-            </div>
-
-          <!-- 🥕環境情報 👆️ -->
-          </details>
-
-        <!-- 🥕情報エリア 👆️ -->
-        </div>
-
-
-        <!------------------------------  👇️ 🥕カールセルの親  -->
-        <div class="carousel">
-
-          <!------------------------------  👇️ 🥕左ボタン  -->
-          <button class="scro_btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
-
-          <!------------------------------  👇️ 🥕横スクロールの箱  --> 
-          <div class="carousel_content">
-
-            <!------------------------------  👇️ 🥕野菜写真（増やしたいときはこれをコピペ！）  -->
+            <!------------------------------  👇️ 野菜写真（増やしたいときはこれをコピペ！）  -->
             <div class="vege_card">
                 <b>7/1</b><br>
                 <img src="10hg_10carrots_20260701.webp" alt="栽培中" width="500" height="500">
@@ -1005,16 +725,16 @@
             </div>
 
           </div>
-          <!------------------------------  👆️ 🥕横スクロールの箱 -->
+          <!------------------------------  👆️ 横スクロールの箱 -->
 
-          <!------------------------------  👇️ 🥕右ボタン  -->
+          <!------------------------------  👇️ 右ボタン  -->
           <button class="scro_btn next"
             onclick="scrollPrime(this, 265)">&gt;</button>
 
-        <!------------------------------  👆️ 🥕カールセルの親  -->
+        <!------------------------------  👆️ カールセルの親  -->
         </div>
 
-        <!------------------------------  👇️ 🥕親トグルを「閉じる」ボタン  --> 
+        <!------------------------------  👇️ 親トグルを「閉じる」ボタン  --> 
         <div class="LR_set">
           <div style=" text-align: center;"><button class="close_btn"></button></div>
           <div style=" text-align: center;"><button class="close_btn"></button></div>
@@ -1025,64 +745,74 @@
       <!------------------------------  👆️ 🥕五寸人参さん  -->
 
       <!------------------------------  👇️ 🍅鈴なりトマトさん（10hg_10Cherry tomatoes）  -->
-      <details><summary>🍅鈴なりトマトさん</summary>
+      <details class="tgl2" data-key1="m_tomatoes_info" data-key2="m_tomatoes_zone">
+      <summary>🍅ミニトマト-さん</summary>
       <div class="content">
 
-        <!------------------------------  👇️ 🍅各情報トグルを入れる箱  -->
+        <!-- 👇️ 情報エリア -->
         <div class="info_wrap vege">
 
-          <!------------------------------  👇️ 🍅野菜情報  -->
-          <details class="info_box"><summary>ℹ️野菜情報</summary>
-            <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro_box">
-              <p style="text-align: center;">【ナス科】</p>
-              <ul>
-                <li><span>・種蒔き</span><span>：</span>３～４月</li>
-                <li><span>・サイズ</span><span>：</span>高さ80〜120cm（ミニトマトは小型）</li>
-                <li><span>・土壌pH</span><span>：</span>弱酸性（6.0〜6.8）</li>
-                <li><span>・温度</span><span>：</span>20〜30℃</li>
-                <li><span>・太陽光</span><span>：</span>強めに</li>
-                <li><span>・水やり</span><span>：</span>乾燥気味に。</li>
-                <li><span>・肥料</span><span>：</span>元肥はしっかり、追肥は定期的。</li>
-                <li><span>・病害虫</span><span>：</span>うどんこ病<br>モザイクウィルス<br>ハダニ</li>
-                <li><span>・収穫</span><span>：</span>種まきから約70～90日</li>
-                <li><span>・再収穫</span><span>：</span>可能（脇芽から）</li>
-                <li><span>・栄養</span><span>：</span>リコピン<br>ビタミンＣ</li>
-                <li><span>・その他</span><span>：</span>通常栽培では支柱が必要</li>
-              </ul>
-              <!------------------------------  👇️ 🍅親トグルを「閉じる」ボタン 使うときはここ -->
+          <!-- 👇️ 野菜情報 -->
+          <details class="tgl2 info_box"><summary>ℹ️VEGE INFO</summary>
+            <div class="content">
 
-            </div></div>
+              <!-- 列ヘッダ -->
+              <table>
+                <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
+              </table>
+
+              <!-- 👇️ Json読み込み VEGE INFO TBL作成 -->
+              <div class="scro_box" id="m_tomatoes_info">
+
+              </div>
+            </div>
+
+            <!-- 👇️ 「閉じる」ボタン --> 
+            <div class="LR_set">
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+            </div>
+
           </details>
 
-          <!------------------------------  👇️ 🍅栽培環境  -->
-          <details class="info_box scro-target"><summary>📝関連</summary>
-            <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro_box">
-              <!-- リスト化 -->
-              <p style="text-align: center;">【栽培環境】</p>
-              <ul style="white-space: nowrap;">
-                <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
-                <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
-                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
-                <li><span>・ツール</span><span>：</span>TUAL</li>
-                <li><span>・プランタ</span><span>：</span>TMLP</li>
-              </ul>
-            </div></div>
+          <!-- 👇️ 環境情報 -->
+          <details class="tgl2 info_box scro-target"><summary>📝ZONE INFO</summary>
+            <div class="content">
+
+              <!-- 列ヘッダ -->
+              <table>
+                <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
+                <!-- 1項目 -->
+              </table>
+
+              <!-- 👇️ Json読み込み ZONE INFO TBL作成 -->
+              <div class="scro_box" id="m_tomatoes_zone">
+
+              </div>
+            </div>
+
+            <!-- 👇️ 「閉じる」ボタン  --> 
+            <div class="LR_set">
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+            </div>
+
+          <!-- 環境情報 👆️ -->
           </details>
-        <!------------------------------  👆️ 🍅各情報トグルを入れる箱  -->
+
+        <!-- 情報エリア 👆️ -->
         </div>
 
-        <!------------------------------  👇️ 🍅カールセルの親  -->
+        <!------------------------------  👇️ カールセルの親  -->
         <div class="carousel">
 
-          <!------------------------------  👇️ 🍅左ボタン  -->
+          <!------------------------------  👇️ 左ボタン  -->
           <button class="scro_btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
-          <!------------------------------  👇️ 🍅横スクロールの箱  --> 
+          <!------------------------------  👇️ 横スクロールの箱  --> 
           <div class="carousel_content">
 
-            <!------------------------------  👇️ 🍅野菜写真（増やしたいときはこれをコピペ！）  -->
+            <!------------------------------  👇️ 野菜写真（増やしたいときはこれをコピペ！）  -->
             <div class="vege_card">
                 <b>7/1</b><br>
                 <img src="10hg_10Cherry tomatoes_20260701.webp" alt="栽培中" width="500" height="500">
@@ -1117,16 +847,16 @@
             </div>
 
           </div>
-          <!------------------------------  👆️ 🍅横スクロールの箱 -->
+          <!------------------------------  👆️ 横スクロールの箱 -->
 
-          <!------------------------------  👇️ 🍅右ボタン  -->
+          <!------------------------------  👇️ 右ボタン  -->
           <button class="scro_btn next"
             onclick="scrollPrime(this, 265)">&gt;</button>
 
-        <!------------------------------  👆️ 🍅カールセルの親  -->
+        <!------------------------------  👆️ カールセルの親  -->
         </div>
 
-        <!------------------------------  👇️ 🍅親トグルを「閉じる」ボタン  --> 
+        <!------------------------------  👇️ 親トグルを「閉じる」ボタン  --> 
         <div class="LR_set">
           <div style=" text-align: center;"><button class="close_btn"></button></div>
           <div style=" text-align: center;"><button class="close_btn"></button></div>
@@ -1138,64 +868,74 @@
 
 
       <!------------------------------  👇️ 🥒地這いキュウリさん（10hg_10cucumbers）  -->
-      <details><summary>🥒地這いキュウリさん</summary>
+      <details class="tgl2" data-key1="cucumbers_info" data-key2="cucumbers_zone">
+      <summary>🥒キュウリ-さん</summary>
       <div class="content">
 
-        <!------------------------------  👇️ 🥒各情報トグルを入れる箱  -->
+        <!-- 👇️ 情報エリア -->
         <div class="info_wrap vege">
 
-          <!------------------------------  👇️ 🥒野菜情報  -->
-          <details class="info_box"><summary>ℹ️野菜情報</summary>
-            <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro_box">
-              <p style="text-align: center;">【ウリ科】</p>
-              <ul>
-                <li><span>・種蒔き</span><span>：</span>４～５月</li>
-                <li><span>・サイズ</span><span>：</span>つるの長さ1〜2m（横に広がる）</li>
-                <li><span>・土壌pH</span><span>：</span>弱酸性（5.5〜7.0）</li>
-                <li><span>・温度</span><span>：</span>20〜30℃</li>
-                <li><span>・太陽光</span><span>：</span>普通に</li>
-                <li><span>・水やり</span><span>：</span>よく吸うので多めに。</li>
-                <li><span>・肥料</span><span>：</span>元肥は普通に、追肥は定期的。</li>
-                <li><span>・病害虫</span><span>：</span>うどんこ病<br>アブラムシ</li>
-                <li><span>・収穫</span><span>：</span>種まきから約50〜60日</li>
-                <li><span>・再収穫</span><span>：</span>可能</li>
-                <li><span>・栄養</span><span>：</span>カリウム</li>
-                <li><span>・その他</span><span>：</span>地面に広がる。</li>
-              </ul>
-              <!------------------------------  👇️ 🥒親トグルを「閉じる」ボタン 使うときはここ -->
+          <!-- 👇️ 野菜情報 -->
+          <details class="tgl2 info_box"><summary>ℹ️VEGE INFO</summary>
+            <div class="content">
 
-            </div></div>
+              <!-- 列ヘッダ -->
+              <table>
+                <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
+              </table>
+
+              <!-- 👇️ Json読み込み VEGE INFO TBL作成 -->
+              <div class="scro_box" id="cucumbers_info">
+
+              </div>
+            </div>
+
+            <!-- 👇️ 「閉じる」ボタン --> 
+            <div class="LR_set">
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+            </div>
+
           </details>
 
-          <!------------------------------  👇️ 🥒栽培環境  -->
-          <details class="info_box scro-target">
-          <summary>📝関連</summary>
-            <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro_box">
-              <p style="text-align: center;">【栽培環境】</p>
-              <ul style="white-space: nowrap;">
-                <li><span>・土成分</span><span>：</span>－</li>
-                <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
-                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
-                <li><span>・ツール</span><span>：</span>－</li>
-                <li><span>・プランタ</span><span>：</span>BTLP</li>
-              </ul>
-            </div></div>
+          <!-- 👇️ 環境情報 -->
+          <details class="tgl2 info_box scro-target"><summary>📝ZONE INFO</summary>
+            <div class="content">
+
+              <!-- 列ヘッダ -->
+              <table>
+                <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
+                <!-- 1項目 -->
+              </table>
+
+              <!-- 👇️ Json読み込み ZONE INFO TBL作成 -->
+              <div class="scro_box" id="cucumbers_zone">
+
+              </div>
+            </div>
+
+            <!-- 👇️ 「閉じる」ボタン  --> 
+            <div class="LR_set">
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+            </div>
+
+          <!-- 環境情報 👆️ -->
           </details>
-        <!------------------------------  👆️ 🥒各情報トグルを入れる箱  -->
+
+        <!-- 情報エリア 👆️ -->
         </div>
 
-        <!------------------------------  👇️ 🥒カールセルの親  -->
+        <!------------------------------  👇️ カールセルの親  -->
         <div class="carousel">
 
-          <!------------------------------  👇️ 🥒左ボタン  -->
+          <!------------------------------  👇️ 左ボタン  -->
           <button class="scro_btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
-          <!------------------------------  👇️ 🥒横スクロールの箱  --> 
+          <!------------------------------  👇️ 横スクロールの箱  --> 
           <div class="carousel_content">
 
-            <!------------------------------  👇️ 🥒野菜写真（増やしたいときはこれをコピペ！）  -->
+            <!------------------------------  👇️ 野菜写真（増やしたいときはこれをコピペ！）  -->
             <div class="vege_card">
                 <b>8/12</b><br>
                 <img src="10hg_10cucumbers_20260812.webp" alt="栽培中" width="500" height="500">
@@ -1230,16 +970,16 @@
             </div>
 
           </div>
-          <!------------------------------  👆️ 🥒横スクロールの箱 -->
+          <!------------------------------  👆️ 横スクロールの箱 -->
 
-          <!------------------------------  👇️ 🥒右ボタン  -->
+          <!------------------------------  👇️ 右ボタン  -->
           <button class="scro_btn next"
             onclick="scrollPrime(this, 265)">&gt;</button>
 
-        <!------------------------------  👆️ 🥒カールセルの親  -->
+        <!------------------------------  👆️ カールセルの親  -->
         </div>
 
-        <!------------------------------  👇️ 🥒親トグルを「閉じる」ボタン  --> 
+        <!------------------------------  👇️ 親トグルを「閉じる」ボタン  --> 
         <div class="LR_set">
           <div style=" text-align: center;"><button class="close_btn"></button></div>
           <div style=" text-align: center;"><button class="close_btn"></button></div>
@@ -1250,64 +990,74 @@
       <!------------------------------  👆️ 🥒地這いキュウリさん  -->
 
       <!------------------------------  👇️ 🌱早生枝豆さん（10hg_10Glycine max）  -->
-      <details><summary>🌱早生枝豆さん</summary>
+      <details class="tgl2" data-key1="glycine_info" data-key2="glycine_zone">
+      <summary>🌱エダマメ-さん</summary>
       <div class="content">
 
-        <!------------------------------  👇️ 🌱各情報トグルを入れる箱  -->
+        <!-- 👇️ 情報エリア -->
         <div class="info_wrap vege">
 
-          <!------------------------------  👇️ 🌱野菜情報  -->
-          <details class="info_box"><summary>ℹ️野菜情報</summary>
-            <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro_box">
-              <p style="text-align: center;">【マメ科】</p>
-              <ul>
-                <li><span>・種蒔き</span><span>：</span>５～６月</li>
-                <li><span>・サイズ</span><span>：</span>高さ30〜50cm（早生は小型）</li>
-                <li><span>・土壌pH</span><span>：</span>弱酸性（6.0〜6.5）</li>
-                <li><span>・温度</span><span>：</span>20〜30℃</li>
-                <li><span>・太陽光</span><span>：</span>普通に</li>
-                <li><span>・水やり</span><span>：</span>乾燥に弱いのでこまめに。</li>
-                <li><span>・肥料</span><span>：</span>元肥は控えめ、追肥も控えめ。</li>
-                <li><span>・病害虫</span><span>：</span>カメムシ<br>ハダニ</li>
-                <li><span>・収穫</span><span>：</span>種まきから約60〜70日（早生は早い）</li>
-                <li><span>・再収穫</span><span>：</span>不可</li>
-                <li><span>・栄養</span><span>：</span>タンパク質<br>ビタミンＢ群<br>カリウム</li>
-                <li><span>・その他</span><span>：</span>根粒菌と共存する環境では肥料を控えめに。</li>
-              </ul>
-              <!------------------------------  👇️ 🌱親トグルを「閉じる」ボタン 使うときはここ -->
+          <!-- 👇️ 野菜情報 -->
+          <details class="tgl2 info_box"><summary>ℹ️VEGE INFO</summary>
+            <div class="content">
 
-            </div></div>
+              <!-- 列ヘッダ -->
+              <table>
+                <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
+              </table>
+
+              <!-- 👇️ Json読み込み VEGE INFO TBL作成 -->
+              <div class="scro_box" id="glycine_info">
+
+              </div>
+            </div>
+
+            <!-- 👇️ 「閉じる」ボタン --> 
+            <div class="LR_set">
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+            </div>
+
           </details>
 
-          <!------------------------------  👇️ 🌱栽培環境  -->
-          <details class="info_box scro-target">
-          <summary>📝関連</summary>
-            <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro_box">
-              <p style="text-align: center;">【栽培環境】</p>
-              <ul style="white-space: nowrap;">
-                <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
-                <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん<br>根粒菌さん</li>
-                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
-                <li><span>・ツール</span><span>：</span>TUAL</li>
-                <li><span>・プランタ</span><span>：</span>TMLP</li>
-              </ul>
-            </div></div>
+          <!-- 👇️ 環境情報 -->
+          <details class="tgl2 info_box scro-target"><summary>📝ZONE INFO</summary>
+            <div class="content">
+
+              <!-- 列ヘッダ -->
+              <table>
+                <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
+                <!-- 1項目 -->
+              </table>
+
+              <!-- 👇️ Json読み込み ZONE INFO TBL作成 -->
+              <div class="scro_box" id="glycine_zone">
+
+              </div>
+            </div>
+
+            <!-- 👇️ 「閉じる」ボタン  --> 
+            <div class="LR_set">
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+            </div>
+
+          <!-- 環境情報 👆️ -->
           </details>
-        <!------------------------------  👆️ 🌱各情報トグルを入れる箱  -->
+
+        <!-- 情報エリア 👆️ -->
         </div>
 
-        <!------------------------------  👇️ 🌱カールセルの親  -->
+        <!------------------------------  👇️ カールセルの親  -->
         <div class="carousel">
 
-          <!------------------------------  👇️ 🌱左ボタン  -->
+          <!------------------------------  👇️ 左ボタン  -->
           <button class="scro_btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
-          <!------------------------------  👇️ 🌱横スクロールの箱  --> 
+          <!------------------------------  👇️ 横スクロールの箱  --> 
           <div class="carousel_content">
 
-            <!------------------------------  👇️ 🌱野菜写真（増やしたいときはこれをコピペ！）  -->
+            <!------------------------------  👇️ 野菜写真（増やしたいときはこれをコピペ！）  -->
             <div class="vege_card">
                 <b>7/1</b><br>
                 <img src="10hg_10Glycine max_20260701.webp" alt="栽培中" width="500" height="500">
@@ -1341,16 +1091,16 @@
               <img src="10hg_10Glycine max_20260909.webp" alt="栽培中" width="500" height="500">
             </div>
           </div>
-          <!------------------------------  👆️ 🌱横スクロールの箱 -->
+          <!------------------------------  👆️ 横スクロールの箱 -->
 
-          <!------------------------------  👇️ 🌱右ボタン  -->
+          <!------------------------------  👇️ 右ボタン  -->
           <button class="scro_btn next"
             onclick="scrollPrime(this, 265)">&gt;</button>
 
-        <!------------------------------  👆️ 🌱カールセルの親  -->
+        <!------------------------------  👆️ カールセルの親  -->
         </div>
 
-        <!------------------------------  👇️ 🌱親トグルを「閉じる」ボタン  --> 
+        <!------------------------------  👇️ 親トグルを「閉じる」ボタン  --> 
         <div class="LR_set">
           <div style=" text-align: center;"><button class="close_btn"></button></div>
           <div style=" text-align: center;"><button class="close_btn"></button></div>
@@ -1361,63 +1111,74 @@
       <!------------------------------  👆️ 🌱早生枝豆さん  -->
 
       <!------------------------------  👇️ 🌿ミニ大根さん  -->
-      <details><summary>🌿ミニ大根さん</summary>
+      <details class="tgl2" data-key1="m_radishes_info" data-key2="m_radishes_zone">
+      <summary>🌿ミニ大根-さん</summary>
       <div class="content">
 
-        <!------------------------------  👇️ 🌿各情報トグルを入れる箱  -->
+        <!-- 👇️ 情報エリア -->
         <div class="info_wrap vege">
 
-          <!------------------------------  👇️ 🌿野菜情報  -->
-          <details class="info_box"><summary>ℹ️野菜情報</summary>
-            <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro_box">
-              <p style="text-align: center;">【アブラナ科】</p>
-              <ul>
-                <li><span>・種蒔き</span><span>：</span>春／秋</li>
-                <li><span>・サイズ</span><span>：</span>根の長さ15〜20cm<br>葉の幅20〜30cm</li>
-                <li><span>・土壌pH</span><span>：</span>弱酸性〜中性（6.0〜7.0）</li>
-                <li><span>・温度</span><span>：</span>15-25℃</li>
-                <li><span>・太陽光</span><span>：</span>普通に</li>
-                <li><span>・水やり</span><span>：</span>土の表面が乾いたら多めに。</li>
-                <li><span>・肥料</span><span>：</span>元肥は普通に、追肥は少量</li>
-                <li><span>・病害虫</span><span>：</span>アブラムシ<br>ヨトウムシ</li>
-                <li><span>・収穫</span><span>：</span>種まきから約50〜60日</li>
-                <li><span>・再収穫</span><span>：</span>不可（葉物野菜として栽培するなら長期的に可能）</li>
-                <li><span>・栄養</span><span>：</span>ビタミンC<br>ジアスターゼ</li>
-                <li><span>・その他</span><span>：</span>土が硬いと根が割れる。<br>植え替えNG。<br>葉の方が栄養豊富。</li>
-              </ul>
+          <!-- 👇️ 野菜情報 -->
+          <details class="tgl2 info_box"><summary>ℹ️VEGE INFO</summary>
+            <div class="content">
 
-              <!------------------------------  👇️ 🌿親トグルを「閉じる」ボタン 使うときはここ -->
-            </div></div>
+              <!-- 列ヘッダ -->
+              <table>
+                <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
+              </table>
+
+              <!-- 👇️ Json読み込み VEGE INFO TBL作成 -->
+              <div class="scro_box" id="m_radishes_info">
+
+              </div>
+            </div>
+
+            <!-- 👇️ 「閉じる」ボタン --> 
+            <div class="LR_set">
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+            </div>
+
           </details>
 
-          <!------------------------------  👇️ 🌿栽培環境  -->
-          <details class="info_box scro-target"><summary>📝関連</summary>
-            <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro_box">
-              <p style="text-align: center;">【栽培環境】</p>
-              <ul style="white-space: nowrap;">
-                <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
-                <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
-                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
-                <li><span>・ツール</span><span>：</span>TUAH<br>TUAL</li>
-                <li><span>・プランタ</span><span>：</span>かご型</li>
-              </ul>
-            </div></div>
+          <!-- 👇️ 環境情報 -->
+          <details class="tgl2 info_box scro-target"><summary>📝ZONE INFO</summary>
+            <div class="content">
+
+              <!-- 列ヘッダ -->
+              <table>
+                <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
+                <!-- 1項目 -->
+              </table>
+
+              <!-- 👇️ Json読み込み ZONE INFO TBL作成 -->
+              <div class="scro_box" id="m_radishes_zone">
+
+              </div>
+            </div>
+
+            <!-- 👇️ 「閉じる」ボタン  --> 
+            <div class="LR_set">
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+            </div>
+
+          <!-- 環境情報 👆️ -->
           </details>
-        <!------------------------------  👆️ 🌿各情報トグルを入れる箱  -->
+
+        <!-- 情報エリア 👆️ -->
         </div>
 
-        <!------------------------------  👇️ 🌿カールセルの親  -->
+        <!------------------------------  👇️ カールセルの親  -->
         <div class="carousel">
 
-          <!------------------------------  👇️ 🌿左ボタン  -->
+          <!------------------------------  👇️ 左ボタン  -->
           <button class="scro_btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
-          <!------------------------------  👇️ 🌿横スクロールの箱  --> 
+          <!------------------------------  👇️ 横スクロールの箱  --> 
           <div class="carousel_content">
 
-            <!------------------------------  👇️ 🌿野菜写真（増やしたいときはこれをコピペ！）  -->
+            <!------------------------------  👇️ 野菜写真（増やしたいときはこれをコピペ！）  -->
             <div class="vege_card">
               <b>7/1</b><br>
               <img src="10hg_10mini radishes_20260701.webp" alt="栽培中" width="500" height="500">
@@ -1451,16 +1212,16 @@
               <img src="10hg_10mini radishes_20260909.webp" alt="栽培中" width="500" height="500">
             </div>
           </div>
-          <!------------------------------  👆️ 🌿横スクロールの箱 -->
+          <!------------------------------  👆️ 横スクロールの箱 -->
 
-          <!------------------------------  👇️ 🌿右ボタン  -->
+          <!------------------------------  👇️ 右ボタン  -->
           <button class="scro_btn next"
             onclick="scrollPrime(this, 265)">&gt;</button>
 
-        <!------------------------------  👆️ 🌿カールセルの親  -->
+        <!------------------------------  👆️ カールセルの親  -->
         </div>
 
-        <!------------------------------  👇️ 🌿親トグルを「閉じる」ボタン --> 
+        <!------------------------------  👇️ 親トグルを「閉じる」ボタン --> 
         <div class="LR_set">
           <div style=" text-align: center;"><button class="close_btn"></button></div>
           <div style=" text-align: center;"><button class="close_btn"></button></div>
@@ -1470,63 +1231,74 @@
       <!------------------------------  👆️ 🌿ミニ大根さん  -->
 
       <!------------------------------  👇️ 🍃モロヘイヤさん（10hg_10molokhia）  -->
-      <details><summary>🍃モロヘイヤさん</summary>
-        <div class="content">
+      <details class="tgl2" data-key1="molokhia_info" data-key2="molokhia_zone">
+      <summary>🍃モロヘイヤ-さん</summary>
+      <div class="content">
 
-        <!------------------------------  👇️ 🍃各情報トグルを入れる箱  -->
+        <!-- 👇️ 情報エリア -->
         <div class="info_wrap vege">
 
-          <!------------------------------  👇️ 🍃野菜情報  -->
-          <details class="info_box"><summary>ℹ️野菜情報</summary>
-            <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro_box">
-              <p style="text-align: center;">【シナノキ科】</p>
-              <ul>
-                <li><span>・種蒔き</span><span>：</span>５～６月</li>
-                <li><span>・サイズ</span><span>：</span>高さ1〜1.5m</li>
-                <li><span>・土壌pH</span><span>：</span>弱酸性〜中性（6.0〜7.0）</li>
-                <li><span>・温度</span><span>：</span>25〜35℃（暑さに強い）</li>
-                <li><span>・太陽光</span><span>：</span>普通に</li>
-                <li><span>・水やり</span><span>：</span>乾燥に弱いのでこまめに。</li>
-                <li><span>・肥料</span><span>：</span>元肥は普通に、追肥は少量。</li>
-                <li><span>・病害虫</span><span>：</span>アブラムシ</li>
-                <li><span>・収穫</span><span>：</span>種まきから約40〜60日</li>
-                <li><span>・再収穫</span><span>：</span>可能（摘芯：50〜60cmになった頃から、先端の15〜20cmほどの柔らかい芽を摘み取る）</li>
-                <li><span>・栄養</span><span>：</span>ビタミンA<br>カルシウム</li>
-                <li><span>・その他</span><span>：</span>成長が早く丈夫。</li>
-              </ul>
-              <!------------------------------  👇️ 🍃親トグルを「閉じる」ボタン 使うときはここ -->
+          <!-- 👇️ 野菜情報 -->
+          <details class="tgl2 info_box"><summary>ℹ️VEGE INFO</summary>
+            <div class="content">
 
-            </div></div>
+              <!-- 列ヘッダ -->
+              <table>
+                <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
+              </table>
+
+              <!-- 👇️ Json読み込み VEGE INFO TBL作成 -->
+              <div class="scro_box" id="molokhia_info">
+
+              </div>
+            </div>
+
+            <!-- 👇️ 「閉じる」ボタン --> 
+            <div class="LR_set">
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+            </div>
+
           </details>
 
-          <!------------------------------  👇️ 🍃栽培環境  -->
-          <details class="info_box scro-target"><summary>📝関連</summary>
-            <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="content"><div class="scro_box">
-              <p style="text-align: center;">【栽培環境】</p>
-              <ul style="white-space: nowrap;">
-                <li><span>・土成分</span><span>：</span>ココブリック（７）<br>バーミキュライト（３）</li>
-                <li><span>・コラボ</span><span>：</span>納豆菌さん<br>菌根菌さん</li>
-                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
-                <li><span>・ツール</span><span>：</span>TUAL</li>
-                <li><span>・プランタ</span><span>：</span>パック</li>
-              </ul>
-            </div></div>
+          <!-- 👇️ 環境情報 -->
+          <details class="tgl2 info_box scro-target"><summary>📝ZONE INFO</summary>
+            <div class="content">
+
+              <!-- 列ヘッダ -->
+              <table>
+                <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
+                <!-- 1項目 -->
+              </table>
+
+              <!-- 👇️ Json読み込み ZONE INFO TBL作成 -->
+              <div class="scro_box" id="molokhia_zone">
+
+              </div>
+            </div>
+
+            <!-- 👇️ 「閉じる」ボタン  --> 
+            <div class="LR_set">
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+            </div>
+
+          <!-- 環境情報 👆️ -->
           </details>
-        <!------------------------------  👆️ 🍃各情報トグルを入れる箱  -->
+
+        <!-- 情報エリア 👆️ -->
         </div>
 
-        <!------------------------------  👇️ 🍃カールセルの親  -->
+        <!------------------------------  👇️ カールセルの親  -->
         <div class="carousel">
 
-          <!------------------------------  👇️ 🍃左ボタン  -->
+          <!------------------------------  👇️ 左ボタン  -->
           <button class="scro_btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
-          <!------------------------------  👇️ 🍃横スクロールの箱  --> 
+          <!------------------------------  👇️ 横スクロールの箱  --> 
           <div class="carousel_content">
 
-            <!------------------------------  👇️ 🍃野菜写真（増やしたいときはこれをコピペ！）  -->
+            <!------------------------------  👇️ 野菜写真（増やしたいときはこれをコピペ！）  -->
             <div class="vege_card">
               <b>8月12日</b><br>
               <img src="10hg_10molokhia_20260812.webp" alt="栽培中" width="500" height="500">
@@ -1560,16 +1332,16 @@
               <img src="10hg_10molokhia_20261021.webp" alt="栽培中" width="500" height="500">
             </div>
           </div>
-          <!------------------------------  👆️ 🍃横スクロールの箱 -->
+          <!------------------------------  👆️ 横スクロールの箱 -->
 
-          <!------------------------------  👇️ 🍃右ボタン  -->
+          <!------------------------------  👇️ 右ボタン  -->
           <button class="scro_btn next"
             onclick="scrollPrime(this, 265)">&gt;</button>
 
-        <!------------------------------  👆️ 🍃カールセルの親  -->
+        <!------------------------------  👆️ カールセルの親  -->
         </div>
 
-        <!------------------------------  👇️ 🍃親トグルを「閉じる」ボタン  --> 
+        <!------------------------------  👇️ 親トグルを「閉じる」ボタン  --> 
         <div class="LR_set">
           <div style=" text-align: center;"><button class="close_btn"></button></div>
           <div style=" text-align: center;"><button class="close_btn"></button></div>
@@ -1580,64 +1352,74 @@
       <!------------------------------  👆️ 🍃モロヘイヤさん  -->
 
       <!------------------------------  👇️ 🥔ジャガイモさん（10hg_10potato）  -->
-      <details><summary>🥔ジャガイモさん</summary>
+      <details class="tgl2" data-key1="potato_info" data-key2="potato_zone">
+      <summary>🥔ジャガイモ-さん</summary>
       <div class="content">
 
-        <!------------------------------  👇️ 🥔各情報トグルを入れる箱  -->
+        <!-- 👇️ 情報エリア -->
         <div class="info_wrap vege">
 
-          <!------------------------------  👇️ 🥔野菜情報  -->
-          <details class="info_box"><summary>ℹ️野菜情報</summary>
-            <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="scro_box"><div class="content">
-              <p style="text-align: center;">【ナス科】</p>
-              <ul>
-                <li><span>・種蒔き</span><span>：</span>春／秋</li>
-                <li><span>・サイズ</span><span>：</span>高さ30〜60cm</li>
-                <li><span>・土壌pH</span><span>：</span>酸性（5.0〜6.0）</li>
-                <li><span>・温度</span><span>：</span>15-25℃</li>
-                <li><span>・太陽光</span><span>：</span>普通に</li>
-                <li><span>・水やり</span><span>：</span>控えめに（過湿NG）。</li>
-                <li><span>・肥料</span><span>：</span>元肥は普通に、追肥は少量。</li>
-                <li><span>・病害虫</span><span>：</span>そうか病<br>アブラムシ</li>
-                <li><span>・収穫</span><span>：</span>種まきから約80〜100日</li>
-                <li><span>・再収穫</span><span>：</span>不可</li>
-                <li><span>・栄養</span><span>：</span>ビタミンC<br>炭水化物</li>
-                <li><span>・その他</span><span>：</span>アルカリに弱い（そうか病に注意）。</li>
-              </ul>
+          <!-- 👇️ 野菜情報 -->
+          <details class="tgl2 info_box"><summary>ℹ️VEGE INFO</summary>
+            <div class="content">
 
-              <!------------------------------  👇️ 🥔親トグルを「閉じる」ボタン 使うときはここ -->
-            </div></div>
+              <!-- 列ヘッダ -->
+              <table>
+                <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
+              </table>
+
+              <!-- 👇️ Json読み込み VEGE INFO TBL作成 -->
+              <div class="scro_box" id="potato_info">
+
+              </div>
+            </div>
+
+            <!-- 👇️ 「閉じる」ボタン --> 
+            <div class="LR_set">
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+            </div>
+
           </details>
 
-          <!------------------------------  👇️ 🥔栽培環境  -->
-          <details class="info_box scro-target"><summary>📝関連</summary>
-            <!-- コンテンツウィンドウ＆ミニウィンドウ-->
-            <div class="scro_box"><div class="content">
-              <p style="text-align: center;">【栽培環境】</p>
-              <ul style="white-space: nowrap;">
-                <li><span>・土成分</span><span>：</span>－</li>
-                <li><span>・コラボ</span><span>：</span>納豆菌さん</li>
-                <li><span>・肥料</span><span>：</span>ハイポネックス<br>ヨモギ水<br>酢</li>
-                <li><span>・殺菌</span><span>：</span>銅イオン</li>
-                <li><span>・ツール</span><span>：</span>－</li>
-                <li><span>・プランタ</span><span>：</span>TBBP<br>BTLP</li>
-              </ul>
-            </div></div>
+          <!-- 👇️ 環境情報 -->
+          <details class="tgl2 info_box scro-target"><summary>📝ZONE INFO</summary>
+            <div class="content">
+
+              <!-- 列ヘッダ -->
+              <table>
+                <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
+                <!-- 1項目 -->
+              </table>
+
+              <!-- 👇️ Json読み込み ZONE INFO TBL作成 -->
+              <div class="scro_box" id="potato_zone">
+
+              </div>
+            </div>
+
+            <!-- 👇️ 「閉じる」ボタン  --> 
+            <div class="LR_set">
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+              <div style=" text-align: center;"><button class="close_btn"></button></div>
+            </div>
+
+          <!-- 環境情報 👆️ -->
           </details>
-        <!------------------------------  👆️ 🥔各情報トグルを入れる箱  -->
+
+        <!-- 情報エリア 👆️ -->
         </div>
 
-        <!------------------------------  👇️ 🥔カールセルの親  -->
+        <!------------------------------  👇️ カールセルの親  -->
         <div class="carousel">
 
-          <!------------------------------  👇️ 🥔左ボタン  -->
+          <!------------------------------  👇️ 左ボタン  -->
           <button class="scro_btn prev" onclick="scrollPrime(this, -265)">&lt;</button>
 
-          <!------------------------------  👇️ 🥔横スクロールの箱  --> 
+          <!------------------------------  👇️ 横スクロールの箱  --> 
           <div class="carousel_content">
 
-            <!------------------------------  👇️ 🥔野菜写真（増やしたいときはこれをコピペ！）  -->
+            <!------------------------------  👇️ 野菜写真（増やしたいときはこれをコピペ！）  -->
             <div class="vege_card">
               <b>未定</b><br>
               <img src="10hg_10potato_20260812.webp" alt="栽培中" width="500" height="500">
@@ -1671,16 +1453,16 @@
               <img src="10hg_10potato_20261021.webp" alt="栽培中" width="500" height="500">
             </div>
           </div>
-          <!------------------------------  👆️ 🥔横スクロールの箱 -->
+          <!------------------------------  👆️ 横スクロールの箱 -->
 
-          <!------------------------------  👇️ 🥔右ボタン  -->
+          <!------------------------------  👇️ 右ボタン  -->
           <button class="scro_btn next"
             onclick="scrollPrime(this, 265)">&gt;</button>
 
-        <!------------------------------  👆️ 🥔カールセルの親  -->
+        <!------------------------------  👆️ カールセルの親  -->
         </div>
 
-        <!------------------------------  👇️ 🥔親トグルを「閉じる」ボタン  --> 
+        <!------------------------------  👇️ 親トグルを「閉じる」ボタン  --> 
         <div class="LR_set">
           <div style=" text-align: center;"><button class="close_btn"></button></div>
           <div style=" text-align: center;"><button class="close_btn"></button></div>
@@ -2079,46 +1861,71 @@
       return tr;
     }
 
-    /*------------------------------  👇️ createGroupRows グルーブ項目読み込み  --*/ 
-    function createGroupRows(item) {
-      const rows = [];
+  /*------------------------------  👇️ createGroupRows グループ項目読み込み  --*/ 
+  function createGroupRows(item) {
+    const rows = [];
 
-      item.children.forEach((child, index) => {
-        const tr = document.createElement("tr");
+    item.children.forEach((child, index) => {
+      const tr = document.createElement("tr");
 
-        // 親 th は最初の行だけ
-        if (index === 0) {
-          const thParent = document.createElement("th");
-          thParent.innerHTML = `${item.icon}<br>${item.label}`;
-          thParent.rowSpan = item.rowspan;
+      /*-----------------------------------------
+        親 th（左端） → 最初の行だけ出す
+      -----------------------------------------*/
+      if (index === 0) {
+        const thParent = document.createElement("th");
+        thParent.innerHTML = `${item.icon}<br>${item.label}`;
+        thParent.rowSpan = item.rowspan;
 
-          if (item.class?.th) {
-            thParent.classList.add(item.class.th);
-          }
-
-          tr.appendChild(thParent);
+        if (item.class?.th) {
+          thParent.classList.add(item.class.th);
         }
 
-        // 子 th
-        const thChild = document.createElement("th");
-        thChild.innerHTML = `${child.icon}<br>${child.label}`;
-
-        if (child.class?.th) {
-          thChild.classList.add(child.class.th);
-        }
-
-        tr.appendChild(thChild);
-
-      // 子 td
-      const td = document.createElement("td");
-      td.innerHTML = child.value;
-      td.colSpan = child.colspan ?? 1;
-
-      if (child.class?.td) {
-        td.classList.add(child.class.td);
+        tr.appendChild(thParent);
       }
 
-      tr.appendChild(td);
+      /*-----------------------------------------
+        子 th（中央） → 毎行出す
+      -----------------------------------------*/
+      const thChild = document.createElement("th");
+      thChild.innerHTML = `${child.icon}<br>${child.label ?? ""}`;
+
+      if (child.class?.th) {
+        thChild.classList.add(child.class.th);
+      }
+
+      tr.appendChild(thChild);
+
+      /*-----------------------------------------
+        ★ 子 td（右端）
+        - mergeTd = true → 最初の行だけ出す（統合）
+        - mergeTd = false → 毎行出す（統合しない）
+      -----------------------------------------*/
+      if (item.mergeTd) {
+        // 統合する group → td は最初の行だけ
+        if (index === 0) {
+          const td = document.createElement("td");
+          td.innerHTML = child.value;
+          td.colSpan = child.colspan ?? 1;
+          td.rowSpan = item.rowspan;
+
+          if (child.class?.td) {
+            td.classList.add(child.class.td);
+          }
+
+          tr.appendChild(td);
+        }
+      } else {
+        // 統合しない group → 毎行 td を出す
+        const td = document.createElement("td");
+        td.innerHTML = child.value;
+        td.colSpan = child.colspan ?? 1;
+
+        if (child.class?.td) {
+          td.classList.add(child.class.td);
+        }
+
+        tr.appendChild(td);
+      }
 
       rows.push(tr);
     });
@@ -2126,54 +1933,53 @@
     return rows;
   }
 
-    /*------------------------------  👇️ createMultiRows 複数グループ項目読み込み  --*/
-    function createMultiRows(item) {
-      const rows = [];
+  /*------------------------------  👇️ createMultiRows 複数グループ項目読み込み  --*/
+  function createMultiRows(item) {
+    const rows = [];
 
-      item.groups.forEach((group, groupIndex) => {
-        group.values.forEach((value, valueIndex) => {
-          const tr = document.createElement("tr");
+    item.groups.forEach((group, groupIndex) => {
+      group.values.forEach((value, valueIndex) => {
+        const tr = document.createElement("tr");
 
-          if (groupIndex === 0 && valueIndex === 0) {
-            const thParent = document.createElement("th");
-            thParent.innerHTML = `${item.icon}<br>${item.label}`;
-            thParent.rowSpan = item.rowspan;
-            if (item.class?.th) thParent.classList.add(item.class.th);
-            tr.appendChild(thParent);
-          }
+        // 親 th（左端） → 最初の行だけ
+        if (groupIndex === 0 && valueIndex === 0) {
+          const thParent = document.createElement("th");
+          thParent.innerHTML = `${item.icon}<br>${item.label}`;
+          thParent.rowSpan = item.rowspan;
+          if (item.class?.th) thParent.classList.add(item.class.th);
+          tr.appendChild(thParent);
+        }
 
-          if (valueIndex === 0) {
-            const thGroup = document.createElement("th");
-            thGroup.innerHTML = `${group.icon}<br>${group.label}`;
-            thGroup.rowSpan = group.rowspan;
-            if (group.class?.th) thGroup.classList.add(group.class.th);
-            tr.appendChild(thGroup);
-          }
+        // group th（中央） → 各 group の最初の行だけ
+        if (valueIndex === 0) {
+          const thGroup = document.createElement("th");
+          thGroup.innerHTML = `${group.icon}<br>${group.label}`;
+          thGroup.rowSpan = group.rowspan;
+          if (group.class?.th) thGroup.classList.add(group.class.th);
+          tr.appendChild(thGroup);
+        }
 
-          const td = document.createElement("td");
-          td.innerHTML = value.value;
-          td.colSpan = value.rowspan ?? 1;
-          if (value.class?.td) td.classList.add(value.class.td);
-          tr.appendChild(td);
-          rows.push(tr);
-        });
+        // values（右端） → 毎行出す
+        const td = document.createElement("td");
+        td.innerHTML = value.value;
+        td.colSpan = value.colspan ?? 1;
+        if (value.class?.td) td.classList.add(value.class.td);
+        tr.appendChild(td);
+        rows.push(tr);
       });
+    });
 
       return rows;
-    }
+  }
+  // テーブル作成処理 👆️
 
-    // テーブル作成処理 👆️
-
-    // 👇️ 左右ボタン判定
-    function scrollPrime(button, distance) {
+  // 👇️ 左右ボタン判定
+  function scrollPrime(button, distance) {
     // querySelector('ここに対象を指定する')      
-      const container = button.parentElement.querySelector('.carousel_content');
-      // スムーズスクロール設定はここ
+    const container = button.parentElement.querySelector('.carousel_content');
+    // スムーズスクロール設定はここ
       container.scrollBy({ left: distance, behavior: 'smooth' });
     }
-
-
-
 
     // トグル判定全般
     (() => {
@@ -2273,6 +2079,7 @@
         };
       content.addEventListener('transitionend', onOpenEnd);
     };
+
     // 自動横スクロール
     // トグルが開いたら右端へ、閉じたら左端へ
     document.querySelectorAll('.scro-target').forEach(details => {
@@ -2296,6 +2103,7 @@
         }
       });
     });
+
     // トグルの心臓部 ラストに置く！！ 
     // [HTML生成] → [setupDetailで処理を準備] → [最後の分岐で開閉を実行]
     summary.addEventListener('click', (e) => {
