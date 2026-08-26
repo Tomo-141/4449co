@@ -684,7 +684,7 @@
   "m_tomatoes_info": {
 
       "meta"   : {
-      "comment": "------------------------------  👇 🍅鈴なりトマトさん VEGE INFO",
+      "comment": "------------------------------  👇 🍅ミニ(鈴なり)トマトさん VEGE INFO",
       "updated": "2024-08-25"
     },
 
@@ -841,7 +841,7 @@
   "m_tomatoes_zone": {
 
       "meta"   : {
-      "comment": "------------------------------  👇 🍅鈴なりトマトさん ZONE INFO",
+      "comment": "------------------------------  👇 🍅ミニ(鈴なり)トマトさん ZONE INFO",
       "updated": "2024-08-25"
     },
 
@@ -2037,14 +2037,14 @@
           {
             "icon" : "🍃",
             "label": "LEAF",
-            "value": "2-5cm<br>絶対食べたらいけない",
+            "value": "2-5cm",
             "class": { "th": "th2a", "td": null }
           },
 
           {
             "icon" : "🌱",
             "label": "PLANT",
-            "value": "25-30cm",
+            "value": "1m-1.5m<br>(摘芯で40-50cm)",
             "class": { "th": "th2a", "td": null }
           }
         ]
@@ -2145,7 +2145,7 @@
       {
         "type"   : "single",
         "icon"   : "💡","label": "etc",
-        "value"  : "<ul><li><span>・</span>⚠️種とサヤには猛毒（ストロファンチジン）が含まれているので、収穫期の後期にできる緑色のサヤや種、熟した古い茎は絶対に食べたらいけない</li></ul><li><span>・</span>VITAMIN Aはホウレン草の約4.6倍</li></ul>",
+        "value"  : "<ul><li><span>・</span>⚠️種とサヤには猛毒（ストロファンチジン）が含まれているので、収穫期の後期にできる緑色のサヤや種、熟した古い茎は絶対に食べたらいけない</li></ul><li><span>・</span>摘芯でサイズを調整できる(40-50cm)<span>・</span>VITAMIN Aはホウレン草の約4.6倍</li></ul>",
         "class"  : { "th": null, "td": null },
         "colspan": 2
       }
@@ -2363,7 +2363,7 @@
           {
             "icon" : "🥔",
             "label": "FRUIT",
-            "value": "25-30cm",
+            "value": "5-10cm",
             "class": { "th": "th2a", "td": null }
           },
 
