@@ -48,7 +48,7 @@
 
           {
             "icon" : "🍃",
-            "label": "PLNT",
+            "label": "PLANT",
             "value": "10-15cm",
             "class": { "th": "th2a", "td": null }
          }
@@ -133,7 +133,7 @@
         "groups" : [
 
           {
-            "icon"   : "🥬","label": "PLNT",
+            "icon"   : "🥬","label": "PLANT",
             "rowspan": 4,
             "class"  : { "th": "th2a" },
             "values" : [
@@ -477,7 +477,7 @@
         "groups" : [
 
           {
-            "icon"   : "🥕","label": "PLNT",
+            "icon"   : "🥕","label": "ROOT",
             "rowspan": 3,
             "class"  : { "th": "th2a" },
             "values" : [
@@ -815,7 +815,7 @@
         "groups" : [
 
           {
-            "icon"   : "🍅","label": "PLANT",
+            "icon"   : "🍅","label": "FRUIT",
             "rowspan": 4,
             "class"  : { "th": "th2a" },
             "values" : [
@@ -1046,14 +1046,14 @@
         "children": [
           {
             "icon" : "🥒",
-            "label": "PLNT",
+            "label": "FRUIT",
             "value": "約20cm",
             "class": { "th": "th2a", "td": null }
           },
 
           {
             "icon" : "🍃",
-            "label": "LEAF",
+            "label": "PLANT",
             "value": "2m-3m",
             "class": { "th": "th2a", "td": null }
          }
@@ -1138,7 +1138,7 @@
         "groups" : [
 
           {
-            "icon"   : "🍅","label": "PLNT",
+            "icon"   : "🥒","label": "FRUIT",
             "rowspan": 3,
             "class"  : { "th": "th2a" },
             "values" : [
@@ -1368,15 +1368,15 @@
         "class"   : { "th": null },
         "children": [
           {
-            "icon" : "🌱",
+            "icon" : "🍃",
             "label": "FRUIT",
             "value": "5-6cm",
             "class": { "th": "th2a", "td": null }
           },
 
           {
-            "icon" : "🍃",
-            "label": "PLNT",
+            "icon" : "🌱",
+            "label": "PLANT",
             "value": "50-70cm",
             "class": { "th": "th2a", "td": null }
          }
@@ -1461,7 +1461,7 @@
         "groups" : [
 
           {
-            "icon"   : "🌱","label": "FRUIT",
+            "icon"   : "🍃","label": "FRUIT",
             "rowspan": 5,
             "class"  : { "th": "th2a" },
             "values" : [
@@ -1663,7 +1663,7 @@
       {
         "type"   : "single",
         "icon"   : "👨‍👦‍👦","label": "FAM",
-        "value"  : "アブラナ科<br>ダイコン属",
+        "value"  : "アブラナ科",
         "class"  : { "th": null, "td": null },
         "colspan": 2
       },
@@ -1814,7 +1814,7 @@
       {
         "type"   : "single",
         "icon"   : "💡","label": "etc",
-        "value"  : "<ul><li>・日当たりが悪いと葉ばかりが茂る</li><li>・極端に乾燥すると肌が荒れたり、根が二股に分かれる</li><li>・土全体にバランスよく肥料を混ぜておく</li><li>・スピード感のある成長をする</li></ul>",
+        "value"  : "<ul><li><span>・</span>日当たりが悪いと葉ばかりが茂る</li><li><span>・</span>極端に乾燥すると肌が荒れたり、根が二股に分かれる</li><li><span>・</span>土全体にバランスよく肥料を混ぜておく</li><li><span>・</span>スピード感のある成長をする</li></ul>",
         "class"  : { "th": null, "td": null },
         "colspan": 2
       }
@@ -2036,17 +2036,17 @@
         "children": [
           {
             "icon" : "🍃",
-            "label": "PLNT",
-            "value": "25-30cm",
+            "label": "LEAF",
+            "value": "2-5cm<br>絶対食べたらいけない",
             "class": { "th": "th2a", "td": null }
           },
 
           {
             "icon" : "🌱",
-            "label": "FRUIT",
-            "value": "2-5cm<br>絶対食べたらいけない",
+            "label": "PLANT",
+            "value": "25-30cm",
             "class": { "th": "th2a", "td": null }
-         }
+          }
         ]
       },
 
@@ -2145,7 +2145,7 @@
       {
         "type"   : "single",
         "icon"   : "💡","label": "etc",
-        "value"  : "<ul><li><span>・</span><span>⚠️種とサヤには猛毒（ストロファンチジン）が含まれているので、収穫期の後期にできる緑色のサヤや種、熟した古い茎は絶対に食べたらいけない</span></li></ul><li><span>・</span><span>VITAMIN Aはホウレン草の約4.6倍</span></li></ul>",
+        "value"  : "<ul><li><span>・</span>⚠️種とサヤには猛毒（ストロファンチジン）が含まれているので、収穫期の後期にできる緑色のサヤや種、熟した古い茎は絶対に食べたらいけない</li></ul><li><span>・</span>VITAMIN Aはホウレン草の約4.6倍</li></ul>",
         "class"  : { "th": null, "td": null },
         "colspan": 2
       }
@@ -2369,7 +2369,7 @@
 
           {
             "icon" : "🌱",
-            "label": "PLNT",
+            "label": "PLANT",
             "value": "50-60cm",
             "class": { "th": "th2a", "td": null }
          }
@@ -2471,7 +2471,7 @@
         "type"   : "single",
         "icon"   : "💡",
         "label"  : "etc",
-        "value"  : "<ul><li></span>・</span><span>日に当たって緑色に変色したジャガイモには猛毒が含まれるので食べてはいけない",
+        "value"  : "<ul><li><span>・</span>日に当たって緑色に変色したジャガイモには猛毒が含まれるので食べてはいけない</li></ul>",
         "colspan": 2
       }
 
