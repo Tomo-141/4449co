@@ -138,17 +138,19 @@
     overflow-y:         auto;/*                 */
     scroll-behavior:  smooth;/* スムーズ       */
     width:              100%;/*               */
-    margin-top:          2px;/* 位置調整     */
-    border-radius:      11px;/*             */
-    /* スクロールバー非表示                */
-    /* IE, Firefox                        */
-    /* Firefox用                         */
-    -ms-overflow-style: none;/*         */
-    scrollbar-width:    none;/*        */
-  }/*                                 */
-  /* Chrome, Safari                  */
+    max-height:        400px;/*              */
+    margin-top:          2px;/* 位置調整    */
+    padding:  0px 0px;/*                   */
+    border-radius:      11px;/*           */
+    /* スクロールバー非表示              */
+    /* IE, Firefox                      */
+    /* Firefox用                       */
+    -ms-overflow-style: none;/*       */
+    scrollbar-width:    none;/*      */
+  }/*                               */
+  /* Chrome, Safari                */
   .carousel_content::-webkit-scrollbar {/**/
-    display:            none;/*    */
+    display:            none;/*  */
   }/**/
 
                     /* 👇️ トグル関連の設定 */
@@ -176,12 +178,6 @@
   /* 野菜・環境情報 content */
   .info_box {/*            */
     padding: 0px;/*       */
-  }/**/
-
-  /* 野菜・環境情報 scro_box */ 
-  .scro_box{/*              */
-    max-height: 400px;/*   */
-    padding:  0px 0px;/*  */
   }/**/
 
             /* 👇️ トグルタイトルのデザイン */
@@ -526,6 +522,7 @@
               <div style=" text-align: center;"><button class="close_btn"></button></div>
             </div>
 
+          <!-- 野菜情報 👆️ -->
           </details>
 
           <!-- 👇️ 環境情報 -->
@@ -1484,7 +1481,7 @@
     <!------------------------------  👆️ 🗓️野菜さん別情報  -->
 
     <!-- 👇️ 👾病気害虫 Info🐛 -->
-    <details class="tgl2"><summary><u>👾病気害虫🐛</u></summary>
+    <details class="tgl2"  data-key1="prev_info" ><summary><u>👾病気害虫🐛</u></summary>
     <div class="content">
 
       <!-- 👇️ 🛡️対策⛑️ -->
@@ -1499,33 +1496,8 @@
             <th  class="thMax">PREV</td>
           </tr></table>
 
-        <div class="scro_box">
+        <div class="scro_box" id="prev_info">
 
-          <table class="table_prev">
-          <!-- 3項目 4データ リストテーブル-->
-            <tr><th>🤢<br>病気</th>
-              <td rowspan="2"><ul>
-                以下のどれかを週2回くらい
-                <li>・お酢スプレー(1000倍希釈)</li>
-                <li>・納豆菌スプレー(自作)</li>
-                <li>・植物用スプレー(市販品)</li>
-              </ul></td>
-            </tr>
-
-            <tr><th>👾<br>カビ</th></tr>
-            <tr><th rowspan="3">🐛<br>害虫</th><td>虫除けプレート<br>(狭い範囲なら💯)</td></tr>
-            <tr><td>ハッカ油の芳香剤<br>(💡自作可能)</td></tr>
-            <tr><td>✨️キラキラ輝くもの</td></tr>
-
-            <!-- 💡 備考専用エリア tr td ul-->
-            <tr><td colspan="3"><ul>
-              <li><span>💡</span>追記</li>
-              <li><span>・</span>市販のスプレーは色々効果がある。</li>
-              <li><span>・</span>虫除けプレートの効果はかなり高い。</li>
-              <li><span>・</span>ハッカ油は自然な香りでいい感じ。</li>
-              <li><span>・</span>✨️はアルミホイルでも良さそう。</li>
-            </ul></td></tr>
-          </table>
 
         </div><!-- content -->
         </div><!-- scro_box -->
@@ -1554,7 +1526,6 @@
 
         <div class="scro_box">
 
-          <!-- 5親項目 1子項目 2データ -->
           <table class="table_prev">
             <tr><th rowspan="5">👾<br>カビ</th><td><ul>
               <li><span>🤢</span>すす病</li>
@@ -1698,279 +1669,90 @@
 
   <!------------------------------  👇️ LICENSE  -->
 
-  <details style="background-color: #ffe1e1">
+  <details style="background-color: #dae1f5">
   <summary><u>⚠️ライセンスについて</u></summary>
-    <div class="license-base">
-      <h2><u><b>License：<br>Creative Commons<br>CC BY-SA 4.0<br>（表示-継承 4.0 国際）</b></u></h2>
-      <u><b>帰属および同一条件許諾条項</b></u><br>
-      サイト内コンテンツの共有、改変は１と２、販売は全ての条件を厳守しなければなりません。<br>
-      <br>
-      <u><b>１．帰属（BY）</b></u><br>
-      「<b>moTo 9444</b>」を、はっきりと目立つように、クレジット表示しなければなりません。<br>
-      <br>
-      ※「moTo」は「Tomo」を逆から読んだものです。
-      日本語で「moto」（元／素）は「起源」、万物の源を意味し、また「本質」、「基礎」を表します。
-      「Tomo」（友／共／智）は友情、一体感、そして知恵を意味し、著者の名前の一部でもあります。<br>
-      <br>
-      <u><b>２．同一条件許諾（SA）</b></u><br>
-      改変、リミックスされたバージョンは、すべて「CC BY-SA 4.0」
-      ライセンスの下で配布され、無料で一般に公開されなければなりません。<br>
-      <br>
-      <u><b>３．販売コスト削減条項</b></u><br>
-      販売に関わる総運用コストおよび処理コストは、Tomoのオリジナルよりも厳密に低く、かつ効率的でなければなりません。<br>
-      <br>
-      <b><u>「コスト」の厳格な定義</u></b><br>
-      <br>
-      <b>＜人的コスト＞</b><br>
-      人的労力およびAI処理のコスト<br>
-      <br>
-      <b>＜エネルギーコスト＞</b><br>
-      電力消費および計算トークンのコスト<br>
-      <br>
-      <b>＜輸送コスト＞</b><br>
-      データ伝送量および物流負荷<br>
-      <br>
-      <b>＜広告・プロモーションコスト＞</b><br>
-      マーケティングおよび注目獲得コスト<br>
-      <br>
-      <u><b>厳格な販売ルール</b></u><br>
-      上記4つの総コストがTomoのオリジナルを下回った場合に限り、「<b>３．販売コスト削減条項</b>」を満たし、販売可能となります。<br>
-      完全に合理化され、透明性が高く、低コストであること。<br>
-      <br>
-      Tomoの「美学」をご理解ください。<br>
-      <br>
-    </div>
+    <div class="info_box content">
+    <div class="scro_box">
+
+      <h3><u><b>License：CC BY‑NC‑SA 4.0<br>
+        (表示-非営利-継承 4.0 国際)</b></u></h3>
+        <table  style="width: 97%;">
+          <tr><th>個人利用</th><td colspan="2">自由</td></tr>
+          <tr><th>商用利用</th><td colspan="2">禁止</td></tr>
+          <tr><th>改変再配</th><td colspan="2">同一ライセンスを適用すれば<br>自由</td></tr>
+          </ul></tr>
+        </table>
+    </div></div>
   </details>
 
   <!------------------------------ 👇️  以下ＪＳエリア   -->
   <script>
-    // テーブル生成 JS は “setupDetail より前” に置く
-    // 📌 STEP 1：JSON を読み込む関数（最初に置く）
-    // １．fetch() で JSON ファイルを読み込む
-    // ２．response.json() で JS オブジェクトに変換
-    // ３．そのオブジェクトを返す
-    // JSONのデータはSTEP3で使用する
+// JSON読み込み（あなたの既存の loadJSON を想定）
+async function loadJSON(file) {
+  const res = await fetch(`${file}.json`);
+  return await res.json();
+}
 
-    async function loadJSON(fileName) {
-      // fetch() は COBOL の「ファイル読み込み」そのもの。
-      // response.json() は COBOL の「データエリアに構造体をロードする」動作に相当する。
-      const response = await fetch(fileName);// １ responseがjsonデータを持っている
+// 親トグル（野菜1つ分）を全部取得
+document.querySelectorAll('details[data-key1]').forEach(parent => {
 
-      // response.json() は「response の中身を JSON として解釈して返す関数」
-      // COBOLの MOVE TO 的な感じで json(WORKSPACE項目)に読み込んだデータを格納しているイメージ
-      const json     = await response.json();        // ２  ()は関数呼び出しのサイン
-      return json;                                   // ３  loadJSONに返す
-    }
+  parent.addEventListener('toggle', async () => {
 
-    // STEP 2：[buildTable] 読み込んだ JSON を使ってテーブルを作る関数
-    // １．<table> を作る
-    // ２．items をループして tr を生成
-    function buildTable(tblData) {/*------------------------------  buildtable   --*/
+    // 親トグルが閉じた時は何もしない
+    if (!parent.open) return;
 
-      // <tableを作る>                               // ２
-      const table = document.createElement('table');
+    // 親トグルに指定されたキーを全部取得（key1, key2, key3…）
+    const keys = Object.keys(parent.dataset)
+      .filter(k => k.startsWith("key"))
+      .map(k => parent.dataset[k]);
 
-      // items をループして tr を生成                // ３
-      // COBOLのEvaluate的な感じで下の方の各処理を呼び出す
-      tblData.items.forEach(item => {
-        if (item.type === "single") {
-          /*------------------------------  👇️ createSingleRow シングル項目読み込み  --*/
-          table.appendChild(createSingleRow(item));
-        }
-        if (item.type === "group") {
-          /*------------------------------  👇️ createGroupRows グルーブ項目読み込み  --*/ 
-            createGroupRows(item).forEach(row => table.appendChild(row));
-        }
-        if (item.type === "multi") {
-          /*------------------------------  👇️ createMultiRows グルーブ項目読み込み  --*/ 
-          createMultiRows(item).forEach(row => table.appendChild(row));
-        }
-      });
+    // JSON読み込み（1回だけ）
+    const data = await loadJSON("data_tbl");
 
-    return table;
+    // キーの数だけテーブル生成
+    keys.forEach(key => {
 
-  }
-  
-  // 📌 STEP 3：親トグルが開いたらテーブルを生成する
-  document.querySelectorAll('details[data-key1]').forEach(parent => {
+      // 対応する子トグルの描画先（scro_box）
+      const box = document.getElementById(key);
+      if (!box) return;
 
-    parent.addEventListener('toggle', async () => {
+      // 毎回生成するので、まず中身を消す（安全）
+      box.innerHTML = "";
 
-      if (!parent.open) return;
+      // JSONから rows を取得
+      const rows = data[key].rows;
 
-      // 汎用変数名（トモさん案）
-      const tbl_Data1 = parent.dataset.key1;
-      const tbl_Data2 = parent.dataset.key2;
+      // 新しいテーブルを作成
+      const table = document.createElement("table");
 
-      // JSON読み込み（汎用ファイル名）STEP1で読み込んだやつ
-      const json = await loadJSON('./data_tbl.json');
-
-      // --- 1つ目のテーブル ---
-      if (tbl_Data1) {
-        const data1 = json[tbl_Data1];
-        const area1 = document.querySelector(`#${tbl_Data1}`);
-        if (data1 && area1) {
-          const table1 = buildTable(data1);
-          area1.replaceChildren(table1);
-        }
-      }
-
-      // --- 2つ目のテーブル ---
-      if (tbl_Data2) {
-        const area2 = document.querySelector(`#${tbl_Data2}`);
-        const data2 = json[tbl_Data2];
-        if (data2 && area2) {
-          const table2 = buildTable(data2);
-          area2.replaceChildren(table2);
-        }
-      }
-
-    });
-  });
-
-    // COBOLのパフォームの中身的な感じSTEP2で呼び出す
-    /*------------------------------  👇️ createSingleRow シングル項目読み込み  --*/
-    function createSingleRow(item) {
-      const tr = document.createElement("tr");
-
-      // --- th の生成 ---
-      const th = document.createElement("th");
-      th.innerHTML = `${item.icon}<br>${item.label}`;
-
-      // th にクラスがあれば付与
-      if (item.class?.th) {
-        th.classList.add(item.class.th);
-      }
-
-      tr.appendChild(th);
-
-      // --- td の生成 ---
-      const td = document.createElement("td");
-      td.innerHTML = item.value;
-
-      // colspan があれば設定（なければ1）
-      td.colSpan = item.colspan ?? 1;
-
-      // td にクラスがあれば付与
-      if (item.class?.td) {
-        td.classList.add(item.class.td);
-      }
-
-      tr.appendChild(td);
-
-      return tr;
-    }
-
-  /*------------------------------  👇️ createGroupRows グループ項目読み込み  --*/ 
-  function createGroupRows(item) {
-    const rows = [];
-
-    item.children.forEach((child, index) => {
-      const tr = document.createElement("tr");
-
-      /*-----------------------------------------
-        親 th（左端） → 最初の行だけ出す
-      -----------------------------------------*/
-      if (index === 0) {
-        const thParent = document.createElement("th");
-        thParent.innerHTML = `${item.icon}<br>${item.label}`;
-        thParent.rowSpan = item.rowspan;
-
-        if (item.class?.th) {
-          thParent.classList.add(item.class.th);
-        }
-
-        tr.appendChild(thParent);
-      }
-
-      /*-----------------------------------------
-        子 th（中央） → 毎行出す
-      -----------------------------------------*/
-      const thChild = document.createElement("th");
-      thChild.innerHTML = `${child.icon}<br>${child.label ?? ""}`;
-
-      if (child.class?.th) {
-        thChild.classList.add(child.class.th);
-      }
-
-      tr.appendChild(thChild);
-
-      /*-----------------------------------------
-        ★ 子 td（右端）
-        - mergeTd = true → 最初の行だけ出す（統合）
-        - mergeTd = false → 毎行出す（統合しない）
-      -----------------------------------------*/
-      if (item.mergeTd) {
-        // 統合する group → td は最初の行だけ
-        if (index === 0) {
-          const td = document.createElement("td");
-          td.innerHTML = child.value;
-          td.colSpan = child.colspan ?? 1;
-          td.rowSpan = item.rowspan;
-
-          if (child.class?.td) {
-            td.classList.add(child.class.td);
-          }
-
-          tr.appendChild(td);
-        }
-      } else {
-        // 統合しない group → 毎行 td を出す
-        const td = document.createElement("td");
-        td.innerHTML = child.value;
-        td.colSpan = child.colspan ?? 1;
-
-        if (child.class?.td) {
-          td.classList.add(child.class.td);
-        }
-
-        tr.appendChild(td);
-      }
-
-      rows.push(tr);
-    });
-
-    return rows;
-  }
-
-  /*------------------------------  👇️ createMultiRows 複数グループ項目読み込み  --*/
-  function createMultiRows(item) {
-    const rows = [];
-
-    item.groups.forEach((group, groupIndex) => {
-      group.values.forEach((value, valueIndex) => {
+      // rows → tr
+      rows.forEach(row => {
         const tr = document.createElement("tr");
 
-        // 親 th（左端） → 最初の行だけ
-        if (groupIndex === 0 && valueIndex === 0) {
-          const thParent = document.createElement("th");
-          thParent.innerHTML = `${item.icon}<br>${item.label}`;
-          thParent.rowSpan = item.rowspan;
-          if (item.class?.th) thParent.classList.add(item.class.th);
-          tr.appendChild(thParent);
-        }
+        // cells → td/th
+        row.cells.forEach(cell => {
+          const el = document.createElement(cell.type);
 
-        // group th（中央） → 各 group の最初の行だけ
-        if (valueIndex === 0) {
-          const thGroup = document.createElement("th");
-          thGroup.innerHTML = `${group.icon}<br>${group.label}`;
-          thGroup.rowSpan = group.rowspan;
-          if (group.class?.th) thGroup.classList.add(group.class.th);
-          tr.appendChild(thGroup);
-        }
+          el.rowSpan = cell.rowspan;
+          el.colSpan = cell.colspan;
 
-        // values（右端） → 毎行出す
-        const td = document.createElement("td");
-        td.innerHTML = value.value;
-        td.colSpan = value.colspan ?? 1;
-        if (value.class?.td) td.classList.add(value.class.td);
-        tr.appendChild(td);
-        rows.push(tr);
+          if (cell.class) el.classList.add(cell.class);
+
+          el.innerHTML = cell.value;
+
+          tr.appendChild(el);
+        });
+
+        table.appendChild(tr);
       });
+
+      // 子トグルの scro_box に追加
+      box.appendChild(table);
     });
 
-      return rows;
-  }
+  });
+});
+
   // テーブル作成処理 👆️
 
   // 👇️ 左右ボタン判定

@@ -3,2646 +3,1763 @@
 
       "meta"   : {
       "comment": "------------------------------  👇️ 🥬芽キャベツさん VEGE INFO",
-      "updated": "2024-08-25"
-    },
+      "updated": "2024-08-25"},
+  
+      "rows":[
 
-    "items":[
-      {
-        "type"   : "single",
-        "icon"   : "👨‍👦‍👦","label": "FAM",
-        "value"  : "アブラナ科",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "👨‍👦‍👦<br>FAM"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "アブラナ科"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "📅","label": "SEAS",
-        "value"  : "春／秋",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "📅<br>SEAS"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "春／秋"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌡️",
-        "label"  : "TEMP",
-        "value"  : "15-25℃",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌡️<br>TEMP"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "15-25℃"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "📐",
-        "label"   : "SIZE",
-        "rowspan" : 2,
-        "class"   : { "th": null },
-        "children": [
-          {
-            "icon" : "🥬",
-            "label": "FRUIT",
-            "value": "15-20cm",
-            "class": { "th": "th2a", "td": null }
-          },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "📐<br>SIZE"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "🥬<br>FRUIT"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "約3cm"}]},
 
-          {
-            "icon" : "🍃",
-            "label": "PLANT",
-            "value": "10-15cm",
-            "class": { "th": "th2a", "td": null }
-         }
-        ]
-      },
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "🌱<br>PLANT"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "50-70cm"}]},
+  
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🧬<br>pH"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "弱酸性-中性 <br>(6.5-7.5)"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🧬",
-        "label"  : "(pH)",
-        "value"  : "弱酸性-中性 (6.5-7.5)",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌞<br>SUN"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "やや強めに"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌞",
-        "label"  : "SUN",
-        "value"  : "やや強めに",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🚿<br>H2O"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "土が乾いたら多めに <br>(加湿NG)"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🚿",
-        "label"  : "H2O",
-        "value"  : "土が乾いたら多めに (加湿NG)",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🍽️<br>FERT"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "🧃<br>BASE"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+            "value": "少なめ"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🍽️","label": "FERT",
-        "rowspan" : 2,
-        "class"   : { "th": null },
-        "children": [
-          {
-            "icon"   : "🧃","label": "BASE",
-            "value"  : "少なめ",
-            "class"  : { "th": "th2b", "td": null },
-            "colspan": 2
-          },
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "🧪<br>POST"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "定期的"}]},
 
-          {
-            "icon"   : "🧪",
-            "label"  : "POST",
-            "value"  : "定期的",
-            "class"  : { "th": "th2b", "td": null },
-            "colspan": 2
-          }
-        ]
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💖🤏<br>HARV"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>種から</span>：100-120日</li><li><span>苗から</span>：60-70日</li></ul>"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "💖🤏",
-        "label"  : "HARV",
-        "value"  : "種植えから60-70日／下から外側の芽を摘む",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🔄🤏<br>REGW"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "不可<br>(下から順に長期間収穫できる)"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🔄🤏",
-        "label"  : "REGW",
-        "value"  : "可能<br>中心から新芽が出る",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 8, "colspan": 1, "class": "",
+          "value"    : "📊<br>NUTR:<br>COMP"},
+          { "type"   : "th", "rowspan": 4, "colspan": 1, "class": "th2a",
+            "value"  : "🥬<br>FRUIT"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "VITAMIN_B9"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "VITAMIN_C"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "VITAMIN_K"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "VITAMIN_U"}]},
 
-      {
-        "type"   : "multi",
-        "icon"   : "📊",
-        "label"  : "NUTR:<br>COMP",
-        "rowspan": 8,
-        "mergeTd": false,
-        "class"  : { "th": null },
-        "groups" : [
+        { "cells":[
+          { "type"   : "th", "rowspan": 4, "colspan": 1, "class": "th2a",
+            "value"   : "🍃<br>LEAF"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2b",
+              "value": "VITAMIN_A"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2b",
+              "value": "LUTEIN"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2b",
+              "value": "MINERALS"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2b",
+              "value": "FIBER"}]},
 
-          {
-            "icon"   : "🥬","label": "PLANT",
-            "rowspan": 4,
-            "class"  : { "th": "th2a" },
-            "values" : [
-              { "value": "VITAMIN B9", "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "VITAMIN C",  "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "VITAMIN K",  "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "VITAMIN U",  "class": { "td": "td2a" }, "colspan": 2 }
-            ]
-          },
-
-          {
-            "icon"   : "🍃",
-            "label"  : "LEAF",
-            "rowspan": 4,
-            "class"  : { "th": "th2a" },
-            "values" : [
-              { "value": "VITAMIN A", "class": { "td": "td2b" }, "colspan": 2 },
-              { "value": "LUTEIN",    "class": { "td": "td2b" }, "colspan": 2 },
-              { "value": "MINERALS",  "class": { "td": "td2b" }, "colspan": 2 },
-              { "value": "FIBER",     "class": { "td": "td2b" }, "colspan": 2 }
-            ]
-          }
-        ]
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💡","label": "etc",
-        "value"  : "<ul><li>芽キャベツは「栄養喰らい」と呼ばれるくらい栄養が必要だそうだ。</ul></li>",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      }
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "📒<br>etc"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>・</span>葉っぱも栄養豊富<li><span>・</span>「栄養喰らい」と呼ばれるくらい栄養が必要だそうだ。</ul></li>"}]}
     ]
   },
 
   "b_sprout_zone": {
 
-      "meta"   : {
-      "comment": "------------------------------  👇️ 🥬芽キャベツさん ZONE INFO",
-      "updated": "2024-08-25"
-    },
+    "meta"   : {
+    "comment": "------------------------------  👇️ 🥬芽キャベツさん ZONE INFO",
+    "updated": "2024-08-25"},
 
-    "items": [
+    "rows": [
 
-      {
-        "type"   : "single",
-        "icon"   : "📍",
-        "label"  : "LOC",
-        "value"  : "ベランダ床",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "📍<br>LOC"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "ベランダ床"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🔳",
-        "label"  : "POT",
-        "value"  : "ワイヤネット プランタ",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🔳<br>POT"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "ワイヤネット プランタ"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌞⌚",
-        "label"  : "SUN",
-        "value"  : "14:30-16:30",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌞⌚<br>SUN"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value":   "14:30-16:30"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "➕️",
-        "label"   : "OPT",
-        "rowspan" : 2,
-        "mergeTd" : true,
-        "children": [
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "➕️<br>OPT"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "TUAL"},
+            { "type" : "td", "rowspan": 2, "colspan": 1, "class": "",
+              "value": "酸素を土中へ供給する"}]},
 
-          {
-            "icon"   : "TUAL",
-            "label"  : "",
-            "value"  : "土中へ酸素を供給する補助ツール",
-            "class"  : { "th": "th2a", "td": null}
-          },
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "TUAH"}]},
 
-          {
-            "icon"   : "TUAH",
-            "label"  : "",
-            "value"  : "",
-            "class"  : { "th": "th2a", "td": null }
-          }
-        ]
-      },
+        { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🟫📊<br>SOIL"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "7"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "COCOブリック"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🟫📊",
-        "label"   : "SOIL",
-        "rowspan" : 2,
-        "children": [
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "3"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "バーミキュライト"}]},
 
-          {
-            "icon" : "7",
-            "label": "",
-            "value": "COCOブリック",
-            "class": { "th": "th2b" }
-          },
+      { "cells":[
+        { "type"     : "th", "rowspan": 4, "colspan": 1, "class": "",
+          "value"    : "🧪POST-COMP:<br>Mix<br>💧1L"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1ml"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "HYPONeX (1000倍希釈)"}]},
 
-          {
-            "icon" : "3",
-            "label": "",
-            "value": "バーミキュライト",
-            "class": { "th": "th2b" }
-          }
-        ]
-      },
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1ml"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "お酢 (1000倍希釈)"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🧪POST-COMP:",
-        "label"   : "Mix 💧1L",
-        "rowspan" : 4,
-        "children": [
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1g弱"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "ブドウ糖 (1500倍希釈)"}]},
 
-          {
-            "icon" : "1ml",
-            "label": "",
-            "value": "HYPONeX (1000倍希釈)",
-            "class": { "th": "th2a" }
-          },
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "💧1L"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "自家製ヨモギ水"}]},
 
-          {
-            "icon" : "1ml",
-            "label": "",
-            "value": "お酢 (1000倍希釈)",
-            "class": { "th": "th2a" }
-          },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🧪📅<br>FREQ"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "初期"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "芽が育つまでは水のみ"}]},
 
-          {
-            "icon" : "1g弱",
-            "label": "",
-            "value": "ブドウ糖 (1500倍希釈)",
-            "class": { "th": "th2a" }
-          },
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "普段"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "🧪を週1回"}]},
 
-          {
-            "icon" : "💧1L",
-            "label": "",
-            "value": "自家製ヨモギ水（市販のヨモギエキスは希釈必要）",
-            "class": { "th": "th2a" }
-          }
-        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"    : "🧪➕️<br>ADD"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "活性剤"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "苗に元気がないときに"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🧪📅",
-        "label"   : "FREQ",
-        "rowspan" : 2,
-        "children": [
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💗🦠<br>PALS"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>🦠</span>納豆菌(バチルス菌)</li><li><span>・</span>土壌改善</li><li><span>・</span>カビ・雑菌予防</li></ul>"}]},
 
-          {
-            "icon"   : "初期",
-            "label": "",
-            "value"  : "芽が育つまでは水のみ",
-            "class"  : { "th": "th2b" }
-          },
-
-          {
-            "icon" : "普段",
-            "label": "",
-            "value": "🧪を週1回",
-            "class": { "th": "th2b" }
-          }
-        ]
-      },
-
-      {
-        "type"    : "group",
-        "icon"    : "🧪➕️",
-        "label"   : "ADD",
-        "rowspan" : 1,
-        "children": [
-
-          {
-            "icon"   : "活性剤",
-            "label": "",
-            "value"  : "苗に元気がないときは与えてみる",
-            "class"  : { "th": "th2a" }
-          }
-        ]
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💗🦠",
-        "label"  : "PALS",
-        "value"  : "<ul><li>🦠納豆菌(バチルス菌)</li><li>・土壌改善</li><li>・カビ・雑菌予防</li></ul>",
-        "colspan": 2
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💡",
-        "label"  : "etc",
-        "value"  : "-",
-        "colspan": 2
-      }
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💡<br>etc"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "-"}]}
     ]
   },
 
   "carrots_info": {
 
-      "meta"   : {
-      "comment": "------------------------------  👇️ 🥕五寸人参さん VEGE INFO",
-      "updated": "2024-08-25"
-    },
+    "meta"   : {
+    "comment": "------------------------------  👇  🥕五寸人参さん VEGE INFO",
+    "updated": "2024-08-25"},
 
-    "items":[
-      {
-        "type"   : "single",
-        "icon"   : "👨‍👦‍👦","label": "FAM",
-        "value"  : "セリ科",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+  "rows": [
 
-      {
-        "type"   : "single",
-        "icon"   : "📅","label": "SEAS",
-        "value"  : "春／秋",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "👨‍👦‍👦<br>FAM"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "セリ科"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌡️",
-        "label"  : "TEMP",
-        "value"  : "15-25℃",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "📅<br>SEAS"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "春／秋"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "📐",
-        "label"   : "SIZE",
-        "rowspan" : 2,
-        "class"   : { "th": null },
-        "children": [
-          {
-            "icon" : "🥕",
-            "label": "ROOT",
-            "value": "15-20cm",
-            "class": { "th": "th2a", "td": null }
-          },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌡️<br>TEMP"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "15-25℃"}]},
 
-          {
-            "icon" : "🍃",
-            "label": "LEAF",
-            "value": "20-25cm",
-            "class": { "th": "th2a", "td": null }
-         }
-        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "📐<br>SIZE"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "🥕<br>ROOT"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "15-20cm"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🧬",
-        "label"  : "(pH)",
-        "value"  : "弱酸性-中性<br>(5.5-6.5)",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "🍃<br>LEAF"},
+            { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+              "value": "20-25cm"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌞",
-        "label"  : "SUN",
-        "value"  : "普通に",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🧬<br>(pH)"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "弱酸性-中性<br>(5.5-6.5)"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🚿",
-        "label"  : "H2O",
-        "value"  : "土が乾いたら控えめに<br>(加湿NG)",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌞<br>SUN"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "普通に"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🍽️","label": "FERT",
-        "rowspan" : 2,
-        "class"   : { "th": null },
-        "children": [
-          {
-            "icon"   : "🧃","label": "BASE",
-            "value"  : "少なめ",
-            "class"  : { "th": "th2b", "td": null },
-            "colspan": 2
-          },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🚿<br>H2O"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "土が乾いたら控えめに<br>(加湿NG)"}]},
 
-          {
-            "icon"   : "🧪",
-            "label"  : "POST",
-            "value"  : "定期的",
-            "class"  : { "th": "th2b", "td": null },
-            "colspan": 2
-          }
-        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🍽️<br>FERT"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "🧃<br>BASE"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "少なめ"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "💖🤏",
-        "label"  : "HARV",
-        "value"  : "種植えから70-90日",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "🧪<br>POST"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "定期的"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🔄🤏",
-        "label"  : "REGW",
-        "value"  : "不可<br>(葉物として育てるなら可能)",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💖🤏<br>HARV"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>種から</span>：70-90日</li></ul>"}]},
 
-      {
-        "type"   : "multi",
-        "icon"   : "📊",
-        "label"  : "NUTR:<br>COMP",
-        "rowspan": 8,
-        "mergeTd": false,
-        "class"  : { "th": null },
-        "groups" : [
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🔄🤏<br>REGW"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "不可<br>(葉物として育てるなら可能)"}]},
 
-          {
-            "icon"   : "🥕","label": "ROOT",
-            "rowspan": 3,
-            "class"  : { "th": "th2a" },
-            "values" : [
-              { "value": "VITAMIN A",       "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "POTASSIUM(ｶﾘｳﾑ)", "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "FIBER",           "class": { "td": "td2a" }, "colspan": 2 }
-            ]
-          },
+      { "cells":[
+        { "type"     : "th", "rowspan": 8, "colspan": 1, "class": "",
+          "value"    : "📊<br>NUTR:<br>COMP"},
+          { "type"   : "th", "rowspan": 3, "colspan": 1, "class": "th2a",
+            "value"  : "🥕<br>ROOT"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "VITAMIN_A"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "POTASSIUM(ｶﾘｳﾑ)"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "FIBER"}]},
 
-          {
-            "icon"   : "🌿",
-            "label"  : "LEAF",
-            "rowspan": 5,
-            "class"  : { "th": "th2a" },
-            "values" : [
-              { "value": "VITAMIN A",        "class": { "td": "td2b" }, "colspan": 2 },
-              { "value": "VITAMIN C(🥕x4)", "class": { "td": "td2b" }, "colspan": 2 },
-              { "value": "IRON(鉄)",         "class": { "td": "td2b" }, "colspan": 2 },
-              { "value": "CALCIUM",          "class": { "td": "td2b" }, "colspan": 2 },
-              { "value": "FIBER",            "class": { "td": "td2b" }, "colspan": 2 }
-            ]
-          }
-        ]
-      },
+        { "cells":[
+          { "type"   : "th", "rowspan": 5, "colspan": 1, "class": "th2a",
+            "value"  : "🌿<br>LEAF"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2b",
+              "value": "VITAMIN_A"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2b",
+              "value": "VITAMIN_C(🥕x4)"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2b",
+              "value": "CALCIUM"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2b",
+              "value": "IRON(鉄)"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2b",
+              "value": "FIBER"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "💡","label": "etc",
-        "value"  : "<ul><li><span>・</span><span>葉物として育てるなら長期間収穫できる</span></li><li><span>・</span><span>葉はほうれん草なみに鉄分が豊富</span></li></ul>",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      }
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💡<br>etc"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>・</span><span>葉物として育てるなら長期間収穫できる</span></li><li><span>・</span><span>葉はほうれん草なみに鉄分が豊富</span></li></ul>"}]}
     ]
   },
 
   "carrots_zone": {
 
-      "meta"   : {
-      "comment": "------------------------------  👇 🥕五寸人参さん ZONE INFO",
-      "updated": "2024-08-25"
-    },
+    "meta"   : {
+    "comment": "------------------------------  👇 🥕五寸人参さん ZONE INFO",
+    "updated": "2024-08-25"},
 
-    "items": [
+    "rows": [
 
-      {
-        "type"   : "single",
-        "icon"   : "📍",
-        "label"  : "LOC",
-        "value"  : "ベランダ床",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "📍<br>LOC"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "ベランダ床"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🔳",
-        "label"  : "POT",
-        "value"  : "パック プランタ",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🔳<br>POT"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "パックプランタ"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌞⌚",
-        "label"  : "SUN",
-        "value"  : "15:30-17:00",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌞⌚<br>SUN"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "15:30-17:00"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "➕️",
-        "label"   : "OPT",
-        "rowspan" : 1,
-        "mergeTd" : false,
-        "children": [
+      { "cells":[
+        { "type"     : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"    : "➕️<br>OPT"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "TUAL"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "土中へ酸素を供給する"}]},
 
-          {
-            "icon"   : "TUAL",
-            "label"  : "",
-            "value"  : "土中へ酸素を供給する補助ツール",
-            "class"  : { "th": "th2a", "td": null}
-          }
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🟫📊<br>SOIL"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "7"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "COCOブリック"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "3"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "バーミキュライト"}]},
 
-        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 4, "colspan": 1, "class": "",
+          "value"    : "🧪POST-COMP:<br>Mix<br>💧1L"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1ml"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "HYPONeX (1000倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1ml"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "お酢 (1000倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1g弱"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "ブドウ糖(1500倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "💧1L"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "自家製ヨモギ水"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🟫📊",
-        "label"   : "SOIL",
-        "rowspan" : 2,
-        "children": [
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🧪📅<br>FREQ"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "初期"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "芽が育つまでは水のみ"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "普段"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "🧪を週1回"}]},
 
-          {
-            "icon" : "7",
-            "label": "",
-            "value": "COCOブリック",
-            "class": { "th": "th2b" }
-          },
+      { "cells":[
+        { "type"     : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"    : "🧪➕️<br>ADD"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "活性剤"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "苗に元気がないときに"}]},
 
-          {
-            "icon" : "3",
-            "label": "",
-            "value": "バーミキュライト",
-            "class": { "th": "th2b" }
-          }
-        ]
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💗🦠<br>PALS"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>🦠</span>納豆菌(バチルス菌)</li><li><span>・</span>土壌改善</li><li><span>・</span>カビ・雑菌予防</li></ul>"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🧪POST-COMP:",
-        "label"   : "Mix 💧1L",
-        "rowspan" : 4,
-        "children": [
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💡<br>etc"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "-"}]}
 
-          {
-            "icon" : "1ml",
-            "label": "",
-            "value": "HYPONeX (1000倍希釈)",
-            "class": { "th": "th2a" }
-          },
-
-          {
-            "icon" : "1ml",
-            "label": "",
-            "value": "お酢 (1000倍希釈)",
-            "class": { "th": "th2a" }
-          },
-
-          {
-            "icon" : "1g弱",
-            "label": "",
-            "value": "ブドウ糖 (1500倍希釈)",
-            "class": { "th": "th2a" }
-          },
-
-          {
-            "icon" : "💧1L",
-            "label": "",
-            "value": "自家製ヨモギ水（市販のヨモギエキスは希釈必要）",
-            "class": { "th": "th2a" }
-          }
-        ]
-      },
-
-      {
-        "type"    : "group",
-        "icon"    : "🧪📅",
-        "label"   : "FREQ",
-        "rowspan" : 2,
-        "children": [
-
-          {
-            "icon"   : "初期",
-            "label": "",
-            "value"  : "芽が育つまでは水のみ",
-            "class"  : { "th": "th2b" }
-          },
-
-          {
-            "icon" : "普段",
-            "label": "",
-            "value": "🧪を週1回",
-            "class": { "th": "th2b" }
-          }
-        ]
-      },
-
-      {
-        "type"    : "group",
-        "icon"    : "🧪➕️",
-        "label"   : "ADD",
-        "rowspan" : 1,
-        "children": [
-
-          {
-            "icon"   : "活性剤",
-            "label": "",
-            "value"  : "苗に元気がないときは与えてみる",
-            "class"  : { "th": "th2a" }
-          }
-        ]
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💗🦠",
-        "label"  : "PALS",
-        "value"  : "<ul><li>🦠納豆菌(バチルス菌)</li><li>・土壌改善</li><li>・カビ・雑菌予防</li></ul>",
-        "colspan": 2
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💡",
-        "label"  : "etc",
-        "value"  : "-",
-        "colspan": 2
-      }
     ]
   },
 
   "m_tomatoes_info": {
 
-      "meta"   : {
-      "comment": "------------------------------  👇 🍅ミニ(鈴なり)トマトさん VEGE INFO",
-      "updated": "2024-08-25"
-    },
+    "meta"   : {
+    "comment": "------------------------------  👇 🍅ミニ(鈴なり)トマトさん VEGE INFO",
+    "updated": "2024-08-25"},
 
-    "items":[
-      {
-        "type"   : "single",
-        "icon"   : "👨‍👦‍👦","label": "FAM",
-        "value"  : "ナス科",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+    "rows": [
 
-      {
-        "type"   : "single",
-        "icon"   : "📅","label": "SEAS",
-        "value"  : "春",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "👨‍👦‍👦<br>FAM"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "ナス科"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌡️",
-        "label"  : "TEMP",
-        "value"  : "20-30℃",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "📅<br>SEAS"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "春"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "📐",
-        "label"   : "SIZE",
-        "rowspan" : 2,
-        "class"   : { "th": null },
-        "children": [
-          {
-            "icon" : "🍅",
-            "label": "FRUIT",
-            "value": "2-3cm",
-            "class": { "th": "th2a", "td": null }
-          },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌡️<br>TEMP"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "20-30℃"}]},
 
-          {
-            "icon" : "🍃",
-            "label": "PLANT",
-            "value": "50cm-1m",
-            "class": { "th": "th2a", "td": null }
-         }
-        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "📐<br>SIZE"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "🍅<br>FRUIT"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "2-3cm"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "🍃<br>PLANT"},
+            { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+              "value": "50cm-1m"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🧬",
-        "label"  : "(pH)",
-        "value"  : "弱酸性-中性<br>(6.0-6.5)",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🧬<br>(pH)"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "弱酸性-中性<br>(6.0-6.5)"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌞",
-        "label"  : "SUN",
-        "value"  : "強めに",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌞<br>SUN"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "強めに"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🚿",
-        "label"  : "H2O",
-        "value"  : "土が乾いたら控えめに<br>(加湿NG)",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🚿<br>H2O"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "土が乾いたら控えめに<br>(加湿NG)"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🍽️","label": "FERT",
-        "rowspan" : 2,
-        "class"   : { "th": null },
-        "children": [
-          {
-            "icon"   : "🧃","label": "BASE",
-            "value"  : "少なめ",
-            "class"  : { "th": "th2b", "td": null },
-            "colspan": 2
-          },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🍽️<br>FERT"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "🧃<br>BASE"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "少なめ"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "🧪<br>POST"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "定期的"}]},
 
-          {
-            "icon"   : "🧪",
-            "label"  : "POST",
-            "value"  : "定期的",
-            "class"  : { "th": "th2b", "td": null },
-            "colspan": 2
-          }
-        ]
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💖🤏<br>HARV"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>種から</span>：100-120日</li><li><span>苗から</span>：50-60日</li></ul>"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "💖🤏",
-        "label"  : "HARV",
-        "value"  : "種植えから100-120日",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🔄🤏<br>REGW"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "温かい環境なら可能"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🔄🤏",
-        "label"  : "REGW",
-        "value"  : "温かい環境なら可能",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 4, "colspan": 1, "class": "",
+          "value"    : "📊<br>NUTR:<br>COMP"},
+          { "type"   : "th", "rowspan": 4, "colspan": 1, "class": "th2a",
+            "value"  : "🥕<br>ROOT"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "VITAMIN_A"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "VITAMIN_C"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "LYCOPENE"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "POTASSIUM(ｶﾘｳﾑ)"}]},
 
-      {
-        "type"   : "multi",
-        "icon"   : "📊",
-        "label"  : "NUTR:<br>COMP",
-        "rowspan": 4,
-        "mergeTd": false,
-        "class"  : { "th": null },
-        "groups" : [
-
-          {
-            "icon"   : "🍅","label": "FRUIT",
-            "rowspan": 4,
-            "class"  : { "th": "th2a" },
-            "values" : [
-              { "value": "VITAMIN A",       "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "VITAMIN C",       "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "LYCOPENE",        "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "POTASSIUM(ｶﾘｳﾑ)", "class": { "td": "td2a" }, "colspan": 2 }
-            ]
-          }
-        ]
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💡","label": "etc",
-        "value"  : "<ul><li>・本来は多年草</li><li>・容器の大きさに応じたサイズに育つ</li><li>・土2リットルで約20個くらい収穫できる</li><li>・大玉トマトより栄養価は高い</li><li>・振動受粉させる</li></ul>",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      }
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💡<br>etc"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>・</span><span>本来は多年草</span></li><li><span>・</span>振動受粉させる</li><li><span>・</span>大玉トマトより栄養価は高い</li><li><span>・</span>プランターの大きさに応じたサイズに育つ</li></ul>"}]}
     ]
   },
 
   "m_tomatoes_zone": {
 
-      "meta"   : {
-      "comment": "------------------------------  👇 🍅ミニ(鈴なり)トマトさん ZONE INFO",
-      "updated": "2024-08-25"
-    },
+    "meta"   : {
+    "comment": "------------------------------  👇 🍅ミニ(鈴なり)トマトさん ZONE INFO",
+    "updated": "2024-08-25"},
 
-    "items": [
+    "rows": [
 
-      {
-        "type"   : "single",
-        "icon"   : "📍",
-        "label"  : "LOC",
-        "value"  : "ベランダ床",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "📍<br>LOC"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "ベランダ床"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🔳",
-        "label"  : "POT",
-        "value"  : "TLMプランタ",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🔳<br>POT"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "TLMプランタ"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌞⌚",
-        "label"  : "SUN",
-        "value"  : "14:30-17:00",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌞⌚<br>SUN"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "14:30-17:00"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "➕️",
-        "label"   : "OPT",
-        "rowspan" : 1,
-        "children": [
+      { "cells":[
+        { "type"     : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"    : "➕️<br>OPT"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "TUAL"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "土中へ酸素を供給する"}]},
 
-          {
-            "icon"   : "TUAL",
-            "label"  : "",
-            "value"  : "土中へ酸素を供給する補助ツール",
-            "class"  : { "th": "th2a", "td": null}
-          }
-        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🟫📊<br>SOIL"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "7"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "COCOブリック"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "3"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "バーミキュライト"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🟫📊",
-        "label"   : "SOIL",
-        "rowspan" : 2,
-        "children": [
+      { "cells":[
+        { "type"     : "th", "rowspan": 4, "colspan": 1, "class": "",
+          "value"    : "🧪POST-COMP:<br>Mix<br>💧1L"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1ml"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "HYPONeX (1000倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1ml"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "お酢 (1000倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1g弱"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "ブドウ糖(1500倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "💧1L"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "自家製ヨモギ水"}]},
 
-          {
-            "icon" : "7",
-            "label": "",
-            "value": "COCOブリック",
-            "class": { "th": "th2b" }
-          },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🧪📅<br>FREQ"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "初期"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "芽が育つまでは水のみ"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "普段"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "🧪を週1回"}]},
 
-          {
-            "icon" : "3",
-            "label": "",
-            "value": "バーミキュライト",
-            "class": { "th": "th2b" }
-          }
-        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"    : "🧪➕️<br>ADD"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "活性剤"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "苗に元気がないときに"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🧪POST-COMP:",
-        "label"   : "Mix 💧1L",
-        "rowspan" : 4,
-        "children": [
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💗🦠<br>PALS"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>🦠</span>納豆菌(バチルス菌)</li><li><span>・</span>土壌改善</li><li><span>・</span>カビ・雑菌予防</li><li><span>🦠</span>菌根菌</li><li><span>・</span>栄養・水分吸収サポート</li><li><span>・</span>ストレス耐性アップ</li><li><span>・</span>病気抵抗力</li></ul>"}]},
 
-          {
-            "icon" : "1ml",
-            "label": "",
-            "value": "HYPONeX (1000倍希釈)",
-            "class": { "th": "th2a" }
-          },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💡<br>etc"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>・</span>過酷な環境の方が実が育つらしい<li></ul>"}]}
 
-          {
-            "icon" : "1ml",
-            "label": "",
-            "value": "お酢 (1000倍希釈)",
-            "class": { "th": "th2a" }
-          },
-
-          {
-            "icon" : "1g弱",
-            "label": "",
-            "value": "ブドウ糖 (1500倍希釈)",
-            "class": { "th": "th2a" }
-          },
-
-          {
-            "icon" : "💧1L",
-            "label": "",
-            "value": "自家製ヨモギ水（市販のヨモギエキスは希釈必要）",
-            "class": { "th": "th2a" }
-          }
-        ]
-      },
-
-      {
-        "type"    : "group",
-        "icon"    : "🧪📅",
-        "label"   : "FREQ",
-        "rowspan" : 2,
-        "children": [
-
-          {
-            "icon"   : "初期",
-            "label": "",
-            "value"  : "芽が育つまでは水のみ",
-            "class"  : { "th": "th2b" }
-          },
-
-          {
-            "icon" : "普段",
-            "label": "",
-            "value": "🧪を週1回",
-            "class": { "th": "th2b" }
-          }
-        ]
-      },
-
-      {
-        "type"    : "group",
-        "icon"    : "🧪➕️",
-        "label"   : "ADD",
-        "rowspan" : 1,
-        "children": [
-
-          {
-            "icon" : "活性剤",
-            "label": "",
-            "value": "苗に元気がないときは与えてみる",
-            "class": { "th": "th2a" }
-          }
-        ]
-      },
-
-      {
-        "type" : "single",
-        "icon" : "💗🦠",
-        "label": "PALS",
-        "value":
-         "<ul><li>🦠納豆菌(バチルス菌)</li><li>・土壌改善</li><li>・カビ・雑菌予防</li><li>🦠菌根菌</li><li>・栄養・水分吸収サポート</li><li>・ストレス耐性アップ</li><li>・病気抵抗力</li></ul>",
-        "colspan": 2
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💡",
-        "label"  : "etc",
-        "value"  : "過酷な環境の方が実が育つらしい",
-        "colspan": 2
-      }
     ]
   },
+
   "cucumbers_info": {
 
-      "meta"   : {
-      "comment": "------------------------------  👇 🥒キュウリさん VEGE INFO",
-      "updated": "2024-08-25"
-    },
+    "meta"   : {
+    "comment": "------------------------------  👇 🥒キュウリさん VEGE INFO",
+    "updated": "2024-08-25"},
 
-    "items":[
-      {
-        "type"   : "single",
-        "icon"   : "👨‍👦‍👦","label": "FAM",
-        "value"  : "ウリ科",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+    "rows": [
 
-      {
-        "type"   : "single",
-        "icon"   : "📅","label": "SEAS",
-        "value"  : "夏",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "👨‍👦‍👦<br>FAM"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "ウリ科"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌡️",
-        "label"  : "TEMP",
-        "value"  : "25-30℃",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "📅<br>SEAS"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "夏"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "📐",
-        "label"   : "SIZE",
-        "rowspan" : 2,
-        "class"   : { "th": null },
-        "children": [
-          {
-            "icon" : "🥒",
-            "label": "FRUIT",
-            "value": "約20cm",
-            "class": { "th": "th2a", "td": null }
-          },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌡️<br>TEMP"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "25-30℃"}]},
 
-          {
-            "icon" : "🍃",
-            "label": "PLANT",
-            "value": "2m-3m",
-            "class": { "th": "th2a", "td": null }
-         }
-        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "📐<br>SIZE"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "🥒<br>FRUIT"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "約20cm"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "🌱<br>PLANT"},
+            { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+              "value": "2m-3m"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🧬",
-        "label"  : "(pH)",
-        "value"  : "弱酸性-中性<br>(6.0-6.5)",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🧬<br>(pH)"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "弱酸性-中性<br>(6.0-6.5)"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌞",
-        "label"  : "SUN",
-        "value"  : "やや強めに",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌞<br>SUN"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "やや強めに"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🚿",
-        "label"  : "H2O",
-        "value"  : "土が乾いたらたっぷり",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🚿<br>H2O"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "土が乾いたらたっぷり"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🍽️","label": "FERT",
-        "rowspan" : 2,
-        "class"   : { "th": null },
-        "children": [
-          {
-            "icon"   : "🧃","label": "BASE",
-            "value"  : "普通に",
-            "class"  : { "th": "th2b", "td": null },
-            "colspan": 2
-          },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🍽️<br>FERT"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "🧃<br>BASE"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "普通に"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "🧪<br>POST"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "定期的"}]},
 
-          {
-            "icon"   : "🧪",
-            "label"  : "POST",
-            "value"  : "定期的",
-            "class"  : { "th": "th2b", "td": null },
-            "colspan": 2
-          }
-        ]
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💖🤏<br>HARV"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>種から</span>：60-70日</li><li><span>苗から</span>：30-40日</li></ul>"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "💖🤏",
-        "label"  : "HARV",
-        "value"  : "種植えから60-70日",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🔄🤏<br>REGW"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "不可"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🔄🤏",
-        "label"  : "REGW",
-        "value"  : "不可",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 3, "colspan": 1, "class": "",
+          "value"    : "📊<br>NUTR:<br>COMP"},
+          { "type"   : "th", "rowspan": 3, "colspan": 1, "class": "th2a",
+            "value"  : "🥒<br>FRUIT"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "VITAMIN_A"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "VITAMIN_K"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "POTASSIUM(ｶﾘｳﾑ)"}]},
 
-      {
-        "type"   : "multi",
-        "icon"   : "📊",
-        "label"  : "NUTR:<br>COMP",
-        "rowspan": 4,
-        "mergeTd": false,
-        "class"  : { "th": null },
-        "groups" : [
-
-          {
-            "icon"   : "🥒","label": "FRUIT",
-            "rowspan": 3,
-            "class"  : { "th": "th2a" },
-            "values" : [
-              { "value": "VITAMIN C",       "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "VITAMIN K",       "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "POTASSIUM(ｶﾘｳﾑ)", "class": { "td": "td2a" }, "colspan": 2 }
-            ]
-          }
-        ]
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💡","label": "etc",
-        "value"  : "<ul><li>・若採りが長期収穫のコツ、こまめに収穫しないと、株の体力を奪う</li></ul>",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      }
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💡<br>etc"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>・</span>若採りが長期収穫のコツ</li><li><span>・</span>花が咲いてから7〜10日で収穫</li><li><span>・</span>こまめに収穫しないと、株の体力を奪う</li></ul>"}]}
     ]
   },
 
   "cucumbers_zone": {
 
-      "meta"   : {
-      "comment": "------------------------------  👇 🥒キュウリさん ZONE INFO",
-      "updated": "2024-08-25"
-    },
+    "meta"   : {
+    "comment": "------------------------------  👇 🥒キュウリさん ZONE INFO",
+    "updated": "2024-08-25"},
 
-    "items": [
+    "rows": [
 
-      {
-        "type"   : "single",
-        "icon"   : "📍",
-        "label"  : "LOC",
-        "value"  : "ベランダ床",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "📍<br>LOC"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "ベランダ床"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🔳",
-        "label"  : "POT",
-        "value"  : "検討中",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🔳<br>POT"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "検討中"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌞⌚",
-        "label"  : "SUN",
-        "value"  : "14:30-17:00",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌞⌚<br>SUN"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "14:30-17:00"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "➕️",
-        "label"   : "OPT",
-        "rowspan" : 1,
-        "mergeTd" : false,
-        "children": [
+      { "cells":[
+        { "type"     : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"    : "➕️<br>OPT"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "TUAL"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "土中へ酸素を供給する"}]},
 
-          {
-            "icon"   : "TUAL",
-            "label"  : "",
-            "value"  : "検討中",
-            "class"  : { "th": "th2a", "td": null}
-          }
-        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🟫📊<br>SOIL"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "7"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "COCOブリック"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "3"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "バーミキュライト"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🟫📊",
-        "label"   : "SOIL",
-        "rowspan" : 2,
-        "children": [
+      { "cells":[
+        { "type"     : "th", "rowspan": 4, "colspan": 1, "class": "",
+          "value"    : "🧪POST-COMP:<br>Mix<br>💧1L"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1ml"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "HYPONeX (1000倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1ml"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "お酢 (1000倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1g弱"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "ブドウ糖(1500倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "💧1L"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "自家製ヨモギ水"}]},
 
-          {
-            "icon" : "7",
-            "label": "",
-            "value": "COCOブリック",
-            "class": { "th": "th2b" }
-          },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🧪📅<br>FREQ"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "初期"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "芽が育つまでは水のみ"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "普段"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "🧪を週1回"}]},
 
-          {
-            "icon" : "3",
-            "label": "",
-            "value": "バーミキュライト",
-            "class": { "th": "th2b" }
-          }
-        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"    : "🧪➕️<br>ADD"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "活性剤"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "苗に元気がないときに"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🧪POST-COMP:",
-        "label"   : "Mix 💧1L",
-        "rowspan" : 4,
-        "children": [
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💗🦠<br>PALS"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>🦠</span>納豆菌(バチルス菌)</li><li><span>・</span>土壌改善</li><li><span>・</span>カビ・雑菌予防</li><li><span>🦠</span>菌根菌</li><li><span>・</span>栄養・水分吸収サポート</li><li><span>・</span>ストレス耐性アップ</li><li><span>・</span>病気抵抗力</li></ul>"}]},
 
-          {
-            "icon" : "1ml",
-            "label": "",
-            "value": "HYPONeX (1000倍希釈)",
-            "class": { "th": "th2a" }
-          },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💡<br>etc"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>・</span>-<li></ul>"}]}
 
-          {
-            "icon" : "1ml",
-            "label": "",
-            "value": "お酢 (1000倍希釈)",
-            "class": { "th": "th2a" }
-          },
-
-          {
-            "icon" : "1g弱",
-            "label": "",
-            "value": "ブドウ糖 (1500倍希釈)",
-            "class": { "th": "th2a" }
-          },
-
-          {
-            "icon" : "💧1L",
-            "label": "",
-            "value": "自家製ヨモギ水（市販のヨモギエキスは希釈必要）",
-            "class": { "th": "th2a" }
-          }
-        ]
-      },
-
-      {
-        "type"    : "group",
-        "icon"    : "🧪📅",
-        "label"   : "FREQ",
-        "rowspan" : 2,
-        "children": [
-
-          {
-            "icon"   : "初期",
-            "label": "",
-            "value"  : "芽が育つまでは水のみ",
-            "class"  : { "th": "th2b" }
-          },
-
-          {
-            "icon" : "普段",
-            "label": "",
-            "value": "🧪を週1回",
-            "class": { "th": "th2b" }
-          }
-        ]
-      },
-
-      {
-        "type"    : "group",
-        "icon"    : "🧪➕️",
-        "label"   : "ADD",
-        "rowspan" : 1,
-        "children": [
-
-          {
-            "icon"   : "活性剤",
-            "label": "",
-            "value"  : "苗に元気がないときは与えてみる",
-            "class"  : { "th": "th2a" }
-          }
-        ]
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💗🦠",
-        "label"  : "PALS",
-        "value"  : "<ul><li>-</ul>",
-        "colspan": 2
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💡",
-        "label"  : "etc",
-        "value"  : "-",
-        "colspan": 2
-      }
     ]
   },
 
   "glycine_info": {
 
-      "meta"   : {
-      "comment": "------------------------------  👇 🌱枝豆さん VEGE INFO",
-      "updated": "2024-08-25"
-    },
+    "meta"   : {
+    "comment": "------------------------------  👇 🌱枝豆さん VEGE INFO",
+    "updated": "2024-08-25"},
 
-    "items":[
-      {
-        "type"   : "single",
-        "icon"   : "👨‍👦‍👦","label": "FAM",
-        "value"  : "マメ科",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+    "rows": [
 
-      {
-        "type"   : "single",
-        "icon"   : "📅","label": "SEAS",
-        "value"  : "夏",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "👨‍👦‍👦<br>FAM"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "マメ科"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌡️",
-        "label"  : "TEMP",
-        "value"  : "25-30℃",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "📅<br>SEAS"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "夏"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "📐",
-        "label"   : "SIZE",
-        "rowspan" : 2,
-        "class"   : { "th": null },
-        "children": [
-          {
-            "icon" : "🍃",
-            "label": "FRUIT",
-            "value": "5-6cm",
-            "class": { "th": "th2a", "td": null }
-          },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌡️<br>TEMP"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "25-30℃"}]},
 
-          {
-            "icon" : "🌱",
-            "label": "PLANT",
-            "value": "50-70cm",
-            "class": { "th": "th2a", "td": null }
-         }
-        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "📐<br>SIZE"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "🍃<br>FRUIT"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "約6cm"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "🌱<br>PLANT"},
+            { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+              "value": "50-70cm"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🧬",
-        "label"  : "(pH)",
-        "value"  : "弱酸性-中性<br>(6.0-6.5)",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🧬<br>(pH)"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "弱酸性-中性<br>(6.0-6.5)"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌞",
-        "label"  : "SUN",
-        "value"  : "やや強めに",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌞<br>SUN"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "やや強めに"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🚿",
-        "label"  : "H2O",
-        "value"  : "土が乾いたらたっぷり",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🚿<br>H2O"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "土が乾いたらたっぷり"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🍽️","label": "FERT",
-        "rowspan" : 2,
-        "class"   : { "th": null },
-        "children": [
-          {
-            "icon"   : "🧃","label": "BASE",
-            "value"  : "少なめ",
-            "class"  : { "th": "th2b", "td": null },
-            "colspan": 2
-          },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🍽️<br>FERT"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "🧃<br>BASE"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "少なめ"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "🧪<br>POST"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "定期的"}]},
 
-          {
-            "icon"   : "🧪",
-            "label"  : "POST",
-            "value"  : "定期的",
-            "class"  : { "th": "th2b", "td": null },
-            "colspan": 2
-          }
-        ]
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💖🤏<br>HARV"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>種から</span>：85-100日</li><li><span>苗から</span>：40-50日</li></ul>"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "💖🤏",
-        "label"  : "HARV",
-        "value"  : "種植えから85-100日",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🔄🤏<br>REGW"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "不可"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🔄🤏",
-        "label"  : "REGW",
-        "value"  : "不可",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 5, "colspan": 1, "class": "",
+          "value"    : "📊<br>NUTR:<br>COMP"},
+          { "type"   : "th", "rowspan": 5, "colspan": 1, "class": "th2a",
+            "value"  : "🍃<br>FRUIT"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "VITAMIN_B1"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "PROTEIN"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "IRON(鉄)"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "FOLIC ACID(葉酸)"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "POTASSIUM(ｶﾘｳﾑ)"}]},
 
-      {
-        "type"   : "multi",
-        "icon"   : "📊",
-        "label"  : "NUTR:<br>COMP",
-        "rowspan": 5,
-        "mergeTd": false,
-        "class"  : { "th": null },
-        "groups" : [
-
-          {
-            "icon"   : "🍃","label": "FRUIT",
-            "rowspan": 5,
-            "class"  : { "th": "th2a" },
-            "values" : [
-              { "value": "VITAMIN B1",       "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "PROTEIN",          "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "IRON(鉄)",         "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "FOLIC ACID(葉酸)", "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "POTASSIUM(ｶﾘｳﾑ)",  "class": { "td": "td2a" }, "colspan": 2 }
-            ]
-          }
-        ]
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💡","label": "etc",
-        "value"  : "<ul><li>・寒さに弱く、15℃以下になると発芽や成長が極端に悪くなる</li><li>・日本の酸性の土では石灰などを混ぜて調整</li><li>・開花期からサヤが膨らむ時期は大量の水が必要になる</li><li>・栄養不足のときは葉が黄色くなる</li></ul>",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      }
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💡<br>etc"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>・</span>寒さに弱く、15℃以下になると発芽や成長が極端に悪くなる</li><li><span>・</span>日本の酸性の土では石灰などを混ぜて調整</li><li><span>・</span>開花期からサヤが膨らむ時期は大量の水が必要になる</li><li><span>・</span>栄養不足のときは葉が黄色くなる</li></ul>"}]}
     ]
   },
 
   "glycine_zone": {
 
-      "meta"   : {
-      "comment": "------------------------------  👇 🌱枝豆さん ZONE INFO",
-      "updated": "2024-08-25"
-    },
+    "meta"   : {
+    "comment": "------------------------------  👇 🌱枝豆さん ZONE INFO",
+    "updated": "2024-08-25"},
 
-    "items": [
+    "rows": [
 
-      {
-        "type"   : "single",
-        "icon"   : "📍",
-        "label"  : "LOC",
-        "value"  : "ベランダ上部",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "📍<br>LOC"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "ベランダ床"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🔳",
-        "label"  : "POT",
-        "value"  : "TLMプランタ",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🔳<br>POT"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "TLMプランタ"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌞⌚",
-        "label"  : "SUN",
-        "value"  : "12:30-16:00",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌞⌚<br>SUN"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "13:30-16:00"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "➕️",
-        "label"   : "OPT",
-        "rowspan" : 1,
-        "mergeTd" : false,
-        "children": [
+      { "cells":[
+        { "type"     : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"    : "➕️<br>OPT"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "TUAL"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "土中へ酸素を供給する"}]},
 
-          {
-            "icon"   : "TUAL",
-            "label"  : "",
-            "value"  : "土中へ酸素を供給する補助ツール",
-            "class"  : { "th": "th2a", "td": null}
-          }
-        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🟫📊<br>SOIL"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "7"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "COCOブリック"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "3"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "バーミキュライト"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🟫📊",
-        "label"   : "SOIL",
-        "rowspan" : 2,
-        "children": [
+      { "cells":[
+        { "type"     : "th", "rowspan": 4, "colspan": 1, "class": "",
+          "value"    : "🧪POST-COMP:<br>Mix<br>💧1L"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1ml"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "HYPONeX (1000倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1ml"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "お酢 (1000倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1g弱"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "ブドウ糖(1500倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "💧1L"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "自家製ヨモギ水"}]},
 
-          {
-            "icon" : "7",
-            "label": "",
-            "value": "COCOブリック",
-            "class": { "th": "th2b" }
-          },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🧪📅<br>FREQ"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "初期"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "芽が育つまでは水のみ"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "普段"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "🧪を週1回"}]},
 
-          {
-            "icon" : "3",
-            "label": "",
-            "value": "バーミキュライト",
-            "class": { "th": "th2b" }
-          }
-        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"    : "🧪➕️<br>ADD"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "活性剤"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "苗に元気がないときに"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🧪POST-COMP:",
-        "label"   : "Mix 💧1L",
-        "rowspan" : 4,
-        "children": [
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💗🦠<br>PALS"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>🦠</span>納豆菌(バチルス菌)</li><li><span>・</span>土壌改善</li><li><span>・</span>カビ・雑菌予防</li><li><span>🦠</span>菌根菌</li><li><span>・</span>栄養・水分吸収サポート</li><li><span>・</span>ストレス耐性アップ</li><li><span>・</span>病気抵抗力</li></ul>"}]},
 
-          {
-            "icon" : "1ml",
-            "label": "",
-            "value": "HYPONeX (1000倍希釈)",
-            "class": { "th": "th2a" }
-          },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💡<br>etc"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>・</span>発芽からの成長は種の栄養でものすごく早かった</ul>"}]}
 
-          {
-            "icon" : "1ml",
-            "label": "",
-            "value": "お酢 (1000倍希釈)",
-            "class": { "th": "th2a" }
-          },
-
-          {
-            "icon" : "1g弱",
-            "label": "",
-            "value": "ブドウ糖 (1500倍希釈)",
-            "class": { "th": "th2a" }
-          },
-
-          {
-            "icon" : "💧1L",
-            "label": "",
-            "value": "自家製ヨモギ水（市販のヨモギエキスは希釈必要）",
-            "class": { "th": "th2a" }
-          }
-        ]
-      },
-
-      {
-        "type"    : "group",
-        "icon"    : "🧪📅",
-        "label"   : "FREQ",
-        "rowspan" : 2,
-        "children": [
-
-          {
-            "icon"   : "初期",
-            "label": "",
-            "value"  : "芽が育つまでは水のみ",
-            "class"  : { "th": "th2b" }
-          },
-
-          {
-            "icon" : "普段",
-            "label": "",
-            "value": "🧪を週1回",
-            "class": { "th": "th2b" }
-          }
-        ]
-      },
-
-      {
-        "type"    : "group",
-        "icon"    : "🧪➕️",
-        "label"   : "ADD",
-        "rowspan" : 1,
-        "children": [
-
-          {
-            "icon"   : "活性剤",
-            "label": "",
-            "value"  : "苗に元気がないときは与えてみる",
-            "class"  : { "th": "th2a" }
-          }
-        ]
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💗🦠",
-        "label"  : "PALS",
-        "value"  : "<ul><li>-</ul>",
-        "colspan": 2
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💡",
-        "label"  : "etc",
-        "value"  : "<ul><li>・発芽からの成長は種の栄養でものすごく早かった</li></ul>",
-        "colspan": 2
-      }
     ]
-  },  
+  },
 
   "m_radishes_info": {
 
-      "meta"   : {
-      "comment": "------------------------------  👇 🌿ミニ大根さん VEGE INFO",
-      "updated": "2024-08-25"
-    },
+    "meta"   : {
+    "comment": "------------------------------  👇  🌿ミニ大根さん VEGE INFO",
+    "updated": "2024-08-25"},
 
-    "items":[
-      {
-        "type"   : "single",
-        "icon"   : "👨‍👦‍👦","label": "FAM",
-        "value"  : "アブラナ科",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+  "rows": [
 
-      {
-        "type"   : "single",
-        "icon"   : "📅","label": "SEAS",
-        "value"  : "秋",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "👨‍👦‍👦<br>FAM"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "アブラナ科"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌡️",
-        "label"  : "TEMP",
-        "value"  : "15-25℃",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "📅<br>SEAS"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "秋"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "📐",
-        "label"   : "SIZE",
-        "rowspan" : 2,
-        "class"   : { "th": null },
-        "children": [
-          {
-            "icon" : "⚪",
-            "label": "FRUIT",
-            "value": "15-25cm",
-            "class": { "th": "th2a", "td": null }
-          },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌡️<br>TEMP"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "15-25℃"}]},
 
-          {
-            "icon" : "🌿",
-            "label": "LEAF",
-            "value": "30-40cm",
-            "class": { "th": "th2a", "td": null }
-         }
-        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "📐<br>SIZE"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "⚪️<br>ROOT"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "15-25cm"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "🌿<br>LEAF"},
+            { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+              "value": "15-25cm"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🧬",
-        "label"  : "(pH)",
-        "value"  : "弱酸性-微酸性<br>(5.5-6.5)",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🧬<br>(pH)"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "弱酸性-微酸性<br>(5.5-6.5)"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌞",
-        "label"  : "SUN",
-        "value"  : "普通に",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌞<br>SUN"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "普通に"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🚿",
-        "label"  : "H2O",
-        "value"  : "土が乾いたらたっぷり",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🚿<br>H2O"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "土が乾いたらたっぷり"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🍽️","label": "FERT",
-        "rowspan" : 2,
-        "class"   : { "th": null },
-        "children": [
-          {
-            "icon"   : "🧃","label": "BASE",
-            "value"  : "普通に",
-            "class"  : { "th": "th2b", "td": null },
-            "colspan": 2
-          },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🍽️<br>FERT"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "🧃<br>BASE"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "普通に"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "🧪<br>POST"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "定期的"}]},
 
-          {
-            "icon"   : "🧪",
-            "label"  : "POST",
-            "value"  : "定期的",
-            "class"  : { "th": "th2b", "td": null },
-            "colspan": 2
-          }
-        ]
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💖🤏<br>HARV"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>種から</span>：50-60日</li></ul>"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "💖🤏",
-        "label"  : "HARV",
-        "value"  : "種植えから50-60日",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🔄🤏<br>REGW"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "不可<br>(葉物として育てるなら可能)"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🔄🤏",
-        "label"  : "REGW",
-        "value"  : "不可<br>(葉物として育てるなら可能)",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 8, "colspan": 1, "class": "",
+          "value"    : "📊<br>NUTR:<br>COMP"},
+          { "type"   : "th", "rowspan": 5, "colspan": 1, "class": "th2a",
+            "value"  : "⚪️<br>ROOT"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "VITAMIN_C"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "FOLIC ACID(葉酸)"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "POTASSIUM(ｶﾘｳﾑ)"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "AMYLASE"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "FIBER"}]},
 
-      {
-        "type"   : "multi",
-        "icon"   : "📊",
-        "label"  : "NUTR:<br>COMP",
-        "rowspan": 8,
-        "mergeTd": false,
-        "class"  : { "th": null },
-        "groups" : [
+        { "cells":[
+          { "type"   : "th", "rowspan": 3, "colspan": 1, "class": "th2b",
+            "value"  : "🌿<br>LEAF"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2b",
+              "value": "VITAMIN_C"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2b",
+              "value": "IRON(鉄)"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2b",
+              "value": "CALCIUM"}]},
 
-          {
-            "icon"   : "⚪","label": "FRUIT",
-            "rowspan": 5,
-            "class"  : { "th": "th2a" },
-            "values" : [
-              { "value": "VITAMIN C",        "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "AMYLASE",          "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "FOLIC ACID(葉酸)", "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "POTASSIUM(ｶﾘｳﾑ)",  "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "FIBER",            "class": { "td": "td2a" }, "colspan": 2 }
-            ]
-          },
-
-          {
-            "icon"   : "🌿","label": "LEAF",
-            "rowspan": 3,
-            "class"  : { "th": "th2a" },
-            "values" : [
-              { "value": "VITAMIN C","class": { "td": "td2b" }, "colspan": 2 },
-              { "value": "IRON(鉄)", "class": { "td": "td2b" }, "colspan": 2 },
-              { "value": "CALCIUM",  "class": { "td": "td2b" }, "colspan": 2 }
-            ]
-          }
-        ]
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💡","label": "etc",
-        "value"  : "<ul><li><span>・</span>日当たりが悪いと葉ばかりが茂る</li><li><span>・</span>極端に乾燥すると肌が荒れたり、根が二股に分かれる</li><li><span>・</span>土全体にバランスよく肥料を混ぜておく</li><li><span>・</span>スピード感のある成長をする</li></ul>",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      }
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💡<br>etc"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>・</span>スピード感のある成長をする</li><li><span>・</span>日当たりが悪いと葉ばかりが茂る</li><li><span>・</span>極端に乾燥すると肌が荒れたり、根が二股に分かれる</li><li><span>・</span>土全体にバランスよく肥料を混ぜておく</li></ul>"}]}
     ]
   },
 
   "m_radishes_zone": {
 
-      "meta"   : {
-      "comment": "------------------------------  👇 🌿ミニ大根さん ZONE INFO",
-      "updated": "2024-08-25"
-    },
+    "meta"   : {
+    "comment": "------------------------------  👇 🌿ミニ大根さん ZONE INFO",
+    "updated": "2024-08-25"},
 
-    "items": [
+    "rows": [
 
-      {
-        "type"   : "single",
-        "icon"   : "📍",
-        "label"  : "LOC",
-        "value"  : "ベランダ床",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "📍<br>LOC"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "ベランダ床"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🔳",
-        "label"  : "POT",
-        "value"  : "カゴ型プランタ",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🔳<br>POT"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "パックプランタ"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌞⌚",
-        "label"  : "SUN",
-        "value"  : "15:30-16:30",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌞⌚<br>SUN"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "15:30-16:30"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "➕️",
-        "label"   : "OPT",
-        "rowspan" : 2,
-        "mergeTd" : true,
-        "children": [
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "➕️<br>OPT"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "TUAL"},
+            { "type" : "td", "rowspan": 2, "colspan": 1, "class": "",
+              "value": "土中へ酸素を供給する"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "TUAH"}]},
 
-          {
-            "icon"   : "TUAL",
-            "label"  : "",
-            "value"  : "土中へ酸素を供給する補助ツール",
-            "class"  : { "th": "th2a", "td": null}
-          },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🟫📊<br>SOIL"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "7"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "COCOブリック"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "3"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "バーミキュライト"}]},
 
-          {
-            "icon"   : "TUAH",
-            "label"  : "",
-            "value"  : "",
-            "class"  : { "th": "th2a", "td": null}
-          }        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 4, "colspan": 1, "class": "",
+          "value"    : "🧪POST-COMP:<br>Mix<br>💧1L"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1ml"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "HYPONeX (1000倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1ml"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "お酢 (1000倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1g弱"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "ブドウ糖(1500倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "💧1L"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "自家製ヨモギ水"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🟫📊",
-        "label"   : "SOIL",
-        "rowspan" : 2,
-        "children": [
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🧪📅<br>FREQ"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "初期"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "芽が育つまでは水のみ"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "普段"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "🧪を週1回"}]},
 
-          {
-            "icon" : "7",
-            "label": "",
-            "value": "COCOブリック",
-            "class": { "th": "th2b" }
-          },
+      { "cells":[
+        { "type"     : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"    : "🧪➕️<br>ADD"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "活性剤"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "苗に元気がないときに"}]},
 
-          {
-            "icon" : "3",
-            "label": "",
-            "value": "バーミキュライト",
-            "class": { "th": "th2b" }
-          }
-        ]
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💗🦠<br>PALS"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>🦠</span>納豆菌(バチルス菌)</li><li><span>・</span>土壌改善</li><li><span>・</span>カビ・雑菌予防</li></ul>"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🧪POST-COMP:",
-        "label"   : "Mix 💧1L",
-        "rowspan" : 4,
-        "children": [
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💡<br>etc"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "-"}]}
 
-          {
-            "icon" : "1ml",
-            "label": "",
-            "value": "HYPONeX (1000倍希釈)",
-            "class": { "th": "th2a" }
-          },
-
-          {
-            "icon" : "1ml",
-            "label": "",
-            "value": "お酢 (1000倍希釈)",
-            "class": { "th": "th2a" }
-          },
-
-          {
-            "icon" : "1g弱",
-            "label": "",
-            "value": "ブドウ糖 (1500倍希釈)",
-            "class": { "th": "th2a" }
-          },
-
-          {
-            "icon" : "💧1L",
-            "label": "",
-            "value": "自家製ヨモギ水（市販のヨモギエキスは希釈必要）",
-            "class": { "th": "th2a" }
-          }
-        ]
-      },
-
-      {
-        "type"    : "group",
-        "icon"    : "🧪📅",
-        "label"   : "FREQ",
-        "rowspan" : 2,
-        "children": [
-
-          {
-            "icon"   : "初期",
-            "label": "",
-            "value"  : "芽が育つまでは水のみ",
-            "class"  : { "th": "th2b" }
-          },
-
-          {
-            "icon" : "普段",
-            "label": "",
-            "value": "🧪を週1回",
-            "class": { "th": "th2b" }
-          }
-        ]
-      },
-
-      {
-        "type"    : "group",
-        "icon"    : "🧪➕️",
-        "label"   : "ADD",
-        "rowspan" : 1,
-        "children": [
-
-          {
-            "icon"   : "活性剤",
-            "label": "",
-            "value"  : "苗に元気がないときは与えてみる",
-            "class"  : { "th": "th2a" }
-          }
-        ]
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💗🦠",
-        "label"  : "PALS",
-        "value"  : "<ul><li>🦠納豆菌(バチルス菌)</li><li>・土壌改善</li><li>・カビ・雑菌予防</li></ul>",
-        "colspan": 2
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💡",
-        "label"  : "etc",
-        "value"  : "-",
-        "colspan": 2
-      }
     ]
   },
 
   "molokhia_info": {
 
-      "meta"   : {
-      "comment": "------------------------------  👇 🍃モロヘイヤさん VEGE INFO",
-      "updated": "2024-08-25"
-    },
+    "meta"   : {
+    "comment": "------------------------------  👇  🍃モロヘイヤさん VEGE INFO",
+    "updated": "2024-08-25"},
 
-    "items":[
-      {
-        "type"   : "single",
-        "icon"   : "👨‍👦‍👦","label": "FAM",
-        "value"  : "アオイ科",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+  "rows": [
 
-      {
-        "type"   : "single",
-        "icon"   : "📅","label": "SEAS",
-        "value"  : "夏",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "👨‍👦‍👦<br>FAM"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "アオイ科"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌡️",
-        "label"  : "TEMP",
-        "value"  : "25-30℃",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "📅<br>SEAS"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "夏"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "📐",
-        "label"   : "SIZE",
-        "rowspan" : 2,
-        "class"   : { "th": null },
-        "children": [
-          {
-            "icon" : "🍃",
-            "label": "LEAF",
-            "value": "2-5cm",
-            "class": { "th": "th2a", "td": null }
-          },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌡️<br>TEMP"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "25-30℃"}]},
 
-          {
-            "icon" : "🌱",
-            "label": "PLANT",
-            "value": "1m-1.5m<br>(摘芯で40-50cm)",
-            "class": { "th": "th2a", "td": null }
-          }
-        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "📐<br>SIZE"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "🍃<br>LEAF"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "15-25cm"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "🌱<br>PLANT"},
+            { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+              "value": "15-25cm"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🧬",
-        "label"  : "(pH)",
-        "value"  : "弱酸性-中性<br>(6.0-6.5)",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🧬<br>(pH)"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "弱酸性-中性<br>(6.0-6.5)"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌞",
-        "label"  : "SUN",
-        "value"  : "強めに",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌞<br>SUN"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "強めに"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🚿",
-        "label"  : "H2O",
-        "value"  : "土が乾いたらたっぷり",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🚿<br>H2O"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "土が乾いたらたっぷり"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🍽️","label": "FERT",
-        "rowspan" : 2,
-        "class"   : { "th": null },
-        "children": [
-          {
-            "icon"   : "🧃","label": "BASE",
-            "value"  : "普通に",
-            "class"  : { "th": "th2b", "td": null },
-            "colspan": 2
-          },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🍽️<br>FERT"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "🧃<br>BASE"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "普通に"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "🧪<br>POST"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "定期的"}]},
 
-          {
-            "icon"   : "🧪",
-            "label"  : "POST",
-            "value"  : "定期的",
-            "class"  : { "th": "th2b", "td": null },
-            "colspan": 2
-          }
-        ]
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💖🤏<br>HARV"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>種から</span>：60-70日</li><ul><li><span>苗から</span>：30-40日</li></ul>"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "💖🤏",
-        "label"  : "HARV",
-        "value"  : "種植えから60-70日",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🔄🤏<br>REGW"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "温かい環境なら可能"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🔄🤏",
-        "label"  : "REGW",
-        "value"  : "温かい環境なら可能",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 5, "colspan": 1, "class": "",
+          "value"    : "📊<br>NUTR:<br>COMP"},
+          { "type"   : "th", "rowspan": 5, "colspan": 1, "class": "th2a",
+            "value"  : "🍃<br>LEAF"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "VITAMIN_A"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "VITAMIN_C"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "VITAMIN_E"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "CALCIUM"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "MUCILAGE(ﾈﾊﾞﾈﾊﾞ)"}]},
 
-      {
-        "type"   : "multi",
-        "icon"   : "📊",
-        "label"  : "NUTR:<br>COMP",
-        "rowspan": 5,
-        "mergeTd": false,
-        "class"  : { "th": null },
-        "groups" : [
-
-          {
-            "icon"   : "🍃","label": "LEAF",
-            "rowspan": 5,
-            "class"  : { "th": "th2a" },
-            "values" : [
-              { "value": "VITAMIN A",            "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "VITAMIN C",            "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "VITAMIN E",            "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "CALCIUM",              "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "MUCILAGE(ﾈﾊﾞﾈﾊﾞ)", "class": { "td": "td2a" }, "colspan": 2 }
-            ]
-          }
-        ]
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💡","label": "etc",
-        "value"  : "<ul><li><span>・</span>⚠️種とサヤには猛毒（ストロファンチジン）が含まれているので、収穫期の後期にできる緑色のサヤや種、熟した古い茎は絶対に食べたらいけない</li></ul><li><span>・</span>摘芯でサイズを調整できる(40-50cm)<span>・</span>VITAMIN Aはホウレン草の約4.6倍</li></ul>",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      }
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💡<br>etc"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>・</span>⚠️種とサヤには猛毒（ストロファンチジン）が含まれているので、収穫期の後期にできる緑色のサヤや種、熟した古い茎は絶対に食べたらいけない</li><li><span>・</span>摘芯でサイズを調整できる(40-50cm)<li><span>・</span>VITAMIN Aはホウレン草の約4.6倍</li></ul>"}]}
     ]
   },
 
   "molokhia_zone": {
 
-      "meta"   : {
-      "comment": "------------------------------  👇 🍃モロヘイヤさん ZONE INFO",
-      "updated": "2024-08-25"
-    },
+    "meta"   : {
+    "comment": "------------------------------  👇 🍃モロヘイヤさん ZONE INFO",
+    "updated": "2024-08-25"},
 
-    "items": [
+    "rows": [
 
-      {
-        "type"   : "single",
-        "icon"   : "📍",
-        "label"  : "LOC",
-        "value"  : "ベランダ床",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "📍<br>LOC"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "ベランダ床"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🔳",
-        "label"  : "POT",
-        "value"  : "パックプランタ",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🔳<br>POT"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "パックプランタ"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌞⌚",
-        "label"  : "SUN",
-        "value"  : "14:30-16:30",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌞⌚<br>SUN"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "14:30-16:30"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "➕️",
-        "label"   : "OPT",
-        "rowspan" : 1,
-        "mergeTd" : true,
-        "children": [
+      { "cells":[
+        { "type"     : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"    : "➕️<br>OPT"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "TUAL"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "土中へ酸素を供給する"}]},
 
-          {
-            "icon"   : "TUAL",
-            "label"  : "",
-            "value"  : "土中へ酸素を供給する補助ツール",
-            "class"  : { "th": "th2a", "td": null}
-          }
-        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🟫📊<br>SOIL"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "7"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "COCOブリック"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "3"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "バーミキュライト"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🟫📊",
-        "label"   : "SOIL",
-        "rowspan" : 2,
-        "children": [
+      { "cells":[
+        { "type"     : "th", "rowspan": 4, "colspan": 1, "class": "",
+          "value"    : "🧪POST-COMP:<br>Mix<br>💧1L"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1ml"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "HYPONeX (1000倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1ml"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "お酢 (1000倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1g弱"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "ブドウ糖(1500倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "💧1L"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "自家製ヨモギ水"}]},
 
-          {
-            "icon" : "7",
-            "label": "",
-            "value": "COCOブリック",
-            "class": { "th": "th2b" }
-          },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🧪📅<br>FREQ"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "初期"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "芽が育つまでは水のみ"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "普段"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "🧪を週1回"}]},
 
-          {
-            "icon" : "3",
-            "label": "",
-            "value": "バーミキュライト",
-            "class": { "th": "th2b" }
-          }
-        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"    : "🧪➕️<br>ADD"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "活性剤"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "苗に元気がないときに"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🧪POST-COMP:",
-        "label"   : "Mix 💧1L",
-        "rowspan" : 4,
-        "children": [
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💗🦠<br>PALS"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>🦠</span>納豆菌(バチルス菌)</li><li><span>・</span>土壌改善</li><li><span>・</span>カビ・雑菌予防</li></ul>"}]},
 
-          {
-            "icon" : "1ml",
-            "label": "",
-            "value": "HYPONeX (1000倍希釈)",
-            "class": { "th": "th2a" }
-          },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💡<br>etc"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "-"}]}
 
-          {
-            "icon" : "1ml",
-            "label": "",
-            "value": "お酢 (1000倍希釈)",
-            "class": { "th": "th2a" }
-          },
-
-          {
-            "icon" : "1g弱",
-            "label": "",
-            "value": "ブドウ糖 (1500倍希釈)",
-            "class": { "th": "th2a" }
-          },
-
-          {
-            "icon" : "💧1L",
-            "label": "",
-            "value": "自家製ヨモギ水（市販のヨモギエキスは希釈必要）",
-            "class": { "th": "th2a" }
-          }
-        ]
-      },
-
-      {
-        "type"    : "group",
-        "icon"    : "🧪📅",
-        "label"   : "FREQ",
-        "rowspan" : 2,
-        "children": [
-
-          {
-            "icon"   : "初期",
-            "label": "",
-            "value"  : "芽が育つまでは水のみ",
-            "class"  : { "th": "th2b" }
-          },
-
-          {
-            "icon" : "普段",
-            "label": "",
-            "value": "🧪を週1回",
-            "class": { "th": "th2b" }
-          }
-        ]
-      },
-
-      {
-        "type"    : "group",
-        "icon"    : "🧪➕️",
-        "label"   : "ADD",
-        "rowspan" : 1,
-        "children": [
-
-          {
-            "icon"   : "活性剤",
-            "label": "",
-            "value"  : "苗に元気がないときは与えてみる",
-            "class"  : { "th": "th2a" }
-          }
-        ]
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💗🦠",
-        "label"  : "PALS",
-        "value"  : "<ul><li>🦠納豆菌(バチルス菌)</li><li>・土壌改善</li><li>・カビ・雑菌予防</li></ul>",
-        "colspan": 2
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💡",
-        "label"  : "etc",
-        "value"  : "-",
-        "colspan": 2
-      }
     ]
   },
 
   "potato_info": {
 
-      "meta"   : {
-      "comment": "------------------------------  👇 🥔ジャガイモさん VEGE INFO",
-      "updated": "2024-08-25"
-    },
+    "meta"   : {
+    "comment": "------------------------------  👇  🥔ジャガイモさん VEGE INFO",
+    "updated": "2024-08-25"},
 
-    "items":[
-      {
-        "type"   : "single",
-        "icon"   : "👨‍👦‍👦","label": "FAM",
-        "value"  : "ナス科",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+  "rows": [
 
-      {
-        "type"   : "single",
-        "icon"   : "📅","label": "SEAS",
-        "value"  : "春／秋",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "👨‍👦‍👦<br>FAM"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "ナス科"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌡️",
-        "label"  : "TEMP",
-        "value"  : "15-20℃",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "📅<br>SEAS"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "春／秋"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "📐",
-        "label"   : "SIZE",
-        "rowspan" : 2,
-        "class"   : { "th": null },
-        "children": [
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌡️<br>TEMP"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "15-20℃"}]},
 
-          {
-            "icon" : "🥔",
-            "label": "FRUIT",
-            "value": "5-10cm",
-            "class": { "th": "th2a", "td": null }
-          },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "📐<br>SIZE"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "🥔<br>FRUIT"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "5-10cm"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "🌱<br>PLANT"},
+            { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+              "value": "50-60cm"}]},
 
-          {
-            "icon" : "🌱",
-            "label": "PLANT",
-            "value": "50-60cm",
-            "class": { "th": "th2a", "td": null }
-         }
-        ]
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🧬<br>(pH)"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "弱酸性-強めの酸性<br>(5.0-5.5)"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🧬",
-        "label"  : "(pH)",
-        "value"  : "弱酸性-強めの酸性<br>(5.0-5.5)",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌞<br>SUN"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "普通に"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌞",
-        "label"  : "SUN",
-        "value"  : "普通に",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🚿<br>H2O"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "土が乾いたらたっぷり<br>(加湿NG)"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🚿",
-        "label"  : "H2O",
-        "value"  : "土が乾いたらたっぷり<br>(加湿NG)",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🍽️<br>FERT"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "🧃<br>BASE"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "やや多め"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "🧪<br>POST"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "定期的"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🍽️","label": "FERT",
-        "rowspan" : 2,
-        "class"   : { "th": null },
-        "children": [
-          {
-            "icon"   : "🧃","label": "BASE",
-            "value"  : "しっかりめ",
-            "class"  : { "th": "th2b", "td": null },
-            "colspan": 2
-          },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💖🤏<br>HARV"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>種芋から</span>：90-100日</li></ul>"}]},
 
-          {
-            "icon"   : "🧪",
-            "label"  : "POST",
-            "value"  : "定期的",
-            "class"  : { "th": "th2b", "td": null },
-            "colspan": 2
-          }
-        ]
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🔄🤏<br>REGW"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "不可"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "💖🤏",
-        "label"  : "HARV",
-        "value"  : "種植えから90-100日",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 3, "colspan": 1, "class": "",
+          "value"    : "📊<br>NUTR:<br>COMP"},
+          { "type"   : "th", "rowspan": 3, "colspan": 1, "class": "th2a",
+            "value"  : "🥔<br>FRUIT"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "VITAMIN_C(🍎x3)"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "carb(炭水化物)"}]},
+          { "cells":[
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "td2a",
+              "value": "POTASSIUM(ｶﾘｳﾑ)"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🔄🤏",
-        "label"  : "REGW",
-        "value"  : "不可",
-        "class"  : { "th": null, "td": null },
-        "colspan": 2
-      },
-
-      {
-        "type"   : "multi",
-        "icon"   : "📊",
-        "label"  : "NUTR:<br>COMP",
-        "rowspan": 3,
-        "mergeTd": false,
-        "class"  : { "th": null },
-        "groups" : [
-
-          {
-            "icon"   : "🥔","label": "FRUIT",
-            "rowspan": 3,
-            "class"  : { "th": "th2a" },
-            "values" : [
-              { "value": "VITAMIN C(🍎x3)", "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "POTASSIUM(ｶﾘｳﾑ)",  "class": { "td": "td2a" }, "colspan": 2 },
-              { "value": "carb(炭水化物)",   "class": { "td": "td2a" }, "colspan": 2 }
-            ]
-
-          }
-        ]
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💡",
-        "label"  : "etc",
-        "value"  : "<ul><li><span>・</span>日に当たって緑色に変色したジャガイモには猛毒が含まれるので食べてはいけない</li></ul>",
-        "colspan": 2
-      }
-
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💡<br>etc"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>・</span>⚠️日に当たって緑色に変色したジャガイモには猛毒が含まれるので食べてはいけない</li><li><span>・</span>葉が黄色く枯れてきたら掘り起こす。</li></ul>"}]}
     ]
   },
 
   "potato_zone": {
 
-      "meta"   : {
-      "comment": "------------------------------  👇 🥔ジャガイモさん ZONE INFO",
-      "updated": "2024-08-25"
-    },
+    "meta"   : {
+    "comment": "------------------------------  👇 🥔ジャガイモさん ZONE INFO",
+    "updated": "2024-08-25"},
 
-    "items": [
+    "rows": [
 
-      {
-        "type"   : "single",
-        "icon"   : "📍",
-        "label"  : "LOC",
-        "value"  : "ベランダ床",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "📍<br>LOC"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "ベランダ床"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🔳",
-        "label"  : "POT",
-        "value"  : "半噴霧耕プランタ",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🔳<br>POT"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "半噴霧耕プランタ"}]},
 
-      {
-        "type"   : "single",
-        "icon"   : "🌞⌚",
-        "label"  : "SUN",
-        "value"  : "14:30-16:30",
-        "colspan": 2
-      },
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "🌞⌚<br>SUN"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "14:30-16:30"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "➕️",
-        "label"   : "OPT",
-        "rowspan" : 1,
-        "mergeTd" : true,
-        "children": [
+      { "cells":[
+        { "type"     : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"    : "➕️<br>OPT"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "TUAL"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "検討中"}]},
 
-          {
-            "icon"   : "TUAL",
-            "label"  : "",
-            "value"  : "検討中",
-            "class"  : { "th": "th2a", "td": null}
-          }
-        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🟫📊<br>SOIL"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "7"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "COCOブリック"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "3"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "バーミキュライト"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🟫📊",
-        "label"   : "SOIL",
-        "rowspan" : 2,
-        "children": [
+      { "cells":[
+        { "type"     : "th", "rowspan": 4, "colspan": 1, "class": "",
+          "value"    : "🧪POST-COMP:<br>Mix<br>💧1L"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1ml"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "HYPONeX (1000倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1ml"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "お酢 (1000倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "1g弱"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "ブドウ糖(1500倍希釈)"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "💧1L"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "自家製ヨモギ水"}]},
 
-          {
-            "icon" : "7",
-            "label": "",
-            "value": "COCOブリック",
-            "class": { "th": "th2b" }
-          },
+      { "cells":[
+        { "type"     : "th", "rowspan": 2, "colspan": 1, "class": "",
+          "value"    : "🧪📅<br>FREQ"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "初期"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "芽が育つまでは水のみ"}]},
+        { "cells":[
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2b",
+            "value"  : "普段"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "🧪を週1回"}]},
 
-          {
-            "icon" : "3",
-            "label": "",
-            "value": "バーミキュライト",
-            "class": { "th": "th2b" }
-          }
-        ]
-      },
+      { "cells":[
+        { "type"     : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"    : "🧪➕️<br>ADD"},
+          { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "th2a",
+            "value"  : "活性剤"},
+            { "type" : "td", "rowspan": 1, "colspan": 1, "class": "",
+              "value": "苗に元気がないときに"}]},
 
-      {
-        "type"    : "group",
-        "icon"    : "🧪POST-COMP:",
-        "label"   : "Mix 💧1L",
-        "rowspan" : 4,
-        "children": [
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💗🦠<br>PALS"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "<ul><li><span>🦠</span>納豆菌(バチルス菌)</li><li><span>・</span>土壌改善</li><li><span>・</span>カビ・雑菌予防</li></ul>"}]},
 
-          {
-            "icon" : "1ml",
-            "label": "",
-            "value": "HYPONeX (1000倍希釈)",
-            "class": { "th": "th2a" }
-          },
-
-          {
-            "icon" : "1ml",
-            "label": "",
-            "value": "お酢 (1000倍希釈)",
-            "class": { "th": "th2a" }
-          },
-
-          {
-            "icon" : "1g弱",
-            "label": "",
-            "value": "ブドウ糖 (1500倍希釈)",
-            "class": { "th": "th2a" }
-          },
-
-          {
-            "icon" : "💧1L",
-            "label": "",
-            "value": "自家製ヨモギ水（市販のヨモギエキスは希釈必要）",
-            "class": { "th": "th2a" }
-          }
-        ]
-      },
-
-      {
-        "type"    : "group",
-        "icon"    : "🧪📅",
-        "label"   : "FREQ",
-        "rowspan" : 2,
-        "children": [
-
-          {
-            "icon"   : "初期",
-            "label": "",
-            "value"  : "芽が育つまでは水のみ",
-            "class"  : { "th": "th2b" }
-          },
-
-          {
-            "icon" : "普段",
-            "label": "",
-            "value": "🧪を週1回",
-            "class": { "th": "th2b" }
-          }
-        ]
-      },
-
-      {
-        "type"    : "group",
-        "icon"    : "🧪➕️",
-        "label"   : "ADD",
-        "rowspan" : 1,
-        "children": [
-
-          {
-            "icon"   : "活性剤",
-            "label": "",
-            "value"  : "苗に元気がないときは与えてみる",
-            "class"  : { "th": "th2a" }
-          }
-        ]
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💗🦠",
-        "label"  : "PALS",
-        "value"  : "<ul><li>🦠納豆菌(バチルス菌)</li><li>・土壌改善</li><li>・カビ・雑菌予防</li></ul>",
-        "colspan": 2
-      },
-
-      {
-        "type"   : "single",
-        "icon"   : "💡",
-        "label"  : "etc",
-        "value"  : "-",
-        "colspan": 2
-      }
+      { "cells":[
+        { "type"   : "th", "rowspan": 1, "colspan": 1, "class": "",
+          "value"  : "💡<br>etc"},
+          { "type" : "td", "rowspan": 1, "colspan": 2, "class": "",
+            "value": "-"}]}
     ]
   }
-
 }
+
