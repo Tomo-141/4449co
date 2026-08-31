@@ -52,7 +52,7 @@
 /*------------------------------  👇️ CSS共通設定エリア  */
 /* CSS共通設定エリア */
 
-  /* 👇️ カラー設定 */
+  /*------------------------------ カラー指定 */
   .green {/**/
     background:#95ff87;/* 緑色 */
   }/**/
@@ -66,7 +66,7 @@
     background:#faa6bb;/* 桃色 */
   }/**/
 
-  /* 👇️ 幅設定 */
+  /*------------------------------ width指定 */
   .wid97per{/**/
     width: 97%;/**/
   }/**/
@@ -74,35 +74,66 @@
   .wid100per{/**/
     width: 100%;/**/
   }/**/
-                   /* 👇️ メインタイトルのデザイン */
-  .main-title {/*                                */
-    background-image:/*                         */
-      linear-gradient(rgba(172, 205, 255, 0.15),    /**/
-     rgba(0, 0, 0, 0.1)), url("00_title.png");     /**/
-    box-shadow:  1px 1px 11px rgba(0, 0, 0, 0.4); /**/
-    text-shadow: 2px 4px 11px rgba(0, 0, 0, 0.9);/**/
-    color:             #fcfff0;                 /**/
-    background-position:  center;/*       */
-    background-repeat: no-repeat;/*      */
-    background-size:       cover;/*     */
-    text-align:           center;/*    */
-    margin:                  7px;/*   */
-    padding:            4px 11px;/*  */
-    border-radius:          11px;/* */
+
+  details {/**/
+    /*------------------------------ トグル全般 --*/
+    box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);
+    background-color: #f1f6ff;
+    overflow:            hidden;/*      */
+    justify-content:     center;/*     */
+    text-align:          center;/*    */
+    margin:            7px auto;/*   */
+    padding:    7px 0px 9px 0px;/*  */
+    border-radius:         22px;/* */
   }/**/
 
-               /* 👇️ 左右スクロール用クラス */
-  .scro{/*                                 */
+  summary {/**/
+    /*------------------------------ トグルタイトル --*/
+    display:            flex;/*        */
+    cursor:          pointer;/*       */
+    justify-content:  center;/*      */
+    text-align:       left;/*     */
+    white-space:      nowrap;/*    */
+    width:              100%;/*   */
+    padding-left: auto;/**/
+    font-weight:        bold;/*  */
+    border-radius:      22px;/* */
+  }/**/
+
+  /*summary::after {/**/
+    /*------------------------------ 対象トグル open 前   --*/
+    /* content: "📘";/**/
+    /* margin-left: 8px;/**/
+    /* font-size:  14px;/**/
+    /* opacity:     0.1;/**/
+  /* }/**/
+
+  details[open] > summary::after {/**/
+    /*------------------------------ 対象トグル open 後   --*/
+    content: "📖";
+    margin-left: 3%;
+    opacity: 1;
+  }
+  .content {/**/
+    /*------------------------------ トグル内必須 --*/
+    /*      ゆっくりスクロ対応 */
+    overflow: hidden;/*       */
+    width: 100%;/*           */
+    margin-top: 3px;/*      */
+  }/**/
+
+  .scro{/**/
+    /*------------------------------ ？？？ --*/
     overflow-x:                  auto;/*  */
     -webkit-overflow-scrolling: touch;/* */
     white-space:               nowrap;/**/
   }/**/
 
-        /* 左右スクロールボタン用クラス */
-  .scro_btn {/*                        */
-    box-shadow:1px 4px 11px rgba(0, 0, 0, 0.4);/**/
-    background:rgba(229, 229, 233, 0.2);      /**/
-    color:     rgb(77, 77, 77);              /**/
+  .scro_btn {/**/
+    /*------------------------------ 左右スクロールボタン --*/
+    box-shadow:1px 4px 11px rgba(0, 0, 0, 0.4);
+    background:rgba(229, 229, 233, 0.2);
+    color:     rgb(77, 77, 77);
     position:   absolute;/*        */
     z-index:          20;/*       */
     cursor:      pointer;/*      */
@@ -113,155 +144,121 @@
     border-radius:   50%;/* */
   }/**/
 
-            /* スクロールボタン位置 */
+  /*-------------------------------- スクロールボタン位置 --*/
   .scro_btn.prev { left : 3px; }/* */
   .scro_btn.next { right: 3px; }/**/
 
-                  /* 閉じるボタン関連の設定  */
-  .close_btn {/*                            */
-    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5); /**/
-    box-shadow:  1px 3px 5px rgba(0, 0, 0, 0.5);/**/
-    background: #dfdfdf;                       /**/
-    color:      #000000;                      /**/
+  .close_btn {/**/
+    /*------------------------------ 閉じるボタン --*/
+    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow:  1px 3px 5px rgba(0, 0, 0, 0.5);
+    background: #dfdfdf;
+    color:      #000000;
     border:          none;/*            */
     cursor:       pointer;/*           */
     font-weight:      570;/*          */
     font-size:       12px;/*         */
-    width:           21px;/*        */
+    width:           22px;/*        */
     padding:          3px;/*       */
     border-radius:   50px;/*      */
   }/*                            */
-  /* 閉じるボタングラ           */
+   /* 閉じるボタングラ          */
   .close_btn::before {/*       */
     /* 文字設定               */
     content:        "✖️";/* */
   }/**/
 
-          /* 閉じるボタンの左右配置クラス */
-  .LR_set {/*                            */
-    display:    flex;/* 横並び          */
-    /* 左右配置                        */
-    justify-content: space-between;/* */
-    width:       64%;/* 位置調整     */
-    padding: 5px 18%;/* 位置調整    */
+  .LR_set {/**/
+    /*------------------------------ 閉じるボタン左右配置 --*/
+    display:    flex;/* 横並び         */
+    justify-content:/*                */
+       space-between;/*              */
+    width:       64%;/* 位置調整    */
+    padding: 5px 18%;/* 位置調整   */
   }/**/
 
-  /* 👇️ ゆっくりスクロ用の箱クラス */
-            /* トグル内必須クラス */
-  .content {/*                   */
-    overflow: hidden;/*         */
-    width: 100%;/*             */
-    margin-top: 3px;/*        */
-  }/**/
-
-  /*       👇️ content内で内容をスクロールする箱  */
-  /*        heightは内容に応じて別クラスで指定  */
-  .scro_box {/*                                */
-    overflow-y:         auto;/*               */
-    scroll-behavior:  smooth;/* スムーズ     */
-    width:              100%;/*             */
-    max-height:        400px;/*            */
-    border-radius:      11px;/*           */
-    /* スクロールバー非表示              */
-    /* IE, Firefox                      */
-    -ms-overflow-style: none;/*        */
-    /* Firefox用                      */
-    scrollbar-width:    none;/*      */
-  }/*                               */
-  /* Chrome, Safari                */
+  .scro_box {/**/
+    /*------------------------------ 縦スクロール Box --*/
+    overflow-y:         auto;/*              */
+    scroll-behavior:  smooth;/*             */
+    width:              100%;/*            */
+    max-height:        400px;/*           */
+    border-radius:      11px;/*          */
+    /* スクロールバー非表示             */
+    /* IE, Firefox                     */
+    -ms-overflow-style: none;/*       */
+    /* Firefox用                     */
+    scrollbar-width:    none;/*     */
+  }/*                              */
+  /* Chrome, Safari               */
   .carousel_content::-webkit-scrollbar {/**/
-    display:            none;/*  */
+    display:            none;/* */
   }/**/
 
-                    /* 👇️ トグル関連の設定 */
-  details {/*                             */
-    box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);/**/
-    background-color: #f1f6ff;                 /**/
-    overflow:            hidden;/*      */
-    justify-content:     center;/*     */
-    text-align:          center;/*    */
-    margin:            7px auto;/*   */
-    padding:    7px 0px 9px 0px;/*  */
-    border-radius:         22px;/* */
-  }/**/
-
-           /* 👇️ トグルタイトルのデザイン */
-  summary {/*                            */
-  /*position: sticky; top: 0;/* 固定    */
-    display:            flex;/* 横並び */
-    cursor:          pointer;/*       */
-    justify-content:  center;/*      */
-    text-align:       center;/*     */
-    white-space:      nowrap;/*    */
-    width:              100%;/*   */
-    font-weight:        bold;/*  */
-    border-radius:      22px;/* */
-  }/**/
-
-  /* 👇️ テーブル設定エリア */
-  table{/*                */
-        /* はみ出し防止  */
+  table{/**/
+    /*------------------------------ テーブル関連 --*/
+    /* はみ出し防止      */
     width: 97%;/*       */
-          /* 中央配置  */
+    /* 中央配置        */
     margin: 0 auto;/* */
   }/**/
-           /* ヘッダ・データ部共通設定 */
-  table th,/*                         */
-  table td {/*                       */
-    box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.4); /**/
-    border: 4px ridge rgba(178, 181, 216, 0.5);/**/
+
+  table th,/**/
+  table td {/**/
+    /*------------------------------ ヘッダフッタ--*/
+    box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.4);
+    border: 4px ridge rgba(178, 181, 216, 0.5);
     line-height:         1.2;/*   */
     padding: 4px 4px 3px 3px;/*  */
     border-radius:      11px;/* */
   }/**/
 
-  /* 親ヘッダ行 36px 黄緑色 */
-  table th {/*             */
-    background:#e6ffac;/**/
-    min-width: 36px;/*   */
+  table th {/**/
+    /*------------------------------ 親行 36px 黄緑色 --*/
+    background:#e6ffac;
+    min-width: 36px;/**/
   }/**/
 
-  /* 親ヘッダ列 36px 青色 */
-  th.th36px{/*           */
-    background:#dee5ff;/**/
+  th.th36px{/**/
+    /*------------------------------ 親列 36px 青色 --*/
+    background:#dee5ff;
   }/**/
   
-  /* 親列ヘッダ width 100% */
-  th.thMax {/*            */
-    background:#dee5ff;  /**/
-    width: 100%;/*      */
+  th.thMax {/**/
+    /*------------------------------ 親列 width 100% --*/
+    background:#dee5ff;
+    width: 100%;/**/
   }/**/
   
-               /* データ部 無色 */
-  table td {/*                 */
+  table td {/**/
+    /*------------------------------ td は width 100% --*/
     word-break: break-word; /**/
     width:            100%;/**/
   }/**/
 
-  /* 👇️ テーブル内リストをテーブル化 */
-  table ul {/*                      */
+  table ul {/**/
+    /*------------------------------ テーブル内リストのテーブル化 --*/
     display:    table;/*           */
     box-sizing: border-box;/*     */
     /* 短い内容は内容幅にする    */
     /* width:   max-content;/*  */
     /* 内容はセル幅を超えない  */
     max-width:  100%;/*       */
-                 /* 中央寄せ */
+    /* 中央寄せ              */
     margin:     0 auto;/*   */
-    /*   インデント        */
+    /* インデント          */
     padding-left: 5px;/*  */
   }/**/
 
-  /* li を「行」にする（中点は消える） */
-  table li {/*                        */
-  /* リストをテーブル行化            */
-    display: table-row;/*           */
-    text-align:  left;/*           */  
+  table li {/**/
+    /*------------------------------ li をテーブル行化（中点は消える） --*/
+    display: table-row;/**/
+    text-align:  left;/**/  
   }/**/
 
-  /* li 直下のspanをテーブルマス化 */
-  table li > span{/*              */
-    display: table-cell;/*       */
+  table li > span{/**/
+    /*------------------------------ span をテーブルマス化 --*/
+    display: table-cell;/**/
   }/**/
 
   /* vege-info li 直下のspan１個目と２個目 */
@@ -270,27 +267,26 @@
   /*      white-space: nowrap;/* */
   /*}/**/
 
-               /* 👇️ カールセル関連 */
-  .carousel {/*                    */
-    overflow:    hidden;/*        */
-    position:  relative;/*       */
-    display:       flex;/*      */
-    align-items: center;/*     */
-    width:          96%;/*    */
-    margin:      0 auto;/*   */
-    padding:      1% 1%;/*  */
-  /*border-radius: 11px;/* */
+  .carousel {/**/
+    /*------------------------------ カールセル関連 --*/
+    overflow:    hidden;/*       */
+    position:  relative;/*      */
+    display:       flex;/*     */
+    align-items: center;/*    */
+    width:         100%;/*   */
+  /*margin-left:     1%;/*  */
+    border-radius: 11px;/* */
   }/**/
 
-                            /* スクロールさせる箱 */
-  .carousel_content {/*                          */
-    display:            flex;/*                 */ 
-  /*align-items:  flex-start;/* 高さ合わせ     */
+  .carousel_content {/**/
+    /*------------------------------ カールセル内用のスクロール box --*/
+  /*display:            flex;/*                 */ 
+    align-items:  flex-start;/* 高さ合わせ     */
     overflow-x:         auto;/*               */
     scroll-behavior:  smooth;/*              */
     width:              100%;/*             */
-    gap:                15px;/*            */
-    padding:             3px;/*           */
+    gap:                22px;/*            */
+  /*padding:             3px;/*           */
     border-radius:      11px;/*          */
     /* スクロールバー非表示             */
     /* IE, Firefox                     */
@@ -306,8 +302,8 @@
 /*------------------------------  👇️ CSS個別設定エリア  */
 /* CSS個別設定エリア */
 
-                /* 👇️ 情報トグルを並べる箱クラス */
-  .info_wrap {/*                                */
+  .info_wrap {/**/
+    /*------------------------------ 情報エリア関連 --*/
     overflow-x:         auto;/* 横スクロ       */
     display:            flex;/* 横並び        */
     justify-content:    left;/* 左寄せ       */
@@ -323,52 +319,50 @@
   .carousel_content::-webkit-scrollbar {/**/
     display:            none;/*   */
   }/*                            */
-          /* 野菜info_wrap専用  */
-  .vege{/*                     */
+  .vege{/*                      */
+    /*------------------------------ 野菜info_wrap専用 --*/
     padding: 0 2%;/* 位置調整 */
   }/**/
   
-                             /* 👇️ 情報トグル */
-  .info_box{/*                               */
-    align-self:   flex-start;/* 個別の高さ  */
-    width:              100%;/*            */
-    /* サマリーの縦サイズ用 横は指定しない*/
-    padding: 5px 0;/*                    */
-    border-radius:      22px;/*         */
+  .info_box{/**/
+    /*------------------------------ VEGE・ZONE INFO専用 --*/
+    align-self:   flex-start;/* 個別の高さ   */
+    width:              100%;/*             */
+    /* サマリーの縦サイズ用 横は指定しない */
+    padding:           5px 0;/*           */
+    border-radius:      22px;/*          */
   }/**/
   
-                  /* 情報トグルオープン時 */
-  .info_box[open] {/*                    */
-  /* flex-grow   要素の幅割合/*         */
-  /* flex-shrink  0:max 1:均等 2:min/* */
-  /* flex-basis  フォーカス時横幅     */
-    flex:  1 0 100%;/* 調整          */
+  .info_box[open] {/**/
+    /*------------------------------ VEGE・ZONE INFO open --*/
+    /* flex-grow   要素の幅割合/*         */
+    /* flex-shrink  0:max 1:均等 2:min/* */
+    /* flex-basis  フォーカス時横幅     */
+    flex:  1 0 100%;/* 調整            */
   }/**/
 
-                       /* 👇️ 情報カード */
-  .vege_card {/*                       */
-    box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);/**/
-    flex:       0 0 222px;/* px固定  */
-    text-align:      left;/*        */
-    padding:    11px 15px;/*       */
-    border-radius:   11px;/*      */
+  .main-title {
+    /*------------------------------ メインタイトル --*/
+    background-image:/*                         */
+      linear-gradient(rgba(172, 205, 255, 0.15),
+     rgba(0, 0, 0, 0.1)), url("00_title.png");
+    box-shadow:  1px 1px 11px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 4px 11px rgba(0, 0, 0, 0.9);
+    color:             #fcfff0; 
+    background-position:  center;/*       */
+    background-repeat: no-repeat;/*      */
+    background-size:       cover;/*     */
+    text-align:           center;/*    */
+    margin:                  7px;/*   */
+    padding:            4px 11px;/*  */
+    border-radius:          11px;/* */
   }/**/
 
-                        /* カード内の画像 */
-  .vege_card img {/*                     */
-    box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);/**/
-    width:          100%;/*            */
-    height:         auto;/*           */
-    display:       block;/* 前後改行 */
-    margin:      7px 0px;/*         */
-    border-radius:  11px;/*        */
-  }/**/
- 
-  /* 👇️ ライセンストグル用クラス */
-  .license-base {/*             */
-    text-align: center;/*      */ 
-    line-height:   1.5;/*     */
-    padding: 10px 15px;/*    */
+  .license-base {/**/
+    /*------------------------------ ライセンス --*/
+    text-align: center;/*   */ 
+    line-height:   1.5;/*  */
+    padding: 10px 15px;/* */
   }/**/
 /*
 /*------------------------------  👇️ コメント化クラス置き場  --*/
@@ -388,6 +382,24 @@
   /* details[open] .content {/*       */
   /*   opacity: 1;/*                 */
   /* }/*                            */
+
+  /*                      /* 👇️ 情報カード */
+  /* .vege_card {/*                       */
+  /*   box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);/**/
+  /*   flex:       0 0 222px;/* px固定  */
+  /*   text-align:      left;/*        */
+  /*   padding:    11px 15px;/*       */
+  /*   border-radius:   11px;/*      */
+  /* }/**/
+  /*                          カード内の画像 */
+  /* .vege_card img {/*                     */
+  /*   box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.4);/**/
+  /*   width:          100%;/*            */
+  /*   height:         auto;/*           */
+  /*   display:       block;/* 前後改行 */
+  /*   margin:      7px 0px;/*         */
+  /*   border-radius:  11px;/*        */
+  /* }/**/
 
   /* ホバーさせたいときはアクティブに */
   /*.vege_card img:hover {/*         */
@@ -416,6 +428,11 @@
     flex:        0 0 220px;
   }/**/
 
+  .carousel_content table td div {
+    text-align: left;
+    min-height:320px;
+  }
+
   .carousel_content table td div > strong {
     color:     #333;
     display:     block;
@@ -427,8 +444,8 @@
   .carousel_content table img {/**/
                     /* 自動改行 */
     display:      block;/*     */
-    width:        222px;/*    */
-    height:       222px;/*   */
+    width:        220px;/*    */
+    height:       220px;/*   */
     margin:    7px auto;/*  */
     object-fit:   cover;/* */
     border-radius: 11px;/**/
@@ -487,7 +504,7 @@
           <details class="info_box"><summary>📒VEGE_INFO</summary>
             <div class="content">
 
-              <table><!-- 列ヘッダ -->
+              <table><!--固定ヘッダ -->
                 <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
               </table>
 
@@ -507,7 +524,7 @@
           <details class="info_box scro-target"><summary>📝ZONE_INFO</summary>
             <div class="content">
 
-              <table><!-- 列ヘッダ -->
+              <table><!--固定ヘッダ -->
                 <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
               </table>
 
@@ -559,7 +576,7 @@
           <details class="info_box"><summary>📒VEGE_INFO</summary>
             <div class="content">
 
-              <table><!-- 列ヘッダ -->
+              <table><!--固定ヘッダ -->
                 <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
               </table>
 
@@ -579,7 +596,7 @@
           <details class="info_box scro-target"><summary>📝ZONE_INFO</summary>
             <div class="content">
 
-              <table><!-- 列ヘッダ -->
+              <table><!--固定ヘッダ -->
                 <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
               </table>
 
@@ -628,7 +645,7 @@
           <details class="info_box"><summary>📒VEGE_INFO</summary>
             <div class="content">
 
-              <table><!-- 列ヘッダ -->
+              <table><!--固定ヘッダ -->
                 <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
               </table>
 
@@ -648,7 +665,7 @@
           <details class="info_box scro-target"><summary>📝ZONE_INFO</summary>
             <div class="content">
 
-              <table><!-- 列ヘッダ -->
+              <table><!--固定ヘッダ -->
                 <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
               </table>
 
@@ -699,7 +716,7 @@
           <details class="info_box"><summary>📒VEGE_INFO</summary>
             <div class="content">
 
-              <table><!-- 列ヘッダ -->
+              <table><!--固定ヘッダ -->
                 <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
               </table>
 
@@ -719,7 +736,7 @@
           <details class="info_box scro-target"><summary>📝ZONE_INFO</summary>
             <div class="content">
 
-              <table><!-- 列ヘッダ -->
+              <table><!--固定ヘッダ -->
                 <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
               </table>
 
@@ -770,7 +787,7 @@
           <details class="info_box"><summary>📒VEGE_INFO</summary>
             <div class="content">
 
-              <table><!-- 列ヘッダ -->
+              <table><!--固定ヘッダ -->
                 <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
               </table>
 
@@ -790,7 +807,7 @@
           <details class="info_box scro-target"><summary>📝ZONE_INFO</summary>
             <div class="content">
 
-              <table><!-- 列ヘッダ -->
+              <table><!--固定ヘッダ -->
                 <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
               </table>
 
@@ -841,7 +858,7 @@
           <details class="info_box"><summary>📒VEGE_INFO</summary>
             <div class="content">
 
-              <table><!-- 列ヘッダ -->
+              <table><!--固定ヘッダ -->
                 <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
               </table>
 
@@ -861,7 +878,7 @@
           <details class="info_box scro-target"><summary>📝ZONE_INFO</summary>
             <div class="content">
 
-              <table><!-- 列ヘッダ -->
+              <table><!--固定ヘッダ -->
                 <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
               </table>
 
@@ -913,7 +930,7 @@
           <details class="info_box"><summary>📒VEGE_INFO</summary>
             <div class="content">
 
-              <table><!-- 列ヘッダ -->
+              <table><!--固定ヘッダ -->
                 <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
               </table>
 
@@ -933,7 +950,7 @@
           <details class="info_box scro-target"><summary>📝ZONE_INFO</summary>
             <div class="content">
 
-              <table><!-- 列ヘッダ -->
+              <table><!--固定ヘッダ -->
                 <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
               </table>
 
@@ -984,7 +1001,7 @@
           <details class="info_box"><summary>📒VEGE_INFO</summary>
             <div class="content">
 
-              <table><!-- 列ヘッダ -->
+              <table><!--固定ヘッダ -->
                 <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
               </table>
 
@@ -1004,7 +1021,7 @@
           <details class="info_box scro-target"><summary>📝ZONE_INFO</summary>
             <div class="content">
 
-              <table><!-- 列ヘッダ -->
+              <table><!--固定ヘッダ -->
                 <tr><th class="th36px">ITEM</th><th colspan="2" class="thMax">INFO</th><tr>
               </table>
 
@@ -1062,7 +1079,7 @@
 
         <div class="info_box content"><!-- 専用構造 -->
 
-          <table><tr><!-- 列ヘッダ -->
+          <table><tr><!--固定ヘッダ -->
             <th  class="th36px">TGT</th><th  class="thMax">PREV</td>
           </tr></table>
 
@@ -1083,7 +1100,7 @@
 
         <div class="info_box content"><!-- 専用構造 -->
 
-          <table><tr><!-- 列ヘッダ -->
+          <table><tr><!--固定ヘッダ -->
             <th class="th36px">CAUS</th><th class="thMax" colspan="2" >SICK & SYMP</th>
           </tr></table>
 
@@ -1104,7 +1121,7 @@
 
         <div class="info_box content"><!-- 専用構造 -->
 
-          <table><!-- 列ヘッダ -->
+          <table><!--固定ヘッダ -->
             <tr><th class="th36px">TYPE</th><th class="thMax">PEST & DMG</th></tr>
           </table>        
 
